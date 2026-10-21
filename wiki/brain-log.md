@@ -31,3 +31,8 @@
 - `git init` (branch main), remote https://github.com/chatgptgopcworld-spec/msk-ai-os (private). First commit: 83 files (schema, main wiki, templates, tools, Pakistan Legal Aid).
 - `.gitignore` excludes the three imported projects (own repos), Pakistan Legal Aid `cases/` except its README, Obsidian workspace state and Python caches.
 - Root CLAUDE.md rule 10 added; push script now includes this repo. Hot cache refreshed.
+
+## [2026-10-22] schema | New project: AI OS Blueprint
+- Created `Projects/AI OS Blueprint/` from 5 Nick Milo (Linking Your Thinking) videos: `CLAUDE.md`, [[aios-hot]], [[aios-index]], [[aios-log]], 5 source pages, 14 concept pages, skill-systems page, 3 entities, [[aios-msk-adoption-plan]], 6 kit templates, transcript tool.
+- Added to the root `CLAUDE.md` project table, `Projects/CLAUDE.md`, [[brain-index]] (Projects) and [[brain-overview]] (open threads).
+- No changes to other projects. Adoption plan is a proposal only. Hot cache refreshed.

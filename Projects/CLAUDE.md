@@ -10,6 +10,7 @@ log. Read the vault's root `CLAUDE.md` first ("Projects" section), then the proj
 | `AI Brain/` | `AI Brain/CLAUDE.md`, then `wiki/hot.md`, `wiki/index.md` (git repo) |
 | `Prompts Website/` | `Prompts Website/CLAUDE.md`, then `wiki/hot.md`, `wiki/index.md` (git repo; code repo in `projects/soniprompts/`) |
 | `Ubaid Automation/` | `Ubaid Automation/CLAUDE.md`, then `wiki/hot.md`, `wiki/index.md` (git repo; code repo in `projects/ubaidooautomation/`) |
+| `AI OS Blueprint/` | `AI OS Blueprint/CLAUDE.md`, then `wiki/aios-hot.md`, `wiki/aios-index.md` (tracked by the msk-ai-os repo) |
 
 The last three were standalone Obsidian vaults until 2026-10-22 and keep their own file names;
 see rules 7-9 in the root `CLAUDE.md`.

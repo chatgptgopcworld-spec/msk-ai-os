@@ -180,6 +180,7 @@ Some work needs its own rules, sources and outputs (e.g. legal drafting). That w
 | `Projects/AI Brain/` | Hamzi Prompts wiki (hamziprompts.com: prompt library, memberships, academy); code lives in `Documents\hamzi-lms` | its `CLAUDE.md`, then `wiki/hot.md`, `wiki/index.md` |
 | `Projects/Prompts Website/` | General wiki from before MSK AI OS, plus the SoniPrompts / PromptsStudio rebuild (code in its `projects/soniprompts/`) | its `CLAUDE.md`, then `wiki/hot.md`, `wiki/index.md` |
 | `Projects/Ubaid Automation/` | Ubaidoo client-work wiki (Ubaidoo Automation site and Academy LMS; code in its `projects/ubaidooautomation/`) | its `CLAUDE.md`, then `wiki/hot.md`, `wiki/index.md` |
+| `Projects/AI OS Blueprint/` | Nick Milo's AI OS (Ideaverse + me.md / vault map / skill map + swappable AI tools) from 5 videos, a starter kit, and a plan for applying it to MSK AI OS | its `CLAUDE.md`, then `wiki/aios-hot.md`, `wiki/aios-index.md` |
 
 ## Optional extras (not set up yet; add when useful)
 - Obsidian Web Clipper → save clips into `raw/inbox/`.
