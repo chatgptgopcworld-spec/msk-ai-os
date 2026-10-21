@@ -68,3 +68,7 @@
 - Paths no longer contain the Windows username (vault map, kit, project CLAUDE.md files, AI Brain entity pages; dated records keep old paths as history).
 - Moved inside the vault: `Documents\Pakistan Laws` → `Projects/Pakistan Legal Aid/raw/source-laws/` (25 files, checksum-verified); `Documents\.claude\launch.json` → `.claude/launch.json` (paths now vault-relative). hamzi-lms is to move to `Projects/AI Brain/projects/hamzi-lms` (user does the cut-paste); its CLAUDE.md and sync-project.ps1 already find AI Brain at `../..`.
 - New `tools/msk-sync.ps1` (pull/push every repo), `tools/msk-setup-computer.ps1` (clone everything on a new computer); `finish-git-sync.ps1` now calls msk-sync. Skills: [[msk-skill-git-sync]] rewritten, new [[msk-skill-new-computer]]; vault map rule 9 updated. Hot cache refreshed.
+
+## [2026-10-22] schema | Project renamed: AI Brain → Hamzi Prompts
+- Folder `Projects/AI Brain` → `Projects/Hamzi Prompts`. Updated: [[msk-vault-map]] (rules 7, 9, table), [[msk-skill-git-sync]], [[msk-me]], `Projects/CLAUDE.md`, `.gitignore`, `tools/msk-sync.ps1`, `tools/msk-setup-computer.ps1`, [[brain-index]], hot cache; mentions in Prompts Website and Ubaid Automation; hamzi-lms CLAUDE.md, AGENTS.md and sync-project.ps1 (uncommitted, user to commit).
+- Logs, raw files and dated test records keep "AI Brain" as history. GitHub repo name unchanged (`ai-brain-vault`). Hot cache refreshed.

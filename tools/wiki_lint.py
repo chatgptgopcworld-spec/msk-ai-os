@@ -13,7 +13,7 @@ SKIP_DIRS = ('/.git/', '/node_modules/', '/projects/')
 all_md = [p for p in glob.glob('**/*.md', recursive=True) if not any(s in '/' + p.replace(os.sep, '/') for s in SKIP_DIRS)]
 vault = {os.path.basename(p)[:-3] for p in all_md}
 def resolves(l):
-    # path-style link, e.g. [[Projects/AI Brain/wiki/hot]]
+    # path-style link, e.g. [[Projects/Hamzi Prompts/wiki/hot]]
     return (os.path.exists(l + '.md') or os.path.exists(l)) if '/' in l else l in vault
 SKIP = {'brain-index', 'brain-log', 'brain-overview', 'hot'}
 links, inbound = {}, {s: 0 for s in pages}

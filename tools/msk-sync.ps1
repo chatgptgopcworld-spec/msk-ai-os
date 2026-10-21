@@ -20,10 +20,10 @@ if (-not $Message) { $Message = "sync: $env:COMPUTERNAME $(Get-Date -Format 'yyy
 
 $repos = @(
   @{ p = '.';                                                     kind = 'vault' },
-  @{ p = 'Projects\AI Brain';                                     kind = 'vault' },
+  @{ p = 'Projects\Hamzi Prompts';                                     kind = 'vault' },
   @{ p = 'Projects\Prompts Website';                              kind = 'vault' },
   @{ p = 'Projects\Ubaid Automation';                             kind = 'vault' },
-  @{ p = 'Projects\AI Brain\projects\hamzi-lms';                  kind = 'code'  },
+  @{ p = 'Projects\Hamzi Prompts\projects\hamzi-lms';                  kind = 'code'  },
   @{ p = 'Projects\Prompts Website\projects\soniprompts';         kind = 'code'  },
   @{ p = 'Projects\Ubaid Automation\projects\ubaidooautomation';  kind = 'code'  }
 )

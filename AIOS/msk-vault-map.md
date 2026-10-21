@@ -131,17 +131,17 @@ files refer to "rules 7-9".)
    has learned on a topic page, but project pages are only edited under the project's own rules.
 5. New project: follow [[msk-skill-new-project]].
 6. Every **new** file name must be unique vault-wide; give generic pages a prefix.
-7. **Imported projects** (AI Brain, Prompts Website, Ubaid Automation; moved in on 2026-10-22 from
+7. **Imported projects** (Hamzi Prompts — named AI Brain until 2026-10-22, GitHub repo still `ai-brain-vault` — Prompts Website, Ubaid Automation; moved in on 2026-10-22 from
    standalone vaults) keep their own schemas and file names (`index`, `log`, `hot`, `overview`, ...),
    which repeat across them. Never rename their files to "fix" this. Each still has its own
    `.obsidian` folder: open it as its own Obsidian vault for reliable links inside it. From the
-   main wiki, link to their pages by full path, e.g. `[[Projects/AI Brain/wiki/hot|AI Brain hot cache]]`.
+   main wiki, link to their pages by full path, e.g. `[[Projects/Hamzi Prompts/wiki/hot|Hamzi Prompts hot cache]]`.
 8. Each imported project is its own git repo with a GitHub remote, and its `projects/` folder holds
    separate code repos. Commit inside the repo you changed; never commit one project's files into
    another's repo.
 9. **Everything lives inside the vault** (since 2026-10-22), so copying or cloning the vault brings
-   all of it: the Hamzi website/LMS code is `Projects/AI Brain/projects/hamzi-lms` (its own repo; its
-   `CLAUDE.md` finds AI Brain at `../..`); the original law PDFs and verbatim .md are in
+   all of it: the Hamzi website/LMS code is `Projects/Hamzi Prompts/projects/hamzi-lms` (its own repo; its
+   `CLAUDE.md` finds Hamzi Prompts at `../..`); the original law PDFs and verbatim .md are in
    `Projects/Pakistan Legal Aid/raw/source-laws/`; preview servers are in `.claude/launch.json`.
    If a project or code repo ever moves, update these paths and `tools/msk-sync.ps1`.
 10. **MSK AI OS has its own git repo** (GitHub `chatgptgopcworld-spec/msk-ai-os`, private, branch
@@ -154,7 +154,7 @@ files refer to "rules 7-9".)
 | Project | What it is | Start at |
 |---|---|---|
 | `Projects/Pakistan Legal Aid/` | Verified Pakistani law and forum wiki for drafting complaints, applications and representations | its `CLAUDE.md`, then `wiki/legal-hot.md`, `wiki/legal-index.md` |
-| `Projects/AI Brain/` | Hamzi Prompts wiki (hamziprompts.com: prompt library, memberships, academy); code in its `projects/hamzi-lms/` | its `CLAUDE.md`, then `wiki/hot.md`, `wiki/index.md` |
+| `Projects/Hamzi Prompts/` | Hamzi Prompts wiki (hamziprompts.com: prompt library, memberships, academy); code in its `projects/hamzi-lms/` | its `CLAUDE.md`, then `wiki/hot.md`, `wiki/index.md` |
 | `Projects/Prompts Website/` | General wiki from before MSK AI OS, plus the SoniPrompts / PromptsStudio rebuild (code in its `projects/soniprompts/`) | its `CLAUDE.md`, then `wiki/hot.md`, `wiki/index.md` |
 | `Projects/Ubaid Automation/` | Ubaidoo client-work wiki (Ubaidoo Automation site and Academy LMS; code in its `projects/ubaidooautomation/`) | its `CLAUDE.md`, then `wiki/hot.md`, `wiki/index.md` |
 | `Projects/AI OS Blueprint/` | Nick Milo's AI OS from 6 videos, starter kit, and the plan this map came from | its `CLAUDE.md`, then `wiki/aios-hot.md`, `wiki/aios-index.md` |

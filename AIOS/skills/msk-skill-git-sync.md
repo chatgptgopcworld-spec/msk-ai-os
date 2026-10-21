@@ -17,10 +17,10 @@ working and pushes after. Only one computer should be working on the vault at a 
 | Repo | Path | GitHub | Branch |
 |---|---|---|---|
 | MSK AI OS (OS, Pakistan Legal Aid, AI OS Blueprint) | `.` | msk-ai-os | main |
-| AI Brain vault | `Projects/AI Brain` | ai-brain-vault | master |
+| Hamzi Prompts vault (formerly AI Brain) | `Projects/Hamzi Prompts` | ai-brain-vault | master |
 | Prompts Website vault | `Projects/Prompts Website` | prompts-website-vault | master |
 | Ubaid Automation vault | `Projects/Ubaid Automation` | ubaid-automation-vault | master |
-| Hamzi website/LMS code | `Projects/AI Brain/projects/hamzi-lms` | hamzipromtps | main |
+| Hamzi website/LMS code | `Projects/Hamzi Prompts/projects/hamzi-lms` | hamzipromtps | main |
 | Ubaidoo code | `Projects/Ubaid Automation/projects/ubaidooautomation` | ubaidooautomation | redesign/v2 |
 | SoniPrompts code | `Projects/Prompts Website/projects/soniprompts` | none yet | master |
 

@@ -10,10 +10,10 @@ if (-not (Get-Command git -ErrorAction SilentlyContinue)) { 'Install Git for Win
 $gh = 'https://github.com/chatgptgopcworld-spec'
 $repos = @(
   @{ url = "$gh/msk-ai-os.git";              path = '.';                                                    branch = 'main' },
-  @{ url = "$gh/ai-brain-vault.git";         path = 'Projects\AI Brain';                                    branch = 'master' },
+  @{ url = "$gh/ai-brain-vault.git";         path = 'Projects\Hamzi Prompts';                                    branch = 'master' },
   @{ url = "$gh/prompts-website-vault.git";  path = 'Projects\Prompts Website';                             branch = 'master' },
   @{ url = "$gh/ubaid-automation-vault.git"; path = 'Projects\Ubaid Automation';                            branch = 'master' },
-  @{ url = "$gh/hamzipromtps.git";           path = 'Projects\AI Brain\projects\hamzi-lms';                 branch = 'main' },
+  @{ url = "$gh/hamzipromtps.git";           path = 'Projects\Hamzi Prompts\projects\hamzi-lms';                 branch = 'main' },
   @{ url = "$gh/ubaidooautomation.git";      path = 'Projects\Ubaid Automation\projects\ubaidooautomation'; branch = 'redesign/v2' }
   # soniprompts has no GitHub repo yet: add a line here once it has one.
 )
@@ -23,7 +23,7 @@ foreach ($r in $repos) {
   if ((Test-Path $p) -and (Get-ChildItem $p -Force | Select-Object -First 1)) { "[STOP]  $($r.path) exists but is not a git repo; move it away and run again"; continue }
   "[CLONE] $($r.path)"; git clone -b $r.branch $r.url $p
 }
-$h = Join-Path $root 'Projects\AI Brain\projects\hamzi-lms'
+$h = Join-Path $root 'Projects\Hamzi Prompts\projects\hamzi-lms'
 if (Test-Path (Join-Path $h '.git')) { git -C $h config core.hooksPath .githooks }
 ''
 'Done. Next:'
