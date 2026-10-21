@@ -1,0 +1,21 @@
+# MSK AI OS repo: the OS itself (schema, main wiki, raw, templates, tools) and
+# projects that have no repo of their own.
+
+# Imported projects are separate git repos with their own GitHub remotes. Never track them here.
+Projects/AI Brain/
+Projects/Prompts Website/
+Projects/Ubaid Automation/
+
+# Case files hold real people's personal data: never on GitHub. Only the README is tracked.
+Projects/Pakistan Legal Aid/cases/*
+!Projects/Pakistan Legal Aid/cases/README.md
+
+# Obsidian per-device state and trash
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.trash/
+
+# Python caches and one-off run output
+__pycache__/
+*.pyc
+tools/finish-git-sync-result.txt
