@@ -55,6 +55,7 @@ Catalogue of every page in this project. One line per page: link, summary, (n so
 - [[aios-kit-skill-template]] — one skill file
 - [[aios-kit-claude-pointer]] — pointer line for CLAUDE.md, optional AGENTS.md
 - [[aios-kit-session-start-prompt]] — paste-in prompt for any AI session
+- [[aios-kit-chatgpt-export-prompt]] — prompt set to export everything ChatGPT knows about the user, for filling `msk-me`
 
 ## Tools
 - `tools/aios-yt-transcript.js` — read a YouTube transcript in the built-in browser

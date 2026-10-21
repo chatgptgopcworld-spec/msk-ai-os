@@ -26,3 +26,6 @@ Append-only. Entries: `## [YYYY-MM-DD] op | Title`, newest at the bottom.
 
 ## [2026-10-22] apply | me.md drafted
 - [[msk-me]] created in `AIOS/` and added to the start-of-session order; adoption plan step 2 done as a draft.
+
+## [2026-10-22] apply | ChatGPT export prompt
+- New kit file [[aios-kit-chatgpt-export-prompt]]: main prompt + 4 follow-ups to export the user's context from ChatGPT, tagged by basis, secrets redacted; to fill [[msk-me]].
