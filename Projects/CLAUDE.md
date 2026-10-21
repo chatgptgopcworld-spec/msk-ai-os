@@ -1,7 +1,7 @@
 # Projects (inside MSK AI OS)
 
 Each subfolder is a self-contained project with its own `CLAUDE.md`, sources, wiki, index and
-log. Read the vault's root `CLAUDE.md` first ("Projects" section), then the project's own
+log. Read the vault map `AIOS/msk-vault-map.md` first (section 6, "Projects"), then the project's own
 `CLAUDE.md`. Work on one project never touches another project's files.
 
 | Project | Start at |
@@ -13,4 +13,4 @@ log. Read the vault's root `CLAUDE.md` first ("Projects" section), then the proj
 | `AI OS Blueprint/` | `AI OS Blueprint/CLAUDE.md`, then `wiki/aios-hot.md`, `wiki/aios-index.md` (tracked by the msk-ai-os repo) |
 
 The last three were standalone Obsidian vaults until 2026-10-22 and keep their own file names;
-see rules 7-9 in the root `CLAUDE.md`.
+see rules 7-9 in the vault map (`AIOS/msk-vault-map.md`, section 6).

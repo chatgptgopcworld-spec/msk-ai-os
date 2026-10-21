@@ -15,6 +15,6 @@ _Nothing ingested yet._
 
 ## Open threads
 - Pakistan Legal Aid project set up ([[legal-index]]); new law files waiting to be ingested there.
-- AI OS Blueprint project set up ([[aios-index]]); its [[aios-msk-adoption-plan]] proposes making MSK AI OS tool-portable (me.md, vault map, skill map, skills folder). Awaiting the user's decision.
+- AI OS Blueprint project set up ([[aios-index]]); from its [[aios-msk-adoption-plan]], the vault map, skill map, skill files and `AGENTS.md` were set up on 2026-10-22 ([[msk-vault-map]]); `me.md`, a personal-notes area and a Calendar layer are still open.
 
 ## What changed recently

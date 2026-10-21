@@ -33,3 +33,18 @@ show('Missing frontmatter', {s for s, p in pages.items() if s not in {'brain-ind
 hot_words = len(open('wiki/hot.md', encoding='utf-8').read().split('\n---\n', 1)[-1].split()) if os.path.exists('wiki/hot.md') else 0
 print(f'\nHot cache words: {hot_words} (target ~500, ceiling 600)' + ('  <-- TOO LONG' if hot_words > 600 else ''))
 show('Waiting in raw/inbox', {f for f in os.listdir('raw/inbox') if not f.startswith('.')})
+# AIOS schema layer: pointers exist, skill map and skill files agree, links resolve
+aios = []
+for f in ('CLAUDE.md', 'AGENTS.md', 'AIOS/msk-vault-map.md', 'AIOS/msk-skill-map.md'):
+    if not os.path.exists(f): aios.append(f'missing {f}')
+if os.path.exists('AIOS/msk-skill-map.md'):
+    listed = set(re.findall(r'\[\[(msk-skill-[^\]|#]+)', open('AIOS/msk-skill-map.md', encoding='utf-8').read()))
+    files = {os.path.basename(p)[:-3] for p in glob.glob('AIOS/skills/*.md')}
+    aios += [f'skill file not in skill map: {s}' for s in files - listed]
+    aios += [f'skill map row has no file: {s}' for s in listed - files]
+def strip_code(s):  # placeholders like `[[slug]]` inside code are examples, not links
+    return re.sub(r'`[^`\n]*`', '', re.sub(r'```.*?```', '', s, flags=re.S))
+for p in glob.glob('AIOS/**/*.md', recursive=True):
+    for l in set(re.findall(r'\[\[([^\]|#]+)', strip_code(open(p, encoding='utf-8').read()))):
+        if not resolves(l): aios.append(f'broken link {os.path.basename(p)} -> {l}')
+show('AIOS schema problems', set(aios))

@@ -8,7 +8,7 @@ of templates, and a plan for applying the system to MSK AI OS itself.
 
 This project lives in `MSK AI OS/Projects/AI OS Blueprint/`; all paths below are relative to
 that folder and nothing here is written outside it, except the registration lines and hot
-cache paragraph the root `CLAUDE.md` asks for.
+cache paragraph the vault's rules ask for (`AIOS/msk-vault-map.md`, `AIOS/skills/`).
 
 **Read order every session:** this file → `wiki/aios-hot.md` → `wiki/aios-index.md` → the
 last 5 entries of `wiki/aios-log.md`.
@@ -28,7 +28,7 @@ last 5 entries of `wiki/aios-log.md`.
    videos describe. They become real only when the user fills them in or says to apply them.
 5. **Don't change MSK AI OS from here.** The adoption plan
    ([[aios-msk-adoption-plan]]) is a proposal. Changes to the vault root, other projects or
-   the root schema happen only when the user says so, and then under the root `CLAUDE.md`.
+   the root schema happen only when the user says so, and then under the vault map (`AIOS/msk-vault-map.md`) and its skills.
 6. **Personal data stays out.** If the user later fills `me.md` or a dossier with personal
    material, keep it in the place they choose and never copy it into other projects.
 

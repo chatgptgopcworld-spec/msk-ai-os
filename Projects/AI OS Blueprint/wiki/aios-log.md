@@ -19,3 +19,7 @@ Append-only. Entries: `## [YYYY-MM-DD] op | Title`, newest at the bottom.
 - New: [[aios-obsidian-basics]], [[aios-linking-your-thinking]].
 - Updated: [[aios-obsidian]], [[aios-maps-of-content]], [[aios-file-over-ai]], [[aios-ai-content-hygiene]], [[aios-soft-paper-setup]] (contradiction: dark/Cybertron then, light/Soft Paper now), [[nick-milo]], [[aios-system-overview]], [[aios-msk-adoption-plan]] (gap 7 + step 0: turn on "automatically update internal links"; new decision on a personal-notes area).
 - Checked the vault's `.obsidian` (read only): link-update setting not set explicitly. Nothing changed. Hot cache refreshed.
+
+## [2026-10-22] apply | Vault map, skill map, skills, AGENTS.md in MSK AI OS
+- User approved a full split of the root `CLAUDE.md` and an `AGENTS.md`. Created [[msk-vault-map]], [[msk-skill-map]], 9 skills in `AIOS/skills/`; root `CLAUDE.md` became a pointer.
+- [[aios-msk-adoption-plan]] status → partly applied; hot cache refreshed. Root log has the full entry.

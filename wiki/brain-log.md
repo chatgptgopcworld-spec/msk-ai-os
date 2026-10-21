@@ -40,3 +40,9 @@
 ## [2026-10-22] ingest | AI OS Blueprint: video 6 (Obsidian Masterclass)
 - Project ingest under its own rules: [[src-2026-10-22-nm-obsidian-masterclass]], new [[aios-obsidian-basics]] and [[aios-linking-your-thinking]], 8 pages updated; see [[aios-log]].
 - Hot cache refreshed (project paragraph and Recently changed).
+
+## [2026-10-22] schema | Vault map, skill map, skills and AGENTS.md (CLAUDE.md fully split)
+- New `AIOS/` layer: [[msk-vault-map]] (all rules, layout, conventions, projects, from the old root `CLAUDE.md`), [[msk-skill-map]], 9 skills in `AIOS/skills/` (context-lookup, ingest, hot-cache, lint, new-project, import-project, file-answer, git-sync, yt-transcript).
+- Root `CLAUDE.md` is now a pointer (with a map of where old "root CLAUDE.md" rules moved); new `AGENTS.md` pointer for other AI tools. Checked line by line that no rule was lost.
+- `Projects/CLAUDE.md` now points to the vault map; `tools/wiki_lint.py` checks the AIOS layer; [[brain-index]] gained a Schema section; [[brain-overview]] updated. Other projects untouched.
+- Applied steps 1 (partly: no me.md yet), 3, 4 and 5 of [[aios-msk-adoption-plan]]. Hot cache refreshed.

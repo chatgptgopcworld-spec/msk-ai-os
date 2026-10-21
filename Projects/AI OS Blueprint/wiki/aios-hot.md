@@ -23,12 +23,13 @@ A wiki of the "AI OS" system [[nick-milo]] explains across six YouTube videos, p
 Personal context and skills moved from inside Claude (video 2) to the user's own files (videos 3-4). Theme preference moved from dark/colourful (older masterclass) to light Soft Paper. Recorded under Contradictions on [[aios-me-md]], [[aios-skills-as-files]], [[aios-soft-paper-setup]].
 
 ## Applying it to MSK AI OS
-[[aios-msk-adoption-plan]] (proposal, nothing applied). Already matching: plain files plus git, `CLAUDE.md` + `brain-index` as vault map, `Projects/` as Efforts, `raw/inbox/` as `+`, lint as Janitor. Gaps: no `me.md`; everything addressed to Claude; no skill files; no session prompt; no Calendar; no home for the user's own thinking (the masterclass's main point); auto-update links not set. Quickest wins: turn on auto-update links in Obsidian, then an `AIOS/` folder with `msk-me`, `msk-vault-map`, `msk-skill-map`, `skills/`. Templates in `kit/`.
+[[aios-msk-adoption-plan]]. **Applied 22 Oct:** `AIOS/` with [[msk-vault-map]], [[msk-skill-map]], 9 skills; `CLAUDE.md` split into a pointer; `AGENTS.md` added. Already matching: plain files plus git, `CLAUDE.md` + `brain-index` as vault map, `Projects/` as Efforts, `raw/inbox/` as `+`, lint as Janitor. Still open: no `me.md`; no session prompt; no Calendar; no home for the user's own thinking (the masterclass's main point); auto-update links not set. Templates in `kit/`.
 
 ## Open threads
 - User decisions: contents of `me.md`; other AI tools now or later; a Calendar/daily-brief layer; a personal-notes area AI reads but doesn't rewrite.
 - The `X` folder in ACE isn't explained in these videos.
 
 ## Recently changed
+- 22 Oct 2026: adoption steps applied to MSK AI OS: vault map, skill map, 9 skills, `CLAUDE.md` pointer, `AGENTS.md`.
 - 22 Oct 2026: video 6 (Obsidian masterclass) ingested; new pages on linking your thinking and Obsidian basics; adoption plan gained step 0 and gap 7.
 - 22 Oct 2026: project created; 5 videos summarised; concepts, systems page, entities, adoption plan, kit, transcript tool.

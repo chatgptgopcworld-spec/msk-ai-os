@@ -8,7 +8,7 @@ status: active
 ---
 # Applying the AI OS to MSK AI OS: gap analysis and plan
 
-**Status: proposal.** Nothing below has been applied to the vault. Each step needs the user's go-ahead, then is done under the root `CLAUDE.md` and logged in both logs.
+**Status: partly applied.** On 2026-10-22 the user approved and Claude applied: `AIOS/` folder with [[msk-vault-map]], [[msk-skill-map]] and 9 skill files; root `CLAUDE.md` fully split into a pointer; `AGENTS.md` added (steps 1 without me.md, 3, 4, 5). Still open: step 0, `me.md` (step 2), step 6, step 7. Remaining steps need the user's go-ahead and are logged in both logs.
 
 ## Where MSK AI OS already matches
 | AI OS element | MSK AI OS today |

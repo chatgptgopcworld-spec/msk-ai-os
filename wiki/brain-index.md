@@ -7,6 +7,11 @@ Catalogue of every wiki page. Updated on every ingest. Format per line: link to 
 - [[brain-overview]] — the big picture: themes, open threads, evolving synthesis
 - [[brain-log]] — timeline of everything done to this wiki
 
+## Schema (AIOS)
+- [[msk-vault-map]] — vault map: rules, layout, page conventions, projects (read first, for any AI tool)
+- [[msk-skill-map]] — skill map: every procedure as a skill file in `AIOS/skills/`, and when to use it
+- `CLAUDE.md`, `AGENTS.md` — pointer files that send Claude and other AI tools to the vault map
+
 ## Projects
 - [[legal-hot]] — Pakistan Legal Aid: verified law and forum wiki for drafting complaints (`Projects/Pakistan Legal Aid/`; [[legal-index|its index]])
 - [[Projects/AI Brain/wiki/hot|AI Brain]] — Hamzi Prompts wiki: prompt library, memberships, academy (`Projects/AI Brain/`; also [[Projects/AI Brain/wiki/index|its index]])
