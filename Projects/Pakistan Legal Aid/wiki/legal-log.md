@@ -18,3 +18,6 @@ MSK AI OS as a whole is now the user's second brain; this project moved to `MSK 
 ## [2026-10-22] schema | Project hot cache added
 - Created `wiki/legal-hot.md` (~500 words): rules, what the wiki holds, facts drafts need most, gaps, open threads. Read right after `CLAUDE.md`.
 - `CLAUDE.md`: reading order and refresh rules updated; index rebuilt with the hot cache under "Start here".
+
+## [2026-10-22] restructure | Law sources moved inside the project
+- `Documents\Pakistan Laws` (pdf/, md/, candidates/; 25 files) copied to `raw/source-laws/` and verified by checksum, so the project carries its own sources to every computer. CLAUDE.md, legal-hot, legal-gaps and source pages now point there. Nothing else changed.

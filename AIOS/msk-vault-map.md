@@ -10,7 +10,7 @@ The master table of contents and manual for this vault, written for **any** AI t
 Codex, Gemini, a local model) and for the user. It holds the rules, the layout and the
 conventions. *How* to carry out each job lives in skill files: see [[msk-skill-map]].
 
-All paths are relative to the vault root (`C:\Users\dell\Documents\MSK AI OS`).
+All paths are relative to the vault root: `Documents\MSK AI OS` in the current Windows user's profile (`%USERPROFILE%\Documents\MSK AI OS`), the same on every computer. Never hard-code a Windows username.
 
 **Start of every session:** [[msk-me]] (who the user is) → this file → [[msk-skill-map]] → `wiki/hot.md` → `wiki/brain-index.md`
 → the last 5 entries of `wiki/brain-log.md` → check `raw/inbox/` for new sources.
@@ -59,6 +59,7 @@ AIOS/
   msk-skill-map.md  Every skill, when to use it, where its file is.
   skills/           One markdown file per procedure (msk-skill-*.md).
 CLAUDE.md           Pointer for Claude.     AGENTS.md  Pointer for other AI tools.
+.claude/launch.json Preview servers for website code (paths relative to the vault root).
 raw/
   inbox/            Drop new sources here (PDF, .md, .txt, web clips, images, transcripts).
   sources/YYYY/     Ingested originals, moved here and renamed YYYY-MM-DD-short-slug.ext
@@ -74,7 +75,7 @@ wiki/
   topics/           Hub pages that pull a domain together (e.g. germany-study, ai-studio).
   answers/          Valuable answers and analyses filed back from questions.
 templates/          Page templates (source, entity, concept, topic, answer).
-tools/              wiki_lint.py (health check), finish-git-sync.ps1 (Windows push script).
+tools/              wiki_lint.py (health check), msk-sync.ps1 (pull/push all repos), msk-setup-computer.ps1 (new computer).
 Projects/
   <Project Name>/   Self-contained project with its own CLAUDE.md, raw/, wiki/, log.
 ```
@@ -138,10 +139,11 @@ files refer to "rules 7-9".)
 8. Each imported project is its own git repo with a GitHub remote, and its `projects/` folder holds
    separate code repos. Commit inside the repo you changed; never commit one project's files into
    another's repo.
-9. Something outside the vault may depend on a project's location. Known ones:
-   `Documents\hamzi-lms` (CLAUDE.md and `tools/sync-project.ps1` point at
-   `MSK AI OS/Projects/AI Brain`), and `Documents\.claude\launch.json` (preview servers for the
-   Ubaidoo and SoniPrompts code). Update them if a project ever moves again.
+9. **Everything lives inside the vault** (since 2026-10-22), so copying or cloning the vault brings
+   all of it: the Hamzi website/LMS code is `Projects/AI Brain/projects/hamzi-lms` (its own repo; its
+   `CLAUDE.md` finds AI Brain at `../..`); the original law PDFs and verbatim .md are in
+   `Projects/Pakistan Legal Aid/raw/source-laws/`; preview servers are in `.claude/launch.json`.
+   If a project or code repo ever moves, update these paths and `tools/msk-sync.ps1`.
 10. **MSK AI OS has its own git repo** (GitHub `chatgptgopcworld-spec/msk-ai-os`, private, branch
    `main`). It tracks the OS itself and projects without their own repo (Pakistan Legal Aid, AI OS
    Blueprint). `.gitignore` keeps out the imported projects (their own repos) and
@@ -152,14 +154,14 @@ files refer to "rules 7-9".)
 | Project | What it is | Start at |
 |---|---|---|
 | `Projects/Pakistan Legal Aid/` | Verified Pakistani law and forum wiki for drafting complaints, applications and representations | its `CLAUDE.md`, then `wiki/legal-hot.md`, `wiki/legal-index.md` |
-| `Projects/AI Brain/` | Hamzi Prompts wiki (hamziprompts.com: prompt library, memberships, academy); code in `Documents\hamzi-lms` | its `CLAUDE.md`, then `wiki/hot.md`, `wiki/index.md` |
+| `Projects/AI Brain/` | Hamzi Prompts wiki (hamziprompts.com: prompt library, memberships, academy); code in its `projects/hamzi-lms/` | its `CLAUDE.md`, then `wiki/hot.md`, `wiki/index.md` |
 | `Projects/Prompts Website/` | General wiki from before MSK AI OS, plus the SoniPrompts / PromptsStudio rebuild (code in its `projects/soniprompts/`) | its `CLAUDE.md`, then `wiki/hot.md`, `wiki/index.md` |
 | `Projects/Ubaid Automation/` | Ubaidoo client-work wiki (Ubaidoo Automation site and Academy LMS; code in its `projects/ubaidooautomation/`) | its `CLAUDE.md`, then `wiki/hot.md`, `wiki/index.md` |
 | `Projects/AI OS Blueprint/` | Nick Milo's AI OS from 6 videos, starter kit, and the plan this map came from | its `CLAUDE.md`, then `wiki/aios-hot.md`, `wiki/aios-index.md` |
 
 ## 7. Current priorities
 
-- Finish the GitHub pushes from Windows (`tools/finish-git-sync.ps1`).
+- Multi-computer use: run `tools/msk-sync.ps1 -Pull` before work and `-Push` after ([[msk-skill-git-sync]]); new computer: [[msk-skill-new-computer]].
 - AI OS adoption ([[aios-msk-adoption-plan]]): vault map, skill map, skills and `AGENTS.md` done
   2026-10-22; `msk-me.md` drafted 2026-10-22 (user to fill the [BRACKETS]); still open: a personal-notes area, Calendar/daily brief, the Obsidian
   "automatically update internal links" setting.

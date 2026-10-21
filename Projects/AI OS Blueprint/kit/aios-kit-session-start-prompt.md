@@ -12,7 +12,7 @@ Paste at the start of any AI session (or save as a text-expander snippet). Patte
 
 Today (works now):
 ```text
-You're working in my MSK AI OS vault (C:\Users\dell\Documents\MSK AI OS). First read CLAUDE.md at the vault root, then wiki/hot.md, then wiki/brain-index.md and the last 5 entries of wiki/brain-log.md. If I name a project, read Projects/<Name>/CLAUDE.md and its hot cache too. Confirm what you've read in two lines, then wait for my instruction.
+You're working in my MSK AI OS vault (Documents\MSK AI OS). First read CLAUDE.md at the vault root, then wiki/hot.md, then wiki/brain-index.md and the last 5 entries of wiki/brain-log.md. If I name a project, read Projects/<Name>/CLAUDE.md and its hot cache too. Confirm what you've read in two lines, then wait for my instruction.
 ```
 
 After the AIOS folder exists (adoption plan steps 1-4):

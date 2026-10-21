@@ -33,7 +33,7 @@ then `wiki/legal-index.md`, then `wiki/legal-gaps.md`.
 
 ```
 raw/laws/        Immutable verbatim .md conversions of the law PDFs (originals:
-                 Documents\Pakistan Laws\pdf). Read, never edit.
+                 `raw/source-laws/pdf`). Read, never edit.
 wiki/legal-hot.md      Hot cache: ~500-word summary of the most important context. Read first.
 wiki/legal-index.md    Catalogue of every page with a one-line summary. Read after legal-hot.
 wiki/legal-log.md      Append-only history: "## [YYYY-MM-DD] <op> | <title>".
@@ -61,7 +61,7 @@ cases/           One folder per matter (private). See cases/README.md.
 
 ## Operations
 
-**Ingest a new law PDF.** User drops PDF in Documents\Pakistan Laws\pdf → convert
+**Ingest a new law PDF.** User drops PDF in `raw/source-laws/pdf` → convert
 verbatim to .md (pdftotext, page markers kept, header with source URL) → copy to
 `raw/laws/` → write `wiki/sources/` page (origin, amended-up-to, OCR quality) → create or
 update the statute page → extract any sections drafts need with the extractor (verbatim) →

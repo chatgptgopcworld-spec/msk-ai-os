@@ -17,7 +17,7 @@ updated: 2026-10-22
 3. Add it to `.gitignore` (it stays its own repo).
 4. Find anything outside the vault pointing at its old location and update it (rule 9); record it there.
 5. Register it as in [[msk-skill-new-project]] step 3; log it; refresh the hot cache.
-6. Finish its GitHub sync from Windows ([[msk-skill-git-sync]]).
+6. Add it to the repo lists in `tools/msk-sync.ps1` and `tools/msk-setup-computer.ps1`; finish its GitHub sync ([[msk-skill-git-sync]]).
 
 ## Done when
 - Its own Obsidian vault still opens; links from the main wiki use full paths; lint passes.

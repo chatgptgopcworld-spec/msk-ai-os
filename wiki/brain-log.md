@@ -63,3 +63,8 @@
 ## [2026-10-22] schema | me.md update skill
 - New [[msk-skill-me-update]]: changes only on the user's request or confirmation (AI proposes new facts, never writes them silently); corrections remove the line fully; monthly review of stale lines, length and open items.
 - Added to [[msk-skill-map]] (Identity); lint skill runs the review when due; `tools/wiki_lint.py` now reports me.md length and age (review due at 30 days). Scheduled reminder deferred by the user.
+
+## [2026-10-22] schema | Portable vault and multi-computer sync
+- Paths no longer contain the Windows username (vault map, kit, project CLAUDE.md files, AI Brain entity pages; dated records keep old paths as history).
+- Moved inside the vault: `Documents\Pakistan Laws` → `Projects/Pakistan Legal Aid/raw/source-laws/` (25 files, checksum-verified); `Documents\.claude\launch.json` → `.claude/launch.json` (paths now vault-relative). hamzi-lms is to move to `Projects/AI Brain/projects/hamzi-lms` (user does the cut-paste); its CLAUDE.md and sync-project.ps1 already find AI Brain at `../..`.
+- New `tools/msk-sync.ps1` (pull/push every repo), `tools/msk-setup-computer.ps1` (clone everything on a new computer); `finish-git-sync.ps1` now calls msk-sync. Skills: [[msk-skill-git-sync]] rewritten, new [[msk-skill-new-computer]]; vault map rule 9 updated. Hot cache refreshed.

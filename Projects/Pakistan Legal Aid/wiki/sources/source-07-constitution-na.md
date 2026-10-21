@@ -7,7 +7,7 @@ status: outdated-source
 ---
 # 07 Constitution of Pakistan 1973 - NA
 
-- **Raw file:** `raw/laws/07 Constitution of Pakistan 1973 - NA.md` (original PDF in `Documents\Pakistan Laws\pdf`)
+- **Raw file:** `raw/laws/07 Constitution of Pakistan 1973 - NA.md` (original PDF in `raw/source-laws/pdf`)
 - **Origin:** https://www.na.gov.pk/uploads/documents/1514786554_925.pdf
 - **Currency:** National Assembly 7th edition, as modified up to 22 December 2017.
 - **OCR / text quality:** Readable but marginal article numbers are split from text, so verbatim extraction is unreliable. Badly out of date (26th and 27th Amendments missing).

@@ -7,7 +7,7 @@ status: verified
 ---
 # 01 PECA 2016 with Rules (amended upto 2025) - SJA
 
-- **Raw file:** `raw/laws/01 PECA 2016 with Rules (amended upto 2025) - SJA.md` (original PDF in `Documents\Pakistan Laws\pdf`)
+- **Raw file:** `raw/laws/01 PECA 2016 with Rules (amended upto 2025) - SJA.md` (original PDF in `raw/source-laws/pdf`)
 - **Origin:** https://www.sja.gos.pk/assets/Updated_Laws/The%20Prevention%20of%20Electronic%20Crimes%20Act%2C%20Rules%20Final%20Index%20(%20Upto%20date%202025).pdf
 - **Currency:** Sindh Judicial Academy library compilation. Amendments up to Act II of 2025 (29 Jan 2025) and Act XXXVII of 2023.
 - **OCR / text quality:** Good. Text layer is clean; a few headings are displaced by layout (e.g. s.29 heading appears above its number).

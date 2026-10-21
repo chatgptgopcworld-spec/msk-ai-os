@@ -1,0 +1,28 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "ubaidoo-static",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "5178",
+        "--bind",
+        "127.0.0.1",
+        "--directory",
+        "Projects/Ubaid Automation/projects/ubaidooautomation"
+      ],
+      "port": 5178
+    },
+    {
+      "name": "soniprompts-preview",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "Projects/Prompts Website/projects/soniprompts/tools/serve.cjs"
+      ],
+      "port": 4321,
+      "autoPort": true
+    }
+  ]
+}

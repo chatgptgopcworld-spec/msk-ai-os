@@ -7,7 +7,7 @@ status: verified
 ---
 # 06 Qanun-e-Shahadat Order 1984 (amended upto 2025) - SJA
 
-- **Raw file:** `raw/laws/06 Qanun-e-Shahadat Order 1984 (amended upto 2025) - SJA.md` (original PDF in `Documents\Pakistan Laws\pdf`)
+- **Raw file:** `raw/laws/06 Qanun-e-Shahadat Order 1984 (amended upto 2025) - SJA.md` (original PDF in `raw/source-laws/pdf`)
 - **Origin:** https://sja.gos.pk/wp-content/uploads/2026/01/QANUN-E-SHAHADAT-ORDER1984-Amendment-up-to-date-2025.pdf
 - **Currency:** Sindh Judicial Academy compilation; last amendment Fed Act No. XLI of 2025 dated 24 Dec 2025.
 - **OCR / text quality:** Good text layer.

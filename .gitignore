@@ -19,3 +19,8 @@ Projects/Pakistan Legal Aid/cases/*
 __pycache__/
 *.pyc
 tools/finish-git-sync-result.txt
+tools/msk-sync-result.txt
+
+# Claude Code per-computer settings and runtime files
+.claude/settings.local.json
+.claude/scheduled_tasks.lock

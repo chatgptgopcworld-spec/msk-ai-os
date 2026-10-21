@@ -7,7 +7,7 @@ status: outdated-source
 ---
 # 02 PECA Amendment Bill 2025 - NA Committee Report
 
-- **Raw file:** `raw/laws/02 PECA Amendment Bill 2025 - NA Committee Report.md` (original PDF in `Documents\Pakistan Laws\pdf`)
+- **Raw file:** `raw/laws/02 PECA Amendment Bill 2025 - NA Committee Report.md` (original PDF in `raw/source-laws/pdf`)
 - **Origin:** https://www.na.gov.pk/uploads/documents/6797176bdf26b_835.pdf
 - **Currency:** NA Standing Committee on Interior report on the PECA (Amendment) Bill 2025 (bill as reported, not the gazetted Act).
 - **OCR / text quality:** Poor. Scanned; OCR errors throughout ("PREYENTION", "ELECTROMC"). Do not quote from it.

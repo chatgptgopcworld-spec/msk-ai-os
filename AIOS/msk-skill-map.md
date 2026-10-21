@@ -47,7 +47,8 @@ A project's own `CLAUDE.md` may add or replace steps inside that project.
 ## Sync
 | Skill | Use when | File |
 |---|---|---|
-| git-sync | after changing vault files | [[msk-skill-git-sync]] |
+| git-sync | pull before work, commit after changes, push when done (all repos, all computers) | [[msk-skill-git-sync]] |
+| new-computer | setting up MSK AI OS on another computer | [[msk-skill-new-computer]] |
 
 ## Research
 | Skill | Use when | File |

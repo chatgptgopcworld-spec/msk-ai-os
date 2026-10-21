@@ -19,7 +19,7 @@ Give a new piece of work its own self-contained home without mixing it with anyt
    `raw/`, `wiki/<prefix>hot.md`, `wiki/<prefix>index.md`, `wiki/<prefix>log.md`.
 3. Register it: a row in the projects table of [[msk-vault-map]] (section 6), a row in
    `Projects/CLAUDE.md`, a line under Projects in `wiki/brain-index.md`.
-4. If it has its own git repo: add it to `.gitignore`; if it holds personal data: ignore that folder.
+4. If it has its own git repo: add it to `.gitignore` and to the repo lists in `tools/msk-sync.ps1` and `tools/msk-setup-computer.ps1`; if it holds personal data: ignore that folder.
 5. Append `## [YYYY-MM-DD] schema | New project: <Name>` to `wiki/brain-log.md`.
 6. Refresh the hot cache ([[msk-skill-hot-cache]]); commit ([[msk-skill-git-sync]]).
 

@@ -8,7 +8,7 @@ word_budget: 500
 The most important context for this project, about 500 words. Read it right after `CLAUDE.md`, then [[legal-index]] and [[legal-gaps]]. Rewrite it in full (never append) after every ingest, lint, schema change or finished case. It only summarises what the wiki pages already say.
 
 ## What this project is
-A verified law and forum wiki for drafting complaints, applications and representations to Pakistani bodies (NCCIA, police, courts, regulators, ombudsmen, departments). Part of MSK AI OS, at `Projects/Pakistan Legal Aid/`. Law sources come from `Documents\Pakistan Laws` (pdf and verbatim md); copies used here sit in `raw/laws/`.
+A verified law and forum wiki for drafting complaints, applications and representations to Pakistani bodies (NCCIA, police, courts, regulators, ombudsmen, departments). Part of MSK AI OS, at `Projects/Pakistan Legal Aid/`. Law sources (original PDFs and verbatim md) sit in `raw/source-laws/`; copies used here sit in `raw/laws/`.
 
 ## Rules that never bend
 - Truth first: no invented facts, dates, names or sections; unknowns stay in [BRACKETS] and go on the case's must-confirm list. False complaints expose the complainant ([[ppc-s182]], [[ppc-s211]]).
@@ -34,7 +34,7 @@ A verified law and forum wiki for drafting complaints, applications and represen
 - Open questions: NCCIA's own rules, SMPRA's filing channel, whether PECA s.24A covers adults.
 
 ## Open threads
-- Files 08-11 in `Documents\Pakistan Laws\md` (Cr.P.C. to Dec 2022, a 2026 ICT Cr.P.C. amendment, Limitation Act 1908, Constitution with the 27th Amendment) await the user's go-ahead to ingest. They would close the Cr.P.C. and Constitution gaps.
+- Files 08-11 in `raw/source-laws/md` (Cr.P.C. to Dec 2022, a 2026 ICT Cr.P.C. amendment, Limitation Act 1908, Constitution with the 27th Amendment) await the user's go-ahead to ingest. They would close the Cr.P.C. and Constitution gaps.
 - No cases filed yet.
 
 ## Recently changed
