@@ -35,7 +35,7 @@ Set up 22 Oct 2026. No sources ingested yet; inbox empty.
 - Optional Obsidian setting: Attachment folder path → `raw/assets`.
 
 ## Recently changed
-- 22 Oct 2026: [[msk-me]] drafted (user identity and working preferences, for any AI tool).
+- 22 Oct 2026: [[msk-me]] drafted, then rebuilt from a filtered ChatGPT export (user identity and working preferences, for any AI tool).
 - 22 Oct 2026: root `CLAUDE.md` split into [[msk-vault-map]], [[msk-skill-map]] and 9 skill files; `AGENTS.md` added for other AI tools.
 - 22 Oct 2026: AI OS Blueprint ingested video 6 (Obsidian masterclass); plan now suggests turning on Obsidian's auto-update internal links.
 - 22 Oct 2026: new project AI OS Blueprint (5 videos summarised, 14 concepts, kit, adoption plan).

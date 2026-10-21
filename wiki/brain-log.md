@@ -50,3 +50,8 @@
 ## [2026-10-22] schema | me.md drafted
 - New [[msk-me]] (draft): identity, current work, working preferences, off-limits areas; built from project hot caches and saved notes; unknowns left in [BRACKETS] for the user.
 - Read first in every session: `CLAUDE.md`, `AGENTS.md` and [[msk-vault-map]] updated; lint checks it exists; [[brain-index]] Schema section. Hot cache refreshed.
+
+## [2026-10-22] schema | me.md v2 from ChatGPT export (filtered)
+- [[msk-me]] rewritten from a ChatGPT "about me" export. The ChatGPT account was shared by four people; the user confirmed groups A (web/LMS/AI dev), B (faceless content creator) and C (medical student) as theirs, discarded group D (Grade 3 teaching, photo/design jobs).
+- Added: name (ShahZaib, goes by MSK), MBBS/UHS, content brands and courses, tools, language and coding-agent instruction format, MSK 15s+15s video rule, prompt defaults. Health details left out of the file. Export not stored in the vault (contains other people's data).
+- Open [BRACKETS]: education conflict (BS CS note), which brands/plans are active, values, goals. Hot cache unchanged in substance.
