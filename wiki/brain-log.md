@@ -55,3 +55,7 @@
 - [[msk-me]] rewritten from a ChatGPT "about me" export. The ChatGPT account was shared by four people; the user confirmed groups A (web/LMS/AI dev), B (faceless content creator) and C (medical student) as theirs, discarded group D (Grade 3 teaching, photo/design jobs).
 - Added: name (ShahZaib, goes by MSK), MBBS/UHS, content brands and courses, tools, language and coding-agent instruction format, MSK 15s+15s video rule, prompt defaults. Health details left out of the file. Export not stored in the vault (contains other people's data).
 - Open [BRACKETS]: education conflict (BS CS note), which brands/plans are active, values, goals. Hot cache unchanged in substance.
+
+## [2026-10-22] schema | me.md v3 (user corrections)
+- [[msk-me]]: explain in Hinglish, deliverables in English; removed the coding-agent summary rule and the content/prompt rules (to be built from scratch); removed AKS Media, Monetics Lab, Monetics Media; no brand active, a new one starting soon; AI studio pending; TikTok prank channel removed (a separate automation project later); Germany study plan and the BS CS note removed (they were a friend's); values and goals later; health details skipped.
+- Note: the v2 file never reached disk (copy tool delay); v3 written directly and verified by checksum.
