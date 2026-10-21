@@ -17,6 +17,11 @@ A project's own `CLAUDE.md` may add or replace steps inside that project.
 |---|---|---|
 | context-lookup | any question about the user, their work, or what the vault holds | [[msk-skill-context-lookup]] |
 
+## Identity
+| Skill | Use when | File |
+|---|---|---|
+| me-update | "update me.md", "remember this about me", a correction, a new durable fact (ask first), or the monthly review | [[msk-skill-me-update]] |
+
 ## Wiki upkeep
 | Skill | Use when | File |
 |---|---|---|

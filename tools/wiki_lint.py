@@ -48,3 +48,14 @@ for p in glob.glob('AIOS/**/*.md', recursive=True):
     for l in set(re.findall(r'\[\[([^\]|#]+)', strip_code(open(p, encoding='utf-8').read()))):
         if not resolves(l): aios.append(f'broken link {os.path.basename(p)} -> {l}')
 show('AIOS schema problems', set(aios))
+# me.md health: length and age (monthly review, see AIOS/skills/msk-skill-me-update.md)
+if os.path.exists('AIOS/msk-me.md'):
+    import datetime
+    me = open('AIOS/msk-me.md', encoding='utf-8').read()
+    lines = len([l for l in me.split('\n---\n', 1)[-1].splitlines() if l.strip()])
+    m = re.search(r'^updated: (\d{4}-\d{2}-\d{2})', me, re.M)
+    age = (datetime.date.today() - datetime.date.fromisoformat(m.group(1))).days if m else None
+    note = []
+    if lines > 80: note.append('too long, compress')
+    if age is None or age >= 30: note.append('monthly review due')
+    print(f'\nme.md: {lines} lines, updated {age} days ago' + (('  <-- ' + ', '.join(note)) if note else ''))

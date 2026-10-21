@@ -59,3 +59,7 @@
 ## [2026-10-22] schema | me.md v3 (user corrections)
 - [[msk-me]]: explain in Hinglish, deliverables in English; removed the coding-agent summary rule and the content/prompt rules (to be built from scratch); removed AKS Media, Monetics Lab, Monetics Media; no brand active, a new one starting soon; AI studio pending; TikTok prank channel removed (a separate automation project later); Germany study plan and the BS CS note removed (they were a friend's); values and goals later; health details skipped.
 - Note: the v2 file never reached disk (copy tool delay); v3 written directly and verified by checksum.
+
+## [2026-10-22] schema | me.md update skill
+- New [[msk-skill-me-update]]: changes only on the user's request or confirmation (AI proposes new facts, never writes them silently); corrections remove the line fully; monthly review of stale lines, length and open items.
+- Added to [[msk-skill-map]] (Identity); lint skill runs the review when due; `tools/wiki_lint.py` now reports me.md length and age (review due at 30 days). Scheduled reminder deferred by the user.

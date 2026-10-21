@@ -19,9 +19,10 @@ Keep the wiki and schema healthy so it can be trusted.
 2. Judgement checks: contradictions between pages; stale claims superseded by newer sources;
    concepts mentioned on 3+ pages without their own page; thin pages a web search could fill
    (ask before searching); pages missing frontmatter.
-3. Report findings; fix what is safe; ask about the rest.
-4. Append `## [YYYY-MM-DD] lint | ...` to `wiki/brain-log.md`.
-5. Refresh the hot cache: [[msk-skill-hot-cache]]. Commit: [[msk-skill-git-sync]].
+3. If lint says the me.md review is due, run the monthly review in [[msk-skill-me-update]] (step 4).
+4. Report findings; fix what is safe; ask about the rest.
+5. Append `## [YYYY-MM-DD] lint | ...` to `wiki/brain-log.md`.
+6. Refresh the hot cache: [[msk-skill-hot-cache]]. Commit: [[msk-skill-git-sync]].
 
 ## Rules
 - Never "fix" imported projects' repeated file names (vault map, section 6, rule 7).

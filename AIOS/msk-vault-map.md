@@ -54,7 +54,7 @@ question. Self-contained projects live in `Projects/<name>/`, each with its own 
 
 ```
 AIOS/
-  msk-me.md         Who the user is, how to work with them (read first).
+  msk-me.md         Who the user is, how to work with them (read first; kept current by msk-skill-me-update).
   msk-vault-map.md  This file: rules, layout, conventions, projects.
   msk-skill-map.md  Every skill, when to use it, where its file is.
   skills/           One markdown file per procedure (msk-skill-*.md).
