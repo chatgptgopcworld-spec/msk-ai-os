@@ -35,7 +35,7 @@ print(f'\nHot cache words: {hot_words} (target ~500, ceiling 600)' + ('  <-- TOO
 show('Waiting in raw/inbox', {f for f in os.listdir('raw/inbox') if not f.startswith('.')})
 # AIOS schema layer: pointers exist, skill map and skill files agree, links resolve
 aios = []
-for f in ('CLAUDE.md', 'AGENTS.md', 'AIOS/msk-vault-map.md', 'AIOS/msk-skill-map.md'):
+for f in ('CLAUDE.md', 'AGENTS.md', 'AIOS/msk-me.md', 'AIOS/msk-vault-map.md', 'AIOS/msk-skill-map.md'):
     if not os.path.exists(f): aios.append(f'missing {f}')
 if os.path.exists('AIOS/msk-skill-map.md'):
     listed = set(re.findall(r'\[\[(msk-skill-[^\]|#]+)', open('AIOS/msk-skill-map.md', encoding='utf-8').read()))

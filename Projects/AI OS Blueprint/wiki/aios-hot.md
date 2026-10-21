@@ -23,7 +23,7 @@ A wiki of the "AI OS" system [[nick-milo]] explains across six YouTube videos, p
 Personal context and skills moved from inside Claude (video 2) to the user's own files (videos 3-4). Theme preference moved from dark/colourful (older masterclass) to light Soft Paper. Recorded under Contradictions on [[aios-me-md]], [[aios-skills-as-files]], [[aios-soft-paper-setup]].
 
 ## Applying it to MSK AI OS
-[[aios-msk-adoption-plan]]. **Applied 22 Oct:** `AIOS/` with [[msk-vault-map]], [[msk-skill-map]], 9 skills; `CLAUDE.md` split into a pointer; `AGENTS.md` added. Already matching: plain files plus git, `CLAUDE.md` + `brain-index` as vault map, `Projects/` as Efforts, `raw/inbox/` as `+`, lint as Janitor. Still open: no `me.md`; no session prompt; no Calendar; no home for the user's own thinking (the masterclass's main point); auto-update links not set. Templates in `kit/`.
+[[aios-msk-adoption-plan]]. **Applied 22 Oct:** `AIOS/` with [[msk-vault-map]], [[msk-skill-map]], 9 skills; `CLAUDE.md` split into a pointer; `AGENTS.md` added. Already matching: plain files plus git, `CLAUDE.md` + `brain-index` as vault map, `Projects/` as Efforts, `raw/inbox/` as `+`, lint as Janitor. [[msk-me]] drafted (user to confirm). Still open: no session prompt; no Calendar; no home for the user's own thinking (the masterclass's main point); auto-update links not set. Templates in `kit/`.
 
 ## Open threads
 - User decisions: contents of `me.md`; other AI tools now or later; a Calendar/daily-brief layer; a personal-notes area AI reads but doesn't rewrite.

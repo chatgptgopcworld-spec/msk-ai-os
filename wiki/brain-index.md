@@ -8,6 +8,7 @@ Catalogue of every wiki page. Updated on every ingest. Format per line: link to 
 - [[brain-log]] — timeline of everything done to this wiki
 
 ## Schema (AIOS)
+- [[msk-me]] — who the user is and how to work with them; read first (draft, items in [BRACKETS] to confirm)
 - [[msk-vault-map]] — vault map: rules, layout, page conventions, projects (read first, for any AI tool)
 - [[msk-skill-map]] — skill map: every procedure as a skill file in `AIOS/skills/`, and when to use it
 - `CLAUDE.md`, `AGENTS.md` — pointer files that send Claude and other AI tools to the vault map

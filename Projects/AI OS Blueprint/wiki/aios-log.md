@@ -23,3 +23,6 @@ Append-only. Entries: `## [YYYY-MM-DD] op | Title`, newest at the bottom.
 ## [2026-10-22] apply | Vault map, skill map, skills, AGENTS.md in MSK AI OS
 - User approved a full split of the root `CLAUDE.md` and an `AGENTS.md`. Created [[msk-vault-map]], [[msk-skill-map]], 9 skills in `AIOS/skills/`; root `CLAUDE.md` became a pointer.
 - [[aios-msk-adoption-plan]] status → partly applied; hot cache refreshed. Root log has the full entry.
+
+## [2026-10-22] apply | me.md drafted
+- [[msk-me]] created in `AIOS/` and added to the start-of-session order; adoption plan step 2 done as a draft.

@@ -46,3 +46,7 @@
 - Root `CLAUDE.md` is now a pointer (with a map of where old "root CLAUDE.md" rules moved); new `AGENTS.md` pointer for other AI tools. Checked line by line that no rule was lost.
 - `Projects/CLAUDE.md` now points to the vault map; `tools/wiki_lint.py` checks the AIOS layer; [[brain-index]] gained a Schema section; [[brain-overview]] updated. Other projects untouched.
 - Applied steps 1 (partly: no me.md yet), 3, 4 and 5 of [[aios-msk-adoption-plan]]. Hot cache refreshed.
+
+## [2026-10-22] schema | me.md drafted
+- New [[msk-me]] (draft): identity, current work, working preferences, off-limits areas; built from project hot caches and saved notes; unknowns left in [BRACKETS] for the user.
+- Read first in every session: `CLAUDE.md`, `AGENTS.md` and [[msk-vault-map]] updated; lint checks it exists; [[brain-index]] Schema section. Hot cache refreshed.

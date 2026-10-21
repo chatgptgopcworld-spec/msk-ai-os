@@ -5,6 +5,7 @@ there; `AGENTS.md` is the same pointer for other AI tools. Don't add rules here
 (vault map, section 2, rule 6).
 
 **Start of every session, in this order:**
+0. `AIOS/msk-me.md`: who the user is and how to work with them.
 1. `AIOS/msk-vault-map.md`: what the vault is, rules that never bend, layout, page conventions,
    projects (everything this file used to hold).
 2. `AIOS/msk-skill-map.md`: which skill to follow for each job; open that skill file in

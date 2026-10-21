@@ -12,7 +12,7 @@ conventions. *How* to carry out each job lives in skill files: see [[msk-skill-m
 
 All paths are relative to the vault root (`C:\Users\dell\Documents\MSK AI OS`).
 
-**Start of every session:** this file → [[msk-skill-map]] → `wiki/hot.md` → `wiki/brain-index.md`
+**Start of every session:** [[msk-me]] (who the user is) → this file → [[msk-skill-map]] → `wiki/hot.md` → `wiki/brain-index.md`
 → the last 5 entries of `wiki/brain-log.md` → check `raw/inbox/` for new sources.
 Tool pointer files (`CLAUDE.md`, `AGENTS.md`) only send you here.
 
@@ -49,11 +49,12 @@ question. Self-contained projects live in `Projects/<name>/`, each with its own 
 |---|---|---|---|
 | Raw sources | `raw/` | the user | Immutable (rule 1). |
 | Wiki | `wiki/` | the AI | The AI owns it entirely: creates, updates, links, keeps consistent. |
-| Schema | `AIOS/` (this map, the skill map, skills) | both | Update when a convention changes, and log the change. |
+| Schema | `AIOS/` (me, this map, the skill map, skills) | both | Update when a convention changes, and log the change. |
 | Tool pointers | `CLAUDE.md`, `AGENTS.md` | both | Pointer only: they send every tool to this map. |
 
 ```
 AIOS/
+  msk-me.md         Who the user is, how to work with them (read first).
   msk-vault-map.md  This file: rules, layout, conventions, projects.
   msk-skill-map.md  Every skill, when to use it, where its file is.
   skills/           One markdown file per procedure (msk-skill-*.md).
@@ -160,7 +161,7 @@ files refer to "rules 7-9".)
 
 - Finish the GitHub pushes from Windows (`tools/finish-git-sync.ps1`).
 - AI OS adoption ([[aios-msk-adoption-plan]]): vault map, skill map, skills and `AGENTS.md` done
-  2026-10-22; still open: `me.md`, a personal-notes area, Calendar/daily brief, the Obsidian
+  2026-10-22; `msk-me.md` drafted 2026-10-22 (user to fill the [BRACKETS]); still open: a personal-notes area, Calendar/daily brief, the Obsidian
   "automatically update internal links" setting.
 - Pakistan Legal Aid: five new law files await the user's go-ahead.
 
