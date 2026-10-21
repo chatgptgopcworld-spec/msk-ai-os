@@ -163,8 +163,8 @@ files refer to "rules 7-9".)
 
 - Multi-computer use: run `tools/msk-sync.ps1 -Pull` before work and `-Push` after ([[msk-skill-git-sync]]); new computer: [[msk-skill-new-computer]].
 - AI OS adoption ([[aios-msk-adoption-plan]]): vault map, skill map, skills and `AGENTS.md` done
-  2026-10-22; `msk-me.md` drafted 2026-10-22 (user to fill the [BRACKETS]); still open: a personal-notes area, Calendar/daily brief, the Obsidian
-  "automatically update internal links" setting.
+  2026-10-22; `msk-me.md` drafted 2026-10-22 (user to fill the [BRACKETS]); still open: a personal-notes area, Calendar/daily brief,
+  (Obsidian "automatically update internal links" is on since 2026-10-22).
 - Pakistan Legal Aid: five new law files await the user's go-ahead.
 
 ## 8. Optional extras (not set up yet; add when useful)
