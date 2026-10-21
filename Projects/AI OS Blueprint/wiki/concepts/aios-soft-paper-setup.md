@@ -1,7 +1,7 @@
 ---
 type: concept
 domains: [obsidian, tools]
-sources: [src-2026-10-22-nm-soft-paper-theme]
+sources: [src-2026-10-22-nm-soft-paper-theme, src-2026-10-22-nm-obsidian-masterclass]
 created: 2026-10-22
 updated: 2026-10-22
 status: active
@@ -32,7 +32,10 @@ status: active
 (see [[src-2026-10-22-nm-soft-paper-theme]])
 
 ## Related
-[[aios-obsidian]] · [[aios-ace-framework]]
+[[aios-obsidian]] · [[aios-ace-framework]] · [[aios-obsidian-basics]]
+
+## Contradictions
+- In the older masterclass he preferred **dark mode** and his own colourful Cybertron theme, while also praising minimal themes for keeping you focused on text ([[src-2026-10-22-nm-obsidian-masterclass]]). Now he prefers **light mode** with Soft Paper ([[src-2026-10-22-nm-soft-paper-theme]]). The newer video is his current view; both agree the space should be enjoyable to return to.
 
 ## Synthesis
 Purely cosmetic; nothing in MSK AI OS depends on it. Theme choice is stored in `.obsidian/`, which the msk-ai-os repo tracks except per-device workspace files.

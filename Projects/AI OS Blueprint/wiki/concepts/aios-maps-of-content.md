@@ -1,7 +1,7 @@
 ---
 type: concept
 domains: [knowledge-management, ai]
-sources: [src-2026-10-22-nm-big-clean, src-2026-10-22-nm-cowork-80, src-2026-10-22-nm-3-file-ai-system]
+sources: [src-2026-10-22-nm-big-clean, src-2026-10-22-nm-cowork-80, src-2026-10-22-nm-3-file-ai-system, src-2026-10-22-nm-obsidian-masterclass]
 created: 2026-10-22
 updated: 2026-10-22
 status: active
@@ -14,10 +14,11 @@ status: active
 - Organise for context: a well-linked note can be found through many routes (a book note, a collection, a folder) (see [[src-2026-10-22-nm-big-clean]]).
 - AI needs the same structure humans do; MOCs let it navigate large vaults quickly and cheaply (see [[src-2026-10-22-nm-3-file-ai-system]]).
 - "Context architecture beats prompting": linked notes plus folders as wayfinders give AI far better context than any single clever prompt (see [[src-2026-10-22-nm-cowork-80]]).
+- Two kinds of relationship: a **link** is strong and direct, a **tag** is weak and loose (good for broad groups such as people or concepts) (see [[src-2026-10-22-nm-obsidian-masterclass]]).
 - AI can build MOCs too: Cowork made a "book illustrations" MOC that resurfaced buried notes (paradigm shifts, scientific surprises, artistic breakthroughs), marked as AI-generated (see [[src-2026-10-22-nm-cowork-80]]).
 
 ## Related
-[[aios-vault-map]] · [[aios-ace-framework]] · [[aios-three-layers]]
+[[aios-vault-map]] · [[aios-ace-framework]] · [[aios-three-layers]] · [[aios-linking-your-thinking]]
 
 ## Synthesis
 MSK AI OS's topic pages (`wiki/topics/`) and project indexes are MOCs in this sense; `brain-index.md` is the top-level one.

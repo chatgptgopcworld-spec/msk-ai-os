@@ -36,3 +36,7 @@
 - Created `Projects/AI OS Blueprint/` from 5 Nick Milo (Linking Your Thinking) videos: `CLAUDE.md`, [[aios-hot]], [[aios-index]], [[aios-log]], 5 source pages, 14 concept pages, skill-systems page, 3 entities, [[aios-msk-adoption-plan]], 6 kit templates, transcript tool.
 - Added to the root `CLAUDE.md` project table, `Projects/CLAUDE.md`, [[brain-index]] (Projects) and [[brain-overview]] (open threads).
 - No changes to other projects. Adoption plan is a proposal only. Hot cache refreshed.
+
+## [2026-10-22] ingest | AI OS Blueprint: video 6 (Obsidian Masterclass)
+- Project ingest under its own rules: [[src-2026-10-22-nm-obsidian-masterclass]], new [[aios-obsidian-basics]] and [[aios-linking-your-thinking]], 8 pages updated; see [[aios-log]].
+- Hot cache refreshed (project paragraph and Recently changed).

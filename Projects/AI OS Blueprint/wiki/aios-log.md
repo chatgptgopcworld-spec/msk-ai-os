@@ -13,3 +13,9 @@ Append-only. Entries: `## [YYYY-MM-DD] op | Title`, newest at the bottom.
 - Pages: topic [[aios-system-overview]]; 14 concepts; [[aios-skill-systems]]; 3 entities; answer [[aios-msk-adoption-plan]]; 6 kit templates.
 - Contradictions recorded on [[aios-me-md]] (settings vs me.md; me.md location) and [[aios-skills-as-files]] (Claude library vs vault); tension with the LLM Wiki pattern on [[aios-ai-content-hygiene]].
 - Registered in the vault: root `CLAUDE.md` table, `Projects/CLAUDE.md`, `brain-index`, `brain-log`, `brain-overview`; vault hot cache refreshed.
+
+## [2026-10-22] ingest | Video 6: Obsidian Masterclass
+- Source: [[src-2026-10-22-nm-obsidian-masterclass]] (record in `raw/videos/`; transcript read, not stored).
+- New: [[aios-obsidian-basics]], [[aios-linking-your-thinking]].
+- Updated: [[aios-obsidian]], [[aios-maps-of-content]], [[aios-file-over-ai]], [[aios-ai-content-hygiene]], [[aios-soft-paper-setup]] (contradiction: dark/Cybertron then, light/Soft Paper now), [[nick-milo]], [[aios-system-overview]], [[aios-msk-adoption-plan]] (gap 7 + step 0: turn on "automatically update internal links"; new decision on a personal-notes area).
+- Checked the vault's `.obsidian` (read only): link-update setting not set explicitly. Nothing changed. Hot cache refreshed.

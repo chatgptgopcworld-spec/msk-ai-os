@@ -1,7 +1,7 @@
 ---
 type: topic
 domains: [ai, knowledge-management, productivity]
-sources: [src-2026-10-22-nm-big-clean, src-2026-10-22-nm-cowork-80, src-2026-10-22-nm-3-file-ai-system, src-2026-10-22-nm-obsidian-cowork-life, src-2026-10-22-nm-soft-paper-theme]
+sources: [src-2026-10-22-nm-big-clean, src-2026-10-22-nm-cowork-80, src-2026-10-22-nm-3-file-ai-system, src-2026-10-22-nm-obsidian-cowork-life, src-2026-10-22-nm-soft-paper-theme, src-2026-10-22-nm-obsidian-masterclass]
 created: 2026-10-22
 updated: 2026-10-22
 status: active
@@ -10,7 +10,7 @@ status: active
 
 **In one line:** own your knowledge and your AI instructions as plain files; rent the AI.
 
-## How the five videos fit together
+## How the six videos fit together
 | # | Video | Role in the system |
 |---|---|---|
 | 1 | [[src-2026-10-22-nm-big-clean]] | Groundwork: a clean desk, files and vault ([[aios-big-clean]], [[aios-plus-folder]]) |
@@ -18,8 +18,10 @@ status: active
 | 3 | [[src-2026-10-22-nm-3-file-ai-system]] | The design: file over AI, three layers, three core files |
 | 4 | [[src-2026-10-22-nm-obsidian-cowork-life]] | The design in daily use: session prompt, skill systems, daily brief |
 | 5 | [[src-2026-10-22-nm-soft-paper-theme]] | The workspace look (optional) |
+| 6 | [[src-2026-10-22-nm-obsidian-masterclass]] | The foundation: Obsidian basics and linking your own thinking ([[aios-obsidian-basics]], [[aios-linking-your-thinking]]) |
 
 ## The system
+0. **Foundation:** [[aios-linking-your-thinking]]: write your own ideas as notes and link them; learn the tool with [[aios-obsidian-basics]].
 1. **Principle:** [[aios-file-over-ai]]. Anything you invest in an AI tool should exist as your own file first.
 2. **Architecture:** [[aios-three-layers]]: Ideaverse → maps and manuals → tools.
 3. **Layer 1, the Ideaverse:** notes in [[aios-ace-framework]] folders (Atlas, Calendar, Efforts, plus `+` and `X`), linked with `[[links]]` and [[aios-maps-of-content]]. Kept clean with [[aios-big-clean]].
@@ -36,6 +38,7 @@ status: active
 ## How the thinking evolved across the videos
 - Personal context moved from Claude's settings (video 2) to `me.md` (videos 3-4).
 - Skills moved from Claude's skill library (video 2) to the vault's skills folder (video 4).
+- Theme preference moved from dark/colourful (video 6, older) to light Soft Paper (video 5).
 - The ad-hoc "holistic briefing" (video 2) became the scheduled daily brief inside the Daily Trident system (video 4).
 Details: Contradictions sections on [[aios-me-md]] and [[aios-skills-as-files]].
 

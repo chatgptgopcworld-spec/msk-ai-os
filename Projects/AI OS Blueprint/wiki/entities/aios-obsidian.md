@@ -1,7 +1,7 @@
 ---
 type: entity
 domains: [tools, obsidian]
-sources: [src-2026-10-22-nm-3-file-ai-system, src-2026-10-22-nm-obsidian-cowork-life, src-2026-10-22-nm-big-clean, src-2026-10-22-nm-soft-paper-theme]
+sources: [src-2026-10-22-nm-3-file-ai-system, src-2026-10-22-nm-obsidian-cowork-life, src-2026-10-22-nm-big-clean, src-2026-10-22-nm-soft-paper-theme, src-2026-10-22-nm-obsidian-masterclass]
 created: 2026-10-22
 updated: 2026-10-22
 status: active
@@ -14,7 +14,9 @@ status: active
 - "File over app": notes stay readable in any text editor if Obsidian disappears (see [[src-2026-10-22-nm-3-file-ai-system]]).
 - `[[` autocomplete for linking; graph view shows links growing; revisiting links strengthens them in the app and in your head (see [[src-2026-10-22-nm-obsidian-cowork-life]]).
 - Search by `path:` then "Copy search results" (optionally as wiki links) for bulk processing (see [[src-2026-10-22-nm-big-clean]]).
+- A vault is just a folder; each note a plain `.md` file; first steps, markdown, settings and hotkeys in [[aios-obsidian-basics]] (see [[src-2026-10-22-nm-obsidian-masterclass]]).
+- Backlinks ("linked mentions") and unresolved links as placeholders for future notes (see [[src-2026-10-22-nm-obsidian-masterclass]]).
 - Look: [[aios-soft-paper-setup]].
 
 ## Related
-[[aios-three-layers]] · [[aios-claude-cowork]] · [[aios-ace-framework]]
+[[aios-three-layers]] · [[aios-claude-cowork]] · [[aios-ace-framework]] · [[aios-obsidian-basics]] · [[aios-linking-your-thinking]]
