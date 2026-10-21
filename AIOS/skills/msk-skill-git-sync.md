@@ -25,14 +25,14 @@ working and pushes after. Only one computer should be working on the vault at a 
 | SoniPrompts code | `Projects/Prompts Website/projects/soniprompts` | none yet | master |
 
 ## Steps
-1. **Before work (user, on Windows):** `tools\msk-sync.ps1 -Pull`.
+1. **Before work (user, on Windows):** double-click `tools\MSK-SYNC-PULL.cmd` (same as `tools\msk-sync.ps1 -Pull`).
 2. **During work (AI):** after each finished change, commit in the repo that changed: `git add` only
    that repo's files, a clear message (`ingest: ...`, `schema: ...`, `lint: ...`) plus the session's
    attribution lines. Never commit one project's files into another's repo.
 3. **If committing from Claude's linked shell** (it cannot delete files): git leaves `.git/*.lock`
    files; rename them to `.git/stale-<name>-<date>` (never inside `.git/refs`). `msk-sync.ps1` deletes
    these leftovers on Windows.
-4. **After work (user, on Windows):** `tools\msk-sync.ps1 -Push`. It commits any leftover vault notes,
+4. **After work (user, on Windows):** double-click `tools\MSK-SYNC-PUSH.cmd` (same as `tools\msk-sync.ps1 -Push`). It commits any leftover vault notes,
    pulls with rebase, and pushes all repos; code repos only push existing commits. Read
    `tools\msk-sync-result.txt`; anything `FAILED` needs a look (usually a GitHub login or a conflict).
 5. **Conflict:** if a pull fails, stop; resolve in that repo (keep both sides' text, never drop the

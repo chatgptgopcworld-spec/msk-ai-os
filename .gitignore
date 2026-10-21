@@ -20,6 +20,7 @@ __pycache__/
 *.pyc
 tools/finish-git-sync-result.txt
 tools/msk-sync-result.txt
+tools/msk-first-push-result.txt
 
 # Claude Code per-computer settings and runtime files
 .claude/settings.local.json

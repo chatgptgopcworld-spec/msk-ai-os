@@ -72,3 +72,6 @@
 ## [2026-10-22] schema | Project renamed: AI Brain → Hamzi Prompts
 - Folder `Projects/AI Brain` → `Projects/Hamzi Prompts`. Updated: [[msk-vault-map]] (rules 7, 9, table), [[msk-skill-git-sync]], [[msk-me]], `Projects/CLAUDE.md`, `.gitignore`, `tools/msk-sync.ps1`, `tools/msk-setup-computer.ps1`, [[brain-index]], hot cache; mentions in Prompts Website and Ubaid Automation; hamzi-lms CLAUDE.md, AGENTS.md and sync-project.ps1 (uncommitted, user to commit).
 - Logs, raw files and dated test records keep "AI Brain" as history. GitHub repo name unchanged (`ai-brain-vault`). Hot cache refreshed.
+
+## [2026-10-22] schema | Double-click sync and first push
+- New `tools/MSK-SYNC-PULL.cmd` and `tools/MSK-SYNC-PUSH.cmd` (double-click wrappers for msk-sync.ps1); one-time `tools/MSK-FIRST-PUSH.cmd` moves hamzi-lms into `Projects/Hamzi Prompts/projects/`, commits its updated files and pushes every repo. [[msk-skill-git-sync]] updated.
