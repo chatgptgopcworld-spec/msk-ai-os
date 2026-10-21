@@ -26,3 +26,8 @@
 ## [2026-10-22] schema | Pakistan Legal Aid hot cache
 - Added `Projects/Pakistan Legal Aid/wiki/legal-hot.md`; every project now has its own CLAUDE.md, hot cache, index and log.
 - Root CLAUDE.md table, Projects/CLAUDE.md, brain-index and hot cache now point to it. Hot cache refreshed.
+
+## [2026-10-22] schema | MSK AI OS git repo
+- `git init` (branch main), remote https://github.com/chatgptgopcworld-spec/msk-ai-os (private). First commit: 83 files (schema, main wiki, templates, tools, Pakistan Legal Aid).
+- `.gitignore` excludes the three imported projects (own repos), Pakistan Legal Aid `cases/` except its README, Obsidian workspace state and Python caches.
+- Root CLAUDE.md rule 10 added; push script now includes this repo. Hot cache refreshed.

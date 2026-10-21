@@ -162,7 +162,13 @@ Some work needs its own rules, sources and outputs (e.g. legal drafting). That w
    `[[Projects/AI Brain/wiki/hot|AI Brain hot cache]]`.
 8. Each imported project is its own git repo with a GitHub remote, and its `projects/` folder
    holds separate code repos. Commit inside the repo you changed; never commit one project's
-   files into another's repo. MSK AI OS itself is not a git repo.
+   files into another's repo.
+10. **MSK AI OS has its own git repo** (GitHub: `chatgptgopcworld-spec/msk-ai-os`, private,
+   branch `main`). It tracks the OS itself and projects without their own repo (Pakistan Legal
+   Aid). `.gitignore` keeps out the imported projects (their own repos) and
+   `Projects/Pakistan Legal Aid/cases/` (personal data; only its README is tracked). Any new
+   project with its own repo gets a line in `.gitignore`; any folder holding personal data
+   stays ignored. Commit OS changes here after each ingest, lint or schema change.
 9. Something outside the vault may depend on a project's location. Known ones:
    `Documents\hamzi-lms` (CLAUDE.md and `tools/sync-project.ps1` point at
    `MSK AI OS/Projects/AI Brain`), and `Documents\.claude\launch.json` (preview servers for

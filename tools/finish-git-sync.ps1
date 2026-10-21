@@ -1,5 +1,5 @@
 # One-off: finish the 2026-10-22 move into MSK AI OS. Commits the hamzi-lms path update,
-# pushes every repo touched, and writes the outcome to finish-git-sync-result.txt.
+# pushes every repo touched (including the new MSK AI OS repo, first push sets its upstream), and writes the outcome to finish-git-sync-result.txt.
 $docs = [Environment]::GetFolderPath('MyDocuments')
 $out  = Join-Path $PSScriptRoot 'finish-git-sync-result.txt'
 "Run: $(Get-Date -Format s)" | Set-Content -Encoding utf8 $out
@@ -13,6 +13,7 @@ if ($LASTEXITCODE -ne 0) {
 } else { Log 'hamzi-lms commit: nothing to commit (already done)' }
 
 $repos = @(
+  'MSK AI OS',
   'MSK AI OS\Projects\AI Brain',
   'MSK AI OS\Projects\Prompts Website',
   'MSK AI OS\Projects\Ubaid Automation',
@@ -21,7 +22,9 @@ $repos = @(
 )
 foreach ($r in $repos) {
   $p = Join-Path $docs $r
-  $res = git -C $p push 2>&1 | Out-String
+  git -C $p rev-parse --abbrev-ref --symbolic-full-name '@{u}' 2>$null | Out-Null
+  if ($LASTEXITCODE -eq 0) { $res = git -C $p push 2>&1 | Out-String }
+  else { $res = git -C $p push -u origin (git -C $p branch --show-current) 2>&1 | Out-String }
   $ok  = $LASTEXITCODE -eq 0
   $st  = (git -C $p status -sb 2>&1 | Select-Object -First 1)
   Log ("[{0}] {1} | {2}" -f ($(if ($ok) {'OK'} else {'FAILED'})), $r, $st)

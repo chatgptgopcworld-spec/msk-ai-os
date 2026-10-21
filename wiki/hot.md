@@ -27,11 +27,12 @@ Set up 22 Oct 2026. No sources ingested yet; inbox empty.
 - **Ubaid Automation** ([[Projects/Ubaid Automation/wiki/hot|hot cache]]): Ubaidoo client-work wiki for the Ubaidoo Automation site and its Academy LMS (code in its `projects/ubaidooautomation/`).
 
 ## Open threads
-- Pushing to GitHub is still pending for AI Brain, Prompts Website, Ubaid Automation, the Ubaidoo code repo and hamzi-lms (needs Windows git login). SoniPrompts code has no GitHub remote.
+- GitHub push pending (needs Windows git login): MSK AI OS's own new repo (msk-ai-os), AI Brain, Prompts Website, Ubaid Automation, the Ubaidoo code repo and hamzi-lms. Run `tools/finish-git-sync.ps1`. SoniPrompts code has no remote.
 - Five new law files in `Documents\Pakistan Laws\md` await the user's go-ahead.
 - Optional Obsidian setting: Attachment folder path → `raw/assets`.
 
 ## Recently changed
+- 22 Oct 2026: MSK AI OS got its own private GitHub repo (imported projects and case files excluded).
 - 22 Oct 2026: Pakistan Legal Aid got its own hot cache; every project now has one.
 - 22 Oct 2026: AI Brain, Prompts Website and Ubaid Automation moved into `Projects/`; their schemas, hamzi-lms and launch.json updated. Studio 404 left out.
 - 22 Oct 2026: context-lookup rule set (wiki only, never raw); hot cache added.
