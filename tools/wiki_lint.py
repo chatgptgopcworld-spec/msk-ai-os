@@ -54,7 +54,7 @@ if os.path.exists('AIOS/msk-me.md'):
     me = open('AIOS/msk-me.md', encoding='utf-8').read()
     lines = len([l for l in me.split('\n---\n', 1)[-1].splitlines() if l.strip()])
     m = re.search(r'^updated: (\d{4}-\d{2}-\d{2})', me, re.M)
-    age = (datetime.date.today() - datetime.date.fromisoformat(m.group(1))).days if m else None
+    age = max(0, (datetime.date.today() - datetime.date.fromisoformat(m.group(1))).days) if m else None  # clamp: shell clock may be UTC
     note = []
     if lines > 80: note.append('too long, compress')
     if age is None or age >= 30: note.append('monthly review due')
