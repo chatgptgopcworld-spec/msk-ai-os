@@ -20,6 +20,8 @@ Catalogue of every wiki page. Updated on every ingest. Format per line: link to 
 - [[Projects/Ubaid Automation/wiki/hot|Ubaid Automation]] — Ubaidoo client-work wiki: Ubaidoo Automation site and Academy LMS (`Projects/Ubaid Automation/`; [[Projects/Ubaid Automation/wiki/index|its index]])
 - [[aios-hot]] — AI OS Blueprint: Nick Milo's AI OS system from 5 videos, starter kit and an adoption plan for MSK AI OS (`Projects/AI OS Blueprint/`; [[aios-index|its index]])
 
+- [[lc-hot]] — Learn Core: the reusable LMS product Monetics LearnCore and the three drifting LMS copies (`Projects/Learn Core/`; [[lc-index|its index]])
+
 ## Topics
 _None yet._
 

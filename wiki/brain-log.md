@@ -79,3 +79,8 @@
 ## [2026-10-22] schema | SoniPrompts on GitHub; old outside copies removed
 - SoniPrompts code repo now has remote `soni-prompts` (branch master); added to `tools/msk-setup-computer.ps1` and [[msk-skill-git-sync]]; [[msk-skill-new-computer]] no longer needs a USB copy of it.
 - After re-verifying checksums, the files in `Documents\Pakistan Laws` and `Documents\.claude` were deleted at the user's request (single copy now inside the vault); `MSK-FIRST-PUSH.cmd` removes the empty folders.
+
+## [2026-10-22] schema | New project: Learn Core
+- `Projects/Learn Core/` created for Monetics LearnCore, the reusable LMS product: CLAUDE.md, [[lc-hot]], [[lc-index]], [[lc-log]], [[lc-lms-copies-2026-10-22]].
+- Product repo copied in from `Documents\Monetics-LearnCore` (checksum-verified); its build.py now finds hamzi-lms inside the vault. No GitHub remote yet.
+- Registered: [[msk-vault-map]] (table, rules 9-10), `Projects/CLAUDE.md`, [[brain-index]], `.gitignore`, sync scripts, [[msk-skill-git-sync]], [[msk-me]] (one line). Hot cache refreshed.

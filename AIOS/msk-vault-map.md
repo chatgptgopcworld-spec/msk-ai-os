@@ -142,11 +142,12 @@ files refer to "rules 7-9".)
 9. **Everything lives inside the vault** (since 2026-10-22), so copying or cloning the vault brings
    all of it: the Hamzi website/LMS code is `Projects/Hamzi Prompts/projects/hamzi-lms` (its own repo; its
    `CLAUDE.md` finds Hamzi Prompts at `../..`); the original law PDFs and verbatim .md are in
-   `Projects/Pakistan Legal Aid/raw/source-laws/`; preview servers are in `.claude/launch.json`.
+   `Projects/Pakistan Legal Aid/raw/source-laws/`; the LMS product code is `Projects/Learn Core/projects/monetics-learncore`
+   (its `build.py` reads the Hamzi LMS source from `Projects/Hamzi Prompts/projects/hamzi-lms`); preview servers are in `.claude/launch.json`.
    If a project or code repo ever moves, update these paths and `tools/msk-sync.ps1`.
 10. **MSK AI OS has its own git repo** (GitHub `chatgptgopcworld-spec/msk-ai-os`, private, branch
    `main`). It tracks the OS itself and projects without their own repo (Pakistan Legal Aid, AI OS
-   Blueprint). `.gitignore` keeps out the imported projects (their own repos) and
+   Blueprint, Learn Core's wiki). `.gitignore` keeps out the imported projects (their own repos) and
    `Projects/Pakistan Legal Aid/cases/` (personal data; only its README is tracked). Any new
    project with its own repo gets a line in `.gitignore`; any folder holding personal data stays
    ignored. How to commit and push: [[msk-skill-git-sync]].
@@ -157,6 +158,7 @@ files refer to "rules 7-9".)
 | `Projects/Hamzi Prompts/` | Hamzi Prompts wiki (hamziprompts.com: prompt library, memberships, academy); code in its `projects/hamzi-lms/` | its `CLAUDE.md`, then `wiki/hot.md`, `wiki/index.md` |
 | `Projects/Prompts Website/` | General wiki from before MSK AI OS, plus the SoniPrompts / PromptsStudio rebuild (code in its `projects/soniprompts/`) | its `CLAUDE.md`, then `wiki/hot.md`, `wiki/index.md` |
 | `Projects/Ubaid Automation/` | Ubaidoo client-work wiki (Ubaidoo Automation site and Academy LMS; code in its `projects/ubaidooautomation/`) | its `CLAUDE.md`, then `wiki/hot.md`, `wiki/index.md` |
+| `Projects/Learn Core/` | Monetics LearnCore, the reusable LMS product; code in its `projects/monetics-learncore/` | its `CLAUDE.md`, then `wiki/lc-hot.md`, `wiki/lc-index.md` |
 | `Projects/AI OS Blueprint/` | Nick Milo's AI OS from 6 videos, starter kit, and the plan this map came from | its `CLAUDE.md`, then `wiki/aios-hot.md`, `wiki/aios-index.md` |
 
 ## 7. Current priorities

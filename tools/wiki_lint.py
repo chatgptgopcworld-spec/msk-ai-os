@@ -10,7 +10,12 @@ pages = {os.path.basename(p)[:-3]: p for p in glob.glob('wiki/**/*.md', recursiv
 # every note in the vault (projects included) counts as a valid link target
 # (code folders and git internals inside imported projects are skipped)
 SKIP_DIRS = ('/.git/', '/node_modules/', '/projects/')
-all_md = [p for p in glob.glob('**/*.md', recursive=True) if not any(s in '/' + p.replace(os.sep, '/') for s in SKIP_DIRS)]
+def _walk_md():  # prune code folders while walking (much faster than globbing everything)
+    for d, dirs, files in os.walk('.'):
+        dirs[:] = [x for x in dirs if x not in ('.git', 'node_modules', 'projects')]
+        for f in files:
+            if f.endswith('.md'): yield os.path.relpath(os.path.join(d, f))
+all_md = list(_walk_md())
 vault = {os.path.basename(p)[:-3] for p in all_md}
 def resolves(l):
     # path-style link, e.g. [[Projects/Hamzi Prompts/wiki/hot]]

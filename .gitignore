@@ -6,6 +6,9 @@ Projects/Hamzi Prompts/
 Projects/Prompts Website/
 Projects/Ubaid Automation/
 
+# Learn Core: the wiki is tracked here; the product code is its own repo
+Projects/Learn Core/projects/
+
 # Case files hold real people's personal data: never on GitHub. Only the README is tracked.
 Projects/Pakistan Legal Aid/cases/*
 !Projects/Pakistan Legal Aid/cases/README.md

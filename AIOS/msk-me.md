@@ -20,7 +20,7 @@ session. Then read `AIOS/msk-vault-map.md` (where things are, the rules) and
 
 ## What I'm building (details live in each project's hot cache)
 - **Hamzi Prompts** (hamziprompts.com): premium AI-video prompt library, paid memberships, member community, academy (lms.hamziprompts.com). Project: Hamzi Prompts.
-- **The LMS as a product**: reusable plugin for clients who have their own domain and hosting (Monetics LearnCore).
+- **The LMS as a product**: reusable plugin for clients who have their own domain and hosting (Monetics LearnCore). Project: Learn Core.
 - **Client work**: Ubaidoo Automation site + Academy LMS (delivered Oct 2026); client packages for course-selling setups (domain, hosting, site, LMS, content protection, support, staged payments).
 - **SoniPrompts / PromptsStudio** rebuild. Project: Prompts Website.
 - **Pakistan Legal Aid**: complaints and applications to Pakistani bodies, strictly from verified law.

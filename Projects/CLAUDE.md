@@ -7,6 +7,7 @@ log. Read the vault map `AIOS/msk-vault-map.md` first (section 6, "Projects"), t
 | Project | Start at |
 |---|---|
 | `Pakistan Legal Aid/` | `Pakistan Legal Aid/CLAUDE.md`, then `wiki/legal-hot.md`, `wiki/legal-index.md` |
+| `Learn Core/` | `Learn Core/CLAUDE.md`, then `wiki/lc-hot.md`, `wiki/lc-index.md` (wiki tracked by msk-ai-os; code repo in `projects/monetics-learncore/`) |
 | `Hamzi Prompts/` | `Hamzi Prompts/CLAUDE.md`, then `wiki/hot.md`, `wiki/index.md` (git repo) |
 | `Prompts Website/` | `Prompts Website/CLAUDE.md`, then `wiki/hot.md`, `wiki/index.md` (git repo; code repo in `projects/soniprompts/`) |
 | `Ubaid Automation/` | `Ubaid Automation/CLAUDE.md`, then `wiki/hot.md`, `wiki/index.md` (git repo; code repo in `projects/ubaidooautomation/`) |

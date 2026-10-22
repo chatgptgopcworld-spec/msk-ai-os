@@ -16,6 +16,7 @@ $repos = @(
   @{ url = "$gh/hamzipromtps.git";           path = 'Projects\Hamzi Prompts\projects\hamzi-lms';                 branch = 'main' },
   @{ url = "$gh/ubaidooautomation.git";      path = 'Projects\Ubaid Automation\projects\ubaidooautomation'; branch = 'redesign/v2' },
   @{ url = "$gh/soni-prompts.git";           path = 'Projects\Prompts Website\projects\soniprompts';      branch = 'master' }
+  # Learn Core product code (Projects\Learn Core\projects\monetics-learncore) has no GitHub repo yet: add a line once it has one.
 )
 foreach ($r in $repos) {
   $p = if ($r.path -eq '.') { $root } else { Join-Path $root $r.path }

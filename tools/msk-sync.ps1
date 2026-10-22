@@ -25,7 +25,8 @@ $repos = @(
   @{ p = 'Projects\Ubaid Automation';                             kind = 'vault' },
   @{ p = 'Projects\Hamzi Prompts\projects\hamzi-lms';                  kind = 'code'  },
   @{ p = 'Projects\Prompts Website\projects\soniprompts';         kind = 'code'  },
-  @{ p = 'Projects\Ubaid Automation\projects\ubaidooautomation';  kind = 'code'  }
+  @{ p = 'Projects\Ubaid Automation\projects\ubaidooautomation';  kind = 'code'  },
+  @{ p = 'Projects\Learn Core\projects\monetics-learncore';        kind = 'code'  }
 )
 
 foreach ($r in $repos) {
