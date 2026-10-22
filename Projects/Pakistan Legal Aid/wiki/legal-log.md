@@ -21,3 +21,6 @@ MSK AI OS as a whole is now the user's second brain; this project moved to `MSK 
 
 ## [2026-10-22] restructure | Law sources moved inside the project
 - `Documents\Pakistan Laws` (pdf/, md/, candidates/; 25 files) copied to `raw/source-laws/` and verified by checksum, so the project carries its own sources to every computer. CLAUDE.md, legal-hot, legal-gaps and source pages now point there. Nothing else changed.
+
+## [2026-10-22] note | Old outside copy removed
+- `Documents\Pakistan Laws` deleted after a second checksum check; `raw/source-laws/` is now the only copy (and goes to GitHub with the vault).

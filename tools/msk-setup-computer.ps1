@@ -14,8 +14,8 @@ $repos = @(
   @{ url = "$gh/prompts-website-vault.git";  path = 'Projects\Prompts Website';                             branch = 'master' },
   @{ url = "$gh/ubaid-automation-vault.git"; path = 'Projects\Ubaid Automation';                            branch = 'master' },
   @{ url = "$gh/hamzipromtps.git";           path = 'Projects\Hamzi Prompts\projects\hamzi-lms';                 branch = 'main' },
-  @{ url = "$gh/ubaidooautomation.git";      path = 'Projects\Ubaid Automation\projects\ubaidooautomation'; branch = 'redesign/v2' }
-  # soniprompts has no GitHub repo yet: add a line here once it has one.
+  @{ url = "$gh/ubaidooautomation.git";      path = 'Projects\Ubaid Automation\projects\ubaidooautomation'; branch = 'redesign/v2' },
+  @{ url = "$gh/soni-prompts.git";           path = 'Projects\Prompts Website\projects\soniprompts';      branch = 'master' }
 )
 foreach ($r in $repos) {
   $p = if ($r.path -eq '.') { $root } else { Join-Path $root $r.path }

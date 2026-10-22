@@ -18,8 +18,7 @@ updated: 2026-10-22
    git clone https://github.com/chatgptgopcworld-spec/msk-ai-os.git "$([Environment]::GetFolderPath('MyDocuments'))\MSK AI OS"
    powershell -ExecutionPolicy Bypass -File "$([Environment]::GetFolderPath('MyDocuments'))\MSK AI OS\tools\msk-setup-computer.ps1"
    ```
-4. Copy `Projects\Pakistan Legal Aid\cases\` by USB (private, never on GitHub). SoniPrompts code has no
-   GitHub repo yet: copy `Projects\Prompts Website\projects\soniprompts\` by USB until it has one.
+4. Copy `Projects\Pakistan Legal Aid\cases\` by USB (private, never on GitHub).
 5. Install Obsidian; open `Documents\MSK AI OS` as a vault (imported projects open as their own vaults).
 6. In the Claude desktop app, choose the `MSK AI OS` folder for the task and sign in with the same account.
 7. From then on: `-Pull` before work, `-Push` after ([[msk-skill-git-sync]]).

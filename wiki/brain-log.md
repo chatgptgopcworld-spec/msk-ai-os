@@ -75,3 +75,7 @@
 
 ## [2026-10-22] schema | Double-click sync and first push
 - New `tools/MSK-SYNC-PULL.cmd` and `tools/MSK-SYNC-PUSH.cmd` (double-click wrappers for msk-sync.ps1); one-time `tools/MSK-FIRST-PUSH.cmd` moves hamzi-lms into `Projects/Hamzi Prompts/projects/`, commits its updated files and pushes every repo. [[msk-skill-git-sync]] updated.
+
+## [2026-10-22] schema | SoniPrompts on GitHub; old outside copies removed
+- SoniPrompts code repo now has remote `soni-prompts` (branch master); added to `tools/msk-setup-computer.ps1` and [[msk-skill-git-sync]]; [[msk-skill-new-computer]] no longer needs a USB copy of it.
+- After re-verifying checksums, the files in `Documents\Pakistan Laws` and `Documents\.claude` were deleted at the user's request (single copy now inside the vault); `MSK-FIRST-PUSH.cmd` removes the empty folders.

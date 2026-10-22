@@ -27,6 +27,13 @@ if (Test-Path (Join-Path $new '.git')) {
   } else { Log "[OK] hamzi-lms: nothing to commit" }
 }
 
+# old copies moved into the vault on 2026-10-22: remove the empty leftover folders
+foreach ($d in @('Pakistan Laws', '.claude')) {
+  $p = Join-Path $docs $d
+  if ((Test-Path $p) -and -not (Get-ChildItem -LiteralPath $p -Force | Select-Object -First 1)) { Remove-Item -LiteralPath $p -Force; Log "[REMOVED] empty Documents\$d" }
+  elseif (Test-Path $p) { Log "[KEPT] Documents\$d is not empty; check it by hand" }
+}
+
 Log '--- msk-sync -Push ---'
 & (Join-Path $PSScriptRoot 'msk-sync.ps1') -Push
 Get-Content (Join-Path $PSScriptRoot 'msk-sync-result.txt') | Add-Content -Path $out

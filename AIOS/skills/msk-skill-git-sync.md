@@ -22,7 +22,7 @@ working and pushes after. Only one computer should be working on the vault at a 
 | Ubaid Automation vault | `Projects/Ubaid Automation` | ubaid-automation-vault | master |
 | Hamzi website/LMS code | `Projects/Hamzi Prompts/projects/hamzi-lms` | hamzipromtps | main |
 | Ubaidoo code | `Projects/Ubaid Automation/projects/ubaidooautomation` | ubaidooautomation | redesign/v2 |
-| SoniPrompts code | `Projects/Prompts Website/projects/soniprompts` | none yet | master |
+| SoniPrompts code | `Projects/Prompts Website/projects/soniprompts` | soni-prompts | master |
 
 ## Steps
 1. **Before work (user, on Windows):** double-click `tools\MSK-SYNC-PULL.cmd` (same as `tools\msk-sync.ps1 -Pull`).

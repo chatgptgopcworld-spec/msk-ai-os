@@ -29,7 +29,7 @@ Set up 22 Oct 2026. No sources ingested yet; inbox empty.
 - **Ubaid Automation** ([[Projects/Ubaid Automation/wiki/hot|hot cache]]): Ubaidoo client-work wiki for the Ubaidoo Automation site and Academy LMS (code in its `projects/ubaidooautomation/`).
 
 ## Open threads
-- GitHub: nothing pushed yet. Run `tools\msk-sync.ps1 -Push` on Windows (pushes all repos). SoniPrompts code has no GitHub repo yet. hamzi-lms must be moved into `Projects/Hamzi Prompts/projects/` by the user.
+- GitHub: nothing pushed yet. Run `tools\msk-sync.ps1 -Push` on Windows (pushes all repos). hamzi-lms must be moved into `Projects/Hamzi Prompts/projects/` by the user.
 - Five new law files in `Projects/Pakistan Legal Aid/raw/source-laws/md` await the user's go-ahead.
 - AI OS adoption: user to fill the [BRACKETS] in [[msk-me]]; decide whether to add a Calendar/daily-brief layer and a personal-notes area.
 - Optional Obsidian setting: Attachment folder path → `raw/assets`.
