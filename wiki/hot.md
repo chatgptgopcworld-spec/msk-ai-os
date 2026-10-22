@@ -23,7 +23,7 @@ Set up 22 Oct 2026. No sources ingested yet; inbox empty.
 
 ## Active projects
 - **Pakistan Legal Aid** ([[legal-hot|hot cache]]): verified law and forum wiki for drafting complaints to Pakistani bodies. Truth first, unknowns in [BRACKETS], statute text verbatim, currency checked before citing. 27 section pages (PECA, PPC, Qanun-e-Shahadat); forums NCCIA, police FIR / s.22-A, SMPRA. Gaps ([[legal-gaps]]): no Cr.P.C.; Constitution copy stops at 2017; PPC at Dec 2023.
-- **Learn Core** ([[lc-hot|hot cache]]): Monetics LearnCore, the reusable LMS product. The same LMS has drifted into three copies (Hamzi, Ubaidoo 0.39.10.18 newest, LearnCore from 0.35.3); unifying them is an open decision.
+- **Learn Core** ([[lc-hot|hot cache]]): Monetics LearnCore, the reusable LMS product. The same LMS has drifted into three copies (Hamzi, Ubaidoo 0.39.10.18 newest, LearnCore from 0.35.3); owner chose one master core; comparison done, plan awaiting approval ([[lc-master-core-plan]]).
 - **AI OS Blueprint** ([[aios-hot|hot cache]]): Nick Milo's "AI OS" from 6 videos: link your own thinking as notes; own your knowledge and AI instructions as files (me.md, vault map, skill map, skills folder); rent the AI tool. Its [[aios-msk-adoption-plan]] gave this vault its AIOS layer; `me.md`, a personal-notes area and a Calendar layer are still open.
 - **Hamzi Prompts** ([[Projects/Hamzi Prompts/wiki/hot|hot cache]], formerly "AI Brain"): wiki for hamziprompts.com: AI-video prompt library, memberships, community, academy. Code: `Documents\hamzi-lms`.
 - **Prompts Website** ([[Projects/Prompts Website/wiki/hot|hot cache]]): the general wiki from before MSK AI OS, plus the SoniPrompts / PromptsStudio rebuild (code in its `projects/soniprompts/`).

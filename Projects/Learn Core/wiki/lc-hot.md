@@ -22,10 +22,17 @@ The same LMS lives in three copies that have drifted apart ([[lc-lms-copies-2026
 Live sites (Hamzi, Ubaidoo) are never changed without approval, backup and a browser check. No client data
 or names in the product. Hamzi and Ubaidoo pages stay in their own projects.
 
+## Decision and plan
+The owner chose **one master copy** (Option B). Phase 0 comparison is done: the copies share 67 files, differ in 50,
+Ubaidoo adds notes, grades, search and certificate templates (DB 21 vs Hamzi's 19), Hamzi has security fixes from
+16 Oct that Ubaidoo lacks, and Ubaidoo's name sits inside core admin files. Plan: [[lc-master-core-plan]]
+(base = Ubaidoo copy, add Hamzi's fixes, move branding to connectors, build every client from LearnCore, test the
+DB 19→21 upgrade on a copy, roll out Ubaidoo then Hamzi). Awaiting approval of phases 1-3.
+
 ## Open threads
-- Decide whether to unify the three copies into one master core ("one master copy" option, not approved).
-- Compare Hamzi vs Ubaidoo copies file by file before any plan.
-- Create a private GitHub repo for the product, then add it to the sync scripts.
+- Owner decisions: approve the base and phases 1-3; staging copy of Hamzi for testing.
+- Product repo has GitHub remote `learn-core`; first push on the next `MSK-SYNC-PUSH.cmd`.
 
 ## Recently changed
+- 22 Oct 2026: Option B chosen; Phase 0 comparison done; plan written.
 - 22 Oct 2026: project created; product repo moved in; build path made vault-relative.

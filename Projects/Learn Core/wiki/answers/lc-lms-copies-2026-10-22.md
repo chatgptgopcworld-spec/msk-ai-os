@@ -29,5 +29,4 @@ Needs first: a file-by-file comparison of the Hamzi and Ubaidoo copies, backups 
 owner's approval of a written plan. Until then, each copy keeps working as it is.
 
 ## Open questions
-- Does Hamzi have changes after 0.39.10 that Ubaidoo doesn't?
-- Which client-specific parts are inside the Ubaidoo copy (names, branding, Bunny settings)?
+Answered on 2026-10-22 by the Phase 0 comparison: see [[lc-master-core-plan]] (Hamzi has security fixes and live edits from 16 Oct that Ubaidoo lacks; Ubaidoo branding sits in at least 10 core admin files).

@@ -40,5 +40,5 @@ wiki/answers/                  Analyses and decisions.
   `lc-` files.
 
 ## Git
-The product code is its own repo (no GitHub remote yet: the owner creates a private repo, then it is added
-to `tools/msk-sync.ps1` and `tools/msk-setup-computer.ps1`). This project's wiki is tracked by msk-ai-os.
+The product code is its own repo (GitHub `learn-core`, branch master), included in `tools/msk-sync.ps1` and
+`tools/msk-setup-computer.ps1`. This project's wiki is tracked by msk-ai-os.
