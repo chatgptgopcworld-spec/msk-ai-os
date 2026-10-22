@@ -26,7 +26,6 @@ or names in the product. Hamzi and Ubaidoo pages stay in their own projects.
 - Decide whether to unify the three copies into one master core ("one master copy" option, not approved).
 - Compare Hamzi vs Ubaidoo copies file by file before any plan.
 - Create a private GitHub repo for the product, then add it to the sync scripts.
-- Delete the old `Documents\Monetics-LearnCore` once the owner confirms (copy verified).
 
 ## Recently changed
 - 22 Oct 2026: project created; product repo moved in; build path made vault-relative.

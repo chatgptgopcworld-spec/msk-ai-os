@@ -28,7 +28,7 @@ if (Test-Path (Join-Path $new '.git')) {
 }
 
 # old copies moved into the vault on 2026-10-22: remove the empty leftover folders
-foreach ($d in @('Pakistan Laws', '.claude')) {
+foreach ($d in @('Pakistan Laws', '.claude', 'Monetics-LearnCore')) {
   $p = Join-Path $docs $d
   if ((Test-Path $p) -and -not (Get-ChildItem -LiteralPath $p -Force | Select-Object -First 1)) { Remove-Item -LiteralPath $p -Force; Log "[REMOVED] empty Documents\$d" }
   elseif (Test-Path $p) { Log "[KEPT] Documents\$d is not empty; check it by hand" }
