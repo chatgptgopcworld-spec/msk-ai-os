@@ -1,0 +1,104 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Jua&display=block">
+<style>
+  html, body { margin: 0; width: 2560px; height: 1440px; overflow: hidden; }
+  body {
+    background:
+      radial-gradient(circle at 1px 1px, rgba(0,0,0,.06) 2px, transparent 2.5px) 0 0 / 46px 46px,
+      #FFD23F;
+    position: relative; font-family: "Jua", sans-serif; color: #1B1A1F;
+  }
+  /* TV/desktop band guide (not drawn): y 508-931 full width; safe area x 507-2053 */
+  .center {
+    position: absolute; left: 507px; top: 508px; width: 1546px; height: 423px;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px;
+  }
+  .title { font-family: "Permanent Marker", cursive; font-size: 200px; line-height: .95; letter-spacing: 2px; position: relative; }
+  .title .heart { position: absolute; right: -78px; top: -6px; width: 84px; transform: rotate(14deg); }
+  .sub { font-size: 66px; line-height: 1; }
+  .pill { margin-top: 10px; background: #1B1A1F; color: #FFFDF6; font-size: 42px; padding: 14px 40px; border-radius: 999px; line-height: 1; }
+  .pill b { color: #FFD23F; font-weight: 400; }
+  .sheet {
+    position: absolute; width: 300px; height: 370px; background: #FFFFFF;
+    box-shadow: 0 14px 28px rgba(80,50,0,.22); border-radius: 4px;
+    display: grid; place-items: center;
+  }
+  .sheet::before { content: ""; position: absolute; top: -20px; left: 50%; width: 120px; height: 40px; margin-left: -60px; background: rgba(255,111,145,.7); transform: rotate(-4deg); }
+  .sheet svg { width: 240px; height: 290px; }
+  .sheet .sig { position: absolute; right: 16px; bottom: 8px; font-family: "Permanent Marker", cursive; font-size: 22px; color: #1B1A1F; }
+  .doodle { position: absolute; }
+</style></head><body>
+
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <g id="f1" fill="none" stroke="#1B1A1F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M58 196 Q100 214 142 196 L178 286 L22 286 Z" fill="#FFFFFF"/>
+      <ellipse cx="100" cy="122" rx="70" ry="78" fill="#FFFFFF"/>
+      <path d="M28 150 C10 40 190 40 172 150 C168 108 140 74 104 80 C86 98 56 104 28 150 Z" fill="#1B1A1F"/>
+      <circle cx="74" cy="134" r="11" fill="#1B1A1F"/><circle cx="126" cy="134" r="11" fill="#1B1A1F"/>
+      <circle cx="78" cy="130" r="3" fill="#FFFFFF" stroke="none"/><circle cx="130" cy="130" r="3" fill="#FFFFFF" stroke="none"/>
+      <circle cx="56" cy="162" r="11" fill="#FF8FAB" stroke="none"/><circle cx="144" cy="162" r="11" fill="#FF8FAB" stroke="none"/>
+      <path d="M80 168 Q100 190 120 168"/>
+    </g>
+    <g id="f2" fill="none" stroke="#1B1A1F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M56 200 Q100 216 144 200 L180 286 L20 286 Z" fill="#FFFFFF"/>
+      <ellipse cx="100" cy="132" rx="66" ry="72" fill="#FFFFFF"/>
+      <path d="M32 104 Q100 20 168 104 Z" fill="#1B1A1F"/>
+      <path d="M150 102 L196 112"/>
+      <circle cx="76" cy="132" r="18" fill="#FFFFFF"/><circle cx="124" cy="132" r="18" fill="#FFFFFF"/><path d="M94 132 L106 132"/>
+      <circle cx="76" cy="134" r="5" fill="#1B1A1F"/><circle cx="124" cy="134" r="5" fill="#1B1A1F"/>
+      <path d="M72 166 Q100 202 128 166 Z" fill="#FFFFFF"/><path d="M76 172 L124 172"/>
+    </g>
+    <g id="f3" fill="none" stroke="#1B1A1F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M58 198 Q100 214 142 198 L176 286 L24 286 Z" fill="#FFFFFF"/>
+      <g fill="#1B1A1F" stroke="none">
+        <circle cx="46" cy="96" r="24"/><circle cx="72" cy="66" r="26"/><circle cx="104" cy="56" r="27"/><circle cx="136" cy="66" r="26"/><circle cx="158" cy="96" r="24"/><circle cx="34" cy="128" r="18"/><circle cx="168" cy="128" r="18"/>
+      </g>
+      <ellipse cx="100" cy="136" rx="62" ry="66" fill="#FFFFFF"/>
+      <path d="M60 116 Q74 106 88 116"/><path d="M112 116 Q126 106 140 116"/>
+      <path d="M64 136 Q74 126 84 136"/><path d="M116 136 Q126 126 136 136"/>
+      <path d="M100 140 Q92 156 104 158"/>
+      <ellipse cx="100" cy="178" rx="16" ry="12" fill="#1B1A1F"/>
+    </g>
+    <g id="f4" fill="none" stroke="#1B1A1F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M58 200 Q100 216 142 200 L178 286 L22 286 Z" fill="#FFFFFF"/>
+      <circle cx="100" cy="36" r="28" fill="#1B1A1F"/>
+      <ellipse cx="100" cy="130" rx="66" ry="74" fill="#FFFFFF"/>
+      <path d="M36 128 C34 64 166 64 164 128 C150 100 128 90 100 96 C74 90 50 102 36 128 Z" fill="#1B1A1F"/>
+      <path d="M66 140 Q76 132 86 140"/><path d="M114 140 Q124 132 134 140"/>
+      <circle cx="58" cy="164" r="11" fill="#FF8FAB" stroke="none"/><circle cx="142" cy="164" r="11" fill="#FF8FAB" stroke="none"/>
+      <path d="M86 170 Q100 184 114 170 Q100 196 86 170 Z" fill="#FF6F91"/>
+    </g>
+    <path id="heart" d="M50 86 C10 58 4 30 22 16 C36 6 48 14 50 26 C52 14 64 6 78 16 C96 30 90 58 50 86 Z" fill="#FF6F91" stroke="#1B1A1F" stroke-width="5" stroke-linejoin="round"/>
+    <path id="star" d="M50 6 L60 38 L94 38 L66 58 L77 92 L50 71 L23 92 L34 58 L6 38 L40 38 Z" fill="#FFFFFF" stroke="#1B1A1F" stroke-width="5" stroke-linejoin="round"/>
+  </defs>
+</svg>
+
+<!-- left side sheets (visible on desktop band and TV) -->
+<div class="sheet" style="left:110px; top:540px; transform:rotate(-7deg)"><svg viewBox="0 0 200 290"><use href="#f1"/></svg><span class="sig">aj</span></div>
+<div class="sheet" style="left:-60px; top:110px; transform:rotate(5deg)"><svg viewBox="0 0 200 290"><use href="#f3"/></svg><span class="sig">aj</span></div>
+<div class="sheet" style="left:300px; top:1010px; transform:rotate(-3deg)"><svg viewBox="0 0 200 290"><use href="#f2"/></svg><span class="sig">aj</span></div>
+<div class="sheet" style="left:330px; top:60px; transform:rotate(-2deg)"><svg viewBox="0 0 200 290"><use href="#f4"/></svg><span class="sig">aj</span></div>
+
+<!-- right side sheets -->
+<div class="sheet" style="left:2150px; top:540px; transform:rotate(6deg)"><svg viewBox="0 0 200 290"><use href="#f2"/></svg><span class="sig">aj</span></div>
+<div class="sheet" style="left:2320px; top:120px; transform:rotate(-5deg)"><svg viewBox="0 0 200 290"><use href="#f1"/></svg><span class="sig">aj</span></div>
+<div class="sheet" style="left:1920px; top:1020px; transform:rotate(4deg)"><svg viewBox="0 0 200 290"><use href="#f4"/></svg><span class="sig">aj</span></div>
+<div class="sheet" style="left:1930px; top:60px; transform:rotate(3deg)"><svg viewBox="0 0 200 290"><use href="#f3"/></svg><span class="sig">aj</span></div>
+<div class="sheet" style="left:2300px; top:1060px; transform:rotate(-6deg)"><svg viewBox="0 0 200 290"><use href="#f1"/></svg><span class="sig">aj</span></div>
+<div class="sheet" style="left:-40px; top:1060px; transform:rotate(7deg)"><svg viewBox="0 0 200 290"><use href="#f4"/></svg><span class="sig">aj</span></div>
+
+<!-- small doodles -->
+<svg class="doodle" style="left:470px; top:470px; width:70px; transform:rotate(-12deg)" viewBox="0 0 100 100"><use href="#star"/></svg>
+<svg class="doodle" style="left:2010px; top:880px; width:76px; transform:rotate(10deg)" viewBox="0 0 100 100"><use href="#heart"/></svg>
+<svg class="doodle" style="left:1100px; top:150px; width:90px; transform:rotate(-8deg)" viewBox="0 0 100 100"><use href="#heart"/></svg>
+<svg class="doodle" style="left:1400px; top:1180px; width:80px; transform:rotate(14deg)" viewBox="0 0 100 100"><use href="#star"/></svg>
+<svg class="doodle" style="left:800px; top:1200px; width:70px; transform:rotate(-6deg)" viewBox="0 0 100 100"><use href="#heart"/></svg>
+
+<div class="center">
+  <div class="title">artjenny<svg class="heart" viewBox="0 0 100 100"><use href="#heart"/></svg></div>
+  <div class="sub">아트제니 · Live Caricatures in Busan</div>
+  <div class="pill">부산 감천문화마을 · <b>New drawing every day</b></div>
+</div>
+</body></html>

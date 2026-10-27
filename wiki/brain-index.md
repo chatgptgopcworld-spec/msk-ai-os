@@ -21,6 +21,7 @@ Catalogue of every wiki page. Updated on every ingest. Format per line: link to 
 - [[aios-hot]] — AI OS Blueprint: Nick Milo's AI OS system from 5 videos, starter kit and an adoption plan for MSK AI OS (`Projects/AI OS Blueprint/`; [[aios-index|its index]])
 
 - [[lc-hot]] — Learn Core: the reusable LMS product Monetics LearnCore and the three drifting LMS copies (`Projects/Learn Core/`; [[lc-index|its index]])
+- [[aj-hot]] — Artjenny: client work for a Busan caricature artist; YouTube channel kit and brand images (`Projects/Artjenny/`; [[aj-index|its index]])
 
 ## Topics
 _None yet._

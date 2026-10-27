@@ -1,0 +1,368 @@
+<title>artjenny YouTube Kit</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&family=IBM+Plex+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: one sketchbook column; each section is a "page" with a marker-tab label; ideas and specs sit in ruled tables */
+:root {
+  --paper: #FFFDF6;
+  --sheet: #FFFFFF;
+  --ink: #1B1A1F;
+  --ink-soft: #5A5763;
+  --rule: #E6E1D3;
+  --sun: #FFD23F;
+  --sun-ink: #1B1A1F;
+  --blush: #FF6F91;
+  --blush-soft: #FFE3EA;
+  --sky: #2E6BE6;
+  --display: "Jua", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+  --body: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #17161B; --sheet: #201F26; --ink: #F3F0E8; --ink-soft: #ACA8B5; --rule: #34323C;
+    --sun: #FFD23F; --sun-ink: #1B1A1F; --blush: #FF86A3; --blush-soft: #3A2430; --sky: #7FA6FF;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #17161B; --sheet: #201F26; --ink: #F3F0E8; --ink-soft: #ACA8B5; --rule: #34323C;
+  --sun: #FFD23F; --sun-ink: #1B1A1F; --blush: #FF86A3; --blush-soft: #3A2430; --sky: #7FA6FF;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--paper); color: var(--ink); font-family: var(--body);
+  font-size: 15.5px; line-height: 1.65;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 64px;
+}
+.wrap { max-width: 860px; margin: 0 auto; display: grid; gap: 56px; }
+h1, h2, h3 { font-family: var(--display); font-weight: 400; text-wrap: balance; line-height: 1.2; margin: 0; }
+p { margin: 0; }
+a { color: var(--sky); }
+:focus-visible { outline: 3px solid var(--sky); outline-offset: 2px; }
+
+/* hero */
+.hero { padding-block: 48px 8px; display: grid; gap: 20px; }
+.tag { font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft); }
+.hero h1 { font-size: clamp(38px, 7vw, 64px); }
+.hero h1 mark { background: var(--sun); color: var(--sun-ink); padding: 0 .18em; border-radius: 6px; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+.lede { max-width: 62ch; font-size: 17px; color: var(--ink-soft); }
+.facts { display: flex; flex-wrap: wrap; gap: 10px; }
+.fact { border: 1.5px solid var(--ink); border-radius: 999px; padding: 4px 14px; font-size: 13.5px; font-variant-numeric: tabular-nums; }
+.fact b { font-weight: 700; }
+
+/* sections */
+section { display: grid; gap: 18px; }
+.sec-head { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.sec-head .tab { font-family: var(--mono); font-size: 12px; background: var(--ink); color: var(--paper); padding: 2px 10px; border-radius: 4px; }
+.sec-head h2 { font-size: clamp(26px, 4vw, 34px); }
+section > p, .note { max-width: 66ch; }
+.note { color: var(--ink-soft); font-size: 14px; }
+h3 { font-size: 20px; }
+
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.sheet { background: var(--sheet); border: 1px solid var(--rule); border-radius: 10px; padding: 18px 20px; display: grid; gap: 10px; align-content: start; min-width: 0; }
+.sheet.pick { border: 2px solid var(--ink); box-shadow: 5px 5px 0 var(--sun); }
+.badge { justify-self: start; font-family: var(--mono); font-size: 11.5px; letter-spacing: .06em; text-transform: uppercase; background: var(--sun); color: var(--sun-ink); padding: 2px 8px; border-radius: 4px; }
+.big { font-family: var(--display); font-size: 26px; line-height: 1.2; }
+.mono { font-family: var(--mono); font-size: 14px; }
+ul { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; }
+
+/* copy blocks */
+.copyblock { position: relative; background: var(--sheet); border: 1px solid var(--rule); border-radius: 10px; padding: 18px 20px; padding-top: 44px; white-space: pre-wrap; font-size: 14.5px; min-width: 0; overflow-wrap: anywhere; }
+.copyblock .lbl { position: absolute; top: 12px; left: 20px; font-family: var(--mono); font-size: 12px; color: var(--ink-soft); }
+.copybtn { position: absolute; top: 8px; right: 10px; font: 500 12.5px var(--body); background: var(--ink); color: var(--paper); border: 0; border-radius: 6px; padding: 5px 12px; cursor: pointer; }
+.copybtn:hover { background: var(--blush); color: #fff; }
+
+/* tables */
+.tbl { overflow-x: auto; border: 1px solid var(--rule); border-radius: 10px; background: var(--sheet); }
+table { border-collapse: collapse; width: 100%; font-size: 14.5px; }
+th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font-family: var(--mono); font-size: 12px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-soft); }
+tr:last-child td { border-bottom: 0; }
+td.n { font-family: var(--mono); color: var(--ink-soft); font-variant-numeric: tabular-nums; width: 3em; }
+.pill { display: inline-block; font-size: 12px; font-weight: 700; padding: 1px 8px; border-radius: 999px; white-space: nowrap; }
+.p-short { background: var(--blush-soft); color: var(--blush); }
+.p-long { background: var(--sun); color: var(--sun-ink); }
+
+/* pillars */
+.pillar h3 { display: flex; gap: 10px; align-items: baseline; }
+.pillar .share { font-family: var(--mono); font-size: 13px; color: var(--blush); }
+
+/* week strip */
+.week { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px; }
+.day { background: var(--sheet); border: 1px solid var(--rule); border-radius: 8px; padding: 10px 8px; font-size: 13px; display: grid; gap: 4px; align-content: start; min-height: 92px; }
+.day b { font-family: var(--mono); font-size: 11.5px; color: var(--ink-soft); font-weight: 500; }
+.day.on { border-color: var(--ink); }
+.day.long { background: var(--sun); color: var(--sun-ink); border-color: var(--sun); }
+.day.long b { color: var(--sun-ink); }
+@media (max-width: 620px) { .week { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+.checklist { list-style: none; padding: 0; }
+.checklist li { display: flex; gap: 10px; }
+.checklist li::before { content: ""; flex: none; width: 15px; height: 15px; margin-top: 5px; border: 1.5px solid var(--ink); border-radius: 3px; }
+footer { color: var(--ink-soft); font-size: 13px; border-top: 1px solid var(--rule); padding-top: 16px; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="wrap">
+
+<header class="hero">
+  <div class="tag">YouTube channel kit · prepared Oct 2026</div>
+  <h1>One marker, one stranger, <mark>one face in 3 minutes.</mark></h1>
+  <p class="lede">A complete launch kit for artjenny (김미정), a caricature artist in Busan. It is built from what already works on her Facebook page: the top-down shot of her hand drawing live caricatures of visitors in her Gamcheon Culture Village studio.</p>
+  <div class="facts">
+    <span class="fact"><b>172K</b> Facebook followers</span>
+    <span class="fact"><b>16K</b> Instagram</span>
+    <span class="fact">Top Reels: <b>15M · 5.4M · 3M · 993K</b> views</span>
+    <span class="fact">Audience: global tourists + Korea fans</span>
+  </div>
+</header>
+
+<section>
+  <div class="sec-head"><span class="tab">What works</span><h2>Why her videos travel</h2></div>
+  <div class="grid2">
+    <div class="sheet"><h3>The format is already proven</h3><p>Every top Reel is the same shot: the subject sits behind her board, her hand and marker fill the frame, and the face appears line by line. Viewers stay to see if it looks like the person.</p></div>
+    <div class="sheet"><h3>The reveal is the payoff</h3><p>The drawing turned toward the subject, and their reaction, is the moment people replay and share. Every video should end on it.</p></div>
+    <div class="sheet"><h3>The audience is international</h3><p>Subjects are tourists from everywhere, and comments arrive in English. The videos need almost no speech, so one channel can serve the whole world with bilingual titles.</p></div>
+    <div class="sheet"><h3>Content theft is a real risk</h3><p>Her pinned post warns that accounts are reposting her videos. YouTube's copyright tools give her stronger protection than Facebook does (see the Protection section).</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="tab">Identity</span><h2>Name, handle and look</h2></div>
+  <div class="grid2">
+    <div class="sheet pick">
+      <span class="badge">Recommended</span>
+      <div class="big">artjenny · 아트제니</div>
+      <div class="mono">@artjenny91</div>
+      <p>Matches her Instagram and her existing brand, so fans can find her and copycats are easier to spot. If the handle is taken, use <span class="mono">@artjenny.busan</span>.</p>
+    </div>
+    <div class="sheet">
+      <span class="badge">Alternatives</span>
+      <ul>
+        <li><b>Jenny Draws You</b> · <span class="mono">@jennydrawsyou</span></li>
+        <li><b>Busan Caricature Jenny</b> · <span class="mono">@busancaricature</span></li>
+        <li><b>3 Minute Face</b> · <span class="mono">@3minuteface</span></li>
+      </ul>
+      <p class="note">Only switch if she wants a name that explains the content to strangers.</p>
+    </div>
+  </div>
+  <div class="tbl"><table>
+    <thead><tr><th>Asset</th><th>Spec</th><th>What to put on it</th></tr></thead>
+    <tbody>
+      <tr><td>Profile picture</td><td class="mono">800×800, shows as a circle</td><td>Her existing yellow-hair self-caricature. Keep it identical on every platform so viewers trust it is the real account.</td></tr>
+      <tr><td>Banner</td><td class="mono">2560×1440, safe area 1546×423 in the centre</td><td>A row of 6–8 finished caricatures of real visitors on her studio's yellow wall, her hand holding the marker on the right. Text: "Live caricatures in Busan · 부산 감천문화마을" and "New drawing every day".</td></tr>
+      <tr><td>Watermark</td><td class="mono">150×150 PNG, transparent</td><td>Small signature "artjenny" in black marker. Add it in YouTube Studio → Customization → Branding.</td></tr>
+      <tr><td>In-video signature</td><td class="mono">Bottom corner, whole video</td><td>"@artjenny91" written in her handwriting. Makes reposts traceable back to her.</td></tr>
+      <tr><td>Thumbnail style</td><td class="mono">1280×720</td><td>Left: the subject's real face. Right: the finished caricature. A yellow arrow or "?" between them. Max 3 words, e.g. "DID I NAIL IT?"</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="tab">About</span><h2>Channel description</h2></div>
+  <p class="note">Paste into YouTube Studio → Customization → Basic info. English first because most subjects and commenters are international; Korean follows for local customers.</p>
+  <div class="copyblock" id="desc"><span class="lbl">Channel description</span><button class="copybtn" type="button" data-copy="desc">Copy</button>I draw strangers in 3 minutes with one marker. 🎨
+
+I'm Jenny, a caricature artist in Gamcheon Culture Village, Busan, South Korea. Tourists from all over the world sit down at my board, and you get to watch their face appear line by line, then see their reaction.
+
+New Shorts every day · full sessions and studio stories every Saturday.
+
+📍 Visit the studio: Gamcheon Culture Village, Busan
+📩 Business & events: art0745@naver.com
+📷 Instagram: @artjenny91
+
+안녕하세요, 부산·경남 캐리커쳐 작가 아트제니입니다.
+감천문화마을 작업실에서 전 세계 여행객들을 그려요.
+행사·기업 이벤트 캐리커쳐 문의: art0745@naver.com
+
+⚠️ This is my only official YouTube channel. Accounts reposting my videos are not me.</div>
+  <div class="copyblock" id="kw"><span class="lbl">Channel keywords (Settings → Channel → Keywords)</span><button class="copybtn" type="button" data-copy="kw">Copy</button>caricature, caricature artist, live caricature, drawing strangers, speed drawing, portrait drawing, Busan, Gamcheon Culture Village, Korea travel, things to do in Busan, Korean artist, satisfying drawing, 캐리커쳐, 부산 캐리커쳐, 감천문화마을, 아트제니</div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="tab">Pillars</span><h2>What she posts</h2></div>
+  <p>Four content types. Shorts bring new viewers; long videos turn them into subscribers and earn ad revenue.</p>
+  <div class="grid2">
+    <div class="sheet pillar"><h3>Live Draw Shorts <span class="share">60%</span></h3><p>The proven Reel format, cut to 30–58 seconds, vertical. Repost every Facebook Reel that did well, then post new ones daily.</p></div>
+    <div class="sheet pillar"><h3>Reaction Compilations <span class="share">15%</span></h3><p>8–12 minute long videos: "20 Strangers See Their Caricature". Built from existing reveal clips, so they cost almost nothing to make.</p></div>
+    <div class="sheet pillar"><h3>Full Sessions <span class="share">15%</span></h3><p>Uncut 10–20 minute drawings with ambient studio sound. Good for watch time; people play them in the background.</p></div>
+    <div class="sheet pillar"><h3>Behind the Board <span class="share">10%</span></h3><p>Studio day vlogs, Gamcheon Village walks, how-to-draw tutorials, a day at a corporate event. Shows her personality and brings in event bookings.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="tab">Ideas</span><h2>First 30 videos</h2></div>
+  <p class="note">Titles carry an English hook plus a short Korean tag so both audiences find them. Start with the reposts of her biggest Reels.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>#</th><th>Title</th><th>Type</th></tr></thead>
+    <tbody>
+      <tr><td class="n">1</td><td>She didn't expect THIS face 😳 #caricature</td><td><span class="pill p-short">Short</span></td></tr>
+      <tr><td class="n">2</td><td>Drawing a stranger in Busan in 60 seconds</td><td><span class="pill p-short">Short</span></td></tr>
+      <tr><td class="n">3</td><td>Her reaction says everything 😂 부산 캐리커쳐</td><td><span class="pill p-short">Short</span></td></tr>
+      <tr><td class="n">4</td><td>I drew a couple, then this happened</td><td><span class="pill p-short">Short</span></td></tr>
+      <tr><td class="n">5</td><td>Can I draw you with ONE marker? No pencil, no erasing</td><td><span class="pill p-short">Short</span></td></tr>
+      <tr><td class="n">6</td><td>20 Tourists See Their Caricature for the First Time</td><td><span class="pill p-long">Long</span></td></tr>
+      <tr><td class="n">7</td><td>Mom and baby caricature at the park 💕</td><td><span class="pill p-short">Short</span></td></tr>
+      <tr><td class="n">8</td><td>Drawing visitors from 10 countries in one day</td><td><span class="pill p-short">Short</span></td></tr>
+      <tr><td class="n">9</td><td>He thought I'd make his nose big…</td><td><span class="pill p-short">Short</span></td></tr>
+      <tr><td class="n">10</td><td>A Full Day in My Caricature Studio in Gamcheon Village, Busan</td><td><span class="pill p-long">Long</span></td></tr>
+      <tr><td class="n">11</td><td>Best friends, one drawing 👯</td><td><span class="pill p-short">Short</span></td></tr>
+      <tr><td class="n">12</td><td>Guess where they're from before the reveal</td><td><span class="pill p-short">Short</span></td></tr>
+      <tr><td class="n">13</td><td>Real face vs caricature: did I get it right?</td><td><span class="pill p-short">Short</span></td></tr>
+      <tr><td class="n">14</td><td>15 Minutes of Relaxing Live Drawing (no talking, studio sounds)</td><td><span class="pill p-long">Long</span></td></tr>
+      <tr><td class="n">15</td><td>The hardest face I ever drew</td><td><span class="pill p-short">Short</span></td></tr>
+      <tr><td class="n">16</td><td>Drawing a K-pop fan's dream portrait</td><td><span class="pill p-short">Short</span></td></tr>
+      <tr><td class="n">17</td><td>He came back a year later with this drawing</td><td><span class="pill p-short">Short</span></td></tr>
+      <tr><td class="n">18</td><td>How I Draw a Caricature in 3 Minutes (step-by-step tutorial)</td><td><span class="pill p-long">Long</span></td></tr>
+      <tr><td class="n">19</td><td>Drawing a family of five on one page</td><td><span class="pill p-short">Short</span></td></tr>
+      <tr><td class="n">20</td><td>Left hand challenge: can I still draw you?</td><td><span class="pill p-short">Short</span></td></tr>
+      <tr><td class="n">21</td><td>Couples Reacting to Their Caricature (Compilation)</td><td><span class="pill p-long">Long</span></td></tr>
+      <tr><td class="n">22</td><td>Drawing you in 10 seconds vs 1 minute vs 5 minutes</td><td><span class="pill p-short">Short</span></td></tr>
+      <tr><td class="n">23</td><td>The line outside my studio today 😮</td><td><span class="pill p-short">Short</span></td></tr>
+      <tr><td class="n">24</td><td>Gamcheon Culture Village: What to See in Busan's Colourful Hill Town</td><td><span class="pill p-long">Long</span></td></tr>
+      <tr><td class="n">25</td><td>She cried when she saw it 🥹</td><td><span class="pill p-short">Short</span></td></tr>
+      <tr><td class="n">26</td><td>Drawing a subscriber's photo from the comments</td><td><span class="pill p-short">Short</span></td></tr>
+      <tr><td class="n">27</td><td>Old drawing vs new drawing: 5 years of practice</td><td><span class="pill p-short">Short</span></td></tr>
+      <tr><td class="n">28</td><td>Caricature Artist at a Corporate Event: 100 Faces in 4 Hours</td><td><span class="pill p-long">Long</span></td></tr>
+      <tr><td class="n">29</td><td>Twins! Can you tell which is which?</td><td><span class="pill p-short">Short</span></td></tr>
+      <tr><td class="n">30</td><td>Reacting to My Most Viewed Drawing (15M views)</td><td><span class="pill p-long">Long</span></td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="tab">Shorts</span><h2>How each Short is built</h2></div>
+  <div class="tbl"><table>
+    <thead><tr><th>Seconds</th><th>What's on screen</th></tr></thead>
+    <tbody>
+      <tr><td class="mono">0–2</td><td>The subject's face plus a text hook ("Will she like it?"). The first line of marker already on the paper. Never open on a blank page.</td></tr>
+      <tr><td class="mono">2–35</td><td>Drawing, sped up 2–4×. Cut the slow parts. Keep the marker squeak audio or a light trending sound.</td></tr>
+      <tr><td class="mono">35–50</td><td>The flip: board turns toward the subject. Hold on their reaction at normal speed.</td></tr>
+      <tr><td class="mono">50–58</td><td>Side-by-side of face and drawing. End frame loops back into the start so viewers watch twice.</td></tr>
+    </tbody>
+  </table></div>
+  <ul>
+    <li>Ask permission from every subject before filming and posting; a small sign at the board ("Your drawing may appear on my channel") helps.</li>
+    <li>Pin a comment asking "Where should I draw next?" or "Rate this from 1–10" to get replies.</li>
+    <li>Link each Short to a related long video (YouTube Studio → Related video) to turn views into subscribers.</li>
+  </ul>
+</section>
+
+<section>
+  <div class="sec-head"><span class="tab">Schedule</span><h2>Weekly upload rhythm</h2></div>
+  <div class="week">
+    <div class="day on"><b>MON</b>Short</div>
+    <div class="day on"><b>TUE</b>Short</div>
+    <div class="day on"><b>WED</b>Short + Community poll</div>
+    <div class="day on"><b>THU</b>Short</div>
+    <div class="day on"><b>FRI</b>Short</div>
+    <div class="day long"><b>SAT</b>Long video, 8–20 min</div>
+    <div class="day on"><b>SUN</b>Short</div>
+  </div>
+  <p class="note">Post Shorts at 19:00 KST, which lands on the US East Coast morning and Europe's lunch. Film a batch of 15–20 sessions on busy studio days, then edit through the week.</p>
+</section>
+
+<section>
+  <div class="sec-head"><span class="tab">SEO</span><h2>Titles, tags and playlists</h2></div>
+  <div class="grid2">
+    <div class="sheet"><h3>Every upload</h3>
+      <ul>
+        <li>Title: an emotional hook under 60 characters, then one Korean tag.</li>
+        <li>Description, first line: "Live caricature drawn in Gamcheon Culture Village, Busan, Korea."</li>
+        <li>3 hashtags: #caricature #busan #drawing</li>
+        <li>Location set to Busan; video language English.</li>
+        <li>Add Korean, Japanese and Chinese title translations in Studio (her audience already reads all four, as her pinned notice shows).</li>
+      </ul>
+    </div>
+    <div class="sheet"><h3>Playlists</h3>
+      <ul>
+        <li>Live Caricature Shorts</li>
+        <li>Reaction Compilations</li>
+        <li>Full Drawing Sessions (Relaxing)</li>
+        <li>Couples &amp; Families</li>
+        <li>Learn to Draw Caricatures</li>
+        <li>Busan &amp; Gamcheon Village</li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyblock" id="tags"><span class="lbl">Default video tags (Settings → Upload defaults)</span><button class="copybtn" type="button" data-copy="tags">Copy</button>caricature, live caricature, caricature drawing, drawing strangers, speed drawing, portrait, reaction, Busan, Gamcheon Culture Village, Korea, Korean artist, satisfying, artjenny, 캐리커쳐, 부산, 감천문화마을</div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="tab">Protection</span><h2>Stopping reposts</h2></div>
+  <p>Content theft is already happening on Facebook. On YouTube she can catch it automatically.</p>
+  <ul>
+    <li><b>Copyright Match Tool:</b> becomes available once she joins the YouTube Partner Program. It finds full re-uploads of her videos on other channels and lets her request removal from YouTube Studio → Copyright.</li>
+    <li><b>Upload first on YouTube</b>, or on the same day as Facebook, so YouTube holds her as the earliest source.</li>
+    <li><b>Visible handwriting watermark</b> "@artjenny91" on every video.</li>
+    <li><b>Verified links:</b> add the YouTube link to her Facebook and Instagram, and link both back from the channel, so fans can confirm the real account.</li>
+    <li>For reposts on Facebook, keep using Meta's IP report form (facebook.com/help/contact/634636770043106) with the YouTube link as proof of the original.</li>
+  </ul>
+</section>
+
+<section>
+  <div class="sec-head"><span class="tab">Money</span><h2>Ways the channel earns</h2></div>
+  <div class="tbl"><table>
+    <thead><tr><th>Source</th><th>When</th><th>Notes</th></tr></thead>
+    <tbody>
+      <tr><td>Event bookings</td><td>From day one</td><td>Corporate parties, weddings and festivals. The email in the description and a "Book me for your event" pinned comment on long videos.</td></tr>
+      <tr><td>Studio visits</td><td>From day one</td><td>Tourists planning Busan trips find her through Shorts and visit in person.</td></tr>
+      <tr><td>YouTube Partner Program (ads)</td><td>1,000 subs + 10M Shorts views in 90 days, or 4,000 watch hours</td><td>Her Reel numbers suggest the Shorts route can be reached quickly.</td></tr>
+      <tr><td>Online orders</td><td>After 10K subs</td><td>Draw-from-photo caricatures sold online, shipped as a print or digital file.</td></tr>
+      <tr><td>Memberships</td><td>After YPP</td><td>Members see uncut sessions and vote on who to draw next.</td></tr>
+      <tr><td>Brand deals</td><td>After 50K subs</td><td>Marker and paper brands, Busan tourism, travel apps.</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="tab">Launch</span><h2>First 14 days</h2></div>
+  <div class="grid2">
+    <div class="sheet"><h3>Days 1–3: set up</h3>
+      <ul class="checklist">
+        <li>Create the channel on her Google account (or a Brand Account) with @artjenny91</li>
+        <li>Upload profile picture, banner and watermark</li>
+        <li>Paste description, keywords and upload defaults from this page</li>
+        <li>Verify the channel by phone to unlock custom thumbnails and longer videos</li>
+        <li>Add links: Instagram, Facebook, business email</li>
+        <li>Create the 6 playlists</li>
+      </ul>
+    </div>
+    <div class="sheet"><h3>Days 4–14: upload</h3>
+      <ul class="checklist">
+        <li>Repost her top 10 Facebook Reels as Shorts, one or two a day, biggest first (15M, 5.4M, 3M)</li>
+        <li>Publish the first long video: "20 Tourists See Their Caricature"</li>
+        <li>Post the launch on Facebook and Instagram: "I'm on YouTube now, this is my only official channel"</li>
+        <li>Reply to every comment in the first hour after each upload</li>
+        <li>Check YouTube Studio analytics after day 14: double down on the Shorts with the highest "viewed vs swiped away"</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>Based on artjenny's public Facebook page (172K followers, Reels tab and About section) as viewed on 27 Oct 2026. YouTube eligibility rules can change; confirm current thresholds in YouTube Studio.</footer>
+</div>
+
+<script>
+document.querySelectorAll('.copybtn').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var box = document.getElementById(btn.dataset.copy);
+    var text = Array.from(box.childNodes).filter(function (n) { return n.nodeType === 3; }).map(function (n) { return n.textContent; }).join('').trim();
+    function done() { btn.textContent = 'Copied'; setTimeout(function () { btn.textContent = 'Copy'; }, 1600); }
+    function fallback() {
+      var r = document.createRange(); r.selectNodeContents(box);
+      var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+      btn.textContent = 'Press Ctrl+C';
+    }
+    try {
+      navigator.clipboard.writeText(text).then(done, fallback);
+    } catch (e) { fallback(); }
+  });
+});
+</script>

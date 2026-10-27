@@ -1,0 +1,22 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=block">
+<style>
+  html, body { margin: 0; overflow: hidden; background: transparent; }
+  .sig {
+    position: absolute; font-family: "Permanent Marker", cursive; color: #1B1A1F;
+    -webkit-text-stroke: 0.16em #FFFFFF; paint-order: stroke fill; white-space: nowrap;
+    display: flex; align-items: center; gap: .18em; line-height: 1;
+  }
+  .sig svg { width: .8em; height: .8em; flex: none; }
+  /* layouts selected by ?mode= */
+  body.solo { width: 1600px; height: 400px; }
+  body.solo .sig { font-size: 190px; left: 60px; top: 90px; }
+  body.shorts { width: 1080px; height: 1920px; }
+  body.shorts .sig { font-size: 66px; left: 48px; top: 180px; opacity: .92; }
+  body.wide { width: 1920px; height: 1080px; }
+  body.wide .sig { font-size: 58px; left: 48px; bottom: 44px; opacity: .92; }
+</style></head><body>
+<div class="sig">@artjenny91<svg viewBox="0 0 100 100"><path d="M50 86 C10 58 4 30 22 16 C36 6 48 14 50 26 C52 14 64 6 78 16 C96 30 90 58 50 86 Z" fill="#FF6F91" stroke="#FFFFFF" stroke-width="10" stroke-linejoin="round" paint-order="stroke"/></svg></div>
+<script>document.body.className = (location.hash.slice(1) || 'solo');</script>
+</body></html>

@@ -88,3 +88,8 @@
 ## [2026-10-22] query | First push done; Learn Core plan
 - `MSK-FIRST-PUSH.cmd` ran on Windows: hamzi-lms moved into `Projects/Hamzi Prompts/projects/`, empty old folders removed, every repo PUSH OK except Learn Core (no remote then; now `learn-core`).
 - Learn Core: owner chose one master LMS core; Phase 0 comparison and [[lc-master-core-plan]] written (awaiting approval). Hot cache refreshed.
+
+## [2026-10-27] schema | New project: Artjenny
+- `Projects/Artjenny/` created for client work for artjenny (Busan caricature artist): CLAUDE.md, [[aj-hot]], [[aj-index]], [[aj-log]], [[src-2026-10-27-aj-facebook-page]], [[aj-artjenny-brand]], [[aj-youtube-channel-kit-2026-10-27]].
+- Filed the YouTube channel kit page and upload-ready images (banner, watermark, signature overlays) with their HTML sources in `deliverables/youtube-kit/`.
+- Registered: [[msk-vault-map]] (table, rule 10), `Projects/CLAUDE.md`, [[brain-index]]. No own repo; tracked by msk-ai-os. Hot cache refreshed.
