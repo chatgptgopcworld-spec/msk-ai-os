@@ -1,6 +1,6 @@
 ---
 type: log
-updated: 2026-10-27
+updated: 2026-10-28
 ---
 # Artjenny: log
 
@@ -18,3 +18,8 @@ updated: 2026-10-27
 
 ## [2026-10-27] setup | Project created
 - Owner asked for a project for this work. Created CLAUDE.md, [[aj-hot]], [[aj-index]], this log; filed the kit and images above.
+
+## [2026-10-28] deliverable | TikTok story to promote YouTube
+- Read TikTok @artjenny91_ and YouTube @jennydrawsyou in the owner's Chrome: [[src-2026-10-28-aj-tiktok-youtube]]; channels table in [[aj-artjenny-brand]] updated.
+- Made a 4-frame TikTok story (1080×1920, rendered with headless Edge from `deliverables/tiktok-story/source/story.html`), a 15-s video script, caption, pinned comment and bio line: [[aj-tiktok-story-2026-10-28]]. Doodle faces are placeholders.
+- Hot cache refreshed.

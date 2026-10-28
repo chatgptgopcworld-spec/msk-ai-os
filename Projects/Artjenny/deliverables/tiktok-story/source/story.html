@@ -1,0 +1,113 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Jua&display=block">
+<style>
+  /* 1080x1920 TikTok story. Keep content inside x 60-960, y 220-1500 (TikTok UI covers the top bar, right rail and bottom caption). */
+  html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; }
+  body {
+    background:
+      radial-gradient(circle at 1px 1px, rgba(0,0,0,.07) 2px, transparent 2.5px) 0 0 / 40px 40px,
+      #FFD23F;
+    font-family: "Jua", sans-serif; color: #1B1A1F; position: relative;
+  }
+  .frame { position: absolute; inset: 0; display: none; }
+  body.f1 #f1, body.f2 #f2, body.f3 #f3, body.f4 #f4 { display: block; }
+  .safe { position: absolute; left: 60px; right: 120px; top: 230px; bottom: 420px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 34px; }
+  .marker { font-family: "Permanent Marker", cursive; line-height: .95; }
+  .kicker { background: #1B1A1F; color: #FFD23F; font-size: 46px; padding: 14px 34px; border-radius: 999px; transform: rotate(-3deg); }
+  .h1 { font-size: 150px; }
+  .h2 { font-size: 92px; }
+  .ko { font-size: 58px; }
+  .sm { font-size: 44px; color: #1B1A1F; }
+  .yt { display: inline-flex; align-items: center; gap: 22px; }
+  .yt svg { width: 150px; }
+  .sheet { position: absolute; width: 270px; height: 330px; background: #fff; border-radius: 4px; box-shadow: 0 14px 28px rgba(80,50,0,.22); display: grid; place-items: center; }
+  .sheet::before { content: ""; position: absolute; top: -18px; left: 50%; width: 110px; height: 36px; margin-left: -55px; background: rgba(255,111,145,.7); transform: rotate(-4deg); }
+  .sheet svg { width: 210px; height: 260px; }
+  .list { display: grid; gap: 26px; text-align: left; width: 100%; }
+  .row { display: flex; align-items: center; gap: 26px; background: #fff; border: 5px solid #1B1A1F; border-radius: 24px; padding: 22px 30px; font-size: 52px; box-shadow: 8px 8px 0 #1B1A1F; }
+  .row .ic { flex: none; width: 74px; height: 74px; border-radius: 50%; background: #FF6F91; color: #fff; display: grid; place-items: center; font-family: "Permanent Marker", cursive; font-size: 44px; border: 4px solid #1B1A1F; }
+  .row small { display: block; font-size: 34px; color: #5A5763; }
+  .search { width: 100%; background: #fff; border: 6px solid #1B1A1F; border-radius: 999px; padding: 26px 40px; display: flex; align-items: center; gap: 24px; font-size: 64px; box-shadow: 8px 8px 0 #1B1A1F; }
+  .search svg { width: 64px; flex: none; }
+  .cursor { display: inline-block; width: 6px; height: 64px; background: #1B1A1F; vertical-align: middle; margin-left: 6px; }
+  .sub { background: #FF0033; color: #fff; font-family: "Permanent Marker", cursive; font-size: 80px; padding: 26px 70px; border-radius: 999px; border: 6px solid #1B1A1F; box-shadow: 8px 8px 0 #1B1A1F; }
+  .hand { position: absolute; width: 150px; }
+  .doodle { position: absolute; }
+  .tag { font-family: "Permanent Marker", cursive; font-size: 40px; }
+</style></head><body>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+  <g id="fa" fill="none" stroke="#1B1A1F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M58 196 Q100 214 142 196 L178 286 L22 286 Z" fill="#FFFFFF"/>
+    <ellipse cx="100" cy="122" rx="70" ry="78" fill="#FFFFFF"/>
+    <path d="M28 150 C10 40 190 40 172 150 C168 108 140 74 104 80 C86 98 56 104 28 150 Z" fill="#1B1A1F"/>
+    <circle cx="74" cy="134" r="11" fill="#1B1A1F"/><circle cx="126" cy="134" r="11" fill="#1B1A1F"/>
+    <circle cx="56" cy="162" r="11" fill="#FF8FAB" stroke="none"/><circle cx="144" cy="162" r="11" fill="#FF8FAB" stroke="none"/>
+    <path d="M80 168 Q100 190 120 168"/>
+  </g>
+  <g id="fb" fill="none" stroke="#1B1A1F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M56 200 Q100 216 144 200 L180 286 L20 286 Z" fill="#FFFFFF"/>
+    <ellipse cx="100" cy="132" rx="66" ry="72" fill="#FFFFFF"/>
+    <path d="M32 104 Q100 20 168 104 Z" fill="#1B1A1F"/><path d="M150 102 L196 112"/>
+    <circle cx="76" cy="132" r="18" fill="#FFFFFF"/><circle cx="124" cy="132" r="18" fill="#FFFFFF"/><path d="M94 132 L106 132"/>
+    <circle cx="76" cy="134" r="5" fill="#1B1A1F"/><circle cx="124" cy="134" r="5" fill="#1B1A1F"/>
+    <path d="M72 166 Q100 202 128 166 Z" fill="#FFFFFF"/><path d="M76 172 L124 172"/>
+  </g>
+  <path id="heart" d="M50 86 C10 58 4 30 22 16 C36 6 48 14 50 26 C52 14 64 6 78 16 C96 30 90 58 50 86 Z" fill="#FF6F91" stroke="#1B1A1F" stroke-width="5" stroke-linejoin="round"/>
+  <path id="star" d="M50 6 L60 38 L94 38 L66 58 L77 92 L50 71 L23 92 L34 58 L6 38 L40 38 Z" fill="#FFFFFF" stroke="#1B1A1F" stroke-width="5" stroke-linejoin="round"/>
+  <g id="ytlogo"><rect x="0" y="0" width="100" height="70" rx="18" fill="#FF0033" stroke="#1B1A1F" stroke-width="5"/><path d="M40 20 L68 35 L40 50 Z" fill="#fff"/></g>
+</defs></svg>
+
+<!-- FRAME 1: announcement -->
+<div class="frame" id="f1">
+  <div class="sheet" style="left:30px; top:110px; transform:rotate(-8deg)"><svg viewBox="0 0 200 290"><use href="#fa"/></svg></div>
+  <div class="sheet" style="left:740px; top:1460px; transform:rotate(7deg)"><svg viewBox="0 0 200 290"><use href="#fb"/></svg></div>
+  <svg class="doodle" style="left:800px; top:260px; width:110px; transform:rotate(12deg)" viewBox="0 0 100 100"><use href="#heart"/></svg>
+  <svg class="doodle" style="left:110px; top:1380px; width:100px" viewBox="0 0 100 100"><use href="#star"/></svg>
+  <div class="safe">
+    <div class="kicker">BIG NEWS · 깜짝 소식</div>
+    <div class="marker h1">I'M ON<br>YOUTUBE!</div>
+    <svg width="190" viewBox="0 0 100 70"><use href="#ytlogo"/></svg>
+    <div class="ko">아트제니 유튜브 채널 오픈!</div>
+  </div>
+</div>
+
+<!-- FRAME 2: what you get -->
+<div class="frame" id="f2">
+  <div class="safe" style="gap:30px">
+    <div class="marker h2">WHAT YOU'LL<br>SEE THERE</div>
+    <div class="list">
+      <div class="row"><span class="ic">1</span><span>Full drawings, uncut<small>처음부터 끝까지 풀버전</small></span></div>
+      <div class="row"><span class="ic">2</span><span>Real reactions<small>그림 보고 놀라는 순간</small></span></div>
+      <div class="row"><span class="ic">3</span><span>My Busan studio<small>감천문화마을 작업실</small></span></div>
+      <div class="row"><span class="ic">4</span><span>How I draw, step by step<small>캐리커쳐 그리는 법</small></span></div>
+    </div>
+  </div>
+</div>
+
+<!-- FRAME 3: how to find it -->
+<div class="frame" id="f3">
+  <svg class="doodle" style="left:800px; top:1240px; width:120px; transform:rotate(-10deg)" viewBox="0 0 100 100"><use href="#heart"/></svg>
+  <div class="safe">
+    <div class="marker h2">FIND ME ON<br>YOUTUBE</div>
+    <div class="search"><svg viewBox="0 0 64 64"><circle cx="26" cy="26" r="18" fill="none" stroke="#1B1A1F" stroke-width="7"/><path d="M40 40 L58 58" stroke="#1B1A1F" stroke-width="8" stroke-linecap="round"/></svg><span>@jennydrawsyou<span class="cursor"></span></span></div>
+    <div class="ko">유튜브에서 검색하세요</div>
+    <div class="sm">or tap the YouTube icon on my profile</div>
+  </div>
+</div>
+
+<!-- FRAME 4: CTA -->
+<div class="frame" id="f4">
+  <div class="sheet" style="left:30px; top:1460px; transform:rotate(-6deg)"><svg viewBox="0 0 200 290"><use href="#fb"/></svg></div>
+  <div class="sheet" style="left:770px; top:100px; transform:rotate(6deg)"><svg viewBox="0 0 200 290"><use href="#fa"/></svg></div>
+  <div class="safe">
+    <div class="marker h2" style="font-size:104px">SUBSCRIBE<br>&amp; I MIGHT<br>DRAW YOU</div>
+    <div class="sub">SUBSCRIBE</div>
+    <div class="ko">구독하고 다음 그림 주인공이 되어보세요!</div>
+    <div class="tag">YouTube · @jennydrawsyou</div>
+  </div>
+</div>
+
+<script>document.body.className = location.hash.slice(1) || 'f1';</script>
+</body></html>

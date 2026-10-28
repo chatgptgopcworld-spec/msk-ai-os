@@ -1,9 +1,9 @@
 ---
 type: entity
 domains: [business, client-work, content]
-sources: [src-2026-10-27-aj-facebook-page]
+sources: [src-2026-10-27-aj-facebook-page, src-2026-10-28-aj-tiktok-youtube]
 created: 2026-10-27
-updated: 2026-10-27
+updated: 2026-10-28
 status: active
 ---
 # artjenny (아트제니)
@@ -12,11 +12,14 @@ Caricature artist **김미정**, working from a studio in Gamcheon Culture Villa
 (see [[src-2026-10-27-aj-facebook-page]]).
 
 ## Channels
-| Channel | Handle / link | Size (2026-10-27) |
+| Channel | Handle / link | Size |
 |---|---|---|
-| Facebook | facebook.com/profile.php?id=100079569633712 | 172K followers |
-| Instagram | @artjenny91 | 16K followers |
-| YouTube | planned: artjenny · 아트제니, @artjenny91 | not created yet |
+| Facebook | facebook.com/profile.php?id=100079569633712 | 172K followers (2026-10-27) |
+| Instagram | @artjenny91 | 16K followers (2026-10-27) |
+| TikTok | @artjenny91_ ("Art Jenny Busan") | 56.8K followers, 1.8M likes (2026-10-28) |
+| YouTube | @jennydrawsyou ("artjenny · 아트제니") | created, banner live, no videos (2026-10-28) |
+
+The owner runs the TikTok and YouTube accounts (owner's statement, 2026-10-28; see [[src-2026-10-28-aj-tiktok-youtube]]).
 
 Business email (public): art0745@naver.com.
 
