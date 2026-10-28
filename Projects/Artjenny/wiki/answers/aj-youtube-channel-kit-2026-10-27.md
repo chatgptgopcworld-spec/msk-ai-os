@@ -26,7 +26,7 @@ https://claude.ai/artifact/9C2hgztRxiBbrrcH2sZnaR (shared only if the owner shar
 |---|---|---|
 | artjenny-banner-2560x1440.png | 2560×1440 | Channel banner; text inside the 1546×423 safe area |
 | artjenny-watermark-150x150.png / -600x600.png | square, transparent | Video watermark |
-| artjenny-signature-overlay-shorts-1080x1920.png | transparent | Overlay on Shorts (top-left); all three signature files read "@artjenny91_" since 2026-10-28 (owner's choice; was "@artjenny91") |
+| artjenny-signature-overlay-shorts-1080x1920.png | transparent | Overlay on Shorts (top-left); all three signature files read "@artjenny91_" since 2026-10-28 (owner's choice; was "@artjenny91"); a second set ending `-jennydrawsyou` reads "@jennydrawsyou" |
 | artjenny-signature-overlay-16x9-1920x1080.png | transparent | Overlay on long videos (bottom-left) |
 | artjenny-signature-1600x400.png | transparent | Signature alone |
 

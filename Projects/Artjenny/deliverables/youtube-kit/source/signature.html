@@ -17,6 +17,13 @@
   body.wide { width: 1920px; height: 1080px; }
   body.wide .sig { font-size: 58px; left: 48px; bottom: 44px; opacity: .92; }
 </style></head><body>
-<div class="sig">@artjenny91_<svg viewBox="0 0 100 100"><path d="M50 86 C10 58 4 30 22 16 C36 6 48 14 50 26 C52 14 64 6 78 16 C96 30 90 58 50 86 Z" fill="#FF6F91" stroke="#FFFFFF" stroke-width="10" stroke-linejoin="round" paint-order="stroke"/></svg></div>
-<script>document.body.className = (location.hash.slice(1) || 'solo');</script>
+<div class="sig"><span id="handle">@artjenny91_</span><svg viewBox="0 0 100 100"><path d="M50 86 C10 58 4 30 22 16 C36 6 48 14 50 26 C52 14 64 6 78 16 C96 30 90 58 50 86 Z" fill="#FF6F91" stroke="#FFFFFF" stroke-width="10" stroke-linejoin="round" paint-order="stroke"/></svg></div>
+<script>
+  // layout from the hash (#solo, #shorts, #wide); handle from ?h= (default @artjenny91_)
+  document.body.className = (location.hash.slice(1) || 'solo');
+  var h = new URLSearchParams(location.search).get('h');
+  if (h) document.getElementById('handle').textContent = '@' + h;
+  // long handles: shrink the solo version so the heart stays inside 1600px
+  if (h && h.length > 12 && document.body.className === 'solo') document.querySelector('.sig').style.fontSize = '160px';
+</script>
 </body></html>

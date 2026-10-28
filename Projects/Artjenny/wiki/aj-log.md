@@ -25,3 +25,6 @@ updated: 2026-10-28
 - Hot cache refreshed.
 ## [2026-10-28] deliverable | Signature handle changed to @artjenny91_
 - At the owner's request the three signature PNGs in deliverables/youtube-kit/images/ now read "@artjenny91_" (TikTok handle) instead of "@artjenny91"; re-rendered from source/signature.html and checked over dark footage. Story frames keep "@jennydrawsyou" because that is the YouTube search term. Hot cache refreshed.
+
+## [2026-10-28] deliverable | Signature set for @jennydrawsyou
+- At the owner's request, a second set of the three signature PNGs reading "@jennydrawsyou" (YouTube handle), named *-jennydrawsyou.png; the @artjenny91_ set stays. source/signature.html now takes the handle from ?h= (default artjenny91_) and shrinks the solo version for long handles. Checked over dark footage. Hot cache refreshed.
