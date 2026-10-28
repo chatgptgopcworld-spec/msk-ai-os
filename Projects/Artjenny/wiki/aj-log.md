@@ -23,3 +23,5 @@ updated: 2026-10-28
 - Read TikTok @artjenny91_ and YouTube @jennydrawsyou in the owner's Chrome: [[src-2026-10-28-aj-tiktok-youtube]]; channels table in [[aj-artjenny-brand]] updated.
 - Made a 4-frame TikTok story (1080×1920, rendered with headless Edge from `deliverables/tiktok-story/source/story.html`), a 15-s video script, caption, pinned comment and bio line: [[aj-tiktok-story-2026-10-28]]. Doodle faces are placeholders.
 - Hot cache refreshed.
+## [2026-10-28] deliverable | Signature handle changed to @artjenny91_
+- At the owner's request the three signature PNGs in deliverables/youtube-kit/images/ now read "@artjenny91_" (TikTok handle) instead of "@artjenny91"; re-rendered from source/signature.html and checked over dark footage. Story frames keep "@jennydrawsyou" because that is the YouTube search term. Hot cache refreshed.

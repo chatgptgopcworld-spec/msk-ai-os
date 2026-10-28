@@ -19,7 +19,8 @@ Client work for **artjenny (아트제니, 김미정)**, a caricature artist in G
 - Her pinned Facebook post warns that accounts repost her videos; protecting her content is part of every deliverable.
 - **YouTube kit** ([[aj-youtube-channel-kit-2026-10-27]]): Shorts daily at 19:00 KST, long video every Saturday;
   30 ideas; 14-day launch plan. Private artifact https://claude.ai/artifact/9C2hgztRxiBbrrcH2sZnaR.
-- **Images:** banner, watermark, signature overlays in `deliverables/youtube-kit/images/`.
+- **Images:** banner, watermark, signature overlays in `deliverables/youtube-kit/images/`. Overlays carry the
+  TikTok handle **@artjenny91_** (owner's choice, 28 Oct).
 - **TikTok story** ([[aj-tiktok-story-2026-10-28]]): 4 frames + 15-s video script, caption, pinned comment, bio line,
   in `deliverables/tiktok-story/`.
 
@@ -29,7 +30,6 @@ replaced. Her phone and customer data stay out of the wiki and GitHub. Uploads a
 
 ## Open threads
 - Upload 5-10 Shorts before posting the TikTok story; link YouTube in the TikTok profile.
-- Signature overlays say @artjenny91 while the YouTube handle is @jennydrawsyou: decide which handle videos carry.
 - Banner and story doodles are placeholders: need photos of her real caricatures.
 - Owner is considering a reusable skill for channel kits (not created; asked not to yet).
 
