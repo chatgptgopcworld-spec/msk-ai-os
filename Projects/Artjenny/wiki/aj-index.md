@@ -23,3 +23,4 @@ updated: 2026-10-28
 ## Deliverables
 - `deliverables/youtube-kit/` — kit page (HTML), upload-ready images, and the HTML sources of the images
 - `deliverables/tiktok-story/` — story script and captions (.md), four 1080×1920 frames, and their HTML source
+- deliverables/watermarks/ — round avatar watermark: 1024/512 px badges and 1080×1920 overlays (100% and 80%)

@@ -28,3 +28,6 @@ updated: 2026-10-28
 
 ## [2026-10-28] deliverable | Signature set for @jennydrawsyou
 - At the owner's request, a second set of the three signature PNGs reading "@jennydrawsyou" (YouTube handle), named *-jennydrawsyou.png; the @artjenny91_ set stays. source/signature.html now takes the handle from ?h= (default artjenny91_) and shrinks the solo version for long handles. Checked over dark footage. Hot cache refreshed.
+
+## [2026-10-30] deliverable | Round avatar watermark for 9:16 video
+- Owner supplied her real avatar (yellow-hair self-portrait, 2000x2000); stored as raw/artjenny-avatar-2000.jpg. Made round watermarks with a white ring in deliverables/watermarks/: 1024 and 512 px badges, and two 1080x1920 transparent overlays (100% and 80% opacity) with the badge at top-left (x 48, y 230, 170 px), clear of TikTok's top bar, right rail and bottom caption. Checked on dark and bright backgrounds. Built with Pillow from the source image; no AI-drawn art.
