@@ -202,7 +202,7 @@
   function resolveCam(c, stage, spec) {
     const W = spec.width, H = spec.height;
     if (!c || c.fit) {
-      if (stage.kind === 'image') { const w = Math.min(stage.w, stage.h * W / H) / (c && c.zoom || 1); return { cx: c && c.x != null ? c.x : stage.w / 2, cy: c && c.y != null ? c.y : stage.h / 2, w, rot: 0 }; }
+      if (stage.kind === 'image') { const w = Math.min(stage.w, stage.h * W / H) / (c && c.zoom || 1); return { cx: c && c.x != null ? c.x : stage.w / 2, cy: c && c.y != null ? c.y : stage.h / 2, w, rot: c && c.rot || 0 }; }
       return { cx: 0, cy: -20 * K, w: 360 * K, rot: 0 };
     }
     if (c.x != null) {
@@ -653,6 +653,30 @@
     return `<g ${popT(x + slideX, y + slideY, k, e.rotate || 0)} opacity="${L.out * (e.opacity ?? 1)}" filter="url(#kzSh)">${border}<image href="${esc(e.src)}" x="${-w / 2}" y="${-h / 2}" width="${w}" height="${h}" preserveAspectRatio="${e.fit === 'contain' ? 'xMidYMid meet' : 'xMidYMid slice'}"/></g>`;
   };
 
+  // kinetic word-by-word caption: words [[text, tRel], ...] (seconds after the element's t0)
+  E.kcap = (ctx, e, L) => {
+    const size = e.size || 54, y = e.y ?? ctx.H * 0.79, gap = size * 0.28, words = e.words || [];
+    const wid = w => w.replace(/[*!]/g, '').split('').reduce((a, c) => a + size * (/[MW]/i.test(c) ? 0.9 : /[IJ1.,':]/i.test(c) ? 0.34 : 0.7), 0);
+    const total = words.reduce((a, w) => a + wid(w[0]), 0) + gap * (words.length - 1);
+    let x = ctx.W / 2 - total / 2, s = '';
+    const shown = words.filter(w => L.age >= w[1]);
+    if (shown.length && e.box !== false) { const bw = total + size * 0.9; s += `<rect x="${f1(ctx.W / 2 - bw / 2)}" y="${f1(y - size * 0.95)}" width="${f1(bw)}" height="${f1(size * 1.45)}" rx="${f1(size * 0.32)}" fill="rgba(8,14,24,.55)" opacity="${L.out}"/>`; }
+    words.forEach((w, i) => {
+      const age = L.age - w[1], ww = wid(w[0]);
+      if (age >= 0) {
+        const k = age < 0.18 ? EASE.back(clamp(age / 0.18)) : 1;
+        const next = words[i + 1] ? words[i + 1][1] : 1e9, active = L.age < next + 0.05;
+        const raw = w[0].replace(/[*!]/g, ''), hot = /^\*|^!/.test(w[0]);
+        const fill = w[0].startsWith('!') ? '#ff5a4a' : (active || hot) ? '#ffd23f' : '#ffffff';
+        s += `<g transform="translate(${f1(x + ww / 2)},${f1(y - size * 0.27)}) scale(${(0.6 + 0.4 * k).toFixed(3)}) translate(0,${f1(size * 0.27)})" opacity="${clamp(age / 0.08) * L.out}"><text text-anchor="middle" font-family="${T.font}" font-weight="800" font-size="${size}" fill="${fill}" stroke="#000" stroke-width="${size * 0.1}" paint-order="stroke" stroke-linejoin="round">${esc(raw.toUpperCase())}</text></g>`;
+      }
+      x += ww + gap;
+    });
+    return s;
+  };
+  E.vignette = (ctx, e) => `<defs><radialGradient id="kzVg" cx="50%" cy="48%" r="75%"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="${e.opacity ?? 0.6}"/></radialGradient></defs><rect width="${ctx.W}" height="${ctx.H}" fill="url(#kzVg)"/>`;
+  // light sweep / lens streak across the frame
+  E.sweep = (ctx, e, L) => { const p = clamp(L.age / (e.sweepDur || 0.8)); if (p >= 1) return ''; const x = lerp(-ctx.W * 0.6, ctx.W * 1.6, EASE.inOut(p)); return `<defs><linearGradient id="kzSw${ctx.id}" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity="${e.opacity ?? 0.35}"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs><rect x="${f1(x - 300)}" y="-400" width="600" height="${ctx.H + 800}" fill="url(#kzSw${ctx.id})" transform="rotate(18 ${f1(x)} ${ctx.H / 2})"/>`; };
   E.caption = (ctx, e, L) => {
     const size = e.size || 38, y = e.y ?? ctx.H * 0.72;
     return textEl(ctx.W / 2, y, e.text, Object.assign({ size, weight: e.weight || 600 }, e), 1, L.ease * L.out);
@@ -727,10 +751,17 @@
     if (stage.kind === 'image' && !(stage.map.allowEdges)) { // never show past the edges of the user's image
       const fitW = Math.min(stage.w, stage.h * spec.width / spec.height);
       cam.w = Math.min(cam.w, fitW);
+      const rr = Math.abs((cam.rot || 0) * RAD); if (rr) cam.w = cam.w / (Math.cos(rr) + Math.sin(rr) * spec.height / spec.width);
       const hw = cam.w / 2, hh = cam.w * spec.height / spec.width / 2;
       cam.cx = clamp(cam.cx, hw, stage.w - hw); cam.cy = clamp(cam.cy, hh, stage.h - hh);
     }
+    if (shot.punch && stage.kind === 'image') { // punch-in transition: starts tighter, settles fast
+      const pd = shot.punchDur || 0.45, pp = 1 - EASE.out(clamp(tl / pd));
+      cam.w = cam.w / (1 + shot.punch * pp); cam.rot = (cam.rot || 0) + (shot.punchRot || 0) * pp;
+    }
+    if (spec.handheld && isMap) { const a = spec.handheld; cam.cx += Math.sin(t * 0.63) * cam.w * 0.006 * a; cam.cy += Math.sin(t * 0.47 + 1) * cam.w * 0.008 * a; cam.rot = (cam.rot || 0) + Math.sin(t * 0.41) * 0.35 * a; }
     const view = makeView(spec, stage, cam);
+    { const bd = shot.blurIn || 0; const bl = bd && tl < bd ? (1 - tl / bd) * (shot.blurPx || 14) : 0; els.world.style.filter = bl ? `blur(${bl.toFixed(1)}px)` : ''; }
     const ctx = { W: spec.width, H: spec.height, view, map: isMap, spec, id: 0 };
     els.base.style.display = isMap ? '' : 'none';
     for (const [id, g] of Object.entries(els.stages)) g.style.display = id === sid ? '' : 'none';
