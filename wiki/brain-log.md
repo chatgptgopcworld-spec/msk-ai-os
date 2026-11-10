@@ -84,3 +84,6 @@
 - `Projects/Learn Core/` created for Monetics LearnCore, the reusable LMS product: CLAUDE.md, [[lc-hot]], [[lc-index]], [[lc-log]], [[lc-lms-copies-2026-10-22]].
 - Product repo copied in from `Documents\Monetics-LearnCore` (checksum-verified); its build.py now finds hamzi-lms inside the vault. No GitHub remote yet.
 - Registered: [[msk-vault-map]] (table, rules 9-10), `Projects/CLAUDE.md`, [[brain-index]], `.gitignore`, sync scripts, [[msk-skill-git-sync]], [[msk-me]] (one line). Hot cache refreshed.
+
+## [2026-11-10] schema | New skill: Kaz Map Animation
+- Installed the Kaz Map Animation package in `.claude/skills/kaz-map-animation/` (Claude Code picks it up automatically). Vault pointer [[msk-skill-kaz-map-animation]] added under a new Media group in [[msk-skill-map]].

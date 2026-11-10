@@ -1,0 +1,1615 @@
+{
+ "title": "Why the Midterms Matter",
+ "width": 1080,
+ "height": 1920,
+ "fps": 30,
+ "maps": {
+  "na": {
+   "src": "na.png",
+   "projection": "mercator",
+   "points": [
+    [
+     108.0,
+     192.0,
+     -115.50859,
+     61.9754
+    ],
+    [
+     972.0,
+     192.0,
+     -76.05467,
+     61.9754
+    ],
+    [
+     108.0,
+     1728.0,
+     -115.50859,
+     7.95908
+    ],
+    [
+     972.0,
+     1728.0,
+     -76.05467,
+     7.95908
+    ]
+   ],
+   "aligned": true
+  },
+  "lakes": {
+   "src": "lakes.png",
+   "projection": "mercator",
+   "points": [
+    [
+     108.0,
+     192.0,
+     -94.25682,
+     51.22398
+    ],
+    [
+     972.0,
+     192.0,
+     -79.7914,
+     51.22398
+    ],
+    [
+     108.0,
+     1728.0,
+     -94.25682,
+     32.4011
+    ],
+    [
+     972.0,
+     1728.0,
+     -79.7914,
+     32.4011
+    ]
+   ],
+   "aligned": true
+  }
+ },
+ "basemap": {
+  "vignette": 0.4
+ },
+ "sfxVolume": 0.5,
+ "shots": [
+  {
+   "start": 0,
+   "end": 3.3,
+   "fadeIn": 0.3,
+   "map": "na",
+   "cam": {
+    "from": {
+     "fit": true
+    },
+    "to": {
+     "lon": -95,
+     "lat": 38.5,
+     "span": 46
+    }
+   },
+   "elements": [
+    {
+     "type": "region",
+     "set": "provinces",
+     "all": true,
+     "country": "USA",
+     "exclude": [
+      "Alaska",
+      "Hawaii"
+     ],
+     "style": "tint",
+     "reveal": "wipe",
+     "dur": 1.1,
+     "t0": 0.15
+    },
+    {
+     "type": "icon",
+     "icon": "ballot",
+     "lon": -98,
+     "lat": 39.5,
+     "size": 200,
+     "t0": 0.6
+    },
+    {
+     "type": "label",
+     "lon": -98,
+     "lat": 34.5,
+     "text": "ONE ELECTION",
+     "size": 56,
+     "t0": 0.85
+    },
+    {
+     "type": "icon",
+     "icon": "question",
+     "points": [
+      [
+       -113,
+       42
+      ],
+      [
+       -82,
+       41
+      ]
+     ],
+     "size": 90,
+     "t0": 2.3,
+     "stagger": 0.15
+    },
+    {
+     "type": "caption",
+     "text": "How can *one election*",
+     "t0": 0.05,
+     "size": 46,
+     "y": 1540,
+     "dur": 0.2,
+     "t1": 0.9500000000000001,
+     "outDur": 0.08
+    },
+    {
+     "type": "caption",
+     "text": "change what a *U.S. president* gets done",
+     "t0": 1.05,
+     "size": 46,
+     "y": 1540,
+     "dur": 0.2
+    }
+   ]
+  },
+  {
+   "start": 3.3,
+   "end": 5.9,
+   "flash": true,
+   "map": "na",
+   "cam": {
+    "from": {
+     "lon": -90,
+     "lat": 38,
+     "span": 40
+    },
+    "to": {
+     "lon": -77.8,
+     "lat": 38.5,
+     "span": 15
+    },
+    "dur": 1.5
+   },
+   "elements": [
+    {
+     "type": "region",
+     "set": "provinces",
+     "names": [
+      "Maryland",
+      "Virginia"
+     ],
+     "style": "tint",
+     "t0": 0.6
+    },
+    {
+     "type": "region",
+     "set": "provinces",
+     "names": [
+      "District of Columbia"
+     ],
+     "style": "glow",
+     "glowSize": 26,
+     "t0": 1.1
+    },
+    {
+     "type": "circle",
+     "lon": -77.03,
+     "lat": 38.9,
+     "r": 34,
+     "color": "yellow",
+     "t0": 1.2
+    },
+    {
+     "type": "label",
+     "lon": -77.03,
+     "lat": 40.6,
+     "text": "WHITE HOUSE",
+     "size": 50,
+     "t0": 1.3
+    },
+    {
+     "type": "timeTag",
+     "lon": -79.5,
+     "lat": 35.6,
+     "text": "SAME PRESIDENT",
+     "size": 40,
+     "t0": 1.0
+    },
+    {
+     "type": "caption",
+     "text": "while the *same person*",
+     "t0": 0,
+     "size": 46,
+     "y": 1540,
+     "dur": 0.2,
+     "t1": 0.8,
+     "outDur": 0.08
+    },
+    {
+     "type": "caption",
+     "text": "stays in the *White House?*",
+     "t0": 0.9,
+     "size": 46,
+     "y": 1540,
+     "dur": 0.2
+    }
+   ]
+  },
+  {
+   "start": 5.9,
+   "end": 7.6,
+   "map": "na",
+   "cam": {
+    "from": {
+     "lon": -95,
+     "lat": 38.5,
+     "span": 50
+    },
+    "to": {
+     "lon": -95,
+     "lat": 38.5,
+     "span": 44
+    }
+   },
+   "elements": [
+    {
+     "type": "region",
+     "set": "provinces",
+     "all": true,
+     "country": "USA",
+     "exclude": [
+      "Alaska",
+      "Hawaii"
+     ],
+     "style": "tint",
+     "dur": 0,
+     "opacity": 0.4
+    },
+    {
+     "type": "dim",
+     "opacity": 0.5,
+     "dur": 0.2
+    },
+    {
+     "type": "title",
+     "text": "THE MIDTERMS",
+     "size": 112,
+     "y": 860,
+     "t0": 0.6
+    },
+    {
+     "type": "line",
+     "points": [
+      [
+       230,
+       960
+      ],
+      [
+       850,
+       960
+      ]
+     ],
+     "color": "#ffd23f",
+     "width": 6,
+     "t0": 0.8
+    }
+   ]
+  },
+  {
+   "start": 7.6,
+   "end": 10.1,
+   "bg": "blueprint",
+   "flash": true,
+   "elements": [
+    {
+     "type": "label",
+     "x": 540,
+     "y": 560,
+     "text": "PRESIDENT'S TERM",
+     "size": 50,
+     "t0": 0.05
+    },
+    {
+     "type": "box",
+     "x": 225,
+     "y": 760,
+     "w": 190,
+     "h": 110,
+     "text": "YEAR 1",
+     "fill": "#2a64c4",
+     "stroke": "#7fb2ff",
+     "t0": 0.1
+    },
+    {
+     "type": "box",
+     "x": 435,
+     "y": 760,
+     "w": 190,
+     "h": 110,
+     "text": "YEAR 2",
+     "fill": "#2a64c4",
+     "stroke": "#7fb2ff",
+     "t0": 0.2
+    },
+    {
+     "type": "box",
+     "x": 645,
+     "y": 760,
+     "w": 190,
+     "h": 110,
+     "text": "YEAR 3",
+     "fill": "#15418a",
+     "stroke": "#7fb2ff",
+     "t0": 0.30000000000000004
+    },
+    {
+     "type": "box",
+     "x": 855,
+     "y": 760,
+     "w": 190,
+     "h": 110,
+     "text": "YEAR 4",
+     "fill": "#15418a",
+     "stroke": "#7fb2ff",
+     "t0": 0.4
+    },
+    {
+     "type": "line",
+     "points": [
+      [
+       540,
+       640
+      ],
+      [
+       540,
+       900
+      ]
+     ],
+     "color": "#ffd23f",
+     "width": 8,
+     "t0": 0.6
+    },
+    {
+     "type": "label",
+     "x": 540,
+     "y": 960,
+     "text": "MIDTERMS",
+     "size": 64,
+     "color": "#ffd23f",
+     "t0": 0.75
+    },
+    {
+     "type": "number",
+     "x": 540,
+     "y": 1130,
+     "text": "4-YEAR TERM",
+     "size": 70,
+     "color": "white",
+     "t0": 1.45
+    },
+    {
+     "type": "caption",
+     "text": "*Halfway* through a president's",
+     "t0": 0.05,
+     "size": 46,
+     "y": 1450,
+     "dur": 0.2,
+     "t1": 1.3499999999999999,
+     "outDur": 0.08
+    },
+    {
+     "type": "caption",
+     "text": "*four-year* term,",
+     "t0": 1.45,
+     "size": 46,
+     "y": 1450,
+     "dur": 0.2
+    }
+   ]
+  },
+  {
+   "start": 10.1,
+   "end": 15.6,
+   "bg": "blueprint",
+   "elements": [
+    {
+     "type": "seats",
+     "x": 540,
+     "y": 720,
+     "r": 360,
+     "parties": [
+      [
+       435,
+       "#ffd23f"
+      ]
+     ],
+     "label": "HOUSE",
+     "fillDur": 0.9,
+     "t0": 0.15
+    },
+    {
+     "type": "number",
+     "x": 540,
+     "y": 810,
+     "countTo": 435,
+     "countDur": 0.9,
+     "size": 100,
+     "t0": 0.15
+    },
+    {
+     "type": "seats",
+     "x": 540,
+     "y": 1330,
+     "r": 280,
+     "parties": [
+      [
+       34,
+       "#ffd23f"
+      ],
+      [
+       66,
+       "#4d6f9c"
+      ]
+     ],
+     "label": "SENATE",
+     "fillDur": 0.8,
+     "t0": 2.65
+    },
+    {
+     "type": "number",
+     "x": 540,
+     "y": 1410,
+     "text": "\u2248 1/3",
+     "size": 90,
+     "t0": 3.1
+    },
+    {
+     "type": "caption",
+     "text": "all *435 seats* in the House",
+     "t0": 0.05,
+     "size": 46,
+     "y": 1600,
+     "dur": 0.2,
+     "t1": 2.55,
+     "outDur": 0.08
+    },
+    {
+     "type": "caption",
+     "text": "and about *a third* of the Senate",
+     "t0": 2.65,
+     "size": 46,
+     "y": 1600,
+     "dur": 0.2,
+     "t1": 3.9,
+     "outDur": 0.08
+    },
+    {
+     "type": "caption",
+     "text": "are up for *election*",
+     "t0": 4.0,
+     "size": 46,
+     "y": 1600,
+     "dur": 0.2
+    }
+   ]
+  },
+  {
+   "start": 15.6,
+   "end": 18.7,
+   "flash": true,
+   "map": "lakes",
+   "cam": {
+    "from": {
+     "fit": true
+    },
+    "to": {
+     "fit": true,
+     "zoom": 1.08
+    },
+    "dur": 3.1
+   },
+   "elements": [
+    {
+     "type": "region",
+     "set": "provinces",
+     "all": true,
+     "country": "USA",
+     "exclude": [
+      "Alaska",
+      "Hawaii"
+     ],
+     "style": "tint",
+     "opacity": 0.3,
+     "dur": 0.3
+    },
+    {
+     "type": "region",
+     "set": "provinces",
+     "names": [
+      "Wisconsin"
+     ],
+     "style": "solid",
+     "fill": "zoneBlue",
+     "opacity": 0.85,
+     "reveal": "pop",
+     "t0": 0.3
+    },
+    {
+     "type": "region",
+     "set": "provinces",
+     "names": [
+      "Michigan"
+     ],
+     "style": "solid",
+     "fill": "zoneRed",
+     "opacity": 0.85,
+     "reveal": "pop",
+     "t0": 0.43,
+     "sfx": false
+    },
+    {
+     "type": "region",
+     "set": "provinces",
+     "names": [
+      "Ohio"
+     ],
+     "style": "solid",
+     "fill": "zoneBlue",
+     "opacity": 0.85,
+     "reveal": "pop",
+     "t0": 0.56,
+     "sfx": false
+    },
+    {
+     "type": "region",
+     "set": "provinces",
+     "names": [
+      "Minnesota"
+     ],
+     "style": "solid",
+     "fill": "zoneRed",
+     "opacity": 0.85,
+     "reveal": "pop",
+     "t0": 0.69,
+     "sfx": false
+    },
+    {
+     "type": "region",
+     "set": "provinces",
+     "names": [
+      "Iowa"
+     ],
+     "style": "solid",
+     "fill": "zoneBlue",
+     "opacity": 0.85,
+     "reveal": "pop",
+     "t0": 0.8200000000000001,
+     "sfx": false
+    },
+    {
+     "type": "region",
+     "set": "provinces",
+     "names": [
+      "Pennsylvania"
+     ],
+     "style": "solid",
+     "fill": "zoneRed",
+     "opacity": 0.85,
+     "reveal": "pop",
+     "t0": 0.95,
+     "sfx": false
+    },
+    {
+     "type": "region",
+     "set": "provinces",
+     "names": [
+      "Michigan"
+     ],
+     "style": "solid",
+     "fill": "zoneBlue",
+     "opacity": 0.9,
+     "reveal": "wipeDown",
+     "dur": 0.35,
+     "t0": 2.38,
+     "sfx": false
+    },
+    {
+     "type": "region",
+     "set": "provinces",
+     "names": [
+      "Ohio"
+     ],
+     "style": "solid",
+     "fill": "zoneRed",
+     "opacity": 0.9,
+     "reveal": "wipeDown",
+     "dur": 0.35,
+     "t0": 2.46,
+     "sfx": false
+    },
+    {
+     "type": "region",
+     "set": "provinces",
+     "names": [
+      "Iowa"
+     ],
+     "style": "solid",
+     "fill": "zoneRed",
+     "opacity": 0.9,
+     "reveal": "wipeDown",
+     "dur": 0.35,
+     "t0": 2.6199999999999997,
+     "sfx": false
+    },
+    {
+     "type": "number",
+     "lon": -86.5,
+     "lat": 37.6,
+     "text": "FLIP!",
+     "size": 110,
+     "t0": 2.45
+    },
+    {
+     "type": "caption",
+     "text": "Now imagine just a *handful*",
+     "t0": 0.1,
+     "size": 46,
+     "y": 1540,
+     "dur": 0.2,
+     "t1": 1.75,
+     "outDur": 0.08
+    },
+    {
+     "type": "caption",
+     "text": "of close races *flip*",
+     "t0": 1.85,
+     "size": 46,
+     "y": 1540,
+     "dur": 0.2
+    }
+   ]
+  },
+  {
+   "start": 18.7,
+   "end": 23.1,
+   "bg": "blueprint",
+   "flash": true,
+   "elements": [
+    {
+     "type": "seats",
+     "x": 540,
+     "y": 760,
+     "r": 360,
+     "parties": [
+      [
+       220,
+       "blue"
+      ],
+      [
+       215,
+       "red"
+      ]
+     ],
+     "label": "HOUSE",
+     "fillDur": 0.5,
+     "t0": 0,
+     "t1": 1.0,
+     "outDur": 0.01
+    },
+    {
+     "type": "seats",
+     "x": 540,
+     "y": 760,
+     "r": 360,
+     "parties": [
+      [
+       212,
+       "blue"
+      ],
+      [
+       223,
+       "red"
+      ]
+     ],
+     "label": "HOUSE",
+     "fillDur": 0.01,
+     "dur": 0.01,
+     "t0": 1.0,
+     "sfx": "flip"
+    },
+    {
+     "type": "label",
+     "x": 540,
+     "y": 860,
+     "text": "218 = MAJORITY",
+     "size": 46,
+     "color": "#ffd23f",
+     "t0": 0.2
+    },
+    {
+     "type": "number",
+     "x": 820,
+     "y": 420,
+     "text": "NEW\nMAJORITY",
+     "size": 52,
+     "color": "red",
+     "t0": 1.1
+    },
+    {
+     "type": "box",
+     "x": 540,
+     "y": 1080,
+     "w": 420,
+     "text": "WHICH BILLS GET A VOTE",
+     "size": 28,
+     "fill": "#15418a",
+     "stroke": "#7fb2ff",
+     "t0": 2.5
+    },
+    {
+     "type": "icon",
+     "icon": "check",
+     "points": [
+      [
+       380,
+       1240
+      ],
+      [
+       700,
+       1240
+      ]
+     ],
+     "size": 90,
+     "t0": 2.9,
+     "stagger": 0.25
+    },
+    {
+     "type": "icon",
+     "icon": "cross",
+     "at": {
+      "x": 540,
+      "y": 1240
+     },
+     "size": 90,
+     "t0": 3.0
+    },
+    {
+     "type": "caption",
+     "text": "Suddenly, a *different party*",
+     "t0": 0.05,
+     "size": 46,
+     "y": 1480,
+     "dur": 0.2,
+     "t1": 1.2,
+     "outDur": 0.08
+    },
+    {
+     "type": "caption",
+     "text": "could *control the House*",
+     "t0": 1.3,
+     "size": 46,
+     "y": 1480,
+     "dur": 0.2,
+     "t1": 2.3,
+     "outDur": 0.08
+    },
+    {
+     "type": "caption",
+     "text": "and decide which *bills* get a vote",
+     "t0": 2.4,
+     "size": 46,
+     "y": 1480,
+     "dur": 0.2
+    }
+   ]
+  },
+  {
+   "start": 23.1,
+   "end": 28.15,
+   "bg": "blueprint",
+   "elements": [
+    {
+     "type": "seats",
+     "x": 540,
+     "y": 700,
+     "r": 330,
+     "parties": [
+      [
+       51,
+       "blue"
+      ],
+      [
+       49,
+       "red"
+      ]
+     ],
+     "label": "SENATE",
+     "fillDur": 0.4,
+     "t0": 0,
+     "t1": 0.85,
+     "outDur": 0.01
+    },
+    {
+     "type": "seats",
+     "x": 540,
+     "y": 700,
+     "r": 330,
+     "parties": [
+      [
+       49,
+       "blue"
+      ],
+      [
+       51,
+       "red"
+      ]
+     ],
+     "label": "SENATE",
+     "fillDur": 0.01,
+     "dur": 0.01,
+     "t0": 0.85,
+     "sfx": "flip"
+    },
+    {
+     "type": "number",
+     "x": 810,
+     "y": 380,
+     "text": "+2",
+     "size": 120,
+     "color": "red",
+     "t0": 0.85
+    },
+    {
+     "type": "box",
+     "x": 540,
+     "y": 900,
+     "w": 520,
+     "text": "WHO VOTES ON\nTHE PRESIDENT'S PICKS",
+     "h": 110,
+     "size": 28,
+     "fill": "#15418a",
+     "stroke": "#7fb2ff",
+     "t0": 1.75
+    },
+    {
+     "type": "icon",
+     "icon": "gavel",
+     "at": {
+      "x": 540,
+      "y": 1130
+     },
+     "size": 170,
+     "t0": 3.4,
+     "sfx": "impact",
+     "sfxVol": 0.5
+    },
+    {
+     "type": "label",
+     "x": 540,
+     "y": 1270,
+     "text": "FEDERAL JUDGES",
+     "size": 56,
+     "color": "#ffd23f",
+     "t0": 3.6
+    },
+    {
+     "type": "caption",
+     "text": "If the Senate *flips two*,",
+     "t0": 0.05,
+     "size": 46,
+     "y": 1480,
+     "dur": 0.2,
+     "t1": 1.5,
+     "outDur": 0.08
+    },
+    {
+     "type": "caption",
+     "text": "that changes *who votes*",
+     "t0": 1.6,
+     "size": 46,
+     "y": 1480,
+     "dur": 0.2,
+     "t1": 2.75,
+     "outDur": 0.08
+    },
+    {
+     "type": "caption",
+     "text": "on the president's picks for *federal judges*",
+     "t0": 2.85,
+     "size": 40,
+     "y": 1480,
+     "dur": 0.2
+    }
+   ]
+  },
+  {
+   "start": 28.15,
+   "end": 31.4,
+   "flash": true,
+   "map": "na",
+   "cam": {
+    "from": {
+     "lon": -95,
+     "lat": 38.5,
+     "span": 54
+    },
+    "to": {
+     "lon": -95,
+     "lat": 38.5,
+     "span": 46
+    }
+   },
+   "elements": [
+    {
+     "type": "zones",
+     "items": [
+      {
+       "names": [
+        "Alabama"
+       ],
+       "fill": "zoneRed"
+      },
+      {
+       "names": [
+        "Arizona"
+       ],
+       "fill": "zoneRed"
+      },
+      {
+       "names": [
+        "Arkansas"
+       ],
+       "fill": "zoneBlue"
+      },
+      {
+       "names": [
+        "California"
+       ],
+       "fill": "zoneRed"
+      },
+      {
+       "names": [
+        "Colorado"
+       ],
+       "fill": "zoneRed"
+      },
+      {
+       "names": [
+        "Connecticut"
+       ],
+       "fill": "zoneRed"
+      },
+      {
+       "names": [
+        "Delaware"
+       ],
+       "fill": "zoneBlue"
+      },
+      {
+       "names": [
+        "District of Columbia"
+       ],
+       "fill": "zoneRed"
+      },
+      {
+       "names": [
+        "Florida"
+       ],
+       "fill": "zoneBlue"
+      },
+      {
+       "names": [
+        "Georgia"
+       ],
+       "fill": "zoneRed"
+      },
+      {
+       "names": [
+        "Idaho"
+       ],
+       "fill": "zoneBlue"
+      },
+      {
+       "names": [
+        "Illinois"
+       ],
+       "fill": "zoneBlue"
+      },
+      {
+       "names": [
+        "Indiana"
+       ],
+       "fill": "zoneRed"
+      },
+      {
+       "names": [
+        "Iowa"
+       ],
+       "fill": "zoneBlue"
+      },
+      {
+       "names": [
+        "Kansas"
+       ],
+       "fill": "zoneRed"
+      },
+      {
+       "names": [
+        "Kentucky"
+       ],
+       "fill": "zoneRed"
+      },
+      {
+       "names": [
+        "Louisiana"
+       ],
+       "fill": "zoneBlue"
+      },
+      {
+       "names": [
+        "Maine"
+       ],
+       "fill": "zoneBlue"
+      },
+      {
+       "names": [
+        "Maryland"
+       ],
+       "fill": "zoneRed"
+      },
+      {
+       "names": [
+        "Massachusetts"
+       ],
+       "fill": "zoneRed"
+      },
+      {
+       "names": [
+        "Michigan"
+       ],
+       "fill": "zoneBlue"
+      },
+      {
+       "names": [
+        "Minnesota"
+       ],
+       "fill": "zoneRed"
+      },
+      {
+       "names": [
+        "Mississippi"
+       ],
+       "fill": "zoneRed"
+      },
+      {
+       "names": [
+        "Missouri"
+       ],
+       "fill": "zoneRed"
+      },
+      {
+       "names": [
+        "Montana"
+       ],
+       "fill": "zoneBlue"
+      },
+      {
+       "names": [
+        "Nebraska"
+       ],
+       "fill": "zoneRed"
+      },
+      {
+       "names": [
+        "Nevada"
+       ],
+       "fill": "zoneRed"
+      },
+      {
+       "names": [
+        "New Hampshire"
+       ],
+       "fill": "zoneRed"
+      },
+      {
+       "names": [
+        "New Jersey"
+       ],
+       "fill": "zoneRed"
+      },
+      {
+       "names": [
+        "New Mexico"
+       ],
+       "fill": "zoneBlue"
+      },
+      {
+       "names": [
+        "New York"
+       ],
+       "fill": "zoneRed"
+      },
+      {
+       "names": [
+        "North Carolina"
+       ],
+       "fill": "zoneRed"
+      },
+      {
+       "names": [
+        "North Dakota"
+       ],
+       "fill": "zoneRed"
+      },
+      {
+       "names": [
+        "Ohio"
+       ],
+       "fill": "zoneRed"
+      },
+      {
+       "names": [
+        "Oklahoma"
+       ],
+       "fill": "zoneRed"
+      },
+      {
+       "names": [
+        "Oregon"
+       ],
+       "fill": "zoneBlue"
+      },
+      {
+       "names": [
+        "Pennsylvania"
+       ],
+       "fill": "zoneRed"
+      },
+      {
+       "names": [
+        "Rhode Island"
+       ],
+       "fill": "zoneBlue"
+      },
+      {
+       "names": [
+        "South Carolina"
+       ],
+       "fill": "zoneRed"
+      },
+      {
+       "names": [
+        "South Dakota"
+       ],
+       "fill": "zoneRed"
+      },
+      {
+       "names": [
+        "Tennessee"
+       ],
+       "fill": "zoneBlue"
+      },
+      {
+       "names": [
+        "Texas"
+       ],
+       "fill": "zoneRed"
+      },
+      {
+       "names": [
+        "Utah"
+       ],
+       "fill": "zoneRed"
+      },
+      {
+       "names": [
+        "Vermont"
+       ],
+       "fill": "zoneRed"
+      },
+      {
+       "names": [
+        "Virginia"
+       ],
+       "fill": "zoneBlue"
+      },
+      {
+       "names": [
+        "Washington"
+       ],
+       "fill": "zoneBlue"
+      },
+      {
+       "names": [
+        "West Virginia"
+       ],
+       "fill": "zoneRed"
+      },
+      {
+       "names": [
+        "Wisconsin"
+       ],
+       "fill": "zoneRed"
+      },
+      {
+       "names": [
+        "Wyoming"
+       ],
+       "fill": "zoneRed"
+      }
+     ],
+     "style": "solid",
+     "labels": false,
+     "reveal": "pop",
+     "stagger": 0.025,
+     "itemStyle": {
+      "opacity": 0.82,
+      "outlineWidth": 1.4
+     },
+     "t0": 0.4,
+     "sfx": false
+    },
+    {
+     "type": "icon",
+     "icon": "dot",
+     "points": [],
+     "sfx": "riser",
+     "sfxVol": 0.5,
+     "t0": 0.4
+    },
+    {
+     "type": "tag",
+     "text": "MIDTERM RESULTS (EXAMPLE)",
+     "x": 60,
+     "y": 160,
+     "size": 36,
+     "t0": 0.3
+    },
+    {
+     "type": "caption",
+     "text": "So the next time you see",
+     "t0": 0.05,
+     "size": 46,
+     "y": 1540,
+     "dur": 0.2,
+     "t1": 1.15,
+     "outDur": 0.08
+    },
+    {
+     "type": "caption",
+     "text": "a map of *midterm results*,",
+     "t0": 1.25,
+     "size": 46,
+     "y": 1540,
+     "dur": 0.2
+    }
+   ]
+  },
+  {
+   "start": 31.4,
+   "end": 32.45,
+   "flash": true,
+   "map": "lakes",
+   "cam": {
+    "from": {
+     "fit": true
+    },
+    "to": {
+     "lon": -85.6,
+     "lat": 41.0,
+     "span": 10
+    },
+    "ease": "out"
+   },
+   "elements": [
+    {
+     "type": "region",
+     "set": "provinces",
+     "names": [
+      "Illinois",
+      "Indiana",
+      "Ohio",
+      "Michigan",
+      "Wisconsin"
+     ],
+     "style": "tint",
+     "opacity": 0.3,
+     "dur": 0.4
+    },
+    {
+     "type": "caption",
+     "text": "*zoom in.*",
+     "t0": 0.05,
+     "size": 64,
+     "y": 1540,
+     "dur": 0.2
+    }
+   ]
+  },
+  {
+   "start": 32.45,
+   "end": 36.6,
+   "fadeOut": 0.6,
+   "map": "lakes",
+   "cam": {
+    "from": {
+     "lon": -85.6,
+     "lat": 41.0,
+     "span": 10
+    },
+    "to": {
+     "lon": -85.0,
+     "lat": 40.6,
+     "span": 11
+    },
+    "dur": 4.15
+   },
+   "elements": [
+    {
+     "type": "region",
+     "set": "provinces",
+     "names": [
+      "Illinois",
+      "Indiana",
+      "Ohio",
+      "Michigan",
+      "Wisconsin"
+     ],
+     "style": "tint",
+     "opacity": 0.3,
+     "dur": 0
+    },
+    {
+     "type": "area",
+     "points": [
+      [
+       -87.1099,
+       41.85
+      ],
+      [
+       -87.2456,
+       42.123
+      ],
+      [
+       -87.6227,
+       42.1418
+      ],
+      [
+       -87.9469,
+       42.3013
+      ],
+      [
+       -88.261,
+       42.1266
+      ],
+      [
+       -88.2376,
+       41.85
+      ],
+      [
+       -88.1579,
+       41.6292
+      ],
+      [
+       -87.9712,
+       41.3429
+      ],
+      [
+       -87.5984,
+       41.5024
+      ],
+      [
+       -87.3487,
+       41.6328
+      ]
+     ],
+     "smooth": true,
+     "style": "glow",
+     "fill": "fire",
+     "glowSize": 18,
+     "outline": "#ffe08a",
+     "outlineWidth": 3,
+     "t0": 0.1,
+     "label": "DISTRICT",
+     "labelPill": true,
+     "labelAt": [
+      -87.75,
+      42.7
+     ],
+     "labelStyle": {
+      "size": 26,
+      "bg": "fire"
+     }
+    },
+    {
+     "type": "area",
+     "points": [
+      [
+       -82.5121,
+       42.4
+      ],
+      [
+       -82.7223,
+       42.6295
+      ],
+      [
+       -83.007,
+       42.725
+      ],
+      [
+       -83.3774,
+       42.9169
+      ],
+      [
+       -83.5624,
+       42.6213
+      ],
+      [
+       -83.6496,
+       42.4
+      ],
+      [
+       -83.6425,
+       42.1357
+      ],
+      [
+       -83.3585,
+       41.9261
+      ],
+      [
+       -83.0259,
+       42.118
+      ],
+      [
+       -82.6422,
+       42.1275
+      ]
+     ],
+     "smooth": true,
+     "style": "glow",
+     "fill": "fire",
+     "glowSize": 18,
+     "outline": "#ffe08a",
+     "outlineWidth": 3,
+     "t0": 0.30000000000000004,
+     "label": "DISTRICT",
+     "labelPill": true,
+     "labelAt": [
+      -83.15,
+      43.25
+     ],
+     "labelStyle": {
+      "size": 26,
+      "bg": "fire"
+     }
+    },
+    {
+     "type": "area",
+     "points": [
+      [
+       -82.3719,
+       39.96
+      ],
+      [
+       -82.7039,
+       40.1249
+      ],
+      [
+       -82.7937,
+       40.4466
+      ],
+      [
+       -83.1757,
+       40.3746
+      ],
+      [
+       -83.4068,
+       40.1865
+      ],
+      [
+       -83.4678,
+       39.96
+      ],
+      [
+       -83.5905,
+       39.6312
+      ],
+      [
+       -83.1324,
+       39.6477
+      ],
+      [
+       -82.8371,
+       39.5757
+      ],
+      [
+       -82.5202,
+       39.6928
+      ]
+     ],
+     "smooth": true,
+     "style": "glow",
+     "fill": "fire",
+     "glowSize": 18,
+     "outline": "#ffe08a",
+     "outlineWidth": 3,
+     "t0": 0.5,
+     "label": "DISTRICT",
+     "labelPill": true,
+     "labelAt": [
+      -83.0,
+      40.81
+     ],
+     "labelStyle": {
+      "size": 26,
+      "bg": "fire"
+     }
+    },
+    {
+     "type": "arrow",
+     "from": [
+      -82.4,
+      39.6
+     ],
+     "to": [
+      -81.3,
+      38.75
+     ],
+     "color": "white",
+     "width": 8,
+     "bend": -0.25,
+     "t0": 1.6,
+     "drawDur": 0.6
+    },
+    {
+     "type": "label",
+     "lon": -82.4,
+     "lat": 38.05,
+     "text": "WASHINGTON",
+     "size": 44,
+     "color": "#ffd23f",
+     "t0": 1.9
+    },
+    {
+     "type": "number",
+     "x": 540,
+     "y": 470,
+     "text": "NEXT 2 YEARS",
+     "size": 96,
+     "t0": 2.9
+    },
+    {
+     "type": "caption",
+     "text": "A *few districts* can change",
+     "t0": 0.05,
+     "size": 46,
+     "y": 1540,
+     "dur": 0.2,
+     "t1": 1.3499999999999999,
+     "outDur": 0.08
+    },
+    {
+     "type": "caption",
+     "text": "what happens in *Washington*",
+     "t0": 1.45,
+     "size": 46,
+     "y": 1540,
+     "dur": 0.2,
+     "t1": 2.1999999999999997,
+     "outDur": 0.08
+    },
+    {
+     "type": "caption",
+     "text": "for the *next two years*",
+     "t0": 2.3,
+     "size": 46,
+     "y": 1540,
+     "dur": 0.2
+    }
+   ]
+  }
+ ]
+}

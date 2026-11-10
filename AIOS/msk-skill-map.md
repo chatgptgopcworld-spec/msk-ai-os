@@ -2,7 +2,7 @@
 type: schema
 role: skill-map
 created: 2026-10-22
-updated: 2026-10-22
+updated: 2026-11-10
 ---
 # MSK AI OS: skill map
 
@@ -54,6 +54,11 @@ A project's own `CLAUDE.md` may add or replace steps inside that project.
 | Skill | Use when | File |
 |---|---|---|
 | yt-transcript | a YouTube video to study or ingest | [[msk-skill-yt-transcript]] |
+
+## Media
+| Skill | Use when | File |
+|---|---|---|
+| kaz-map-animation | a map animation, geography/politics explainer short, or map images to animate | [[msk-skill-kaz-map-animation]] |
 
 ## Adding a skill
 1. Do the task with the AI until the result is right.

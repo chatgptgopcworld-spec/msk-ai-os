@@ -1,0 +1,73 @@
+{
+  "title": "Kaz Map Animation demo",
+  "width": 1080, "height": 1920, "fps": 30,
+  "projection": "equirect",
+  "basemap": { "style": "satellite" },
+  "shots": [
+    { "start": 0, "end": 3.2, "fadeIn": 0.4,
+      "cam": { "from": { "lon": -100, "lat": 38, "span": 150 }, "to": { "lon": -150, "lat": 25, "span": 95 } },
+      "elements": [
+        { "type": "title", "text": "THE REAL HAWAII", "t0": 0.2, "y": 700 },
+        { "type": "caption", "text": "We usually see *Hawaii*", "t0": 0.3 },
+        { "type": "dot", "lon": -157.5, "lat": 20.6, "color": "yellow", "ping": true, "t0": 1.4 }
+      ] },
+    { "start": 3.2, "end": 6.4,
+      "cam": { "from": { "lon": -157.4, "lat": 20.6, "span": 9 }, "to": { "lon": -157.4, "lat": 20.4, "span": 7.5 } },
+      "elements": [
+        { "type": "region", "set": "states", "names": ["Hawaii"], "fill": "yellow", "opacity": 0.35, "glow": true, "t0": 0.1 },
+        { "type": "label", "lon": -158.6, "lat": 22.6, "text": "Hawaii", "size": 64, "color": "#7fd3ff", "t0": 0.3 },
+        { "type": "circle", "lon": -155.5, "lat": 19.6, "r": 150, "t0": 1.0, "label": "Hawai'i", "labelDy": 190 },
+        { "type": "icon", "icon": "question", "points": [[-159.5, 21.9], [-157, 21.1], [-156.3, 20.8]], "color": "white", "size": 70, "t0": 1.8, "stagger": 0.15 },
+        { "type": "caption", "text": "like this: 8 main islands", "t0": 0.1 }
+      ] },
+    { "start": 6.4, "end": 10.4, "flash": true,
+      "cam": { "from": { "lon": -158, "lat": 21, "span": 14 }, "to": { "lon": -167, "lat": 24.5, "span": 34 }, "dur": 1.6 },
+      "elements": [
+        { "type": "path", "points": [[-155.5, 19.5], [-156.4, 20.8], [-157.9, 21.4], [-159.5, 22], [-161.9, 23.1], [-164.7, 23.6], [-166.2, 23.8], [-168, 24.9], [-170.6, 25.5], [-171.7, 25.8], [-173.9, 26.1], [-175.8, 27.8], [-177.4, 28.2], [-178.3, 28.4]], "color": "#ffb02e", "width": 9, "t0": 0.8, "drawDur": 1.4 },
+        { "type": "number", "lon": -169.5, "lat": 30, "text": "137 islands", "size": 80, "t0": 1.9 },
+        { "type": "ruler", "from": [-156, 17.5], "to": [-178.5, 26], "text": "1,500 mi", "t0": 2.6 },
+        { "type": "caption", "text": "but the state stretches *1,500 miles*", "t0": 0.2 }
+      ] },
+    { "start": 10.4, "end": 13.6,
+      "cam": { "lon": -97, "lat": 39, "span": 62 },
+      "elements": [
+        { "type": "region", "set": "states", "names": ["New York"], "style": "solid", "fill": "orange", "t0": 0.2, "label": "New York", "labelDy": -150 },
+        { "type": "region", "set": "states", "names": ["Wyoming"], "style": "solid", "fill": "zoneRed", "t0": 0.7, "label": true, "labelDy": -70 },
+        { "type": "number", "lon": -75.5, "lat": 43.2, "countTo": 26, "size": 90, "t0": 1.2, "countDur": 0.8 },
+        { "type": "number", "lon": -107.5, "lat": 43, "text": "1", "size": 90, "t0": 1.4 },
+        { "type": "icon", "icon": "person", "points": [[-80, 35.5], [-78, 35.5], [-76, 35.5], [-74, 35.5]], "color": "white", "size": 46, "t0": 1.8 },
+        { "type": "caption", "text": "New York gets *26* seats, Wyoming gets *1*", "t0": 0.2 }
+      ] },
+    { "start": 13.6, "end": 16.8,
+      "cam": { "from": { "lon": -118, "lat": 50, "span": 48 }, "to": { "lon": -121, "lat": 49, "span": 30 } },
+      "elements": [
+        { "type": "meridians", "lons": [-123.1, -122.3], "t0": 0.2 },
+        { "type": "label", "x": 540, "y": 520, "text": "1° apart", "size": 44, "color": "yellow", "t0": 0.6 },
+        { "type": "pin", "lon": -123.1, "lat": 49.28, "label": "Vancouver", "color": "red", "labelStyle": { "anchor": "end" }, "t0": 0.6 },
+        { "type": "pin", "lon": -122.33, "lat": 47.6, "label": "Seattle", "color": "blue", "labelStyle": { "anchor": "start" }, "t0": 0.9 },
+        { "type": "timeTag", "lon": -114, "lat": 51, "text": "10 AM", "t0": 1.4 },
+        { "type": "icon", "icon": "lock", "points": [[-114, 55], [-106, 54]], "color": "#e8473c", "size": 60, "t0": 1.8 },
+        { "type": "caption", "text": "same longitude, different time", "t0": 0.2 }
+      ] },
+    { "start": 16.8, "end": 20.4, "bg": { "type": "section", "plate": "PACIFIC PLATE", "islands": [{ "x": 0.15, "name": "Kaua'i", "w": 0.16 }, { "x": 0.42, "name": "O'ahu", "h": 0.04 }, { "x": 0.7, "name": "Maui" }, { "x": 0.88, "name": "Hawai'i", "h": 0.07 }] },
+      "elements": [
+        { "type": "plume", "x": 900, "top": 830, "t0": 0.2 },
+        { "type": "arrow", "from": { "x": 760, "y": 1000 }, "to": { "x": 320, "y": 1000 }, "bend": 0, "t0": 1.2 },
+        { "type": "label", "x": 900, "y": 1300, "text": "The Hawaiian\nHotspot", "size": 44, "t0": 0.8 },
+        { "type": "caption", "text": "the plate moves, the *hotspot* stays", "y": 1500, "t0": 0.2 }
+      ] },
+    { "start": 20.4, "end": 24.5, "bg": "blueprint", "fadeOut": 0.5,
+      "elements": [
+        { "type": "box", "x": 540, "y": 330, "w": 380, "text": "CONGRESS", "fill": "#15418a", "t0": 0.1 },
+        { "type": "line", "points": [[540, 375], [540, 430], [300, 430], [300, 480]], "t0": 0.4 },
+        { "type": "line", "points": [[540, 430], [780, 430], [780, 480]], "t0": 0.4 },
+        { "type": "box", "x": 300, "y": 530, "w": 360, "text": "HOUSE OF\nREPRESENTATIVES", "size": 28, "t0": 0.6 },
+        { "type": "box", "x": 780, "y": 530, "w": 300, "text": "SENATE", "t0": 0.8 },
+        { "type": "people", "x": 300, "y": 760, "count": 60, "cols": 12, "size": 32, "t0": 1.0 },
+        { "type": "people", "x": 780, "y": 720, "count": 20, "cols": 8, "size": 32, "t0": 1.2 },
+        { "type": "number", "x": 300, "y": 960, "countTo": 435, "t0": 1.2 },
+        { "type": "number", "x": 780, "y": 960, "countTo": 100, "t0": 1.4 },
+        { "type": "seats", "x": 540, "y": 1450, "r": 360, "parties": [[213, "blue"], [222, "red"]], "label": "HOUSE", "t0": 1.8 }
+      ] }
+  ]
+}
