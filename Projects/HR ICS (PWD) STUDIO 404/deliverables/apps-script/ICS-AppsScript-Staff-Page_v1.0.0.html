@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ICS Hiring Sheet</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#14161a; --muted:#5d6470; --line:#e3e6ea; --bg:#f3f4f6; --card:#fff;
+  --red:#c00d0d; --blue:#0b5cad; --blue-soft:#e8f1fb; --red-soft:#fdecec;
+  --green:#137a3f; --green-soft:#e6f4ec; --amber:#a35d00; --amber-soft:#fff3e0;
+  --radius:14px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 "Inter",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px 48px}
+/* header */
+.hero{background:#000;color:#fff;position:relative;overflow:hidden}
+.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;pointer-events:none}
+.hero::before{width:520px;height:220px;right:-140px;top:-110px;border:14px solid var(--red);transform:rotate(-14deg);opacity:.85}
+.hero::after{width:440px;height:180px;right:-90px;top:-80px;border:10px solid var(--blue);transform:rotate(-14deg);opacity:.9}
+.hero-in{max-width:760px;margin:0 auto;padding:28px 16px 30px;position:relative;z-index:1;display:flex;gap:18px;align-items:center}
+.hero img{width:96px;height:auto;border-radius:10px;flex:none}
+.hero .org{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#c9ced6;margin:0 0 4px}
+.hero h1{margin:0;font-size:26px;line-height:1.2;font-weight:800}
+.hero .sub{margin:6px 0 0;color:#d8dce2;font-size:15px}
+.stripe{height:6px;background:linear-gradient(90deg,var(--red) 0 50%,var(--blue) 50% 100%)}
+/* partner strip */
+.partners{background:#fff;border-bottom:1px solid var(--line)}
+.partners-in{max-width:760px;margin:0 auto;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.partners .lbl{font-size:13px;color:var(--ink);font-weight:700;letter-spacing:.03em;text-transform:uppercase;margin-right:auto;line-height:1.3;max-width:170px}
+.partners .logos{display:flex;gap:14px;align-items:center}
+.partners img{height:50px;width:auto;display:block}
+.partners .logos{gap:20px}
+.partners img.tdp{height:36px}
+@media (max-width:560px){.partners img.tdp{height:30px}.partners .lbl{max-width:none}}
+.qr{display:flex;align-items:center;gap:10px;padding-left:14px;border-left:1px solid var(--line)}
+.qr img{height:84px;min-width:84px;object-fit:contain;width:auto;border:1px solid var(--line);border-radius:6px;padding:3px;background:#fff}
+.qr span{font-size:13px;line-height:1.3;color:var(--muted);font-weight:600}
+.qr b{display:block;color:var(--ink);font-size:13px}
+/* cards */
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px;margin-top:16px}
+.intro{border-top:6px solid var(--red)}
+.intro h2{margin:0 0 6px;font-size:19px}
+.intro p{margin:0 0 8px;color:var(--muted)}
+.intro ul{margin:8px 0 0;padding-left:20px;color:var(--muted)}
+.section-title{margin:28px 4px 0;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--blue)}
+.q label.qt,.q .qt{display:block;font-weight:650;font-size:16px}
+.req{color:var(--red);margin-left:2px}
+.hint{display:block;color:var(--muted);font-size:14px;margin:2px 0 12px;font-style:italic}
+input[type=text],input[type=tel],input[type=date],input[type=url],input[type=email],select,textarea{
+  width:100%;font:inherit;padding:12px 14px;border:1.5px solid #cfd4da;border-radius:10px;background:#fff;color:var(--ink)}
+textarea{min-height:110px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(11,92,173,.15)}
+.opts{display:grid;gap:8px}
+.opts.two{grid-template-columns:1fr 1fr}
+.opt{display:flex;align-items:center;gap:10px;padding:11px 14px;border:1.5px solid #dde1e6;border-radius:10px;cursor:pointer;min-height:48px;transition:background .15s,border-color .15s}
+.opt:hover{border-color:#b9c1ca}
+.opt input{accent-color:var(--blue);width:18px;height:18px;margin:0;flex:none}
+.opt:has(input:checked){border-color:var(--blue);background:var(--blue-soft)}
+.opt small{display:block;color:var(--muted);font-size:13px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:inherit;font-weight:700;border:0;border-radius:10px;padding:14px 22px;cursor:pointer;min-height:48px}
+.btn-primary{background:var(--red);color:#fff}
+.btn-primary:hover{background:#a20b0b}
+.btn-ghost{background:transparent;color:var(--muted)}
+.actions{display:flex;justify-content:space-between;align-items:center;margin-top:20px;gap:12px;flex-wrap:wrap}
+.foot{text-align:center;color:var(--muted);font-size:13px;margin-top:28px}
+.mock-note{background:#fffbe6;border:1px dashed #d9b400;color:#6b5600;border-radius:10px;padding:10px 14px;font-size:14px;margin-top:16px}
+.pill{display:inline-block;font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px}
+.pill.g{background:var(--green-soft);color:var(--green)}
+.pill.a{background:var(--amber-soft);color:var(--amber)}
+.pill.r{background:var(--red-soft);color:var(--red)}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);background:#fafbfc}
+.tbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 -4px}
+@media (max-width:560px){
+  .hero-in{flex-direction:column;align-items:flex-start;gap:12px;padding-top:22px}
+  .hero img{width:80px}
+  .hero::before{width:360px;height:150px;right:-170px;top:-70px;border-width:10px}
+  .hero::after{width:300px;height:120px;right:-140px;top:-50px;border-width:7px}
+  .hero h1{font-size:22px}
+  .opts.two{grid-template-columns:1fr}
+  .partners .lbl{width:100%}
+  .partners img{height:42px}
+  .qr img{height:76px;min-width:76px}
+  .qr{border-left:0;padding-left:0;width:100%}
+  .card{padding:16px}
+}
+
+.wrap{max-width:1100px}
+.hero-in{max-width:1100px;padding:20px 16px 22px}
+.hero img{width:64px}
+.hero h1{font-size:22px}
+.partners-in{max-width:1100px}
+.sum{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:16px}
+.stat{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px}
+.stat small{display:block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.stat b{display:block;min-width:0;font-size:30px;line-height:1.2;font-weight:800}
+.stat.t{border-top:5px solid var(--ink)}.stat.g{border-top:5px solid var(--green)}.stat.a{border-top:5px solid #e08a00}.stat.r{border-top:5px solid var(--red)}.stat.n{border-top:5px solid var(--blue)}
+.stat.g b{color:var(--green)}.stat.a b{color:var(--amber)}.stat.r b{color:var(--red)}.stat.n b{color:var(--blue)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0 10px;align-items:center}
+.tab{font:inherit;font-weight:700;font-size:14px;border:1.5px solid #cfd4da;background:#fff;border-radius:999px;padding:8px 16px;cursor:pointer;min-height:40px}
+.tab span{opacity:.65;margin-left:4px;font-weight:600}
+.tab.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.tab[data-f=Shortlist].on{background:var(--green);border-color:var(--green)}
+.tab[data-f=Maybe].on{background:#e08a00;border-color:#e08a00}
+.tab[data-f=Reject].on{background:var(--red);border-color:var(--red)}
+.showing{margin-left:auto;font-size:14px;color:var(--muted)}
+.sheet{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.sheet .tbl-wrap{margin:0;max-height:560px;overflow:auto}
+.sheet table{min-width:980px}
+.sheet th{position:sticky;top:0;z-index:1;white-space:nowrap}
+.sheet td{vertical-align:middle}
+.sheet tr.new td:first-child{box-shadow:inset 4px 0 0 var(--blue)}
+.sc{font-weight:800}
+.wa{display:inline-flex;align-items:center;gap:6px;background:#1fa35a;color:#fff;text-decoration:none;font-weight:700;font-size:13px;padding:8px 12px;border-radius:8px;white-space:nowrap}
+.wa.m{background:#e08a00}.wa.r{background:#6b7280}
+.wa:hover{filter:brightness(.92)}
+.nt{font-size:12px;color:var(--muted)}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.tpl h3{margin:0 0 6px;font-size:16px;display:flex;gap:8px;align-items:center}
+.tpl textarea{min-height:250px;font-size:14px;line-height:1.45;font-family:inherit}
+.fields{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:12px}
+.fields label{font-size:13px;font-weight:700;display:block;margin-bottom:4px}
+.fields input{padding:10px 12px}
+.colnote{background:var(--blue-soft);border-radius:10px;padding:12px 14px;font-size:14px;margin-top:14px;color:#0a3d75}
+code{overflow-wrap:anywhere;word-break:break-word;background:#eef0f3;border-radius:5px;padding:1px 5px;font-size:13px}
+body{overflow-x:hidden}.tbl-wrap,.sheet{max-width:100%}
+@media (max-width:900px){.sum{grid-template-columns:repeat(2,1fr)}.cols{grid-template-columns:1fr}.fields{grid-template-columns:1fr 1fr}.stat.t{grid-column:1/-1}}
+@media (max-width:560px){.hero-in{flex-direction:row;align-items:center}.stat{padding:12px}.fields{grid-template-columns:1fr}.showing{margin-left:0;width:100%}}
+.err{background:var(--red-soft);color:var(--red);border:1.5px solid #f3b9b9;border-radius:10px;padding:12px 14px;margin-top:16px;font-weight:600}
+.navs{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.navl{display:inline-flex;align-items:center;gap:6px;font:inherit;font-size:14px;font-weight:700;color:var(--blue);text-decoration:none;background:var(--blue-soft);border:1.5px solid #bcd6f0;border-radius:10px;padding:8px 12px;cursor:pointer;min-height:40px}
+.nt a{color:var(--blue);font-weight:700;text-decoration:none}
+.empty{padding:28px 16px;text-align:center;color:var(--muted)}
+.savebar{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:12px}
+.btn-dark{background:var(--ink);color:#fff}
+#app{display:none}
+</style>
+</head>
+<body>
+<header class="hero"><div class="hero-in">
+  <img src="{{ICS}}" alt="ICS logo">
+  <div><p class="org">ICS [PWD] Studio 404 · HR only</p><h1>Hiring Sheet</h1>
+  <p class="sub">Live list of every application. Fills itself from the application form.</p></div>
+</div><div class="stripe"></div></header>
+<div class="partners"><div class="partners-in">
+  <span class="lbl">Registered by Government of Pakistan</span>
+  <div class="logos"><img src="{{PSEB}}" alt="PSEB"><img class="tdp" src="{{TDP}}" alt="Tech Destination Pakistan"><img src="{{DP}}" alt="Digital Pakistan"></div>
+  <div class="qr"><img src="{{QR}}" alt="PSEB registration QR code"><span><b>Scan to verify</b>PSEB registration</span></div>
+</div></div>
+
+<main class="wrap">
+  <div class="card intro" id="pinCard">
+    <h2>Staff only</h2>
+    <p>Enter the staff PIN to open the hiring list.</p>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:10px">
+      <input id="pin" type="password" inputmode="numeric" autocomplete="off" placeholder="6-digit PIN" style="max-width:220px">
+      <button class="btn btn-primary" id="pinGo" type="button">Open</button>
+    </div>
+    <div id="pinErr" class="err" style="display:none"></div>
+  </div>
+  <div id="app">
+  <div class="navs">
+    <button class="navl" type="button" id="refresh">↻ Refresh</button>
+    <a class="navl" id="evLink" href="{{APP_URL}}?page=eval" target="_top">📝 Interview Evaluation</a>
+    <a class="navl" id="sheetLink" href="#" target="_blank" rel="noopener">📊 Open Google Sheet</a>
+    <a class="navl" href="{{APP_URL}}" target="_blank" rel="noopener">📄 Application form</a>
+  </div>
+
+  <p class="section-title">1 · Summary (top of the Sheet)</p>
+  <div class="sum" id="sum"></div>
+
+  <p class="section-title">2 · All applications</p>
+  <div class="tabs" id="tabs"></div>
+  <div class="sheet"><div class="tbl-wrap"><table>
+    <thead><tr><th>#</th><th>Received</th><th>Name</th><th>City / area</th><th>Distance</th><th>Score</th><th>Result</th><th>Why</th><th>Send WhatsApp</th></tr></thead>
+    <tbody id="rows"></tbody></table></div></div>
+  <p class="nt" style="margin-top:8px">Blue edge = received today. “Why” shows the reason for Maybe and Reject, such as double job. The All tab is the default, so the full list is always one tap away. Result: Shortlist 75–100, Maybe 50–74, Reject below 50.</p>
+
+  <p class="section-title">3 · One-click WhatsApp</p>
+  <div class="card">
+    <h2 style="margin:0 0 6px;font-size:19px">How the WhatsApp column works</h2>
+    <p style="margin:0;color:var(--muted)">Each row has a button. It opens WhatsApp with the candidate's number and the right message already written (Shortlist, Maybe or Reject). You read it, press Send. Nothing goes out without you pressing Send.</p>
+    <div class="colnote">Change the interview details and messages below, then press <b>Save changes</b>. They are saved to the Templates tab of your Google Sheet, so the WhatsApp buttons in the Sheet use them too.</div>
+    <div class="fields">
+      <div><label>Interview date</label><input id="f-date" type="text"></div>
+      <div><label>Time</label><input id="f-time" type="text"></div>
+      <div><label>Office location</label><input id="f-addr" type="text"></div>
+      <div><label>Contact person</label><input id="f-who" type="text"></div>
+    </div>
+  </div>
+  <div class="cols" style="margin-top:14px" id="tpls"></div>
+  <p class="nt" style="margin-top:8px">Edit any message above. The WhatsApp buttons in the table above use your edited text straight away. <code>{name}</code> <code>{date}</code> <code>{time}</code> <code>{address}</code> <code>{contact}</code> are filled per candidate.</p>
+  <div class="savebar"><button class="btn btn-dark" type="button" id="saveT">Save changes</button><span class="nt" id="saveMsg"></span></div>
+  </div>
+</main>
+
+<script>
+const $=id=>document.getElementById(id);
+const APP='{{APP_URL}}';
+let D=[],TPL={},flt='All',PIN='';
+const esc=t=>String(t==null?'':t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function count(f){return f==='All'?D.length:D.filter(d=>d.res===f).length}
+function fill(t,d){return t.replaceAll('{name}',d.name.split(' ')[0]).replaceAll('{date}',$('f-date').value).replaceAll('{time}',$('f-time').value).replaceAll('{address}',$('f-addr').value).replaceAll('{contact}',$('f-who').value)}
+function link(d){const ta=document.querySelector(`[data-t="${d.res}"]`);if(!ta||!d.waNum)return '';return 'https://wa.me/'+d.waNum+'?text='+encodeURIComponent(fill(ta.value,d))}
+function drawSum(){
+  $('sum').innerHTML=[['t','Total forms received',D.length],['g','Shortlist',count('Shortlist')],['a','Maybe',count('Maybe')],['r','Reject',count('Reject')],['n','New today',D.filter(d=>d.today).length]]
+   .map(s=>`<div class="stat ${s[0]}"><small>${s[1]}</small><b>${s[2]}</b></div>`).join('');
+  $('tabs').innerHTML=['All','Shortlist','Maybe','Reject'].map(f=>`<button class="tab ${f===flt?'on':''}" data-f="${f}">${f}<span>${count(f)}</span></button>`).join('')+`<span class="showing">Showing ${count(flt)} of ${D.length} total</span>`;
+  document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{flt=b.dataset.f;drawSum();drawRows()});
+}
+function drawRows(){
+  const pill={Shortlist:'g',Maybe:'a',Reject:'r'},cls={Shortlist:'',Maybe:'m',Reject:'r'},lbl={Shortlist:'Send invite',Maybe:'Send “we’ll review”',Reject:'Send thanks'};
+  const list=D.filter(d=>flt==='All'||d.res===flt);
+  if(!list.length){$('rows').innerHTML=`<tr><td colspan="9" class="empty">${D.length?'No one in this group yet.':'No applications yet. They will appear here as soon as someone submits the form.'}</td></tr>`;return}
+  $('rows').innerHTML=list.map(d=>{
+    const ev=APP+'?page=eval&name='+encodeURIComponent(d.name)+'&wa='+encodeURIComponent(d.phone);
+    const extra=[d.cv?`<a href="${esc(d.cv)}" target="_blank" rel="noopener">📁 CV</a>`:'',`<a href="${esc(ev)}" target="_top">📝 Evaluate</a>`].filter(Boolean).join(' · ');
+    const wl=link(d);
+    return `<tr class="${d.today?'new':''}"><td>${d.id}</td><td>${esc(d.date)}</td><td><b>${esc(d.name)}</b><br><span class="nt">${esc(d.phone)}</span><br><span class="nt">${extra}</span></td><td>${esc(d.area)}</td><td>${esc(d.dist)}</td><td class="sc">${esc(d.score)}</td><td><span class="pill ${pill[d.res]||''}">${esc(d.res)}</span></td><td class="nt">${esc(d.why)||'-'}</td><td>${wl?`<a class="wa ${cls[d.res]||''}" target="_blank" rel="noopener" href="${esc(wl)}">💬 ${lbl[d.res]||'Send'}</a>`:'-'}</td></tr>`}).join('');
+}
+const H={Shortlist:['g','Shortlist: invite to interview'],Maybe:['a','Maybe: keep warm'],Reject:['r','Reject: polite thanks']};
+function drawTpl(){
+  $('tpls').innerHTML=Object.keys(H).map(k=>`<div class="card tpl" style="margin-top:0"><h3><span class="pill ${H[k][0]}">${k}</span></h3><div class="hint" style="margin:0 0 8px;font-style:normal;font-weight:600">${H[k][1]}</div><textarea data-t="${k}">${esc(TPL[k])}</textarea></div>`).join('');
+  $('f-date').value=TPL.date||'';$('f-time').value=TPL.time||'';$('f-addr').value=TPL.addr||'';$('f-who').value=TPL.who||'';
+}
+document.addEventListener('input',e=>{if(e.target.matches('[data-t],.fields input')){drawRows();$('saveMsg').textContent='Not saved yet'}});
+function fail(e){const m=(e&&e.message)||String(e);if(m.indexOf('PIN')>-1){try{localStorage.removeItem('icsPin')}catch(x){};$('app').style.display='none';$('pinCard').style.display='block';$('pinErr').textContent='Wrong PIN. Please try again.';$('pinErr').style.display='block'}else{alertBox('Could not load: '+m)}}
+function alertBox(m){$('pinErr').textContent=m;$('pinErr').style.display='block';$('pinCard').style.display='block'}
+function load(){
+  google.script.run.withSuccessHandler(r=>{
+    try{localStorage.setItem('icsPin',PIN)}catch(x){}
+    D=r.rows;TPL=r.tpl;$('sheetLink').href=r.sheetUrl;
+    $('pinCard').style.display='none';$('app').style.display='block';
+    drawTpl();drawSum();drawRows();
+  }).withFailureHandler(fail).getDashboard(PIN);
+}
+function open_(){PIN=$('pin').value.trim();if(!PIN)return;$('pinErr').style.display='none';$('pinGo').textContent='Opening…';load();setTimeout(()=>$('pinGo').textContent='Open',1500)}
+$('pinGo').onclick=open_;$('pin').addEventListener('keydown',e=>{if(e.key==='Enter')open_()});
+$('refresh').onclick=()=>{$('refresh').textContent='↻ Loading…';google.script.run.withSuccessHandler(r=>{D=r.rows;drawSum();drawRows();$('refresh').textContent='↻ Refresh'}).withFailureHandler(fail).getDashboard(PIN)};
+$('saveT').onclick=()=>{
+  const t={date:$('f-date').value,time:$('f-time').value,addr:$('f-addr').value,who:$('f-who').value};
+  document.querySelectorAll('[data-t]').forEach(x=>t[x.dataset.t]=x.value);
+  $('saveMsg').textContent='Saving…';
+  google.script.run.withSuccessHandler(()=>{TPL=t;$('saveMsg').textContent='Saved ✓'}).withFailureHandler(e=>$('saveMsg').textContent='Not saved: '+((e&&e.message)||e)).saveTemplates(PIN,t);
+};
+try{const p=localStorage.getItem('icsPin');if(p){$('pin').value=p;PIN=p;load()}}catch(x){}
+</script>
+</body></html>

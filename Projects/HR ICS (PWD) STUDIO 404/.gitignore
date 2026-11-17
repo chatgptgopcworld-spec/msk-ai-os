@@ -1,0 +1,3 @@
+# Applicants' personal data and the sync drop zone never go to git
+private/
+_incoming/

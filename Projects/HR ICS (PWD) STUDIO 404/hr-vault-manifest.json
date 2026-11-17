@@ -1,0 +1,210 @@
+{
+  "files": {
+    "hiring-forms/ICS-Application-Form.html": {
+      "name": "deliverables/hiring-forms/ICS-Application-Form-Mockup.html",
+      "version": "1.0.0",
+      "sha256": "c98201f0a71ecdbc2423475dd81155334e59b8c0193e00d9a593eecaa09c2915",
+      "updated": "2026-11-17"
+    },
+    "hiring-forms/ICS-Hiring-Sheet-Design.html": {
+      "name": "deliverables/hiring-forms/ICS-Hiring-Sheet-Mockup.html",
+      "version": "1.0.0",
+      "sha256": "bf5054fabf3c86ee575e9e00d1f31de8d4e5f364608524f31f00859ebeb0086b",
+      "updated": "2026-11-17"
+    },
+    "hiring-forms/ICS-Interview-Evaluation.html": {
+      "name": "deliverables/hiring-forms/ICS-Interview-Evaluation-Mockup.html",
+      "version": "1.0.0",
+      "sha256": "e2702a88151431a92fed997ae647cd17b7cb2c6e5a297c328a7b4614ac4b8276",
+      "updated": "2026-11-17"
+    },
+    "hiring-forms/ICS-Hiring-Setup.gs": {
+      "name": "deliverables/hiring-forms/ICS-Google-Forms-Setup-Script.gs",
+      "version": "1.0.0",
+      "sha256": "e3e172a0dbbad42eec1c9eccc8f44ce5be095b25d6a589080e0b409cd599ef9c",
+      "updated": "2026-11-17"
+    },
+    "hiring-forms/SETUP.md": {
+      "name": "deliverables/hiring-forms/ICS-Setup-Guide.md",
+      "version": "1.0.0",
+      "sha256": "146ea56d2feb9bf7e57535354820837b769f39101853f1b22499f1c66c26ab24",
+      "updated": "2026-11-17"
+    },
+    "hiring-forms/WhatsApp-Message-Templates.md": {
+      "name": "deliverables/hiring-forms/ICS-WhatsApp-Templates.md",
+      "version": "1.0.0",
+      "sha256": "7815964e0e432116822102e7aad759109e451dbf3e8f8866492d81f11a51c401",
+      "updated": "2026-11-17"
+    },
+    "hiring-forms/webapp/Code.gs": {
+      "name": "deliverables/apps-script/ICS-Apps-Script-Code.gs",
+      "version": "1.0.0",
+      "sha256": "22288a62dbf90ee66ca323cc5792aea6cf2ef71fa627c52487e9607e6fbd5f57",
+      "updated": "2026-11-17"
+    },
+    "hiring-forms/webapp/apply.html": {
+      "name": "deliverables/apps-script/ICS-AppsScript-Apply-Page.html",
+      "version": "1.0.0",
+      "sha256": "a993c930df201f8ef34cdf6d3622cd0f2f2e88bae0aa7b873da927ad2317c0e4",
+      "updated": "2026-11-17"
+    },
+    "hiring-forms/webapp/eval.html": {
+      "name": "deliverables/apps-script/ICS-AppsScript-Eval-Page.html",
+      "version": "1.0.0",
+      "sha256": "e455a6ffe0cb8e464c36fd24c51614bd6725c45b190ffc0c70f4a4eff96f8506",
+      "updated": "2026-11-17"
+    },
+    "hiring-forms/webapp/staff.html": {
+      "name": "deliverables/apps-script/ICS-AppsScript-Staff-Page.html",
+      "version": "1.0.0",
+      "sha256": "20b578610c820f8dd60269191edd156da1673bf6322c4c94235bdce947b5dd0b",
+      "updated": "2026-11-17"
+    },
+    "hiring-forms/webapp/netlify-site/index.html": {
+      "name": "deliverables/netlify-site/ICS-Netlify-Apply-Page.html",
+      "version": "1.0.0",
+      "sha256": "a28e454d74cb9d89a5ee6a25d2e06adf30cb3af5821ae260f9a68b109a348ff0",
+      "updated": "2026-11-17"
+    },
+    "hiring-forms/webapp/netlify-site/eval.html": {
+      "name": "deliverables/netlify-site/ICS-Netlify-Eval-Page.html",
+      "version": "1.0.0",
+      "sha256": "8c64fea59043854759e94ff0ad452d34f2751bb180d0f2c7b78ea7f4d8db31a8",
+      "updated": "2026-11-17"
+    },
+    "hiring-forms/webapp/netlify-site/staff.html": {
+      "name": "deliverables/netlify-site/ICS-Netlify-Staff-Page.html",
+      "version": "1.0.0",
+      "sha256": "12e2f525ee88f6100349c287c801cef732201c923b072aa8513af8ef48a149ac",
+      "updated": "2026-11-17"
+    },
+    "memory/MEMORY.md": {
+      "name": "notes/ICS-Project-Memory-Summary.md",
+      "version": "1.0.0",
+      "sha256": "29c815e274233285c954a09a1ebc79fb8968243708ad58c6b4b21cdd6c27e9e9",
+      "updated": "2026-11-17"
+    },
+    "memory/hiring-process.md": {
+      "name": "notes/ICS-Project-Memory-Hiring-Process.md",
+      "version": "1.0.0",
+      "sha256": "c5d5384a633a3b033e83839ac3f8b23f4ff0d62c5ecb5be4159ea7d3163d272a",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/00812c0b-aede-4da8-8bce-6f91d442fa22": {
+      "name": "uploads/ICS-Upload-Photo-Meta-Ad-Review-Error.jpg",
+      "version": "1.0.0",
+      "sha256": "74cebfd8b6372b0914b8d3a07bc916e6cd23e65d2c8f4fc87d3f6477b0da19b0",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/01abe7e2-c08a-44c1-8ce3-1fd4e6ad6ddf": {
+      "name": "uploads/ICS-Upload-Screenshot-Form-CV-Upload.png",
+      "version": "1.0.0",
+      "sha256": "e8ed03818821567a6e75415df155923ecf0a9cbded5a367273da2f9bb588679c",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/17817a52-632b-4f85-9c17-b05a54f0fcb3": {
+      "name": "uploads/ICS-Upload-Screenshot-Staff-Applications-Table.png",
+      "private": true,
+      "version": "1.0.0",
+      "sha256": "533b47ff5acc39a5e23c402b9dbb93d8aa3a469a9bfaa99c9d0991f2ab0d489a",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/2daafe3f-7691-4e97-b444-6db2c10366fe": {
+      "name": "uploads/ICS-Upload-Screenshot-Staff-Applicant-List.png",
+      "private": true,
+      "version": "1.0.0",
+      "sha256": "e951144740a0cbd571c45c20d7488ee3514f8480446d1e7faa6e3a53111be062",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/31023635-e2b4-4e46-92dc-a89eeccd545a": {
+      "name": "uploads/ICS-Upload-PSEB-Registration-QR.png",
+      "version": "1.0.0",
+      "sha256": "1631e39233a32969d3bbe965e8910f4205a0960d7dad501cdc2b3f0dcaafeaa0",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/54f9a45c-f856-4362-b270-d56d266f1e19": {
+      "name": "uploads/ICS-Upload-Screenshot-Staff-WhatsApp-Section.png",
+      "version": "1.0.0",
+      "sha256": "d5ac72ac403a5e39758b4c65c056c124908f8eb1d8eff478093a0c3af16225a8",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/5b2699e0-9e79-4021-871f-0424921b393e": {
+      "name": "uploads/ICS-Upload-Photo-Laptop-Screen.jpg",
+      "version": "1.0.0",
+      "sha256": "777b86f2480396e861a4e3420af56b3f0990dfd57b575430e99c466cee94de38",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/6134b1d6-114e-4981-8c00-fd4de0c619c4": {
+      "name": "uploads/ICS-Upload-Photo-Meta-Ad-Budget-Schedule-1.jpg",
+      "version": "1.0.0",
+      "sha256": "b9191d316c9aa0bda896199d6dff36c17a1afef2defd1a934b2cf825b41a50f3",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/68cda2eb-1414-4770-b382-2546467066b3": {
+      "name": "uploads/ICS-Upload-Logo-ICS.png",
+      "version": "1.0.0",
+      "sha256": "e69e179b0b10c47fbcd60cb393c710e1cc553e9e30539d7124850cb49cd08db8",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/6c0f3bd3-c18b-4e78-b064-8aeeca6230f2": {
+      "name": "uploads/ICS-Upload-Screenshot-Form-About-You.png",
+      "version": "1.0.0",
+      "sha256": "042f2a1c596a966a26524b8d47188312eaf7cccd693138efbdfd855a2a1d713a",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/702cc11d-d5bc-4386-bbad-de9602d9fcbc": {
+      "name": "uploads/ICS-Upload-Photo-Meta-Ad-Preview.jpg",
+      "version": "1.0.0",
+      "sha256": "0e959d7a5254fa5fb477bc116d8712ad2b490aaceca1062f16891106433e8779",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/7ac8802f-6954-4a80-989c-e941d3924c58": {
+      "name": "uploads/ICS-Upload-Photo-Meta-Ad-Budget-Schedule-2.jpg",
+      "version": "1.0.0",
+      "sha256": "f63024c1f5b8812e5b0e6abe84c347708f4498546591b005febccb79138fb3f7",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/9ac27b55-205d-44e2-b497-1d4a985ff36b": {
+      "name": "uploads/ICS-Upload-Logo-PSEB.png",
+      "version": "1.0.0",
+      "sha256": "7ea2423af280600642c3deaf496ef1265500b2ca11b021d3847aaf9b4a0e0b2d",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/a8f05ccc-1037-4e40-8647-943a22fe8801": {
+      "name": "uploads/ICS-Upload-Photo-Meta-Ad-Budget-Schedule-3.jpg",
+      "version": "1.0.0",
+      "sha256": "94a7a5a8005deec813b4a0b08fd55dc9040bef877361e5855e0f72003e5463e7",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/ac232fef-18c4-4ab0-ac47-c55ca6805d3e": {
+      "name": "uploads/ICS-Upload-Logo-MoITT-Digital-Pakistan.png",
+      "version": "1.0.0",
+      "sha256": "0c9bb4d83af123954267dc18e7033fbf66c29a27db0f1597e30e1204213c371c",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/ace1df31-a88f-4ad7-9576-ca6a644ba673": {
+      "name": "uploads/ICS-Upload-Photo-Meta-Ad-Budget.jpg",
+      "version": "1.0.0",
+      "sha256": "62619ec40868226f8f456c1cdbb6480db8f98f96a4ab27f8eeaae5bad96ae5a1",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/c17c512a-06ec-4f3e-aa1a-07e9d41b7668": {
+      "name": "uploads/ICS-Upload-Photo-Meta-Ad-Placements.jpg",
+      "version": "1.0.0",
+      "sha256": "79b8f7ed28d8c253600f8576577de302df558e37424d5225711a802aa24134ff",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/d84910a9-8a5e-4bde-9d79-b05c656bd6de": {
+      "name": "uploads/ICS-Upload-Logo-Tech-Destination-Pakistan.png",
+      "version": "1.0.0",
+      "sha256": "feb786c73fc375b3b69630fa222cddbc2352070b9a2fcc3c44396fd922b2ba6d",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/f2dfb44c-d462-413d-8a10-7d20868a8646": {
+      "name": "uploads/ICS-Upload-Screenshot-Mobile-Apply-Form.png",
+      "version": "1.0.0",
+      "sha256": "9c4e3c1ecde690d93993f956ea1753d0ce3a8b4c3b4e621b2bec1be12981d8a4",
+      "updated": "2026-11-17"
+    }
+  }
+}
