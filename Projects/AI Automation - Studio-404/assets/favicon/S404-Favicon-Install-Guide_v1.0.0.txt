@@ -1,0 +1,8 @@
+Copy all these files into the site's main folder (next to index.html), then put these lines inside <head> of every page (/, /staff, /eval):
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+Remove any old <link rel="icon"...> lines first.

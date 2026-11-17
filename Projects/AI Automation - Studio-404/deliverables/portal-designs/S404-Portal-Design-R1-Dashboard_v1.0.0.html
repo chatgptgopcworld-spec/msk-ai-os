@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research Portal — Dashboard (Mockup 1)</title>
+<style>
+:root{--bg:#0b0d12;--panel:#12151c;--panel2:#181c25;--line:#232836;--text:#e8eaf0;--muted:#8a90a2;--accent:#7c5cff;--green:#22c55e;--red:#ef4444;--amber:#f59e0b;--blue:#3b82f6;
+--tt:#ff2d55;--yt:#ff3b30;--fb:#3b82f6;--sp:#1ed760}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--text);font-size:14px}
+a{color:inherit;text-decoration:none}
+.app{display:grid;grid-template-columns:230px 1fr;min-height:100vh}
+aside{background:var(--panel);border-right:1px solid var(--line);padding:18px 14px;position:sticky;top:0;height:100vh}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:16px;margin-bottom:22px}
+.logo i{width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,var(--accent),#22d3ee);display:inline-block}
+.nav a{display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:9px;color:var(--muted);margin-bottom:2px}
+.nav a.on,.nav a:hover{background:var(--panel2);color:var(--text)}
+.nav .sec{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#5b6173;margin:16px 10px 6px}
+.dot{width:8px;height:8px;border-radius:50%}
+.badge{margin-left:auto;font-size:11px;background:var(--line);padding:1px 7px;border-radius:20px}
+main{padding:22px 28px}
+.top{display:flex;gap:12px;align-items:center;margin-bottom:22px}
+.search{flex:1;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 14px;color:var(--muted)}
+.btn{background:var(--accent);color:#fff;border:0;border-radius:10px;padding:10px 16px;font-weight:600;cursor:pointer}
+.btn.ghost{background:var(--panel2);color:var(--text);border:1px solid var(--line)}
+h1{font-size:22px;margin:0 0 4px}.sub{color:var(--muted);margin-bottom:18px}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:22px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px}
+.kpi .l{color:var(--muted);font-size:12px}.kpi .v{font-size:26px;font-weight:700;margin:6px 0 2px}.up{color:var(--green);font-size:12px}
+.row{display:grid;grid-template-columns:2fr 1fr;gap:14px;margin-bottom:22px}
+.card h3{margin:0 0 12px;font-size:15px;display:flex;justify-content:space-between;align-items:center}
+.card h3 small{color:var(--muted);font-weight:400}
+.tabs{display:flex;gap:6px;margin-bottom:14px;flex-wrap:wrap}
+.tab{padding:7px 12px;border-radius:20px;background:var(--panel2);border:1px solid var(--line);color:var(--muted);cursor:pointer;font-size:13px}
+.tab.on{background:var(--text);color:#000;border-color:var(--text)}
+table{width:100%;border-collapse:collapse}
+th{text-align:left;color:var(--muted);font-weight:500;font-size:12px;padding:8px 10px;border-bottom:1px solid var(--line)}
+td{padding:10px;border-bottom:1px solid var(--line);vertical-align:middle}
+tr:hover td{background:#141822}
+.acc{display:flex;align-items:center;gap:10px}
+.av{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-weight:700;font-size:13px}
+.plat{font-size:11px;padding:2px 8px;border-radius:20px;font-weight:600}
+.pill{font-size:12px;padding:3px 10px;border-radius:20px;font-weight:600;display:inline-block}
+.s-new{background:#1e293b;color:#93c5fd}.s-short{background:#3a2e0b;color:#fcd34d}.s-sel{background:#0f2e1c;color:#4ade80}.s-rej{background:#3a1212;color:#f87171}
+.tag{font-size:11px;color:var(--muted);background:var(--panel2);border:1px solid var(--line);padding:1px 7px;border-radius:6px;margin-right:4px}
+select{background:var(--panel2);color:var(--text);border:1px solid var(--line);border-radius:8px;padding:5px 8px}
+.kanban{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.col{background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:10px;min-height:150px}
+.col h4{margin:2px 4px 10px;font-size:13px;display:flex;justify-content:space-between}
+.mini{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:9px;margin-bottom:8px;font-size:13px;cursor:grab}
+.mini .m{color:var(--muted);font-size:11px;margin-top:4px}
+.bars{display:flex;align-items:flex-end;gap:8px;height:150px;padding-top:10px}
+.bars div{flex:1;border-radius:6px 6px 0 0;background:linear-gradient(180deg,var(--accent),#3b2a99)}
+.legend{display:flex;justify-content:space-between;color:var(--muted);font-size:11px;margin-top:6px}
+.feed div{padding:8px 0;border-bottom:1px solid var(--line);font-size:13px}.feed span{color:var(--muted);font-size:11px;display:block}
+.toast{position:fixed;bottom:20px;right:20px;background:var(--green);color:#03140a;padding:12px 16px;border-radius:10px;font-weight:600;display:none}
+.note{color:var(--muted);font-size:12px;margin-top:20px;text-align:center}
+@media(max-width:900px){.app{grid-template-columns:1fr}aside{display:none}.kpis{grid-template-columns:1fr 1fr}.row,.kanban{grid-template-columns:1fr}main{padding:16px}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside>
+  <div class="logo"><i></i>Studio-404 Research</div>
+  <div class="nav">
+    <a class="on" href="#">🏠 Dashboard</a>
+    <a href="#">🔎 Researched Accounts <span class="badge">128</span></a>
+    <a href="mockup-2-profile.html">⭐ My Accounts <span class="badge">4</span></a>
+    <a href="#">💡 Ideas Pipeline <span class="badge">23</span></a>
+    <a href="#">📅 Content Calendar</a>
+    <a href="#">🔥 Viral Video Bank</a>
+    <a href="#">📈 Trend Tracker</a>
+    <div class="sec">Platforms</div>
+    <a href="#"><span class="dot" style="background:var(--tt)"></span>TikTok <span class="badge">54</span></a>
+    <a href="#"><span class="dot" style="background:var(--yt)"></span>YouTube <span class="badge">41</span></a>
+    <a href="#"><span class="dot" style="background:var(--fb)"></span>Facebook <span class="badge">19</span></a>
+    <a href="#"><span class="dot" style="background:var(--sp)"></span>Spotify <span class="badge">14</span></a>
+    <div class="sec">System</div>
+    <a href="#">⬇️ Import / Export CSV</a>
+    <a href="#">💾 Backups</a>
+    <a href="#">⚙️ Settings</a>
+  </div>
+</aside>
+<main>
+  <div class="top">
+    <div class="search">🔍 Search accounts, niches, tags, ideas…  (Ctrl + K)</div>
+    <button class="btn ghost">Import CSV</button>
+    <button class="btn">+ Add Account</button>
+  </div>
+  <h1>Assalam o Alaikum 👋</h1>
+  <div class="sub">Aaj ki research ka overview — last auto-sync: today 09:00</div>
+
+  <div class="kpis">
+    <div class="card kpi"><div class="l">Researched accounts</div><div class="v">128</div><div class="up">+12 this week</div></div>
+    <div class="card kpi"><div class="l">Selected</div><div class="v" style="color:var(--green)">37</div><div class="up">+5 this week</div></div>
+    <div class="card kpi"><div class="l">Rejected</div><div class="v" style="color:var(--red)">46</div><div class="l">archived, not deleted</div></div>
+    <div class="card kpi"><div class="l">My total followers</div><div class="v">48.2K</div><div class="up">▲ 3.4% vs last week</div></div>
+  </div>
+
+  <div class="card" style="margin-bottom:22px">
+    <h3>Researched Accounts <small>status badlo → item khud sahi list mein chala jayega</small></h3>
+    <div class="tabs" id="tabs">
+      <span class="tab on" data-f="all">All</span>
+      <span class="tab" data-f="New">🆕 New</span>
+      <span class="tab" data-f="Shortlisted">⏳ Shortlisted</span>
+      <span class="tab" data-f="Selected">✅ Selected</span>
+      <span class="tab" data-f="Rejected">❌ Rejected</span>
+    </div>
+    <table>
+      <thead><tr><th>Account</th><th>Platform</th><th>Niche</th><th>Followers</th><th>Likes / Views</th><th>Uploads</th><th>Created</th><th>Status</th></tr></thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </div>
+
+  <div class="row">
+    <div class="card">
+      <h3>Ideas Pipeline <small>drag & drop board</small></h3>
+      <div class="kanban">
+        <div class="col"><h4>💡 Idea <span>8</span></h4>
+          <div class="mini">ChatGPT se 1 min mein invoice automation<div class="m">TikTok · #automation</div></div>
+          <div class="mini">n8n + WhatsApp bot tutorial<div class="m">YouTube · long</div></div></div>
+        <div class="col"><h4>✍️ Script <span>5</span></h4>
+          <div class="mini">5 AI tools jo kaam 10x fast karein<div class="m">TikTok · hook ready</div></div></div>
+        <div class="col"><h4>🎬 Production <span>3</span></h4>
+          <div class="mini">Make.com Gmail → Sheets flow<div class="m">YouTube · due 18 Nov</div></div></div>
+        <div class="col"><h4>🚀 Posted <span>7</span></h4>
+          <div class="mini">AI voice clone in Urdu<div class="m">TikTok · 120K views</div></div></div>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Followers growth <small>ABC · 8 weeks</small></h3>
+      <div class="bars"><div style="height:30%"></div><div style="height:38%"></div><div style="height:42%"></div><div style="height:50%"></div><div style="height:57%"></div><div style="height:66%"></div><div style="height:80%"></div><div style="height:95%"></div></div>
+      <div class="legend"><span>W1</span><span>W4</span><span>W8</span></div>
+      <h3 style="margin-top:18px">Recent activity</h3>
+      <div class="feed">
+        <div>✅ @aitoolsdaily → Selected<span>10 min pehle</span></div>
+        <div>❌ FB “Tech Masti” → Rejected<span>1 ghanta pehle</span></div>
+        <div>🔄 YouTube stats synced (41 channels)<span>09:00</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="note">Mockup 1 of 2 — dummy data. Status dropdown aur tabs click kar ke dekhein. <a href="mockup-2-profile.html" style="color:var(--accent)">Mockup 2: Profile view →</a></div>
+</main>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+const P={TikTok:'#ff2d55',YouTube:'#ff3b30',Facebook:'#3b82f6',Spotify:'#1ed760'};
+const data=[
+ {n:'AI Tools Daily',h:'@aitoolsdaily',p:'TikTok',ni:'AI tools',f:'812K',l:'14.2M likes',u:412,c:'Mar 2023',s:'Selected',t:['hooks','fast-cut']},
+ {n:'Automate With Ali',h:'@automatewithali',p:'YouTube',ni:'n8n / Make',f:'214K',l:'9.8M views',u:186,c:'Jan 2022',s:'Shortlisted',t:['tutorial']},
+ {n:'Tech Masti',h:'Tech Masti',p:'Facebook',ni:'Tech news',f:'95K',l:'1.1M reactions',u:930,c:'2019',s:'Rejected',t:['low-quality']},
+ {n:'AI Urdu Podcast',h:'AI Urdu Podcast',p:'Spotify',ni:'AI talk',f:'12K',l:'pop. 41',u:64,c:'Jun 2024',s:'New',t:['urdu']},
+ {n:'Prompt Wala',h:'@promptwala',p:'TikTok',ni:'Prompts',f:'340K',l:'5.6M likes',u:220,c:'Aug 2024',s:'New',t:['faceless']},
+ {n:'NoCode Nation',h:'@nocodenation',p:'YouTube',ni:'No-code',f:'1.2M',l:'88M views',u:540,c:'2020',s:'Selected',t:['big','benchmark']},
+];
+const cls={New:'s-new',Shortlisted:'s-short',Selected:'s-sel',Rejected:'s-rej'};
+let filter='all';
+function render(){
+ const tb=document.getElementById('rows');tb.innerHTML='';
+ data.filter(d=>filter==='all'||d.s===filter).forEach(d=>{
+  const c=P[d.p];
+  tb.insertAdjacentHTML('beforeend',`<tr>
+  <td><div class="acc"><div class="av" style="background:${c}22;color:${c}">${d.n[0]}</div><div><b>${d.n}</b><div style="color:var(--muted);font-size:12px">${d.h}</div><div style="margin-top:3px">${d.t.map(x=>'<span class=tag>#'+x+'</span>').join('')}</div></div></div></td>
+  <td><span class="plat" style="background:${c}22;color:${c}">${d.p}</span></td>
+  <td>${d.ni}</td><td><b>${d.f}</b></td><td>${d.l}</td><td>${d.u}</td><td>${d.c}</td>
+  <td><select data-i="${data.indexOf(d)}">${Object.keys(cls).map(k=>`<option ${k===d.s?'selected':''}>${k}</option>`).join('')}</select> <span class="pill ${cls[d.s]}">${d.s}</span></td></tr>`);
+ });
+ tb.querySelectorAll('select').forEach(s=>s.onchange=e=>{const d=data[e.target.dataset.i];d.s=e.target.value;toast(`${d.n} → ${d.s} list mein move ho gaya`);render();});
+}
+function toast(m){const t=document.getElementById('toast');t.textContent=m;t.style.display='block';clearTimeout(t._);t._=setTimeout(()=>t.style.display='none',2200);}
+document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));t.classList.add('on');filter=t.dataset.f;render();});
+render();
+</script>
+</body>
+</html>

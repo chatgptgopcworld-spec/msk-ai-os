@@ -27,6 +27,7 @@ Set up 22 Oct 2026. No sources ingested yet; inbox empty.
 - **Artjenny** ([[aj-hot|hot cache]]): client work for artjenny, a Busan caricature artist (Facebook 172K). YouTube kit and channel images done; channel not created yet.
 - **Moonshot Media** ([[ms-hot|hot cache]]): the owner's brand (moonshotmedia.in). Three rounds of brand kits; 10 premium directions (5 Media, 5 Studios) await the owner's shortlist.
 - **HR ICS (PWD) STUDIO 404** ([[hr-hot|hot cache]]): ICS [PWD] Studio 404 hiring system; files versioned from v1.0.0.
+- **AI Automation - Studio-404** ([[s404-hot|hot cache]]): ICS Research Portal (Netlify site, Apps Script, Chrome extension); files versioned from v1.0.0, auto-saved from the Claude project.
 - **AI OS Blueprint** ([[aios-hot|hot cache]]): Nick Milo's "AI OS" from 6 videos: link your own thinking as notes; own your knowledge and AI instructions as files (me.md, vault map, skill map, skills folder); rent the AI tool. Its [[aios-msk-adoption-plan]] gave this vault its AIOS layer; `me.md`, a personal-notes area and a Calendar layer are still open.
 - **Hamzi Prompts** ([[Projects/Hamzi Prompts/wiki/hot|hot cache]], formerly "AI Brain"): wiki for hamziprompts.com: AI-video prompt library, memberships, community, academy. Code: `Documents\hamzi-lms`.
 - **Prompts Website** ([[Projects/Prompts Website/wiki/hot|hot cache]]): the general wiki from before MSK AI OS, plus the SoniPrompts / PromptsStudio rebuild (code in its `projects/soniprompts/`).
@@ -39,6 +40,7 @@ Set up 22 Oct 2026. No sources ingested yet; inbox empty.
 - Optional Obsidian setting: Attachment folder path → `raw/assets`.
 
 ## Recently changed
+- 17 Nov 2026: new project **AI Automation - Studio-404** (ICS Research Portal, versioned).
 - 17 Nov 2026: new project **HR ICS (PWD) STUDIO 404**.
 - 17 Nov 2026: new project **Moonshot Media** (brand kits).
 - 27 Oct 2026: new project **Artjenny** (client YouTube kit).

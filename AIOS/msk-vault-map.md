@@ -147,7 +147,7 @@ files refer to "rules 7-9".)
    If a project or code repo ever moves, update these paths and `tools/msk-sync.ps1`.
 10. **MSK AI OS has its own git repo** (GitHub `chatgptgopcworld-spec/msk-ai-os`, private, branch
    `main`). It tracks the OS itself and projects without their own repo (Pakistan Legal Aid, AI OS
-   Blueprint, Learn Core's wiki, Artjenny, Moonshot Media, HR ICS (PWD) STUDIO 404). `.gitignore` keeps out the imported projects (their own repos) and
+   Blueprint, Learn Core's wiki, Artjenny, Moonshot Media, HR ICS (PWD) STUDIO 404, AI Automation - Studio-404). `.gitignore` keeps out the imported projects (their own repos) and
    `Projects/Pakistan Legal Aid/cases/` (personal data; only its README is tracked). Any new
    project with its own repo gets a line in `.gitignore`; any folder holding personal data stays
    ignored. How to commit and push: [[msk-skill-git-sync]].
@@ -162,6 +162,7 @@ files refer to "rules 7-9".)
 | `Projects/Artjenny/` | Client work for artjenny (Busan caricature artist): YouTube channel kit, brand images; deliverables in its `deliverables/` | its `CLAUDE.md`, then `wiki/aj-hot.md`, `wiki/aj-index.md` |
 | `Projects/Moonshot Media/` | The owner's brand Moonshot Media / Studios: brand kits, logos, mockups; deliverables in its `deliverables/` | its `CLAUDE.md`, then `wiki/ms-hot.md`, `wiki/ms-index.md` |
 | `Projects/HR ICS (PWD) STUDIO 404/` | Hiring system for ICS [PWD] Studio 404 (forms, Apps Script, Netlify site, WhatsApp templates); every file versioned v1.0.0+ with `VERSIONS.md`, auto-saved by its `tools/hr-vault-sync.py` | its `CLAUDE.md`, then `wiki/hr-hot.md`, `VERSIONS.md` |
+| `Projects/AI Automation - Studio-404/` | Claude project "AI Automation \| Studio-404": ICS Research Portal (Netlify site, Apps Script backend, Chrome extension, design rounds, logos, favicons); every file versioned v1.0.0+ with `VERSIONS.md`, auto-saved by its `tools/s404-vault-sync.py` | its `CLAUDE.md`, then `wiki/s404-hot.md`, `VERSIONS.md` |
 | `Projects/AI OS Blueprint/` | Nick Milo's AI OS from 6 videos, starter kit, and the plan this map came from | its `CLAUDE.md`, then `wiki/aios-hot.md`, `wiki/aios-index.md` |
 
 ## 7. Current priorities

@@ -1,0 +1,5 @@
+<!doctype html><html><head><meta charset="utf-8"><title>ICS Portal</title><meta name="robots" content="noindex">
+<style>html,body{margin:0;height:100%;background:#0a0f22;color:#9aa3c7;font:12px system-ui;display:grid;place-items:center}</style></head><body>Saving...
+<script>(function(){var p=location.hash.slice(1);if(!p){window.close();return}
+var id=String(Date.now())+Math.random(),done=false,go=function(){if(done)return;done=true;try{window.resizeTo(460,340)}catch(e){}location.replace('./#import='+p)};
+try{var bc=new BroadcastChannel('ics-portal');bc.onmessage=function(e){if(e.data&&e.data.type==='ack'&&e.data.id===id&&!done){done=true;window.close()}};bc.postMessage({type:'import',id:id,payload:p});setTimeout(go,450)}catch(e){go()}})();</script></body></html>

@@ -102,3 +102,8 @@
 - All project files, uploads and the project memory filed at v1.0.0; changed files get the next version and the old one moves to `archive/`. Applicant screenshots kept in its `private/` (git-ignored).
 - Auto-save: its `tools/hr-vault-sync.py` (copies `_incoming/`, bumps versions, commits only that folder).
 - Registered: [[msk-vault-map]] (table, rule 10), `Projects/CLAUDE.md`, [[brain-index]]. Hot cache refreshed.
+## [2026-11-17] schema | New project: AI Automation - Studio-404
+- `Projects/AI Automation - Studio-404/` created as the versioned vault copy of the Claude project "AI Automation | Studio-404" ("|" is not allowed in Windows folder names): CLAUDE.md, [[s404-hot]], [[s404-index]], [[s404-log]], `VERSIONS.md`.
+- 97 project files (ICS Research Portal site, Chrome extension, Apps Script, source, design rounds R1-R3, logos, favicons, zips, uploads, project memory) filed from v1.0.0; 4 hiring screenshots with applicants' data kept in its `private/` (git-ignored).
+- Auto-save: its `tools/s404-vault-sync.py` (takes a bundle from the Claude project, bumps versions of changed files, commits only that folder).
+- Registered: [[msk-vault-map]] (table, rule 10), `Projects/CLAUDE.md`, [[brain-index]]. Hot cache refreshed.

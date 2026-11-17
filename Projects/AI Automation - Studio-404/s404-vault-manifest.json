@@ -1,0 +1,590 @@
+{
+  "files": {
+    "portal-mockups/mockup-1-dashboard.html": {
+      "name": "deliverables/portal-designs/S404-Portal-Design-R1-Dashboard.html",
+      "version": "1.0.0",
+      "sha256": "94e2aaf39d65ecae966d1905cd13118b54a9e934ae0f96c943c903ed49a23d22",
+      "updated": "2026-11-17"
+    },
+    "portal-mockups/mockup-2-profile.html": {
+      "name": "deliverables/portal-designs/S404-Portal-Design-R1-Profile.html",
+      "version": "1.1.0",
+      "sha256": "f09e68cae81dcda8e1e2b0a783034c37a163e8cea180474481f648eaaf48b7e1",
+      "updated": "2026-11-17"
+    },
+    "portal-mockups/v2/research-desk.html": {
+      "name": "deliverables/portal-designs/S404-Portal-Design-R2-Research-Desk.html",
+      "version": "2.0.0",
+      "sha256": "fc36dae19b2e48fa56e547cbbc962605d833e80cd9763705d989a6d57f80c656",
+      "updated": "2026-11-17"
+    },
+    "portal-mockups/v2/signal-console.html": {
+      "name": "deliverables/portal-designs/S404-Portal-Design-R2-Signal-Console.html",
+      "version": "2.1.0",
+      "sha256": "758db0bac3d61e38c8e89812e8cb79ea0765cb92121fbd33af1bab29f8b2b6ea",
+      "updated": "2026-11-17"
+    },
+    "portal-mockups/v3/ics-portal-aurora.html": {
+      "name": "deliverables/portal-designs/S404-Portal-Design-R3-Aurora.html",
+      "version": "3.0.0",
+      "sha256": "4c541226dba4ab2b3212f9a9bc28818803cc7242c8281d03fdcf4865d9db1ab8",
+      "updated": "2026-11-17"
+    },
+    "portal-mockups/v3/ics-portal-bento.html": {
+      "name": "deliverables/portal-designs/S404-Portal-Design-R3-Bento.html",
+      "version": "3.1.0",
+      "sha256": "367828a373eda1358c1e00131dd39fba1e2650b52a5a998149995feb17cdc715",
+      "updated": "2026-11-17"
+    },
+    "portal-mockups/v3/ics-portal-carbon.html": {
+      "name": "deliverables/portal-designs/S404-Portal-Design-R3-Carbon.html",
+      "version": "3.2.0",
+      "sha256": "db920feb9f61073df290ec9c65cbb1d6c55b5a3b267a18de039c3814bc0f9ed5",
+      "updated": "2026-11-17"
+    },
+    "portal-mockups/v3/ics-portal-paper.html": {
+      "name": "deliverables/portal-designs/S404-Portal-Design-R3-Paper.html",
+      "version": "3.3.0",
+      "sha256": "83e9d2d524f9ef32de285dcbe89ba9b6c45e4eea23eea4dc1dc1d4f792a8f906",
+      "updated": "2026-11-17"
+    },
+    "portal-mockups/v3/ics-portal-nebula.html": {
+      "name": "deliverables/portal-designs/S404-Portal-Design-R3-Nebula.html",
+      "version": "3.4.0",
+      "sha256": "0782052b774bdf246c477a159bc95d294d329a4fd34f2d9229148a5e4cb9fd53",
+      "updated": "2026-11-17"
+    },
+    "portal-mockups/v3/base.css": {
+      "name": "deliverables/portal-designs/build/S404-Design-Build-Base.css",
+      "version": "1.0.0",
+      "sha256": "f1bf9447e495e5c3c57f49b57151a4c9f8b2edd0983282e17e76aeb106e126d6",
+      "updated": "2026-11-17"
+    },
+    "portal-mockups/v3/build.py": {
+      "name": "deliverables/portal-designs/build/S404-Design-Build-Script.py",
+      "version": "1.0.0",
+      "sha256": "0c3ca05b218deba45cc270b503567c05eca6f6a37a88e81714f5fa9181f8b083",
+      "updated": "2026-11-17"
+    },
+    "portal-mockups/v3/core.js": {
+      "name": "deliverables/portal-designs/build/S404-Design-Build-Core.js",
+      "version": "1.0.0",
+      "sha256": "b0e68f4b3374ff7e466c0fc7ede91d63d23db02ff4acbdfc9a718c9d0aa77371",
+      "updated": "2026-11-17"
+    },
+    "portal-mockups/logos/logo-fb.png": {
+      "name": "assets/logos/S404-Logo-Facebook.png",
+      "version": "1.0.0",
+      "sha256": "8142d405cd067f6081cfc2c62b7b32d51f8f47ed0dfb61a6389dac7b8803d265",
+      "updated": "2026-11-17"
+    },
+    "portal-mockups/logos/logo-ics.png": {
+      "name": "assets/logos/S404-Logo-ICS.png",
+      "version": "1.0.0",
+      "sha256": "d883b8223ca598a5068ca8dc279bbb0afe7e4868f5ccd6a8a305bed8da600525",
+      "updated": "2026-11-17"
+    },
+    "portal-mockups/logos/logo-sp.png": {
+      "name": "assets/logos/S404-Logo-Spotify.png",
+      "version": "1.0.0",
+      "sha256": "2593af1e42d6d43cd8f8d03df82418a6b455c72d72087880effd3e138e387eb6",
+      "updated": "2026-11-17"
+    },
+    "portal-mockups/logos/logo-tt.png": {
+      "name": "assets/logos/S404-Logo-TikTok.png",
+      "version": "1.0.0",
+      "sha256": "80330aa0306bcb6c1e7bd2ba787ef50addd1ed4a64f8c197af5c13ea7a6b89e5",
+      "updated": "2026-11-17"
+    },
+    "portal-mockups/logos/logo-yt.png": {
+      "name": "assets/logos/S404-Logo-YouTube.png",
+      "version": "1.0.0",
+      "sha256": "2df097a64ed8cc5bcf8425cb2f594144beeb2f39bcc0e0ae2abedd82af9bc8e8",
+      "updated": "2026-11-17"
+    },
+    "portal-mockups/logos.json": {
+      "name": "assets/logos/S404-Logos-Embedded-Data.json",
+      "version": "1.0.0",
+      "sha256": "79b94d3c600c5d9e9488f29a23aadc1db47b79cb8acb31d3515f5e5d04a64fcd",
+      "updated": "2026-11-17"
+    },
+    "ics-research-portal/README.md": {
+      "name": "deliverables/portal-docs/S404-Portal-Setup-Guide.md",
+      "version": "1.0.0",
+      "sha256": "1563999e057a271f1a23c4ad91c37f36dd720616d3919b2789dc5d2223361d7d",
+      "updated": "2026-11-17"
+    },
+    "ics-research-portal/netlify.toml": {
+      "name": "deliverables/portal-docs/S404-Portal-Netlify-Config.toml",
+      "version": "1.0.0",
+      "sha256": "c063c61aefeded4379179161e69977480babca220e6b8ef94339a7a16b19bfc2",
+      "updated": "2026-11-17"
+    },
+    "ics-research-portal/extension-preview.png": {
+      "name": "previews/S404-Preview-Extension.png",
+      "version": "1.0.0",
+      "sha256": "8ae1deb31e91d5d4dfd387a82461f5b0ed7301a547fc783473d2edc816b95342",
+      "updated": "2026-11-17"
+    },
+    "ics-research-portal/mobile-preview.png": {
+      "name": "previews/S404-Preview-Mobile.png",
+      "version": "1.0.0",
+      "sha256": "b232b5f1b44b009733317e0fb3be4528b8dd15db29e5e7b6b69b6eee7f306979",
+      "updated": "2026-11-17"
+    },
+    "ics-research-portal/google-apps-script/Code.gs": {
+      "name": "deliverables/apps-script/S404-Apps-Script-Backend.gs",
+      "version": "1.0.0",
+      "sha256": "8fd11209bc5b4c62cdf40003bf6b09e9e2e9e7bead8f5405fb22dada7a11b608",
+      "updated": "2026-11-17"
+    },
+    "ics-research-portal/site/index.html": {
+      "name": "deliverables/research-portal-site/S404-Portal-Site-Index.html",
+      "version": "1.0.0",
+      "sha256": "393fdaa87bf0363ac167ec9ffa4d7b44834ef9636a701650e27c922e268b6e1f",
+      "updated": "2026-11-17"
+    },
+    "ics-research-portal/site/save.html": {
+      "name": "deliverables/research-portal-site/S404-Portal-Site-Save-Page.html",
+      "version": "1.0.0",
+      "sha256": "7336153e033901b325619d7669f4b713d24bbd8fe82732bd4e2fb20d3c8d28c0",
+      "updated": "2026-11-17"
+    },
+    "ics-research-portal/site/favicon.png": {
+      "name": "deliverables/research-portal-site/S404-Portal-Site-Favicon.png",
+      "version": "1.0.0",
+      "sha256": "862789bbc608aeda4aed19d83b02b12eb02e0f2d3fb48e791a7f56bdffb19e77",
+      "updated": "2026-11-17"
+    },
+    "ics-research-portal/site/icon-512.png": {
+      "name": "deliverables/research-portal-site/S404-Portal-Site-Icon-512.png",
+      "version": "1.0.0",
+      "sha256": "1fbb056b4caa435c89de8060095b218aaf25db30aa553774b9bc1d8ff8dcb2ca",
+      "updated": "2026-11-17"
+    },
+    "ics-research-portal/site/manifest.webmanifest": {
+      "name": "deliverables/research-portal-site/S404-Portal-Site-Manifest.webmanifest",
+      "version": "1.0.0",
+      "sha256": "ef8275f85cbf9ac537a4482df4ae003b9808aebbca8b6faca63528e337699dc0",
+      "updated": "2026-11-17"
+    },
+    "ics-research-portal/chrome-extension/background.js": {
+      "name": "deliverables/chrome-extension/S404-Extension-Background.js",
+      "version": "1.0.0",
+      "sha256": "746e186e764c19a267b16fde609835a2547b623b0e355b14f48ef0ff1e71510e",
+      "updated": "2026-11-17"
+    },
+    "ics-research-portal/chrome-extension/bridge.js": {
+      "name": "deliverables/chrome-extension/S404-Extension-Bridge.js",
+      "version": "1.0.0",
+      "sha256": "7ab2f90d141fc7572932a6f3fbe022e6af1796493416b161c6cda9111e2ff2f0",
+      "updated": "2026-11-17"
+    },
+    "ics-research-portal/chrome-extension/config.js": {
+      "name": "deliverables/chrome-extension/S404-Extension-Config.js",
+      "version": "1.0.0",
+      "sha256": "c6e6bce25c0198f9f297061410d6e0721e8da267a6588be7cd7e9e2dbb13737f",
+      "updated": "2026-11-17"
+    },
+    "ics-research-portal/chrome-extension/core.js": {
+      "name": "deliverables/chrome-extension/S404-Extension-Core.js",
+      "version": "1.0.0",
+      "sha256": "da3033157818689baa0f5d1059433cd6fe4287f2b23383d42aca1d7ac9b60059",
+      "updated": "2026-11-17"
+    },
+    "ics-research-portal/chrome-extension/links.js": {
+      "name": "deliverables/chrome-extension/S404-Extension-Links.js",
+      "version": "1.0.0",
+      "sha256": "4ac2ce751e5ee42fe909820571d9e6ae9fac039f264c03f63f124efb2b82ce1c",
+      "updated": "2026-11-17"
+    },
+    "ics-research-portal/chrome-extension/manifest.json": {
+      "name": "deliverables/chrome-extension/S404-Extension-Manifest.json",
+      "version": "1.0.0",
+      "sha256": "91a61da889ab6de0e0a335c587069338c87c06927091baf1fb239070ba6f2790",
+      "updated": "2026-11-17"
+    },
+    "ics-research-portal/chrome-extension/popup.html": {
+      "name": "deliverables/chrome-extension/S404-Extension-Popup.html",
+      "version": "1.0.0",
+      "sha256": "bc67ad92f36fc6dc8c5dafdfa39d8c9e53ad2051778c6084e0079f4be7aac233",
+      "updated": "2026-11-17"
+    },
+    "ics-research-portal/chrome-extension/popup.js": {
+      "name": "deliverables/chrome-extension/S404-Extension-Popup.js",
+      "version": "1.0.0",
+      "sha256": "ba3445fefd63d637b8b0932a0d583b155090668030da20a1be01d531a294f002",
+      "updated": "2026-11-17"
+    },
+    "ics-research-portal/chrome-extension/scrape.js": {
+      "name": "deliverables/chrome-extension/S404-Extension-Scrape.js",
+      "version": "1.0.0",
+      "sha256": "dc791365656bc689d5a7317454f73b39e904ee6aba1348693e95203390731ee0",
+      "updated": "2026-11-17"
+    },
+    "ics-research-portal/chrome-extension/theme.js": {
+      "name": "deliverables/chrome-extension/S404-Extension-Theme.js",
+      "version": "1.0.0",
+      "sha256": "90cb514d09fcf155282185fe1b204e6137b7ae7629af3237396bc04ceda9915b",
+      "updated": "2026-11-17"
+    },
+    "ics-research-portal/chrome-extension/icon16.png": {
+      "name": "deliverables/chrome-extension/S404-Extension-Icon16.png",
+      "version": "1.0.0",
+      "sha256": "b2bb5b2d04577ad8b81e267bfcf3472ae05ced4baeeac4a55f8a14aabe127057",
+      "updated": "2026-11-17"
+    },
+    "ics-research-portal/chrome-extension/icon32.png": {
+      "name": "deliverables/chrome-extension/S404-Extension-Icon32.png",
+      "version": "1.0.0",
+      "sha256": "4a47f9870a74c1a91c8efdffb97f5b1bcf886e60f53a703388f1962c9eb47726",
+      "updated": "2026-11-17"
+    },
+    "ics-research-portal/chrome-extension/icon48.png": {
+      "name": "deliverables/chrome-extension/S404-Extension-Icon48.png",
+      "version": "1.0.0",
+      "sha256": "c76b2ff68c4c854c93f0e991551381dbb4d74f0bfabc51da65d25f5a2b95b904",
+      "updated": "2026-11-17"
+    },
+    "ics-research-portal/chrome-extension/icon128.png": {
+      "name": "deliverables/chrome-extension/S404-Extension-Icon128.png",
+      "version": "1.0.0",
+      "sha256": "14cfe4c4cfca9b6f203a369116a77b205479c908f9fbd9c93173fc1ef39f0fbc",
+      "updated": "2026-11-17"
+    },
+    "ics-research-portal/src/app.src.js": {
+      "name": "deliverables/portal-source/S404-Portal-Source-App.js",
+      "version": "1.0.0",
+      "sha256": "d29ad435179a652ffcfa8d1432fcfefa67cf14694fcad86e8afef889dd9502ec",
+      "updated": "2026-11-17"
+    },
+    "ics-research-portal/src/base.css": {
+      "name": "deliverables/portal-source/S404-Portal-Source-Base.css",
+      "version": "1.0.0",
+      "sha256": "f1bf9447e495e5c3c57f49b57151a4c9f8b2edd0983282e17e76aeb106e126d6",
+      "updated": "2026-11-17"
+    },
+    "ics-research-portal/src/bm.src.js": {
+      "name": "deliverables/portal-source/S404-Portal-Source-Bookmarklet.js",
+      "version": "1.0.0",
+      "sha256": "a732925512730ac7107d804f419d960e57426ab51af02712e1bf048086026b42",
+      "updated": "2026-11-17"
+    },
+    "ics-research-portal/src/build.py": {
+      "name": "deliverables/portal-source/S404-Portal-Source-Build-Dev.py",
+      "version": "1.0.0",
+      "sha256": "0c3ca05b218deba45cc270b503567c05eca6f6a37a88e81714f5fa9181f8b083",
+      "updated": "2026-11-17"
+    },
+    "ics-research-portal/src/build_prod.py": {
+      "name": "deliverables/portal-source/S404-Portal-Source-Build-Prod.py",
+      "version": "1.0.0",
+      "sha256": "d3b68831c1e33636a12f04b30668b2eed9b560fd1f1d079f593816cc5e6268ed",
+      "updated": "2026-11-17"
+    },
+    "ics-research-portal/src/config.js": {
+      "name": "deliverables/portal-source/S404-Portal-Source-Config.js",
+      "version": "1.0.0",
+      "sha256": "46ade043c85256fa4afb2653617c567c425b120f7b389b11b6f37eb1d826266a",
+      "updated": "2026-11-17"
+    },
+    "ics-research-portal/src/logo-ics.png": {
+      "name": "deliverables/portal-source/S404-Portal-Source-Logo-ICS.png",
+      "version": "1.0.0",
+      "sha256": "b5c58e3b83e3645c2a3e88c38e3488d8c3e7409e4c20e4bc7e5796f8a8cc9d55",
+      "updated": "2026-11-17"
+    },
+    "ics-research-portal/src/logos.json": {
+      "name": "deliverables/portal-source/S404-Portal-Source-Logos-Data.json",
+      "version": "1.0.0",
+      "sha256": "79b94d3c600c5d9e9488f29a23aadc1db47b79cb8acb31d3515f5e5d04a64fcd",
+      "updated": "2026-11-17"
+    },
+    "ics-research-portal/src/save.src.html": {
+      "name": "deliverables/portal-source/S404-Portal-Source-Save-Page.html",
+      "version": "1.0.0",
+      "sha256": "7336153e033901b325619d7669f4b713d24bbd8fe82732bd4e2fb20d3c8d28c0",
+      "updated": "2026-11-17"
+    },
+    "ics-favicon/README.txt": {
+      "name": "assets/favicon/S404-Favicon-Install-Guide.txt",
+      "version": "1.0.0",
+      "sha256": "86154ef38ce0b9d6d7c274f86089cb0329d4535b2b3b4e39b852ec347fd28968",
+      "updated": "2026-11-17"
+    },
+    "ics-favicon/favicon.ico": {
+      "name": "assets/favicon/S404-Favicon.ico",
+      "version": "1.0.0",
+      "sha256": "b6f24cb1ba88cbdf8538dff9a0a68c1be5b23a240155ed2a696e042657e97ace",
+      "updated": "2026-11-17"
+    },
+    "ics-favicon/favicon-16.png": {
+      "name": "assets/favicon/S404-Favicon-16.png",
+      "version": "1.0.0",
+      "sha256": "b0e3d3e964c223e206c366979cc0c3e8fb8bc2c7b2b59ebc21f87f34e5484d26",
+      "updated": "2026-11-17"
+    },
+    "ics-favicon/favicon-32.png": {
+      "name": "assets/favicon/S404-Favicon-32.png",
+      "version": "1.0.0",
+      "sha256": "895b7194811d9faa488c89fbc071dc41409e564c862d759fc70f47434e1e89ea",
+      "updated": "2026-11-17"
+    },
+    "ics-favicon/favicon-48.png": {
+      "name": "assets/favicon/S404-Favicon-48.png",
+      "version": "1.0.0",
+      "sha256": "087bf5b8bd4c715856cdf14acb317639a3428c2ea99b9f6c38bf31c1f66e59fc",
+      "updated": "2026-11-17"
+    },
+    "ics-favicon/favicon-192.png": {
+      "name": "assets/favicon/S404-Favicon-192.png",
+      "version": "1.0.0",
+      "sha256": "b6324e65489f9b52cba4dcab6122bbeca551b363d4f653a8a155a5a0a3fd7b31",
+      "updated": "2026-11-17"
+    },
+    "ics-favicon/favicon-512.png": {
+      "name": "assets/favicon/S404-Favicon-512.png",
+      "version": "1.0.0",
+      "sha256": "89d8a43ea04efa1f6017f952985ea1a3cf2a8aac9ab5db10e7c1ddbdf3fcd034",
+      "updated": "2026-11-17"
+    },
+    "ics-favicon/apple-touch-icon.png": {
+      "name": "assets/favicon/S404-Favicon-Apple-Touch.png",
+      "version": "1.0.0",
+      "sha256": "46acac725e6cc5269d385a626e96a62ac7b8a7d6a54ede54dd49e725356a618d",
+      "updated": "2026-11-17"
+    },
+    "ics-research-portal.zip": {
+      "name": "packages/S404-Package-Research-Portal-Full.zip",
+      "version": "1.0.0",
+      "sha256": "6ab18e67ae7c8652d590a309858c7c6ae443146ef0c3af949a8a1179834fea7d",
+      "updated": "2026-11-17"
+    },
+    "ics-portal-site.zip": {
+      "name": "packages/S404-Package-Portal-Site-Netlify.zip",
+      "version": "1.0.0",
+      "sha256": "17c7dc9de3b22fc052155bb0b504dea3e37c74b1507efb4a220061b70e3e4d0f",
+      "updated": "2026-11-17"
+    },
+    "ics-chrome-extension.zip": {
+      "name": "packages/S404-Package-Chrome-Extension.zip",
+      "version": "1.0.0",
+      "sha256": "5f78ff7536b9670c5141b180ca0b30f3bd9187d1555f1d794081d51c8cfbf3d9",
+      "updated": "2026-11-17"
+    },
+    "ics-favicon.zip": {
+      "name": "packages/S404-Package-Favicon.zip",
+      "version": "1.0.0",
+      "sha256": "25ecac126881a1e7eb842d16162983dc9534dd9b1e4441936b7a73ace7d1a632",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/034f623a-1241-46a3-8c02-484f66d13f75": {
+      "name": "uploads/S404-Upload-Screenshot-Hiring-Staff-Page.png",
+      "version": "1.0.0",
+      "private": true,
+      "sha256": "900ab44eb86133286728f73104239915b8b7f8eb48c4bfaf0d580350d3fb1139",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/131bf85d-76fa-4904-a1fe-9e36f00423e4": {
+      "name": "uploads/S404-Upload-Logo-TikTok.png",
+      "version": "1.0.0",
+      "sha256": "5c7bdbfac590aa2aff97ac1d2107ef0d976310f06bc4192b3d49fc980acc82cd",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/195ed345-e9c0-447d-ac0d-24d1e452b68b": {
+      "name": "uploads/S404-Upload-Screenshot-Portal-Fetch-Error-3.png",
+      "version": "1.0.0",
+      "sha256": "33fc70bd93bf7de7347c508acaa4c8cf67775cf5226d07803c9c61961fd9f564",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/19b98c5b-dd19-4fa9-b62e-5c80f1ddb862": {
+      "name": "uploads/S404-Upload-Screenshot-Hiring-Result-Labels.png",
+      "version": "1.0.0",
+      "sha256": "31080ef56107bb7a4bbe8f4bdb7fac03cbe82be662e5ba4db24492ace737e37c",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/1b01f0df-738f-4e2e-87a0-e4bcacea6e96": {
+      "name": "uploads/S404-Upload-Screenshot-Extension-Popup-TikTok-2.png",
+      "version": "1.0.0",
+      "sha256": "a9be6e2d0561aec750c3790b874e135e8c82729e33eeb51bfe14dbafc7955268",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/231abae8-ff01-4964-a2d7-d67efea1f86f": {
+      "name": "uploads/S404-Upload-Logo-ICS-Copy.png",
+      "version": "1.0.0",
+      "sha256": "ced1b223f9bc4db72440d7d623c8338d03de639ad40e14fdac20dc698f668493",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/2590c428-0b78-4a79-95ac-676bf75d0e63": {
+      "name": "uploads/S404-Upload-Screenshot-Hiring-Staff-Summary-Boxes.png",
+      "version": "1.0.0",
+      "private": true,
+      "sha256": "228734d8f2bb0e0b70e7728b8c1306fd74362c039da33a5cfeb96b150e971540",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/2e4579df-894c-47f1-8113-2017ef5ea175": {
+      "name": "uploads/S404-Upload-Screenshot-YouTube-About-Links-1.png",
+      "version": "1.0.0",
+      "sha256": "ccd7b868c626a3f36b53395fe995741aa70deb16f5d18a756ba241b7632bbf6a",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/5d09bad6-8b05-4a53-8f34-340b836a1329": {
+      "name": "uploads/S404-Upload-Screenshot-Mobile-Research-Page.png",
+      "version": "1.0.0",
+      "sha256": "ce5fa1cb4d0600f61d79d7b4120f0c8396f6283ac177a415da90d3a996934281",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/7123b37d-89b8-4c30-8d3b-8b6b9425a1b1": {
+      "name": "uploads/S404-Upload-Screenshot-Extension-Request-Chat.png",
+      "version": "1.0.0",
+      "sha256": "28f3b1723d323719d5edf193de022e53a9527b5e6fa07962915de75ae3444e55",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/7d03bab7-d189-4ae1-91e8-ff04154b5153": {
+      "name": "uploads/S404-Upload-Screenshot-Portal-Table-Edit-Button.png",
+      "version": "1.0.0",
+      "sha256": "779dd52d56eb1af618ddf4f8a2c064b5d78adf53b916d134fe1e8dfb6a13af31",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/7df0cdef-990c-4513-9bec-459362ab6140": {
+      "name": "uploads/S404-Upload-Screenshot-Mobile-Card-Overflow-2.png",
+      "version": "1.0.0",
+      "sha256": "14226042037c3a228f74bb6ca9b155f04b1494235c2929f20e894277907d931f",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/7e76e51e-ba7a-4271-88d8-cf34237364e7": {
+      "name": "uploads/S404-Upload-Screenshot-Portal-Table-Row.png",
+      "version": "1.0.0",
+      "sha256": "35ed83a073f99d1bc02ce55d09cd5b453bb2f1d87ba0bb7c9501d380f32160df",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/8e5d5add-26c6-4a67-b5e7-c7dacfd1b6f3": {
+      "name": "uploads/S404-Upload-Logo-YouTube.png",
+      "version": "1.0.0",
+      "sha256": "986f9b3887c9185b7175a9dea398c983f41e138a0fe66a0701a7f439d3eed353",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/926bf024-0c70-428b-846b-6e0f20f1785c": {
+      "name": "uploads/S404-Upload-Logo-Instagram.png",
+      "version": "1.0.0",
+      "sha256": "6d3c0ebfa0a06f25bafca67a0daa7a2ade4e5976e6d2b591bb185241b0cba9ce",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/ab077d4b-6c84-4fe5-8cea-84ff2ee53c13": {
+      "name": "uploads/S404-Upload-Screenshot-Mobile-Card-Overflow-1.png",
+      "version": "1.0.0",
+      "sha256": "d3ac4c528dfa98e06f430f223bf9af1ab013015b2a1cdaa8202196e9f5d19c0b",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/ae53a8cd-fc66-4afa-af31-a73aa6829728": {
+      "name": "uploads/S404-Upload-Screenshot-Mobile-Profile-Detail.png",
+      "version": "1.0.0",
+      "sha256": "41bb8a642aa83e42781fa473afa8819a9d35364cc31c809685c23c80e2e193ad",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/b529f44e-dfc8-4d0c-a2ce-0bc710e2bbf6": {
+      "name": "uploads/S404-Upload-Screenshot-Portal-Fetch-Error-1.png",
+      "version": "1.0.0",
+      "sha256": "09c470cb59b6a8fcb90a48d126f2813ede721844a6e4e62a78f6543e0e473114",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/b8e4f9ed-123b-4ac7-afe8-f103a161e7e8": {
+      "name": "uploads/S404-Upload-Screenshot-TikTok-Profile-Research.png",
+      "version": "1.0.0",
+      "sha256": "32b47281e78b08095ea0553b3596561112c00e9d9da8b63f9c8c71a5f08f7be9",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/bc9062f3-9c46-453b-8068-ed0493e067c4": {
+      "name": "uploads/S404-Upload-Screenshot-Extension-Popup-TikTok-1.png",
+      "version": "1.0.0",
+      "sha256": "621a963258747fa580235c91fc90039e10166c567d8671a446bee40fc471a418",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/cacd4e70-79d8-439f-823f-0a0c0d08fe17": {
+      "name": "uploads/S404-Upload-Logo-ICS.png",
+      "version": "1.0.0",
+      "sha256": "ced1b223f9bc4db72440d7d623c8338d03de639ad40e14fdac20dc698f668493",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/cbce811b-9630-4137-831e-8b2d5348c669": {
+      "name": "uploads/S404-Upload-Screenshot-Hiring-Staff-Summary-Row.png",
+      "version": "1.0.0",
+      "private": true,
+      "sha256": "9c053c20d13fe0833db94aa1445b0f96532330f4782fbcedfb66e2bb42ab491c",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/d460d0b5-3d00-4ef1-b997-ae1fc9b88af4": {
+      "name": "uploads/S404-Upload-Screenshot-YouTube-About-Links-2.png",
+      "version": "1.0.0",
+      "sha256": "ff8e5c0d1fe6de140894f2b84ae585903c1b5eb356aef9b2fc8e2913812557ab",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/db4459fa-a782-40c1-bcfd-3b94b4e88d7b": {
+      "name": "uploads/S404-Upload-Screenshot-Extension-YouTube-Channel.png",
+      "version": "1.0.0",
+      "sha256": "1f58c475c647c7a521c9bbd12f73bcc94659613d10b42c6d679ff6ef32a7b269",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/ddb455e3-6ee7-47ca-9eb7-2e0d1bafb938": {
+      "name": "uploads/S404-Upload-Screenshot-Hiring-Staff-List-Rows.png",
+      "version": "1.0.0",
+      "private": true,
+      "sha256": "96e2d530df6bf90bfde6208ebf95372b02ca47f6419626b2b46e23059f8f0263",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/de7a81f4-4900-4b0b-9b7b-1512ca04747b": {
+      "name": "uploads/S404-Upload-Screenshot-Import-Links-Rejected-Layout.png",
+      "version": "1.0.0",
+      "sha256": "88d80fb6a616b7c476198773ea979dff91c683434bcad4db171867e8b3c5137c",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/e1f757e1-c024-47b8-95ea-7e2d8328787f": {
+      "name": "uploads/S404-Upload-Screenshot-Extension-Facebook-Page.png",
+      "version": "1.0.0",
+      "sha256": "72fe30ed9931ee9831c432b09e81b81e3c543914dd2c575e7a4c246988d96ca4",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/e29263c7-20dd-4792-b6b9-fce63f5085f0": {
+      "name": "uploads/S404-Upload-Logo-Facebook.png",
+      "version": "1.0.0",
+      "sha256": "2f24b2b4ca671db6b5456087f12920107b1e34c94224ea3629338e3694ca877b",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/e8f813ea-b5b0-4bbd-b470-38cf44dbd639": {
+      "name": "uploads/S404-Upload-Screenshot-Extension-Facebook-Likes-Posts.png",
+      "version": "1.0.0",
+      "sha256": "710447d05bca6808fb4ee44bb33b3fc6cef66edbb1fe6556d61276e222f67801",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/f0321341-0f3a-4ad1-9948-3c2d551fd188": {
+      "name": "uploads/S404-Upload-Logo-Spotify.png",
+      "version": "1.0.0",
+      "sha256": "42526d884e7760ac2ec5db82d4e2d9c334e76378d806a1526279f8b7c73412c8",
+      "updated": "2026-11-17"
+    },
+    "uploads/hearth/f4200f33-f74d-4569-92e0-b879258fcd47": {
+      "name": "uploads/S404-Upload-Screenshot-Portal-Fetch-Error-2.png",
+      "version": "1.0.0",
+      "sha256": "5cd46d36081c0bfe1edf21364703b200687d5e94a88e631423d4d62a5a4cea28",
+      "updated": "2026-11-17"
+    },
+    "memory/MEMORY.md": {
+      "name": "notes/S404-Project-Memory-Summary.md",
+      "version": "1.0.0",
+      "sha256": "e9aa528dbb42b8c86e852c2a05514c53dcc22a0e1873dab909606e8e4594b4ac",
+      "updated": "2026-11-17"
+    },
+    "memory/content-research-portal.md": {
+      "name": "notes/S404-Memory-Research-Portal.md",
+      "version": "1.0.0",
+      "sha256": "e689cb9b6e280cbee75f9616b79859302fd8a8267cedb05fdd13c3427173b896",
+      "updated": "2026-11-17"
+    },
+    "memory/ics-studio404-site.md": {
+      "name": "notes/S404-Memory-Hiring-Site.md",
+      "version": "1.0.0",
+      "sha256": "4b26b4cba141f81fccdf523c9a5603a52bd370346bad77d14c990b6f9855c4d9",
+      "updated": "2026-11-17"
+    }
+  }
+}

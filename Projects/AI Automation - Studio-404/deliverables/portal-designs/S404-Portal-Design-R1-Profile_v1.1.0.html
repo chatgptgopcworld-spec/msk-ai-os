@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research Portal — Account Profile (Mockup 2)</title>
+<style>
+:root{--bg:#0b0d12;--panel:#12151c;--panel2:#181c25;--line:#232836;--text:#e8eaf0;--muted:#8a90a2;--accent:#7c5cff;--green:#22c55e;--red:#ef4444;--tt:#ff2d55;--cy:#25f4ee}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--text);font-size:14px}
+a{color:inherit;text-decoration:none}
+header{display:flex;align-items:center;gap:14px;padding:14px 28px;border-bottom:1px solid var(--line);background:var(--panel)}
+header .back{color:var(--muted)}header .sw{margin-left:auto;display:flex;gap:6px}
+.chip{padding:6px 12px;border-radius:20px;background:var(--panel2);border:1px solid var(--line);font-size:13px;cursor:pointer;color:var(--muted)}
+.chip.on{background:var(--text);color:#000}
+.wrap{display:grid;grid-template-columns:1fr 360px;gap:20px;padding:22px 28px;max-width:1300px;margin:auto}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}
+.prof{text-align:center;padding:30px 18px 10px}
+.avatar{width:110px;height:110px;border-radius:50%;margin:0 auto 12px;background:conic-gradient(var(--tt),var(--cy),var(--tt));padding:3px}
+.avatar div{width:100%;height:100%;border-radius:50%;background:#1b1f2b;display:grid;place-items:center;font-size:38px;font-weight:800}
+.uname{font-size:22px;font-weight:700}.handle{color:var(--muted);margin-top:2px}
+.live{display:inline-flex;align-items:center;gap:6px;font-size:11px;color:var(--green);background:#0f2e1c;padding:3px 9px;border-radius:20px;margin-top:8px}
+.live i{width:7px;height:7px;border-radius:50%;background:var(--green);animation:p 1.4s infinite}@keyframes p{50%{opacity:.3}}
+.stats{display:flex;justify-content:center;gap:34px;margin:18px 0 10px}
+.stats b{display:block;font-size:20px}.stats span{color:var(--muted);font-size:13px}
+.bio{color:#c5c9d6;max-width:420px;margin:8px auto 14px;line-height:1.5}
+.acts{display:flex;justify-content:center;gap:8px;margin-bottom:10px}
+.btn{background:var(--tt);color:#fff;border:0;border-radius:6px;padding:10px 26px;font-weight:600}
+.btn.g{background:var(--panel2);border:1px solid var(--line);color:var(--text);padding:10px 16px}
+.meta{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:6px}
+.meta span{font-size:12px;color:var(--muted);background:var(--panel2);border:1px solid var(--line);padding:3px 9px;border-radius:6px}
+.vtabs{display:flex;justify-content:center;gap:40px;border-bottom:1px solid var(--line);margin-top:18px}
+.vtabs span{padding:12px 4px;color:var(--muted);cursor:pointer}.vtabs .on{color:var(--text);border-bottom:2px solid var(--text)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;margin-top:4px}
+.vid{aspect-ratio:9/14;border-radius:4px;position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:8px;font-size:12px;font-weight:600}
+.vid .t{position:absolute;top:8px;left:8px;right:8px;font-size:12px;font-weight:700;line-height:1.3;text-shadow:0 1px 3px #000}
+.vid .pin{position:absolute;bottom:8px;right:8px;background:var(--tt);font-size:10px;padding:1px 6px;border-radius:4px}
+h3{margin:0 0 12px;font-size:15px;display:flex;justify-content:space-between}h3 small{color:var(--muted);font-weight:400}
+.cmp{width:100%;border-collapse:collapse;font-size:13px}
+.cmp td,.cmp th{padding:8px 6px;border-bottom:1px solid var(--line);text-align:right}
+.cmp th{color:var(--muted);font-weight:500}.cmp td:first-child,.cmp th:first-child{text-align:left}
+.me td{background:#1a1530}
+.g{color:var(--green)}.r{color:var(--red)}
+svg{width:100%;height:150px}
+.side>.card{margin-bottom:16px}
+.ins div{padding:8px 0;border-bottom:1px solid var(--line);font-size:13px;line-height:1.45}
+.note{color:var(--muted);font-size:12px;text-align:center;padding:10px 0 30px}
+@media(max-width:950px){.wrap{grid-template-columns:1fr;padding:16px}.grid{grid-template-columns:repeat(3,1fr)}header{padding:12px 16px;flex-wrap:wrap}.stats{gap:20px}}
+</style>
+</head>
+<body>
+<header>
+  <a class="back" href="mockup-1-dashboard.html">← Dashboard</a>
+  <b>My Accounts</b>
+  <div class="sw">
+    <span class="chip on">ABC · TikTok</span><span class="chip">ABC · YouTube</span><span class="chip">ABC · Facebook</span><span class="chip">+ Add</span>
+  </div>
+</header>
+<div class="wrap">
+  <div>
+    <div class="card prof">
+      <div class="avatar"><div>A</div></div>
+      <div class="uname">ABC Automation</div>
+      <div class="handle">@abc.automation</div>
+      <div class="live"><i></i> Auto-synced · today 09:00</div>
+      <div class="stats">
+        <div><b>312</b><span>Following</span></div>
+        <div><b>48.2K</b><span>Followers</span></div>
+        <div><b>1.3M</b><span>Likes</span></div>
+        <div><b>86</b><span>Videos</span></div>
+      </div>
+      <div class="bio">AI automation Urdu mein 🤖 | n8n · Make · ChatGPT<br>Roz ek naya hack ⚡</div>
+      <div class="acts"><a class="btn" href="#">Open on TikTok ↗</a><a class="btn g" href="#">✏️ Edit record</a><a class="btn g" href="#">🔄 Sync now</a></div>
+      <div class="meta"><span>Niche: AI automation</span><span>Created: 12 Feb 2025</span><span>Avg views/video: 21K</span><span>Engagement: 6.8%</span><span>#faceless</span></div>
+      <div class="vtabs"><span class="on">▦ Videos</span><span>🔥 Top</span><span>📝 Notes</span><span>⚔️ Competitors</span></div>
+      <div class="grid" id="grid"></div>
+    </div>
+  </div>
+  <div class="side">
+    <div class="card">
+      <h3>Followers growth <small>30 din</small></h3>
+      <svg viewBox="0 0 300 150" preserveAspectRatio="none">
+        <defs><linearGradient id="g" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#ff2d55" stop-opacity=".45"/><stop offset="1" stop-color="#ff2d55" stop-opacity="0"/></linearGradient></defs>
+        <path d="M0,130 L30,124 L60,120 L90,112 L120,108 L150,96 L180,90 L210,70 L240,58 L270,40 L300,26 L300,150 L0,150Z" fill="url(#g)"/>
+        <path d="M0,130 L30,124 L60,120 L90,112 L120,108 L150,96 L180,90 L210,70 L240,58 L270,40 L300,26" fill="none" stroke="#ff2d55" stroke-width="2.5"/>
+        <path d="M0,110 L30,108 L60,104 L90,100 L120,97 L150,92 L180,90 L210,86 L240,82 L270,78 L300,74" fill="none" stroke="#25f4ee" stroke-width="2" stroke-dasharray="5 4"/>
+      </svg>
+      <div style="font-size:12px;color:var(--muted)"><span style="color:var(--tt)">━</span> ABC &nbsp; <span style="color:var(--cy)">┅</span> Top competitor avg</div>
+    </div>
+    <div class="card">
+      <h3>Competitors <small>linked to ABC</small></h3>
+      <table class="cmp">
+        <tr><th>Account</th><th>Followers</th><th>7d</th><th>Avg views</th></tr>
+        <tr class="me"><td><b>ABC (you)</b></td><td>48.2K</td><td class="g">+3.4%</td><td>21K</td></tr>
+        <tr><td>@aitoolsdaily</td><td>812K</td><td class="g">+1.1%</td><td>96K</td></tr>
+        <tr><td>@promptwala</td><td>340K</td><td class="g">+2.6%</td><td>44K</td></tr>
+        <tr><td>@techwithzee</td><td>65K</td><td class="r">−0.4%</td><td>9K</td></tr>
+      </table>
+      <div style="margin-top:10px;font-size:12px;color:var(--muted)">+ Link competitor from Researched Accounts</div>
+    </div>
+    <div class="card ins">
+      <h3>Insights <small>auto</small></h3>
+      <div>📈 Aap ki growth (+3.4%) competitors ke average se tez hai.</div>
+      <div>⏱️ Best videos 20–30 sec ki hain; 60s+ videos ke views 40% kam.</div>
+      <div>🪝 “1 minute mein…” wale hooks sab se zyada chal rahe hain.</div>
+    </div>
+  </div>
+</div>
+<div class="note">Mockup 2 of 2 — dummy data. TikTok-jaisa layout, apna original design (koi brand logo/asset copy nahi). Isi tarah YouTube (banner + video list), Facebook (cover + posts) aur Spotify (show/episodes) ke apne layouts honge.</div>
+<script>
+const vids=[['1 minute mein invoice automation 🤯','128K',1],['ChatGPT + Sheets hack','96K',1],['n8n WhatsApp bot','74K'],['AI voice Urdu mein','120K'],['5 AI tools 10x fast','52K'],['Make.com Gmail flow','31K'],['Prompt jo client laye','27K'],['Faceless channel setup','44K']];
+const cols=[['#3b1d5c','#7c5cff'],['#0c3b3a','#25f4ee'],['#3b0f1d','#ff2d55'],['#1d2e0c','#a3e635']];
+document.getElementById('grid').innerHTML=vids.map((v,i)=>{const c=cols[i%4];return `<div class="vid" style="background:linear-gradient(160deg,${c[0]},#0b0d12 70%),radial-gradient(circle at 70% 30%,${c[1]}55,transparent 60%)"><div class="t">${v[0]}</div>${v[2]?'<span class="pin">Pinned</span>':''}▷ ${v[1]}</div>`}).join('');
+</script>
+</body>
+</html>

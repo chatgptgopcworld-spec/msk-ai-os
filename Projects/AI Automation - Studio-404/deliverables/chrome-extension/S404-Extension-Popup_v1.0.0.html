@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<title>ICS Research Portal</title>
+<script src="theme.js"></script>
+<style>
+:root{--bg:#070b18;--bg2:#0c1226;--card:#111936;--sunk:#0a1024;--line:#232e5c;--ink:#f1f4ff;--ink2:#b9c1e6;--ink3:#8089b3;--accent:#6e8cff;--a1:#35b6ff;--a2:#8a5bff;--red:#ff4d5e;--ok:#4ade9a;--bad:#ff7a88;--warn:#f5b454;--glow:rgba(110,140,255,.35);--shadow:0 10px 30px rgba(0,0,0,.45)}
+[data-theme=light]{--bg:#f3f5fd;--bg2:#ffffff;--card:#ffffff;--sunk:#eef1fb;--line:#dde2f3;--ink:#0d1330;--ink2:#3b446b;--ink3:#6b7499;--accent:#3b5bff;--glow:rgba(59,91,255,.22);--ok:#0f9d63;--bad:#d92d44;--warn:#b7791f;--shadow:0 10px 26px rgba(30,45,110,.14)}
+*{box-sizing:border-box}
+html,body{margin:0}
+html{width:384px;overflow:hidden;background:var(--bg)}
+body{width:384px;max-height:490px;overflow-y:auto;scrollbar-width:none;background:var(--bg);color:var(--ink);font:14px/1.45 "Segoe UI",system-ui,-apple-system,Arial,sans-serif;position:relative;overflow-x:hidden;transition:background .25s,color .25s}
+body::before{content:"";position:absolute;inset:-60px 0 auto 0;height:210px;background:radial-gradient(60% 70% at 18% 30%,rgba(53,182,255,.28),transparent 70%),radial-gradient(55% 70% at 85% 20%,rgba(138,91,255,.30),transparent 70%),radial-gradient(40% 50% at 55% 0%,rgba(255,77,94,.16),transparent 70%);pointer-events:none;filter:blur(6px)}
+[data-theme=light] body::before{opacity:.55}
+.wrap{position:relative;padding:14px 16px 16px}
+/* header */
+.hd{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.logo{width:38px;height:38px;border-radius:11px;flex:none;box-shadow:0 0 0 1px var(--line),0 6px 18px rgba(0,0,0,.35);transition:transform .25s}
+.hd:hover .logo{transform:rotate(-4deg) scale(1.05)}
+.brand{flex:1;min-width:0;line-height:1.15}
+.brand b{display:block;font-size:15.5px;font-weight:800;letter-spacing:.01em;background:linear-gradient(90deg,var(--a1),var(--a2) 55%,var(--red));-webkit-background-clip:text;background-clip:text;color:transparent}
+.brand span{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink3);font-weight:600}
+.ib{width:32px;height:32px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink2);display:grid;place-items:center;cursor:pointer;padding:0;transition:transform .18s,border-color .18s,color .18s,box-shadow .18s,background .18s}
+.ib:hover{transform:translateY(-2px);border-color:var(--accent);color:var(--ink);box-shadow:0 6px 16px var(--glow)}
+.ib:active{transform:translateY(0) scale(.94)}
+.ib svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.ib.out:hover{border-color:var(--bad);color:var(--bad);box-shadow:0 6px 16px rgba(255,90,110,.25)}
+#theme .sun{display:none}[data-theme=light] #theme .sun{display:block}[data-theme=light] #theme .moon{display:none}
+#theme:hover svg{animation:spin .5s ease}
+@keyframes spin{from{transform:rotate(-90deg) scale(.6);opacity:.3}to{transform:none;opacity:1}}
+/* tabs */
+.tabs{position:relative;display:grid;grid-template-columns:1fr 1fr;background:var(--sunk);border:1px solid var(--line);border-radius:13px;padding:4px;margin-bottom:14px}
+.tabs i{position:absolute;top:4px;bottom:4px;left:4px;width:calc(50% - 4px);border-radius:10px;background:linear-gradient(90deg,var(--a1),var(--a2));box-shadow:0 6px 16px var(--glow);transition:transform .28s cubic-bezier(.3,1.3,.5,1)}
+.tabs[data-on=bulk] i{transform:translateX(100%)}
+.tabs button{position:relative;z-index:1;border:0;background:none;color:var(--ink3);font:inherit;font-weight:700;font-size:13px;padding:8px 6px;border-radius:10px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:7px;transition:color .2s}
+.tabs button svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.tabs button:hover{color:var(--ink)}
+.tabs button.on{color:#fff}
+/* cards + fields */
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;box-shadow:var(--shadow);animation:rise .28s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+label{display:block;font-size:11.5px;font-weight:600;color:var(--ink3);margin-bottom:10px;letter-spacing:.02em}
+.f{position:relative;margin-top:5px}
+.f svg{position:absolute;left:11px;top:50%;width:15px;height:15px;transform:translateY(-50%);fill:none;stroke:var(--ink3);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;pointer-events:none;transition:stroke .18s}
+.f:focus-within svg{stroke:var(--accent)}
+input,select,textarea{display:block;width:100%;margin-top:5px;background:var(--sunk);border:1px solid var(--line);border-radius:11px;padding:10px 12px;color:var(--ink);font:inherit;font-size:13.5px;outline:none;transition:border-color .18s,box-shadow .18s,background .18s}
+.f input{margin-top:0;padding-left:34px}
+input:hover,select:hover,textarea:hover{border-color:color-mix(in srgb,var(--accent) 55%,var(--line))}
+input:focus,select:focus,textarea:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--glow)}
+input::placeholder,textarea::placeholder{color:var(--ink3);opacity:.75}
+select{appearance:none;-webkit-appearance:none;padding-right:32px;cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238089b3' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 11px center;background-size:14px}
+select option{background:var(--bg2);color:var(--ink)}
+textarea{resize:none;height:104px;font:12px/1.5 ui-monospace,Consolas,monospace}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+/* buttons */
+.go{position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;gap:8px;width:100%;border:0;cursor:pointer;background:linear-gradient(90deg,var(--a1),var(--a2));color:#fff;font:inherit;font-weight:800;font-size:14px;border-radius:12px;padding:12px;box-shadow:0 8px 22px var(--glow);transition:transform .18s,box-shadow .18s,filter .18s}
+.go::after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:45%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.38),transparent);transform:skewX(-20deg);transition:left .55s ease}
+.go:hover{transform:translateY(-2px);box-shadow:0 12px 28px var(--glow);filter:saturate(1.15)}
+.go:hover::after{left:120%}
+.go:active{transform:translateY(0) scale(.98)}
+.go:disabled{opacity:.5;cursor:default;transform:none;box-shadow:none;filter:none}.go:disabled::after{display:none}
+.go.alt{background:var(--sunk);border:1px solid var(--line);color:var(--ink);box-shadow:none;font-weight:700}
+.go.alt:hover{border-color:var(--accent);box-shadow:0 8px 18px var(--glow)}
+.go.stop{background:linear-gradient(90deg,#ff5d6c,#ff8a4c)}
+.go svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.btns{display:grid;grid-template-columns:auto 1fr;gap:10px;margin-top:2px}
+.btns .alt{width:auto;padding:12px 14px}
+/* login */
+.hero{text-align:center;padding:6px 0 14px}
+.hero img{width:64px;height:64px;border-radius:18px;box-shadow:0 0 0 1px var(--line),0 14px 34px var(--glow);animation:float 4s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-5px)}}
+.hero h1{font-size:19px;margin:12px 0 2px;font-weight:800}
+.hero p{margin:0;color:var(--ink3);font-size:12.5px}
+/* profile */
+.who{display:flex;gap:12px;align-items:center;margin-bottom:12px}
+.who .ring{padding:2px;border-radius:50%;background:linear-gradient(135deg,var(--a1),var(--a2),var(--red));flex:none;transition:transform .25s}
+.who:hover .ring{transform:scale(1.06) rotate(4deg)}
+.who img{display:block;width:54px;height:54px;border-radius:50%;object-fit:cover;border:2px solid var(--card);background:var(--sunk)}
+.who>div:last-child{min-width:0}
+.who .n{font-weight:800;font-size:16px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.who .s{color:var(--ink3);font-size:12.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:10px}
+.grid div{background:var(--sunk);border:1px solid var(--line);border-radius:12px;padding:9px 6px;text-align:center;transition:transform .18s,border-color .18s}
+.grid div:hover{transform:translateY(-2px);border-color:var(--accent)}
+.grid b{display:block;font-size:16px;font-weight:800}
+.grid span{color:var(--ink3);font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;font-weight:600}
+.more{color:var(--ink3);font-size:12px;margin-bottom:12px;min-height:0}
+.more:empty{display:none}
+.note{color:var(--ink2);font-size:13px;text-align:center;padding:22px 10px}
+.note svg{display:block;margin:0 auto 10px;width:34px;height:34px;fill:none;stroke:var(--accent);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;opacity:.9}
+.msg{font-size:12.5px;color:var(--ink3);min-height:18px;margin-top:10px;text-align:center;font-weight:600}
+.msg.ok{color:var(--ok)}.msg.err{color:var(--bad)}
+/* bulk */
+.tip{color:var(--ink3);font-size:12px;margin:0 0 8px}
+.bar{height:6px;border-radius:99px;background:var(--sunk);overflow:hidden;margin-top:12px}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--a1),var(--a2));transition:width .35s}
+.sum{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 8px}
+.sum:empty{display:none}
+.sum span{background:var(--sunk);border:1px solid var(--line);border-radius:99px;padding:3px 10px;font-size:11.5px;font-weight:700;color:var(--ink2)}
+ul{list-style:none;margin:0;padding:0;display:grid;gap:5px;max-height:150px;overflow-y:auto;scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+ul:empty{display:none}
+li{display:flex;gap:8px;align-items:center;background:var(--sunk);border-radius:10px;padding:7px 10px;min-width:0;font-size:12.5px;transition:transform .15s,background .15s}
+li:hover{transform:translateX(2px)}
+li .p{flex:none;width:9px;height:9px;border-radius:50%;background:var(--ink3)}
+li .u{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+li .t{flex:none;max-width:46%;text-align:right;font-size:11px;font-weight:800;color:var(--ink3);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+li.ready .t{color:var(--accent)}li.saved .t,li.updated .t{color:var(--ok)}li.fail .t,li.bad .t{color:var(--bad)}li.work .t{color:var(--a1)}
+li.bad{opacity:.7}
+li.TikTok .p{background:#25f4ee}li.YouTube .p{background:#ff3b30}li.Facebook .p{background:#1877f2}li.Instagram .p{background:#e1306c}li.Spotify .p{background:#1db954}
+.foot{text-align:center;color:var(--ink3);font-size:11px;margin-top:12px}
+.foot a{color:var(--accent);cursor:pointer;font-weight:700;text-decoration:none;transition:color .15s}
+.foot a:hover{color:var(--ink);text-decoration:underline}
+[hidden]{display:none!important}
+body::-webkit-scrollbar{display:none}
+.note{min-height:348px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hd">
+    <img class="logo" src="icon128.png" alt="">
+    <div class="brand"><b>ICS Research</b><span>Portal</span></div>
+    <button class="ib" id="theme" title="Dark / light mode" aria-label="Switch dark or light mode"><svg class="moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+    <button class="ib" id="open" title="Open portal" aria-label="Open portal"><svg viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></button>
+    <button class="ib out" id="logout" title="Log out" aria-label="Log out" hidden><svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></svg></button>
+  </div>
+
+  <form id="login" hidden>
+    <div class="hero"><img src="icon128.png" alt=""><h1>Welcome back</h1><p>Log in once. Same login as your portal.</p></div>
+    <div class="card">
+      <label>Username<div class="f"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><input id="user" autocomplete="username" value="admin" required></div></label>
+      <label>Password<div class="f"><svg viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><input id="pass" type="password" autocomplete="current-password" placeholder="Your portal password" required></div></label>
+      <button class="go" id="lbtn"><svg viewBox="0 0 24 24"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M15 12H3"/></svg><span>Log in</span></button>
+      <div class="msg" id="lmsg"></div>
+    </div>
+    <div class="foot">Tip: open the <a id="open2">portal</a> and the extension logs in by itself.</div>
+  </form>
+
+  <div id="main" hidden>
+    <div class="tabs" id="tabs" data-on="one"><i></i>
+      <button type="button" id="tone" class="on"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>This profile</button>
+      <button type="button" id="tbulk"><svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>Paste links</button>
+    </div>
+
+    <div id="pone">
+      <div class="card note" id="note">Reading this profile...</div>
+      <div class="card" id="card" hidden>
+        <div class="who"><div class="ring"><img id="av" alt=""></div><div><div class="n" id="nm"></div><div class="s" id="sb"></div></div></div>
+        <div class="grid" id="grid"></div>
+        <div class="more" id="more"></div>
+        <div class="two">
+          <label>Niche (optional)<input id="niche" placeholder="e.g. AI tools"></label>
+          <label>Status<select id="status"><option>New</option><option>Shortlisted</option><option>Selected</option><option>Active</option><option>Rejected</option></select></label>
+        </div>
+        <button class="go" id="save"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg><span>Save to Portal</span></button>
+        <div class="msg" id="msg"></div>
+      </div>
+    </div>
+
+    <div id="pbulk" hidden>
+      <div class="card">
+        <p class="tip">Paste any number of TikTok, YouTube, Facebook, Instagram or Spotify links. Each one is sorted and saved with full details.</p>
+        <textarea id="btext" placeholder="https://www.tiktok.com/@name&#10;https://www.youtube.com/@channel&#10;https://www.instagram.com/name/"></textarea>
+        <div class="two" style="margin-top:10px">
+          <label>Niche (optional)<input id="bniche" placeholder="e.g. AI tools"></label>
+          <label>Status<select id="bstatus"><option>New</option><option>Shortlisted</option><option>Selected</option><option>Active</option><option>Rejected</option></select></label>
+        </div>
+        <div class="btns">
+          <button class="go alt" id="bcheck" type="button">Check</button>
+          <button class="go" id="brun" type="button" disabled><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg><span>Save accounts</span></button>
+          <button class="go stop" id="bstop" type="button" hidden><span>Stop</span></button>
+        </div>
+        <div class="bar" id="bbar" hidden><i id="bfill"></i></div>
+        <div class="msg" id="bmsg"></div>
+        <div class="sum" id="bsum"></div>
+        <ul id="blist"></ul>
+      </div>
+      <div class="foot">You can close this window. The import keeps running in the background.</div>
+    </div>
+  </div>
+</div>
+<script src="config.js"></script>
+<script src="links.js"></script>
+<script src="scrape.js"></script>
+<script src="core.js"></script>
+<script src="popup.js"></script>
+</body>
+</html>

@@ -11,6 +11,7 @@ log. Read the vault map `AIOS/msk-vault-map.md` first (section 6, "Projects"), t
 | `Artjenny/` | `Artjenny/CLAUDE.md`, then `wiki/aj-hot.md`, `wiki/aj-index.md` (client work; tracked by msk-ai-os) |
 | `Moonshot Media/` | `Moonshot Media/CLAUDE.md`, then `wiki/ms-hot.md`, `wiki/ms-index.md` (owner's brand; tracked by msk-ai-os) |
 | `HR ICS (PWD) STUDIO 404/` | `HR ICS (PWD) STUDIO 404/CLAUDE.md`, then `wiki/hr-hot.md`, `VERSIONS.md` (ICS hiring system, versioned files; tracked by msk-ai-os; `private/` not in git) |
+| `AI Automation - Studio-404/` | `AI Automation - Studio-404/CLAUDE.md`, then `wiki/s404-hot.md`, `VERSIONS.md` (ICS Research Portal, versioned files; tracked by msk-ai-os; `private/` not in git) |
 | `Hamzi Prompts/` | `Hamzi Prompts/CLAUDE.md`, then `wiki/hot.md`, `wiki/index.md` (git repo) |
 | `Prompts Website/` | `Prompts Website/CLAUDE.md`, then `wiki/hot.md`, `wiki/index.md` (git repo; code repo in `projects/soniprompts/`) |
 | `Ubaid Automation/` | `Ubaid Automation/CLAUDE.md`, then `wiki/hot.md`, `wiki/index.md` (git repo; code repo in `projects/ubaidooautomation/`) |

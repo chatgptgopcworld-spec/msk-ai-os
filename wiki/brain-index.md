@@ -24,6 +24,7 @@ Catalogue of every wiki page. Updated on every ingest. Format per line: link to 
 - [[aj-hot]] — Artjenny: client work for a Busan caricature artist; YouTube channel kit and brand images (`Projects/Artjenny/`; [[aj-index|its index]])
 - [[ms-hot]] — Moonshot Media: the owner's brand; three rounds of brand kits, 10 premium directions awaiting shortlist (`Projects/Moonshot Media/`; [[ms-index|its index]])
 - [[hr-hot]] — HR ICS (PWD) STUDIO 404: hiring system for ICS [PWD] Studio 404 (forms, Apps Script, Netlify), files versioned from v1.0.0 (`Projects/HR ICS (PWD) STUDIO 404/`; [[hr-index|its index]])
+- [[s404-hot]] — AI Automation - Studio-404: ICS Research Portal (Netlify site, Apps Script, Chrome extension, design rounds), files versioned from v1.0.0 (`Projects/AI Automation - Studio-404/`; [[s404-index|its index]])
 
 ## Topics
 _None yet._
