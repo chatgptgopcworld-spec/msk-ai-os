@@ -32,15 +32,29 @@
     },
     "hiring-forms/WhatsApp-Message-Templates.md": {
       "name": "deliverables/hiring-forms/ICS-WhatsApp-Templates.md",
-      "version": "1.0.0",
-      "sha256": "7815964e0e432116822102e7aad759109e451dbf3e8f8866492d81f11a51c401",
-      "updated": "2026-11-17"
+      "version": "1.1.0",
+      "sha256": "cd57d09cc87d2d5cf426cc33772b8473d017def95209664f1ea23dca991ed910",
+      "updated": "2026-11-17",
+      "history": [
+        {
+          "version": "1.0.0",
+          "sha256": "7815964e0e432116822102e7aad759109e451dbf3e8f8866492d81f11a51c401",
+          "updated": "2026-11-17"
+        }
+      ]
     },
     "hiring-forms/webapp/Code.gs": {
       "name": "deliverables/apps-script/ICS-Apps-Script-Code.gs",
-      "version": "1.0.0",
-      "sha256": "22288a62dbf90ee66ca323cc5792aea6cf2ef71fa627c52487e9607e6fbd5f57",
-      "updated": "2026-11-17"
+      "version": "1.1.0",
+      "sha256": "a918478b4800a6eec03491f7ae6caa20ae0af4515722526e9b243d04b3b81bba",
+      "updated": "2026-11-17",
+      "history": [
+        {
+          "version": "1.0.0",
+          "sha256": "22288a62dbf90ee66ca323cc5792aea6cf2ef71fa627c52487e9607e6fbd5f57",
+          "updated": "2026-11-17"
+        }
+      ]
     },
     "hiring-forms/webapp/apply.html": {
       "name": "deliverables/apps-script/ICS-AppsScript-Apply-Page.html",
@@ -74,9 +88,16 @@
     },
     "hiring-forms/webapp/netlify-site/staff.html": {
       "name": "deliverables/netlify-site/ICS-Netlify-Staff-Page.html",
-      "version": "1.0.0",
-      "sha256": "12e2f525ee88f6100349c287c801cef732201c923b072aa8513af8ef48a149ac",
-      "updated": "2026-11-17"
+      "version": "1.1.0",
+      "sha256": "b0a396ba93c70b7ff54e8d564ddf9a7cb2c62bf5f8e0da8902332e413da63224",
+      "updated": "2026-11-17",
+      "history": [
+        {
+          "version": "1.0.0",
+          "sha256": "12e2f525ee88f6100349c287c801cef732201c923b072aa8513af8ef48a149ac",
+          "updated": "2026-11-17"
+        }
+      ]
     },
     "memory/MEMORY.md": {
       "name": "notes/ICS-Project-Memory-Summary.md",
@@ -93,9 +114,16 @@
     },
     "memory/hiring-process.md": {
       "name": "notes/ICS-Project-Memory-Hiring-Process.md",
-      "version": "1.0.0",
-      "sha256": "c5d5384a633a3b033e83839ac3f8b23f4ff0d62c5ecb5be4159ea7d3163d272a",
-      "updated": "2026-11-17"
+      "version": "1.1.0",
+      "sha256": "0748dbe56147bfe3560b6305d1c656f6c384183da7247c7e0d82f72a08df5e31",
+      "updated": "2026-11-17",
+      "history": [
+        {
+          "version": "1.0.0",
+          "sha256": "c5d5384a633a3b033e83839ac3f8b23f4ff0d62c5ecb5be4159ea7d3163d272a",
+          "updated": "2026-11-17"
+        }
+      ]
     },
     "uploads/hearth/00812c0b-aede-4da8-8bce-6f91d442fa22": {
       "name": "uploads/ICS-Upload-Photo-Meta-Ad-Review-Error.jpg",
@@ -217,6 +245,12 @@
       "name": "notes/ICS-vault-sync.md",
       "version": "1.0.0",
       "sha256": "3d99e86b686dd11621f38f6cf192b4e2ab2011ed30e7ded4f4721d3c292ad2ad",
+      "updated": "2026-11-17"
+    },
+    "hiring-forms/webapp/netlify-site/confirm.html": {
+      "name": "deliverables/netlify-site/ICS-Netlify-Confirm-Page.html",
+      "version": "1.0.0",
+      "sha256": "e39333046e3ceedad7a54b84245ab694d90b36836000e0f1bd6675fcbcff1ffa",
       "updated": "2026-11-17"
     }
   }
