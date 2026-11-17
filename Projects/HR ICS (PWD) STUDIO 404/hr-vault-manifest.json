@@ -80,9 +80,16 @@
     },
     "memory/MEMORY.md": {
       "name": "notes/ICS-Project-Memory-Summary.md",
-      "version": "1.0.0",
-      "sha256": "29c815e274233285c954a09a1ebc79fb8968243708ad58c6b4b21cdd6c27e9e9",
-      "updated": "2026-11-17"
+      "version": "1.0.1",
+      "sha256": "659c2dd3b15298b1944c95838e2b0fc7d445c2b97ed63db97f339700845027e9",
+      "updated": "2026-11-17",
+      "history": [
+        {
+          "version": "1.0.0",
+          "sha256": "29c815e274233285c954a09a1ebc79fb8968243708ad58c6b4b21cdd6c27e9e9",
+          "updated": "2026-11-17"
+        }
+      ]
     },
     "memory/hiring-process.md": {
       "name": "notes/ICS-Project-Memory-Hiring-Process.md",
@@ -204,6 +211,12 @@
       "name": "uploads/ICS-Upload-Screenshot-Mobile-Apply-Form.png",
       "version": "1.0.0",
       "sha256": "9c4e3c1ecde690d93993f956ea1753d0ce3a8b4c3b4e621b2bec1be12981d8a4",
+      "updated": "2026-11-17"
+    },
+    "memory/vault-sync.md": {
+      "name": "notes/ICS-vault-sync.md",
+      "version": "1.0.0",
+      "sha256": "3d99e86b686dd11621f38f6cf192b4e2ab2011ed30e7ded4f4721d3c292ad2ad",
       "updated": "2026-11-17"
     }
   }
