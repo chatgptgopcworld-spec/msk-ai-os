@@ -16,6 +16,20 @@
       "port": 5178
     },
     {
+      "name": "moonshot-brand-kits",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "5181",
+        "--bind",
+        "127.0.0.1",
+        "--directory",
+        "Projects/Moonshot Media/deliverables/brand-kits"
+      ],
+      "port": 5181
+    },
+    {
       "name": "soniprompts-preview",
       "runtimeExecutable": "node",
       "runtimeArgs": [

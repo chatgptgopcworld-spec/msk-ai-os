@@ -22,6 +22,7 @@ Catalogue of every wiki page. Updated on every ingest. Format per line: link to 
 
 - [[lc-hot]] — Learn Core: the reusable LMS product Monetics LearnCore and the three drifting LMS copies (`Projects/Learn Core/`; [[lc-index|its index]])
 - [[aj-hot]] — Artjenny: client work for a Busan caricature artist; YouTube channel kit and brand images (`Projects/Artjenny/`; [[aj-index|its index]])
+- [[ms-hot]] — Moonshot Media: the owner's brand; three rounds of brand kits, 10 premium directions awaiting shortlist (`Projects/Moonshot Media/`; [[ms-index|its index]])
 
 ## Topics
 _None yet._

@@ -93,3 +93,7 @@
 - `Projects/Artjenny/` created for client work for artjenny (Busan caricature artist): CLAUDE.md, [[aj-hot]], [[aj-index]], [[aj-log]], [[src-2026-10-27-aj-facebook-page]], [[aj-artjenny-brand]], [[aj-youtube-channel-kit-2026-10-27]].
 - Filed the YouTube channel kit page and upload-ready images (banner, watermark, signature overlays) with their HTML sources in `deliverables/youtube-kit/`.
 - Registered: [[msk-vault-map]] (table, rule 10), `Projects/CLAUDE.md`, [[brain-index]]. No own repo; tracked by msk-ai-os. Hot cache refreshed.
+## [2026-11-17] schema | New project: Moonshot Media
+- `Projects/Moonshot Media/` created for the owner's brand: CLAUDE.md, [[ms-hot]], [[ms-index]], [[ms-log]], [[ms-brand-kits-2026-11-17]].
+- Filed three rounds of brand kits (HTML) and the original logo assets in `deliverables/brand-kits/`; preview server `moonshot-brand-kits` added to `.claude/launch.json`.
+- Registered: [[msk-vault-map]] (table, rule 10), `Projects/CLAUDE.md`, [[brain-index]]. Hot cache refreshed.

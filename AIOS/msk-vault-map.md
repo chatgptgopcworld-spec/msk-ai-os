@@ -147,7 +147,7 @@ files refer to "rules 7-9".)
    If a project or code repo ever moves, update these paths and `tools/msk-sync.ps1`.
 10. **MSK AI OS has its own git repo** (GitHub `chatgptgopcworld-spec/msk-ai-os`, private, branch
    `main`). It tracks the OS itself and projects without their own repo (Pakistan Legal Aid, AI OS
-   Blueprint, Learn Core's wiki, Artjenny). `.gitignore` keeps out the imported projects (their own repos) and
+   Blueprint, Learn Core's wiki, Artjenny, Moonshot Media). `.gitignore` keeps out the imported projects (their own repos) and
    `Projects/Pakistan Legal Aid/cases/` (personal data; only its README is tracked). Any new
    project with its own repo gets a line in `.gitignore`; any folder holding personal data stays
    ignored. How to commit and push: [[msk-skill-git-sync]].
@@ -160,6 +160,7 @@ files refer to "rules 7-9".)
 | `Projects/Ubaid Automation/` | Ubaidoo client-work wiki (Ubaidoo Automation site and Academy LMS; code in its `projects/ubaidooautomation/`) | its `CLAUDE.md`, then `wiki/hot.md`, `wiki/index.md` |
 | `Projects/Learn Core/` | Monetics LearnCore, the reusable LMS product; code in its `projects/monetics-learncore/` | its `CLAUDE.md`, then `wiki/lc-hot.md`, `wiki/lc-index.md` |
 | `Projects/Artjenny/` | Client work for artjenny (Busan caricature artist): YouTube channel kit, brand images; deliverables in its `deliverables/` | its `CLAUDE.md`, then `wiki/aj-hot.md`, `wiki/aj-index.md` |
+| `Projects/Moonshot Media/` | The owner's brand Moonshot Media / Studios: brand kits, logos, mockups; deliverables in its `deliverables/` | its `CLAUDE.md`, then `wiki/ms-hot.md`, `wiki/ms-index.md` |
 | `Projects/AI OS Blueprint/` | Nick Milo's AI OS from 6 videos, starter kit, and the plan this map came from | its `CLAUDE.md`, then `wiki/aios-hot.md`, `wiki/aios-index.md` |
 
 ## 7. Current priorities

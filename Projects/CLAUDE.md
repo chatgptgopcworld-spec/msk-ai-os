@@ -9,6 +9,7 @@ log. Read the vault map `AIOS/msk-vault-map.md` first (section 6, "Projects"), t
 | `Pakistan Legal Aid/` | `Pakistan Legal Aid/CLAUDE.md`, then `wiki/legal-hot.md`, `wiki/legal-index.md` |
 | `Learn Core/` | `Learn Core/CLAUDE.md`, then `wiki/lc-hot.md`, `wiki/lc-index.md` (wiki tracked by msk-ai-os; code repo in `projects/monetics-learncore/`) |
 | `Artjenny/` | `Artjenny/CLAUDE.md`, then `wiki/aj-hot.md`, `wiki/aj-index.md` (client work; tracked by msk-ai-os) |
+| `Moonshot Media/` | `Moonshot Media/CLAUDE.md`, then `wiki/ms-hot.md`, `wiki/ms-index.md` (owner's brand; tracked by msk-ai-os) |
 | `Hamzi Prompts/` | `Hamzi Prompts/CLAUDE.md`, then `wiki/hot.md`, `wiki/index.md` (git repo) |
 | `Prompts Website/` | `Prompts Website/CLAUDE.md`, then `wiki/hot.md`, `wiki/index.md` (git repo; code repo in `projects/soniprompts/`) |
 | `Ubaid Automation/` | `Ubaid Automation/CLAUDE.md`, then `wiki/hot.md`, `wiki/index.md` (git repo; code repo in `projects/ubaidooautomation/`) |

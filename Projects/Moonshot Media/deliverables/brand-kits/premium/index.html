@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Moonshot — Premium Brand Kits</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Archivo+Black&family=Bodoni+Moda:opsz,wght@6..96,400..700&family=Cinzel:wght@400;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Mono:wght@400;500&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600;700&family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Outfit:wght@300;400;600&family=Poiret+One&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0b0c;--fg:#f3eee4;--paper:#f3eee4;--ink:#0b0b0c;--acc:#a07c2c;--fd:"Bodoni Moda";--fb:Jost;--dw:500;--ds:normal;--dx:100%}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:#08080a;color:#eee;font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+a{color:inherit}
+header.top{position:sticky;top:0;z-index:30;background:rgba(8,8,10,.92);backdrop-filter:blur(14px);border-bottom:1px solid #1e1e22}
+.topin{display:flex;align-items:center;gap:18px;padding:10px max(16px,4vw)}
+.home{font:600 12px Inter;letter-spacing:.2em;white-space:nowrap;padding:8px 0}
+.home small{display:block;font-weight:400;letter-spacing:.04em;color:#77777f;font-size:11px;margin-top:2px}
+.tabs{display:flex;gap:6px;overflow-x:auto;flex:1;scrollbar-width:none;align-items:center}
+.tabs em{font:500 10px Inter;letter-spacing:.2em;color:#6c6c75;font-style:normal;padding:0 6px 0 10px;white-space:nowrap}
+.tab{display:flex;align-items:center;gap:8px;padding:5px 12px 5px 5px;border:1px solid #26262c;border-radius:999px;font:500 12px Inter;color:#a9a9b3;white-space:nowrap;transition:.15s}
+.tab i{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;flex:none;overflow:hidden}
+.tab i svg{width:18px;height:18px}
+.tab:hover{border-color:#555;color:#fff}.tab.on{background:#fff;border-color:#fff;color:#08080a}
+.subnav{display:flex;gap:22px;padding:8px max(16px,4vw);border-top:1px solid #17171b;font:500 11.5px Inter;overflow-x:auto;scrollbar-width:none}
+.subnav a{color:#77777f;text-decoration:none;white-space:nowrap}.subnav a:hover{color:#fff}
+/* overview */
+.ov{padding:70px max(20px,5vw) 90px}
+.ov h1{font:300 clamp(34px,5vw,68px)/1.02 "Cormorant Garamond",serif;letter-spacing:-.01em}
+.ov h1 i{color:#c9a46a}
+.ov>p{max-width:62ch;color:#9a9aa3;line-height:1.65;margin:18px 0 0;font-size:15px}
+.ov h2{font:500 11px Inter;letter-spacing:.28em;color:#77777f;margin:54px 0 16px;display:flex;gap:14px;align-items:center}
+.ov h2::after{content:"";flex:1;height:1px;background:#1e1e22}
+.ovg{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+.ovc{border-radius:14px;overflow:hidden;text-align:left;border:1px solid #1e1e22;transition:transform .25s,border-color .25s;display:flex;flex-direction:column}
+.ovc:hover{transform:translateY(-4px);border-color:#555}
+.ovc .lg{aspect-ratio:4/3;display:grid;place-items:center;padding:13% 14%}
+.ovc .lg svg{width:100%;height:100%}
+.ovc .mt{padding:13px 16px;background:#111114;font:500 13px Inter;display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+.ovc .mt small{color:#77777f;font-weight:400;font-size:11.5px;text-align:right}
+/* kit */
+.hero{position:relative;overflow:hidden;background:var(--bg);color:var(--fg);padding:86px max(20px,5vw) 96px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:56px;align-items:center}
+.hero .pat{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hero>div{position:relative}
+.kick{font:500 11px Inter;letter-spacing:.28em;text-transform:uppercase;opacity:.7;margin-bottom:22px}
+.hero h1{font-family:var(--fd);font-weight:var(--dw);font-style:var(--ds);font-stretch:var(--dx);font-size:clamp(40px,5.6vw,84px);line-height:1}
+.hero p{margin-top:24px;max-width:50ch;line-height:1.7;font-size:15.5px;opacity:.82;font-family:var(--fb)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+.chips span{border:1px solid color-mix(in srgb,var(--fg) 30%,transparent);border-radius:999px;padding:5px 13px;font:500 11.5px Inter}
+.hl svg{display:block;width:100%;max-height:340px}
+.sec{padding:76px max(20px,5vw);background:var(--paper);color:var(--ink);scroll-margin-top:92px;font-family:var(--fb)}
+.sec.alt{background:color-mix(in srgb,var(--paper) 90%,var(--ink))}
+.sh{display:flex;align-items:baseline;gap:18px;margin-bottom:10px}
+.sh b{font:500 11px Inter;letter-spacing:.24em;color:var(--acc)}
+.sec h2{font-family:var(--fd);font-weight:var(--dw);font-style:var(--ds);font-stretch:var(--dx);font-size:clamp(30px,3.6vw,50px);line-height:1.05}
+.lede{max-width:66ch;line-height:1.65;opacity:.75;margin-bottom:32px;font-size:15px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.tile{border-radius:14px;overflow:hidden;display:flex;flex-direction:column;border:1px solid color-mix(in srgb,var(--ink) 10%,transparent)}
+.pad{flex:1;min-height:210px;display:grid;place-items:center;padding:44px 40px}
+.pad svg{display:block;width:100%;max-height:150px}
+.pad.mk svg{max-width:120px}
+.cap{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:11px 16px;font:500 12px Inter}
+.cap button{font-size:10.5px;letter-spacing:.08em;padding:3px 10px;border:1px solid currentColor;border-radius:999px;opacity:.6}.cap button:hover{opacity:1}
+.wide{grid-column:span 2}
+.shot{border-radius:16px;overflow:hidden;margin-bottom:18px;box-shadow:0 30px 60px -30px rgba(0,0,0,.45)}
+.shot svg{display:block;width:100%;height:auto}
+.shotcap{font:500 12px Inter;letter-spacing:.04em;opacity:.65;margin:-6px 0 34px;display:flex;gap:10px;flex-wrap:wrap}
+.shotcap span{border:1px solid color-mix(in srgb,var(--ink) 22%,transparent);padding:4px 11px;border-radius:999px}
+.rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:16px}
+.rule{border:1px solid color-mix(in srgb,var(--ink) 14%,transparent);border-radius:14px;padding:22px;font-size:13.5px;line-height:1.6}
+.rule h4{font:600 11px Inter;letter-spacing:.2em;text-transform:uppercase;margin-bottom:12px}
+.clear{border:1px dashed var(--acc);padding:28px;margin-bottom:14px}
+.clear svg{display:block;width:100%;max-height:84px}
+.donts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.dont{position:relative;border:1px solid color-mix(in srgb,var(--ink) 14%,transparent);border-radius:10px;padding:20px 12px 10px;text-align:center;font:500 11.5px Inter;overflow:hidden}
+.dont svg{display:block;width:100%;height:56px;margin-bottom:10px}
+.dont::after{content:"✕";position:absolute;top:6px;right:9px;color:#d92d20;font-weight:700}
+.d1 svg{transform:scaleX(1.4) scaleY(.7)}.d2 svg{transform:rotate(-16deg)}.d3 svg{filter:hue-rotate(150deg) saturate(1.8)}.d4 svg{opacity:.13}
+.sw{border-radius:14px;overflow:hidden;border:1px solid color-mix(in srgb,var(--ink) 12%,transparent);cursor:pointer;background:var(--paper)}
+.sw .c{height:150px;display:flex;align-items:flex-end;padding:14px;font:600 13px Inter}
+.sw .m{padding:13px 14px;font:11.5px/1.75 "DM Mono",monospace}.sw .m b{display:block;font:600 13px Inter}.sw .m em{font-style:normal;font-family:Inter;opacity:.6}
+.type{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-top:40px}
+.spec{border:1px solid color-mix(in srgb,var(--ink) 12%,transparent);border-radius:14px;padding:30px}
+.spec small{font:500 10.5px Inter;letter-spacing:.2em;text-transform:uppercase;color:var(--acc)}
+.spec .aa{font-size:104px;line-height:1.05;margin:8px 0}
+.dsp{font-family:var(--fd);font-weight:var(--dw);font-style:var(--ds);font-stretch:var(--dx)}
+footer{padding:36px max(20px,5vw);color:#77777f;font:13px/1.7 Inter;border-top:1px solid #1e1e22}
+footer b{color:#ddd}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#fff;color:#111;padding:9px 18px;border-radius:999px;font:500 13px Inter;opacity:0;transition:.2s;pointer-events:none;z-index:60}.toast.on{opacity:1}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:50px}.wide{grid-column:auto}}
+</style>
+</head>
+<body>
+<svg id="defs" width="0" height="0" style="position:absolute"><defs>
+<linearGradient id="gold" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="150" y2="90" spreadMethod="reflect"><stop offset="0" stop-color="#9C7830"/><stop offset=".3" stop-color="#F3DC9C"/><stop offset=".55" stop-color="#B98D3C"/><stop offset=".8" stop-color="#F7E7B4"/><stop offset="1" stop-color="#A07C2C"/></linearGradient>
+<linearGradient id="copper" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="150" y2="90" spreadMethod="reflect"><stop offset="0" stop-color="#8E4623"/><stop offset=".3" stop-color="#F0B48A"/><stop offset=".55" stop-color="#B8693D"/><stop offset=".8" stop-color="#F6C9A6"/><stop offset="1" stop-color="#9A4F28"/></linearGradient>
+<linearGradient id="shade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".1"/><stop offset=".45" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".2"/></linearGradient>
+<linearGradient id="cyl" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#000" stop-opacity=".26"/><stop offset=".28" stop-color="#000" stop-opacity="0"/><stop offset=".42" stop-color="#fff" stop-opacity=".22"/><stop offset=".6" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".32"/></linearGradient>
+<radialGradient id="gloss" cx=".34" cy=".28" r=".8"><stop offset="0" stop-color="#fff" stop-opacity=".42"/><stop offset=".45" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".22"/></radialGradient>
+<radialGradient id="vig" cx=".5" cy=".45" r=".8"><stop offset=".45" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".3"/></radialGradient>
+<radialGradient id="spot" cx=".5" cy="0" r=".85"><stop offset="0" stop-color="#fff" stop-opacity=".2"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+<filter id="paper" x="-20%" y="-20%" width="140%" height="150%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="4" result="n"/><feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  .2 0 0 0 0" result="g"/><feComposite in="g" in2="SourceAlpha" operator="in" result="gi"/><feGaussianBlur in="SourceAlpha" stdDeviation="9"/><feOffset dy="12" result="b"/><feComponentTransfer in="b" result="s1"><feFuncA type="linear" slope=".38"/></feComponentTransfer><feGaussianBlur in="SourceAlpha" stdDeviation="1.4"/><feOffset dy="1.5" result="b2"/><feComponentTransfer in="b2" result="s2"><feFuncA type="linear" slope=".4"/></feComponentTransfer><feMerge><feMergeNode in="s1"/><feMergeNode in="s2"/><feMergeNode in="SourceGraphic"/><feMergeNode in="gi"/></feMerge></filter>
+<filter id="sh" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="14" stdDeviation="12" flood-color="#000" flood-opacity=".4"/></filter>
+<filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".75" numOctaves="2" seed="9"/><feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  .32 0 0 0 0"/></filter>
+<filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="14"/></filter>
+<filter id="emboss" x="-10%" y="-10%" width="120%" height="120%"><feOffset in="SourceAlpha" dx="-.8" dy="-.8" result="a"/><feFlood flood-color="#fff" flood-opacity=".5"/><feComposite in2="a" operator="in" result="hl"/><feOffset in="SourceAlpha" dx=".9" dy=".9" result="b"/><feFlood flood-color="#000" flood-opacity=".5"/><feComposite in2="b" operator="in" result="sd"/><feMerge><feMergeNode in="hl"/><feMergeNode in="sd"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs></svg>
+<header class="top">
+  <div class="topin"><button class="home" data-go="0">MOONSHOT<small>Premium brand kits · 10 directions</small></button><nav class="tabs" id="tabs"></nav></div>
+  <div class="subnav" id="subnav"></div>
+</header>
+<main id="app"></main>
+<footer><b>Notes.</b> Ten identity directions: 01–05 for Moonshot Media, 06–10 for Moonshot Studios. Text in [BRACKETS] is a placeholder. Logo SVGs can be saved with the “SVG” buttons; all fonts are free Google Fonts, and kit 06 and kit 09 use lettering drawn for this logo. Foil and emboss effects on screen stand in for the print finish.</footer>
+<div class="toast" id="toast"></div>
+<script src="kits.js"></script>
+<script src="mock.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
