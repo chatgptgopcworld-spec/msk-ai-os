@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Moonshot — Premium Brand Kits</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Archivo+Black&family=Bodoni+Moda:opsz,wght@6..96,400..700&family=Cinzel:wght@400;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Mono:wght@400;500&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600;700&family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Outfit:wght@300;400;600&family=Poiret+One&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0b0c;--fg:#f3eee4;--paper:#f3eee4;--ink:#0b0b0c;--acc:#a07c2c;--fd:"Bodoni Moda";--fb:Jost;--dw:500;--ds:normal;--dx:100%}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:#08080a;color:#eee;font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+a{color:inherit}
+header.top{position:sticky;top:0;z-index:30;background:rgba(8,8,10,.92);backdrop-filter:blur(14px);border-bottom:1px solid #1e1e22}
+.topin{display:flex;align-items:center;gap:18px;padding:10px max(16px,4vw)}
+.home{font:600 12px Inter;letter-spacing:.2em;white-space:nowrap;padding:8px 0}
+.home small{display:block;font-weight:400;letter-spacing:.04em;color:#77777f;font-size:11px;margin-top:2px}
+.tabs{display:flex;gap:6px;overflow-x:auto;flex:1;scrollbar-width:none;align-items:center}
+.tabs em{font:500 10px Inter;letter-spacing:.2em;color:#6c6c75;font-style:normal;padding:0 6px 0 10px;white-space:nowrap}
+.tab{display:flex;align-items:center;gap:8px;padding:5px 12px 5px 5px;border:1px solid #26262c;border-radius:999px;font:500 12px Inter;color:#a9a9b3;white-space:nowrap;transition:.15s}
+.tab i{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;flex:none;overflow:hidden}
+.tab i svg{width:18px;height:18px}
+.tab:hover{border-color:#555;color:#fff}.tab.on{background:#fff;border-color:#fff;color:#08080a}
+.subnav{display:flex;gap:22px;padding:8px max(16px,4vw);border-top:1px solid #17171b;font:500 11.5px Inter;overflow-x:auto;scrollbar-width:none}
+.subnav a{color:#77777f;text-decoration:none;white-space:nowrap}.subnav a:hover{color:#fff}
+/* overview */
+.ov{padding:70px max(20px,5vw) 90px}
+.ov h1{font:300 clamp(34px,5vw,68px)/1.02 "Cormorant Garamond",serif;letter-spacing:-.01em}
+.ov h1 i{color:#c9a46a}
+.ov>p{max-width:62ch;color:#9a9aa3;line-height:1.65;margin:18px 0 0;font-size:15px}
+.ov h2{font:500 11px Inter;letter-spacing:.28em;color:#77777f;margin:54px 0 16px;display:flex;gap:14px;align-items:center}
+.ov h2::after{content:"";flex:1;height:1px;background:#1e1e22}
+.ovg{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+.ovc{border-radius:14px;overflow:hidden;text-align:left;border:1px solid #1e1e22;transition:transform .25s,border-color .25s;display:flex;flex-direction:column}
+.ovc:hover{transform:translateY(-4px);border-color:#555}
+.ovc .lg{aspect-ratio:4/3;display:grid;place-items:center;padding:13% 14%}
+.ovc .lg svg{width:100%;height:100%}
+.ovc .mt{padding:13px 16px;background:#111114;font:500 13px Inter;display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+.ovc .mt small{color:#77777f;font-weight:400;font-size:11.5px;text-align:right}
+/* kit */
+.hero{position:relative;overflow:hidden;background:var(--bg);color:var(--fg);padding:86px max(20px,5vw) 96px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:56px;align-items:center}
+.hero .pat{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hero>div{position:relative}
+.kick{font:500 11px Inter;letter-spacing:.28em;text-transform:uppercase;opacity:.7;margin-bottom:22px}
+.hero h1{font-family:var(--fd);font-weight:var(--dw);font-style:var(--ds);font-stretch:var(--dx);font-size:clamp(40px,5.6vw,84px);line-height:1}
+.hero p{margin-top:24px;max-width:50ch;line-height:1.7;font-size:15.5px;opacity:.82;font-family:var(--fb)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+.chips span{border:1px solid color-mix(in srgb,var(--fg) 30%,transparent);border-radius:999px;padding:5px 13px;font:500 11.5px Inter}
+.hl svg{display:block;width:100%;max-height:340px}
+.sec{padding:76px max(20px,5vw);background:var(--paper);color:var(--ink);scroll-margin-top:92px;font-family:var(--fb)}
+.sec.alt{background:color-mix(in srgb,var(--paper) 90%,var(--ink))}
+.sh{display:flex;align-items:baseline;gap:18px;margin-bottom:10px}
+.sh b{font:500 11px Inter;letter-spacing:.24em;color:var(--acc)}
+.sec h2{font-family:var(--fd);font-weight:var(--dw);font-style:var(--ds);font-stretch:var(--dx);font-size:clamp(30px,3.6vw,50px);line-height:1.05}
+.lede{max-width:66ch;line-height:1.65;opacity:.75;margin-bottom:32px;font-size:15px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.tile{border-radius:14px;overflow:hidden;display:flex;flex-direction:column;border:1px solid color-mix(in srgb,var(--ink) 10%,transparent)}
+.pad{flex:1;min-height:210px;display:grid;place-items:center;padding:44px 40px}
+.pad svg{display:block;width:100%;max-height:150px}
+.pad.mk svg{max-width:120px}
+.cap{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:11px 16px;font:500 12px Inter}
+.cap button{font-size:10.5px;letter-spacing:.08em;padding:3px 10px;border:1px solid currentColor;border-radius:999px;opacity:.6}.cap button:hover{opacity:1}
+.wide{grid-column:span 2}
+.shot{border-radius:16px;overflow:hidden;margin-bottom:18px;box-shadow:0 30px 60px -30px rgba(0,0,0,.45)}
+.shot svg{display:block;width:100%;height:auto}
+.shotcap{font:500 12px Inter;letter-spacing:.04em;opacity:.65;margin:-6px 0 34px;display:flex;gap:10px;flex-wrap:wrap}
+.shotcap span{border:1px solid color-mix(in srgb,var(--ink) 22%,transparent);padding:4px 11px;border-radius:999px}
+.rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:16px}
+.rule{border:1px solid color-mix(in srgb,var(--ink) 14%,transparent);border-radius:14px;padding:22px;font-size:13.5px;line-height:1.6}
+.rule h4{font:600 11px Inter;letter-spacing:.2em;text-transform:uppercase;margin-bottom:12px}
+.clear{border:1px dashed var(--acc);padding:28px;margin-bottom:14px}
+.clear svg{display:block;width:100%;max-height:84px}
+.donts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.dont{position:relative;border:1px solid color-mix(in srgb,var(--ink) 14%,transparent);border-radius:10px;padding:20px 12px 10px;text-align:center;font:500 11.5px Inter;overflow:hidden}
+.dont svg{display:block;width:100%;height:56px;margin-bottom:10px}
+.dont::after{content:"✕";position:absolute;top:6px;right:9px;color:#d92d20;font-weight:700}
+.d1 svg{transform:scaleX(1.4) scaleY(.7)}.d2 svg{transform:rotate(-16deg)}.d3 svg{filter:hue-rotate(150deg) saturate(1.8)}.d4 svg{opacity:.13}
+.sw{border-radius:14px;overflow:hidden;border:1px solid color-mix(in srgb,var(--ink) 12%,transparent);cursor:pointer;background:var(--paper)}
+.sw .c{height:150px;display:flex;align-items:flex-end;padding:14px;font:600 13px Inter}
+.sw .m{padding:13px 14px;font:11.5px/1.75 "DM Mono",monospace}.sw .m b{display:block;font:600 13px Inter}.sw .m em{font-style:normal;font-family:Inter;opacity:.6}
+.type{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-top:40px}
+.spec{border:1px solid color-mix(in srgb,var(--ink) 12%,transparent);border-radius:14px;padding:30px}
+.spec small{font:500 10.5px Inter;letter-spacing:.2em;text-transform:uppercase;color:var(--acc)}
+.spec .aa{font-size:104px;line-height:1.05;margin:8px 0}
+.dsp{font-family:var(--fd);font-weight:var(--dw);font-style:var(--ds);font-stretch:var(--dx)}
+footer{padding:36px max(20px,5vw);color:#77777f;font:13px/1.7 Inter;border-top:1px solid #1e1e22}
+footer b{color:#ddd}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#fff;color:#111;padding:9px 18px;border-radius:999px;font:500 13px Inter;opacity:0;transition:.2s;pointer-events:none;z-index:60}.toast.on{opacity:1}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:50px}.wide{grid-column:auto}}
+</style>
+</head>
+<body>
+<svg id="defs" width="0" height="0" style="position:absolute"><defs>
+<linearGradient id="gold" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="150" y2="90" spreadMethod="reflect"><stop offset="0" stop-color="#9C7830"/><stop offset=".3" stop-color="#F3DC9C"/><stop offset=".55" stop-color="#B98D3C"/><stop offset=".8" stop-color="#F7E7B4"/><stop offset="1" stop-color="#A07C2C"/></linearGradient>
+<linearGradient id="copper" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="150" y2="90" spreadMethod="reflect"><stop offset="0" stop-color="#8E4623"/><stop offset=".3" stop-color="#F0B48A"/><stop offset=".55" stop-color="#B8693D"/><stop offset=".8" stop-color="#F6C9A6"/><stop offset="1" stop-color="#9A4F28"/></linearGradient>
+<linearGradient id="shade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".1"/><stop offset=".45" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".2"/></linearGradient>
+<linearGradient id="cyl" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#000" stop-opacity=".26"/><stop offset=".28" stop-color="#000" stop-opacity="0"/><stop offset=".42" stop-color="#fff" stop-opacity=".22"/><stop offset=".6" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".32"/></linearGradient>
+<radialGradient id="gloss" cx=".34" cy=".28" r=".8"><stop offset="0" stop-color="#fff" stop-opacity=".42"/><stop offset=".45" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".22"/></radialGradient>
+<radialGradient id="vig" cx=".5" cy=".45" r=".8"><stop offset=".45" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".3"/></radialGradient>
+<radialGradient id="spot" cx=".5" cy="0" r=".85"><stop offset="0" stop-color="#fff" stop-opacity=".2"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+<filter id="paper" x="-20%" y="-20%" width="140%" height="150%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="4" result="n"/><feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  .2 0 0 0 0" result="g"/><feComposite in="g" in2="SourceAlpha" operator="in" result="gi"/><feGaussianBlur in="SourceAlpha" stdDeviation="9"/><feOffset dy="12" result="b"/><feComponentTransfer in="b" result="s1"><feFuncA type="linear" slope=".38"/></feComponentTransfer><feGaussianBlur in="SourceAlpha" stdDeviation="1.4"/><feOffset dy="1.5" result="b2"/><feComponentTransfer in="b2" result="s2"><feFuncA type="linear" slope=".4"/></feComponentTransfer><feMerge><feMergeNode in="s1"/><feMergeNode in="s2"/><feMergeNode in="SourceGraphic"/><feMergeNode in="gi"/></feMerge></filter>
+<filter id="sh" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="14" stdDeviation="12" flood-color="#000" flood-opacity=".4"/></filter>
+<filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".75" numOctaves="2" seed="9"/><feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  .32 0 0 0 0"/></filter>
+<filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="14"/></filter>
+<filter id="emboss" x="-10%" y="-10%" width="120%" height="120%"><feOffset in="SourceAlpha" dx="-.8" dy="-.8" result="a"/><feFlood flood-color="#fff" flood-opacity=".5"/><feComposite in2="a" operator="in" result="hl"/><feOffset in="SourceAlpha" dx=".9" dy=".9" result="b"/><feFlood flood-color="#000" flood-opacity=".5"/><feComposite in2="b" operator="in" result="sd"/><feMerge><feMergeNode in="hl"/><feMergeNode in="sd"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs></svg>
+<header class="top">
+  <div class="topin"><button class="home" data-go="0">MOONSHOT<small>Premium brand kits · 10 directions</small></button><nav class="tabs" id="tabs"></nav></div>
+  <div class="subnav" id="subnav"></div>
+</header>
+<main id="app"></main>
+<footer><b>Notes.</b> Ten identity directions: 01–05 for Moonshot Media, 06–10 for Moonshot Studios. Text in [BRACKETS] is a placeholder. Logo SVGs can be saved with the “SVG” buttons; all fonts are free Google Fonts, and kit 06 and kit 09 use lettering drawn for this logo. Foil and emboss effects on screen stand in for the print finish.</footer>
+<div class="toast" id="toast"></div>
+<script>
+/* Moonshot premium brand kits: helpers, logos, kit data */
+const NS='xmlns="http://www.w3.org/2000/svg"';
+const cv=document.createElement('canvas').getContext('2d');
+const mw=(s,size,fam,o={})=>{cv.font=`${o.i?'italic ':''}${o.w||400} ${o.x?'expanded ':''}${size}px ${fam}`;return cv.measureText(s).width+(o.ls||0)*s.length};
+const tx=(s,x,y,size,fill,fam,o={})=>`<text x="${x}" y="${y}" font-family="${fam}" font-size="${size}" font-weight="${o.w||400}" fill="${fill}"${o.i?' font-style="italic"':''}${o.x?' style="font-stretch:125%"':''}${o.ls?` letter-spacing="${o.ls}"`:''}${o.a?` text-anchor="${o.a}"`:''}${o.o?` opacity="${o.o}"`:''}${o.e||''}>${s}${o.c||''}</text>`;
+const S=(w,h,i)=>`<svg ${NS} viewBox="0 0 ${Math.ceil(w)} ${Math.ceil(h)}">${i}</svg>`;
+const put=(svg,x,y,w,h,al='xMidYMid')=>svg.replace('<svg ',`<svg x="${x}" y="${y}" width="${w}" height="${h}" preserveAspectRatio="${al} meet" `);
+let uid=0;
+const DA=' pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"';
+const dAn=(d,b=0)=>`<animate attributeName="stroke-dashoffset" from="1" to="0" dur="${d}s" begin="${b}s" fill="freeze"/>`;
+const FA=' opacity="0"';
+const fAn=(b,d=.8)=>`<animate attributeName="opacity" from="0" to="1" dur="${d}s" begin="${b}s" fill="freeze"/>`;
+const spin=(cx,cy,d,dir=1)=>`<animateTransform attributeName="transform" type="rotate" from="0 ${cx} ${cy}" to="${360*dir} ${cx} ${cy}" dur="${d}s" repeatCount="indefinite"/>`;
+const cres=(cx,cy,R,fill,rot=0)=>`<path transform="translate(${cx} ${cy}) rotate(${rot}) scale(${R/30})" d="M18 -28.28A30 30 0 1 0 18 28.28A34 34 0 0 1 18 -28.28Z" fill="${fill}"/>`;
+const DOT={M:'10001110111010110101100011000110001',O:'01110100011000110001100011000101110',N:'10001110011010110011100011000110001',S:'01111100001000001110000010000111110',H:'10001100011000111111100011000110001',T:'11111001000010000100001000010000100',U:'10001100011000110001100011000101110',D:'11110100011000110001100011000111110',I:'11111001000010000100001000010011111'};
+const dots=(str,cell,r,x0=0,y0=0,on=1)=>{let d='';[...str].forEach((ch,n)=>{const b=DOT[ch];for(let i=0;i<35;i++)if((b[i]==='1')===!!on){const x=x0+(n*6+i%5)*cell+cell/2,y=y0+Math.floor(i/5)*cell+cell/2;d+=`M${x-r} ${y}a${r} ${r} 0 1 0 ${2*r} 0a${r} ${r} 0 1 0 ${-2*r} 0`}});return d};
+const ML={M:[30,'M0 40V0L15 24L30 0V40'],O:[40,'M40 20A20 20 0 1 1 0 20A20 20 0 1 1 40 20Z'],N:[26,'M0 40V0L26 40V0'],S:[24,'M23 8C23 3 18 0 12 0C5 0 1 4 1 10C1 23 24 17 24 30C24 36 19 40 12 40C5 40 0 36 0 31'],H:[26,'M0 0V40M0 20H26M26 0V40'],T:[28,'M0 0H28M14 0V40'],U:[26,'M0 0V27A13 13 0 0 0 26 27V0'],D:[30,'M0 0V40H10A20 20 0 0 0 10 0Z'],I:[0,'M0 0V40']};
+const mono=(str,gap,an,b0=0)=>{let x=0,i='',xs=[];[...str].forEach((ch,n)=>{const[w,d]=ML[ch];xs.push(x);i+=`<path transform="translate(${x} 0)" d="${d}"${an?DA:''}>${an?dAn(.7,b0+n*.14):''}</path>`;x+=w+gap});return{w:x-gap,i,xs}};
+
+/* ---------- logos: each kit has mark(c,an) -> inner of 100x100, word(c,an) -> {w,h,i} ---------- */
+const LG={
+maison:{mark:(c,an)=>`<circle cx="50" cy="50" r="45" fill="none" stroke="${c.ac}" stroke-width="1.3"${an?DA:''}>${an?dAn(1.6):''}</circle><circle cx="50" cy="50" r="41" fill="none" stroke="${c.ac}" stroke-width=".5" opacity=".7"/>${tx('M',50,70.5,60,c.fg,'Bodoni Moda',{w:500,a:'middle',e:an?FA:'',c:an?fAn(.7):''})}<g>${an?spin(50,50,9):''}<circle cx="81.8" cy="18.2" r="4.2" fill="${c.ac}"/></g>`,
+ word:(c,an)=>{const F='Bodoni Moda',W=mw('MOONSHOT',56,F,{w:500,ls:8})-8,wm=mw('MEDIA',12,'Jost',{w:500,ls:9})-9,x=(W-wm)/2;
+  return{w:W,h:98,i:tx('MOONSHOT',0,56,56,c.fg,F,{w:500,ls:8,e:an?FA:'',c:an?fAn(.3,1.2):''})+`<g${an?FA:''}>${an?fAn(1.2):''}<path d="M0 86H${x-16}M${x+wm+16} 86H${W}" stroke="${c.ac}" stroke-width="1"/>${tx('MEDIA',x,90.5,12,c.ac,'Jost',{w:500,ls:9})}</g>`}}},
+trajectory:{mark:(c,an)=>`<path d="M14 86C15 52 33 31 55.5 28.5" fill="none" stroke="${c.fg}" stroke-width="1.8" stroke-linecap="round"${an?DA:''}>${an?dAn(1.2,.2):''}</path><circle cx="72.5" cy="27.5" r="17" fill="none" stroke="${c.ac}" stroke-width="1.8"${an?DA:''}>${an?dAn(1,1.2):''}</circle><circle cx="72.5" cy="27.5" r="11.5" fill="none" stroke="${c.ac}" stroke-width=".6" opacity=".8"/><circle cx="14" cy="86" r="3.8" fill="${c.fg}">${an?'<animate attributeName="r" values="3.8;5.4;3.8" dur="2.4s" repeatCount="indefinite"/>':''}</circle>`,
+ word:(c,an)=>{const W=mw('MOONSHOT',40,'Jost',{w:300,ls:12})-12;return{w:W,h:74,i:tx('MOONSHOT',0,40,40,c.fg,'Jost',{w:300,ls:12,e:an?FA:'',c:an?fAn(1.4,1):''})+tx('MEDIA',1,68,12.5,c.ac,'Jost',{w:500,ls:11,e:an?FA:'',c:an?fAn(2):''})+`<path d="M${mw('MEDIA',12.5,'Jost',{w:500,ls:11})+8} 64H${W}" stroke="${c.ac}" stroke-width=".8" opacity=".6"/>`}}},
+doublem:{mark:(c,an)=>`<rect width="100" height="100" fill="${c.ac}"/><path d="M14 82V20L32 54L50 20L68 54L86 20V82M50 20V82" fill="none" stroke="${c.on}" stroke-width="9.5" stroke-linejoin="miter" stroke-miterlimit="6"${an?DA:''}>${an?dAn(1.8):''}</path>`,
+ word:(c,an)=>{const o={w:800,x:1,ls:-.6},W=mw('MOONSHOT',36,'Archivo',o);return{w:W,h:74,i:`<g${an?FA:''}>${an?fAn(1):''}${tx('MOONSHOT',0,32,36,c.fg,'Archivo',o)}${tx('MEDIA',0,70,36,c.fg,'Archivo',o)}<rect x="${mw('MEDIA',36,'Archivo',o)+8}" y="60" width="10" height="10" fill="${c.ac===c.bg?c.fg:c.ac}"/></g>`}}},
+halo:{mark:(c,an)=>`<circle cx="57" cy="43" r="36" fill="none" stroke="${c.ac}" stroke-width="1.2"${an?DA:''}>${an?dAn(1.6):''}</circle>${tx('M',44,82,92,c.fg,'Cormorant Garamond',{w:300,i:1,a:'middle',e:an?FA:'',c:an?fAn(.6):''})}<g>${an?spin(57,43,10):''}<circle cx="82.5" cy="17.5" r="3.2" fill="${c.ac}"/></g>`,
+ word:(c,an)=>{const F='Cormorant Garamond',o={w:300,i:1},W=mw('Moonshot',86,F,o),cx=mw('M',86,F,o)+mw('oo',86,F,o)/2+3;
+  return{w:W+6,h:114,i:`<circle cx="${cx}" cy="62" r="45" fill="none" stroke="${c.ac}" stroke-width="1.1"${an?DA:''}>${an?dAn(1.8):''}</circle><g>${an?spin(cx,62,12):''}<circle cx="${cx+31.8}" cy="30.2" r="3" fill="${c.ac}"/></g>`+tx('Moonshot',2,84,86,c.fg,F,{...o,e:an?FA:'',c:an?fAn(.8,1.2):''})+tx('MEDIA',W+4,108,11,c.ac,'Jost',{w:500,ls:8,a:'end',e:an?FA:'',c:an?fAn(1.8):''})}}},
+crest:{mark:(c,an)=>{const i=++uid;let rays='';for(let n=0;n<28;n++){const a=n*Math.PI*2/28,r1=n%2?17:15,r2=n%2?25:29;rays+=`M${(50+Math.cos(a)*r1).toFixed(2)} ${(50+Math.sin(a)*r1).toFixed(2)}L${(50+Math.cos(a)*r2).toFixed(2)} ${(50+Math.sin(a)*r2).toFixed(2)}`}
+  return `<circle cx="50" cy="50" r="48" fill="none" stroke="${c.fg}" stroke-width="1.3"/><circle cx="50" cy="50" r="45.6" fill="none" stroke="${c.fg}" stroke-width=".5"/><circle cx="50" cy="50" r="32.5" fill="none" stroke="${c.fg}" stroke-width=".6"/><defs><path id="ct${i}" d="M14.5 50A35.5 35.5 0 0 1 85.5 50"/><path id="cb${i}" d="M8.5 50A41.5 41.5 0 0 0 91.5 50"/></defs><g font-family="Cinzel, serif" fill="${c.fg}" text-anchor="middle">${an?spin(50,50,40):''}<text font-size="8.2" font-weight="600" letter-spacing="2.4"><textPath href="#ct${i}" startOffset="50%">MOONSHOT</textPath></text><text font-size="6.6" letter-spacing="3.6"><textPath href="#cb${i}" startOffset="50%">✦ ${c.sub||'MEDIA'} ✦</textPath></text></g><path d="${rays}" stroke="${c.ac}" stroke-width=".7" fill="none">${an?spin(50,50,24,-1):''}</path>${cres(46.5,50,10.5,c.ac,-24)}`},
+ word:(c,an)=>{const W=mw('MOONSHOT',38,'Cinzel',{w:600,ls:5})-5,wm=mw(c.sub||'MEDIA',12.5,'Cinzel',{ls:12});return{w:W,h:78,i:`<g${an?FA:''}>${an?fAn(.6,1.2):''}${tx('MOONSHOT',0,38,38,c.fg,'Cinzel',{w:600,ls:5})}${tx(c.sub||'MEDIA',1,72,12.5,c.ac,'Cinzel',{ls:12})}<path d="M${wm+6} 67.5H${W}" stroke="${c.ac}" stroke-width=".8"/></g>`}}},
+marquee:{mark:(c,an)=>`<rect x="3" y="3" width="94" height="94" rx="18" fill="none" stroke="${c.fg}" stroke-width="1.6" opacity=".9"/><path d="${dots('M',10,3.1,25,15,0)}" fill="${c.fg}" opacity=".16"/><path d="${dots('M',10,3.3,25,15)}" fill="${c.fg}">${an?'<animate attributeName="opacity" values="1;.35;1;1" keyTimes="0;.08;.16;1" dur="2.6s" repeatCount="indefinite"/>':''}</path><circle cx="50" cy="40" r="3.6" fill="${c.ac}"/>`,
+ word:(c,an)=>{const C=6,W=47*C,sw=41*3;let i=`<path d="${dots('MOONSHOT',C,2.1,0,0,0)}" fill="${c.fg}" opacity=".13"/>`;
+  [...'MOONSHOT'].forEach((ch,n)=>{i+=`<path d="${dots(ch,C,2.35,n*6*C,0)}" fill="${n===2?c.ac:c.fg}"${an?FA:''}>${an?fAn(.15+n*.16,.25):''}</path>`});
+  return{w:W,h:76,i:i+`<path d="${dots('STUDIOS',3,1.15,W-sw,54)}" fill="${c.ac}"${an?FA:''}>${an?fAn(1.7,.5):''}</path><path d="M0 64.5H${W-sw-12}" stroke="${c.fg}" stroke-width=".8" opacity=".35"/>`}}},
+deco:{mark:(c,an)=>{let rays='';for(let n=0;n<=14;n++){const a=Math.PI*(1+n/14),r2=n%2?30:35;rays+=`M${(50+Math.cos(a)*17).toFixed(2)} ${(52+Math.sin(a)*17).toFixed(2)}L${(50+Math.cos(a)*r2).toFixed(2)} ${(52+Math.sin(a)*r2).toFixed(2)}`}
+  return `<path d="M10 97V50A40 40 0 0 1 90 50V97" fill="none" stroke="${c.ac}" stroke-width="1.4"${an?DA:''}>${an?dAn(1.6):''}</path><path d="M14.5 97V50A35.5 35.5 0 0 1 85.5 50V97" fill="none" stroke="${c.ac}" stroke-width=".6"/><path d="${rays}" stroke="${c.ac}" stroke-width=".9" fill="none">${an?'<animate attributeName="opacity" values=".25;1;.25" dur="2.8s" repeatCount="indefinite"/>':''}</path><circle cx="50" cy="52" r="12.5" fill="${c.fg}"/><circle cx="55" cy="49" r="10.5" fill="${c.bg}"/><path d="M22 66H78M28 72H72M35 78H65M42 84H58" stroke="${c.ac}" stroke-width="1"/><path d="M50 88.5l3 4.2-3 4.2-3-4.2z" fill="${c.ac}"/>`},
+ word:(c,an)=>{const W=mw('MOONSHOT',48,'Poiret One',{ls:8})-8,ws=mw('STUDIOS',13.5,'Poiret One',{ls:14})-14,x=(W-ws)/2;return{w:W,h:92,i:`<g${an?FA:''}>${an?fAn(.8,1.2):''}${tx('MOONSHOT',0,48,48,c.fg,'Poiret One',{ls:8})}<path d="M0 80H${x-24}M${x+ws+24} 80H${W}" stroke="${c.ac}" stroke-width=".9"/><path d="M${x-14} 76l3 4-3 4-3-4zM${x+ws+14} 76l3 4-3 4-3-4z" fill="${c.ac}"/>${tx('STUDIOS',x,84.5,13.5,c.ac,'Poiret One',{ls:14,w:400})}</g>`}}},
+overlap:{mark:(c,an)=>{const R=27,d=30,h=Math.sqrt(R*R-d*d/4),a=50-d/2,b=50+d/2;return `<circle cx="${a}" cy="50" r="${R-4.5}" fill="none" stroke="${c.fg}" stroke-width="9"/><circle cx="${b}" cy="50" r="${R-4.5}" fill="none" stroke="${c.fg}" stroke-width="9">${an?`<animate attributeName="cx" values="${b+26};${b};${b}" keyTimes="0;.35;1" dur="3.4s" repeatCount="indefinite" calcMode="spline" keySplines=".2 .8 .2 1;0 0 1 1"/>`:''}</circle><path d="M50 ${50-h}A${R} ${R} 0 0 1 50 ${50+h}A${R} ${R} 0 0 1 50 ${50-h}Z" fill="${c.ac}">${an?'<animate attributeName="opacity" values="0;0;1;1" keyTimes="0;.3;.42;1" dur="3.4s" repeatCount="indefinite"/>':''}</path>`},
+ word:(c,an)=>{const F='Outfit',z=72,o={w:600,ls:-1},wm_=mw('m',z,F,o),D=z*.575,R=D/2,sw=z*.118,cy=70-R+.8,x1=wm_+R+1.5,dd=D*.6,x2=x1+dd,h=Math.sqrt(R*R-dd*dd/4),mx=(x1+x2)/2,xn=x2+R+3.5,W=xn+mw('nshot',z,F,o);
+  return{w:W,h:100,i:tx('m',0,70,z,c.fg,F,o)+`<circle cx="${x1}" cy="${cy}" r="${R-sw/2}" fill="none" stroke="${c.fg}" stroke-width="${sw}"/><circle cx="${x2}" cy="${cy}" r="${R-sw/2}" fill="none" stroke="${c.fg}" stroke-width="${sw}">${an?`<animate attributeName="cx" values="${x2+16};${x2}" dur="1.2s" fill="freeze" calcMode="spline" keySplines=".2 .8 .2 1"/>`:''}</circle><path d="M${mx} ${cy-h}A${R} ${R} 0 0 1 ${mx} ${cy+h}A${R} ${R} 0 0 1 ${mx} ${cy-h}Z" fill="${c.ac}"${an?FA:''}>${an?fAn(1.1,.5):''}</path>`+tx('nshot',xn,70,z,c.fg,F,o)+tx('studios',W-1,95,15,c.fg,F,{w:400,ls:7,a:'end',o:.75})}}},
+monoline:{mark:(c,an)=>`<rect x="9" y="9" width="82" height="82" fill="none" stroke="${c.fg}" stroke-width="1.5"${an?DA:''}>${an?dAn(1.6):''}</rect><g transform="translate(27.5 22) scale(1.5)" fill="none" stroke="${c.fg}" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M0 40V0L15 24L30 0V40"${an?DA:''}>${an?dAn(1.2,.8):''}</path></g><circle cx="91" cy="9" r="9" fill="${c.bg}" stroke="${c.ac}" stroke-width="1.6"/><circle cx="91" cy="9" r="3" fill="${c.ac}"/>`,
+ word:(c,an)=>{const a=mono('MOONSHOT',17,an),b=mono('STUDIOS',26,an,1.3),sc=.3,ox=a.xs[6]+20;return{w:a.w+8,h:80,i:`<g transform="translate(4 4)" fill="none" stroke="${c.fg}" stroke-linecap="round" stroke-linejoin="round"><g stroke-width="2.5">${a.i}</g><circle cx="${ox+7.5}" cy="12.5" r="4.6" fill="${c.ac}" stroke="none"/><g transform="translate(${(a.w-b.w*sc)/2} 58) scale(${sc})" stroke-width="5">${b.i}</g></g>`}}},
+block:{mark:(c,an)=>`<rect width="100" height="100" fill="${c.fg}"/>${tx('M',46,84,88,c.bg,'Archivo Black',{a:'middle'})}<circle cx="83" cy="17" r="9" fill="${c.ac}">${an?'<animate attributeName="r" values="9;11.5;9" dur="1.6s" repeatCount="indefinite"/>':''}</circle>`,
+ word:(c,an)=>{const F='Archivo Black',z=86,n=mw('MOON',z,F),f=184/n,ox=11+f*(mw('MO',z,F)+mw('O',z,F)/2);
+  return{w:252,h:176,i:`<rect width="206" height="176" fill="${c.fg}"/><text x="11" y="84" font-family="${F}" font-size="${z}" fill="${c.bg}" textLength="184" lengthAdjust="spacingAndGlyphs">MOON</text><text x="11" y="161" font-family="${F}" font-size="${z}" fill="${c.bg}" textLength="184" lengthAdjust="spacingAndGlyphs">SHOT</text><ellipse cx="${ox}" cy="53" rx="${z*.135*f}" ry="${z*.215}" fill="${c.ac}">${an?'<animate attributeName="opacity" values="1;.25;1" dur="1.6s" repeatCount="indefinite"/>':''}</ellipse><rect x="207.5" y="1.5" width="43" height="173" fill="none" stroke="${c.fg}" stroke-width="3"/><text transform="translate(223 88) rotate(90)" text-anchor="middle" font-family="${F}" font-size="18" letter-spacing="7" fill="${c.fg}">STUDIOS</text>`}}}
+};
+function logo(k,type,c,an){
+  c={...c,sub:k.sub};const g=LG[k.lg];
+  if(type==='mark')return S(100,100,g.mark(c,an));
+  const w=g.word(c,an);
+  if(type==='word'||(type==='primary'&&!k.hz))return S(w.w,w.h,w.i);
+  if(type==='primary'){const sc=(k.hs||66)/w.h;return S(120+w.w*sc,100,g.mark(c,an)+`<g transform="translate(120 ${(100-w.h*sc)/2}) scale(${sc})">${w.i}</g>`)}
+  const sc=Math.min(250/w.w,1.2),W=Math.max(110,w.w*sc);return S(W,116+w.h*sc,`<g transform="translate(${(W-100)/2} 0)">${g.mark(c,an)}</g><g transform="translate(${(W-w.w*sc)/2} 116) scale(${sc})">${w.i}</g>`);
+}
+const hexL=h=>{if(!h||h[0]!=='#')return 60;const n=parseInt(h.slice(1),16);return .299*(n>>16)+.587*(n>>8&255)+.114*(n&255)};
+const shade=(h,p)=>{const n=parseInt(h.slice(1),16),f=v=>Math.max(0,Math.min(255,Math.round(v+p))).toString(16).padStart(2,'0');return'#'+f(n>>16)+f(n>>8&255)+f(n&255)};
+const MONO={w:{bg:'#111111',fg:'#ffffff',ac:'#ffffff',on:'#111111'},b:{bg:'#ffffff',fg:'#111111',ac:'#111111',on:'#ffffff'}};
+
+/* device (brand pattern) drawn into a 400x300 box */
+function dev(k,col){let s='';const st=`fill="none" stroke="${col}"`;
+  switch(k.lg){
+  case'maison':for(let r=14;r<520;r+=13)s+=`<circle cx="400" cy="300" r="${r}" ${st} stroke-width=".8"/>`;break;
+  case'trajectory':for(let i=0;i<16;i++)s+=`<path d="M${-120+i*38} 310C${-110+i*38} 160 ${0+i*38} 60 ${150+i*38} 30" ${st} stroke-width=".9"/>`;break;
+  case'doublem':for(let j=-1;j<7;j++){let p='';for(let i=0;i<=10;i++)p+=`${i*44-10},${j*58+(i%2?40:0)} `;s+=`<polyline points="${p}" ${st} stroke-width="14"/>`}break;
+  case'halo':for(let j=0;j<4;j++)for(let i=0;i<6;i++)s+=`<circle cx="${i*84+(j%2)*42}" cy="${j*96+10}" r="62" ${st} stroke-width=".8"/>`;break;
+  case'crest':for(let n=0;n<72;n++){const a=n*Math.PI/36,r1=n%2?26:18;s+=`<path d="M${200+Math.cos(a)*r1} ${150+Math.sin(a)*r1}L${200+Math.cos(a)*420} ${150+Math.sin(a)*420}" ${st} stroke-width=".7"/>`}s+=`<circle cx="200" cy="150" r="14" ${st}/>`;break;
+  case'marquee':for(let j=0;j<26;j++)for(let i=0;i<34;i++)s+=`<circle cx="${i*12+6}" cy="${j*12+6}" r="${(i*7+j*3)%11===0?3.2:1.9}" fill="${col}"/>`;break;
+  case'deco':for(let j=0;j<8;j++)for(let i=-1;i<8;i++){const x=i*60+(j%2)*30,y=j*30+30;s+=`<path d="M${x-30} ${y}a30 30 0 0 1 60 0M${x-21} ${y}a21 21 0 0 1 42 0M${x-12} ${y}a12 12 0 0 1 24 0" ${st} stroke-width=".9"/>`}break;
+  case'overlap':for(let j=0;j<4;j++)for(let i=0;i<5;i++){const x=i*110+(j%2)*55-20,y=j*84+30;s+=`<circle cx="${x}" cy="${y}" r="30" ${st} stroke-width="5"/><circle cx="${x+34}" cy="${y}" r="30" ${st} stroke-width="5"/>`}break;
+  case'monoline':s+=`<g transform="translate(-30 -40) scale(6.4)" ${st} stroke-width=".28" stroke-linejoin="round">${mono('MOON',6).i}</g>`;break;
+  default:for(let i=-6;i<12;i++)s+=`<path d="M${i*60} 320L${i*60+320} 0" ${st} stroke-width="24"/>`}
+  return s}
+
+const G='url(#gold)',CU='url(#copper)',CR='url(#chrome)';
+const KITS=[
+{id:1,grp:'Media',sub:'MEDIA',lg:'maison',name:'Maison',style:'Serif wordmark + orbit monogram',
+ concept:'A high-contrast Didone wordmark with room to breathe, and a monogram where a single gold moon circles the M. Built to be stamped in foil on black cotton paper.',
+ f:{d:'Bodoni Moda',dw:500,b:'Jost',n:'Bodoni Moda · Jost'},finish:'foil',foil:G,
+ t:{dark:{bg:'#0B0B0C',fg:'#F3EEE4',ac:G,on:'#0B0B0C'},light:{bg:'#F3EEE4',fg:'#0B0B0C',ac:'#A07C2C',on:'#F3EEE4'},brand:{bg:'#C6A15B',fg:'#0B0B0C',ac:'#0B0B0C',on:'#C6A15B'}},
+ pal:[['Noir','#0B0B0C','Backgrounds, lettering'],['Foil Gold','#C6A15B','Hot-foil stamping, rules'],['Ivory','#F3EEE4','Cotton paper'],['Antique Gold','#A07C2C','Gold as ink on light paper'],['Stone','#8A8377','Captions']],
+ m:{paper:'#F3EEE4',dark:'#0B0B0C',brand:'#16161A',ink:'#0B0B0C',acc:'#A07C2C',surf:'#1B1A19',surf2:'#E6DFD2',pen:'#0B0B0C',tee:'#0B0B0C',tote:'#F3EEE4',rx:3},
+ v:{card:0,letter:0,env:2,note:0,tee:0,tote:0,arr:0},
+ motion:'The ring draws itself in one sweep, the M fades in, and the gold moon keeps a slow orbit (9 s per turn). The wordmark fades up last.'},
+{id:2,grp:'Media',sub:'MEDIA',lg:'trajectory',hz:1,hs:60,name:'Trajectory',style:'Fine-line symbol + light sans',
+ concept:'One line leaves the ground and arrives at the moon. Hairline-weight drawing, wide-spaced light capitals and a blind emboss: nothing shouts.',
+ f:{d:'Jost',dw:300,b:'Jost',n:'Jost Light · Jost'},finish:'emboss',foil:'#B88A44',up:1,
+ t:{dark:{bg:'#0E3B33',fg:'#F1EBDD',ac:'#D0A765',on:'#0E3B33'},light:{bg:'#F1EBDD',fg:'#0E3B33',ac:'#A9793A',on:'#F1EBDD'},brand:{bg:'#B88A44',fg:'#0A1F1B',ac:'#0A1F1B',on:'#B88A44'}},
+ pal:[['Emerald','#0E3B33','Backgrounds, lettering'],['Brass','#B88A44','The moon, fine rules'],['Cream','#F1EBDD','Paper'],['Sage','#8FA89B','Secondary surfaces'],['Deep Pine','#0A1F1B','Text on brass']],
+ m:{paper:'#F1EBDD',dark:'#0E3B33',brand:'#0E3B33',ink:'#0E3B33',acc:'#A9793A',surf:'#D9D2C2',surf2:'#10332D',pen:'#B88A44',tee:'#F1EBDD',tote:'#0E3B33',rx:2},
+ v:{card:3,letter:2,env:0,note:2,tee:1,tote:2,arr:1},
+ motion:'The line travels from the ground dot to the moon (1.2 s), then the ring closes. The ground dot keeps a slow pulse as the loader.'},
+{id:3,grp:'Media',sub:'MEDIA',lg:'doublem',hz:1,hs:70,name:'Double M',style:'Swiss monogram · MM in a square',
+ concept:'Moonshot Media: two capital M’s sharing one stem, cut into a cobalt square. A hard, systematic mark that still reads at 16 pixels.',
+ f:{d:'Archivo',dw:800,dx:1,b:'Archivo',n:'Archivo Expanded ExtraBold · Archivo'},finish:'ink',foil:'#1F3BFF',up:1,
+ t:{dark:{bg:'#16171B',fg:'#FFFFFF',ac:'#1F3BFF',on:'#FFFFFF'},light:{bg:'#FFFFFF',fg:'#16171B',ac:'#1F3BFF',on:'#FFFFFF'},brand:{bg:'#1F3BFF',fg:'#FFFFFF',ac:'#FFFFFF',on:'#1F3BFF'}},
+ pal:[['Cobalt','#1F3BFF','Primary. The square'],['Graphite','#16171B','Lettering, dark surfaces'],['White','#FFFFFF','Paper'],['Fog','#E9EAEE','Panels'],['Signal','#FF4D2E','Rare: alerts, edition marks']],
+ m:{paper:'#FFFFFF',dark:'#16171B',brand:'#1F3BFF',ink:'#16171B',acc:'#1F3BFF',surf:'#E3E5EA',surf2:'#1F3BFF',pen:'#1F3BFF',tee:'#FFFFFF',tote:'#1F3BFF',rx:0},
+ v:{card:1,letter:1,env:1,note:1,tee:2,tote:1,arr:2},
+ motion:'The double M is drawn in a single continuous stroke (1.8 s), then the name snaps in beside it.'},
+{id:4,grp:'Media',sub:'MEDIA',lg:'halo',name:'Halo',style:'Light italic wordmark with a hairline moon',
+ concept:'“Moonshot” in a whisper-light italic, with one fine gold circle sitting behind the double o like a moon behind cloud. Fashion-house restraint.',
+ f:{d:'Cormorant Garamond',dw:300,di:1,b:'Jost',n:'Cormorant Garamond Light Italic · Jost'},finish:'foil',foil:G,tc:1,
+ t:{dark:{bg:'#4A0F1C',fg:'#F4E4DE',ac:G,on:'#4A0F1C'},light:{bg:'#FBF6F1',fg:'#4A0F1C',ac:'#B08A4A',on:'#FBF6F1'},brand:{bg:'#F4E4DE',fg:'#4A0F1C',ac:'#8C3B4A',on:'#F4E4DE'}},
+ pal:[['Oxblood','#4A0F1C','Backgrounds, lettering'],['Blush','#F4E4DE','Secondary paper, packaging'],['Foil Gold','#C9A46A','The halo'],['Rosewood','#8C3B4A','Accents on blush'],['Cream','#FBF6F1','Paper']],
+ m:{paper:'#FBF6F1',dark:'#4A0F1C',brand:'#F4E4DE',ink:'#4A0F1C',acc:'#B08A4A',surf:'#EBD9D2',surf2:'#3A0B15',pen:'#C9A46A',tee:'#F4E4DE',tote:'#4A0F1C',rx:1},
+ v:{card:2,letter:3,env:2,note:0,tee:3,tote:0,arr:1},
+ motion:'The halo is drawn first, a small moon rides round it, then the word fades in through it.'},
+{id:5,grp:'Media',sub:'MEDIA',lg:'crest',hz:1,hs:62,name:'Crest',style:'Engraved seal',
+ concept:'An engraver’s seal: the name set on the ring, a crescent in a burst of fine rays. It carries its own authority on wax, paper and brass.',
+ f:{d:'Cinzel',dw:600,b:'EB Garamond',n:'Cinzel · EB Garamond'},finish:'foil',foil:CU,up:1,
+ t:{dark:{bg:'#0F1E36',fg:'#EFE6D3',ac:CU,on:'#0F1E36'},light:{bg:'#EFE6D3',fg:'#0F1E36',ac:'#A6582F',on:'#EFE6D3'},brand:{bg:'#B8693D',fg:'#0F1E36',ac:'#0F1E36',on:'#B8693D'}},
+ pal:[['Navy','#0F1E36','Backgrounds, lettering'],['Copper','#B8693D','Foil, the crescent'],['Parchment','#EFE6D3','Paper'],['Slate','#5A6B85','Secondary text'],['Ember','#A6582F','Copper as ink on light paper']],
+ m:{paper:'#EFE6D3',dark:'#0F1E36',brand:'#0F1E36',ink:'#0F1E36',acc:'#A6582F',surf:'#17294A',surf2:'#E2D8C2',pen:'#B8693D',tee:'#0F1E36',tote:'#EFE6D3',rx:4},
+ v:{card:0,letter:0,env:0,note:1,tee:1,tote:1,arr:0},
+ motion:'The rays turn slowly one way while the lettering ring turns the other (24 s / 40 s). Use the stamped still on print.'},
+{id:6,grp:'Studios',sub:'STUDIOS',lg:'marquee',name:'Marquee',style:'Dot-matrix wordmark',
+ concept:'The name spelled in studio-sign bulbs, one moon-coloured O among them. It lights up letter by letter, so the logo is its own title sequence.',
+ f:{d:'Space Mono',dw:700,b:'Space Mono',n:'Custom dot matrix · Space Mono'},finish:'ink',foil:'#FFB000',up:1,
+ t:{dark:{bg:'#0A0A0A',fg:'#FFF4D6',ac:'#FFB000',on:'#0A0A0A'},light:{bg:'#F4EFE2',fg:'#0A0A0A',ac:'#D98E00',on:'#F4EFE2'},brand:{bg:'#FFB000',fg:'#0A0A0A',ac:'#0A0A0A',on:'#FFB000'}},
+ pal:[['Stage Black','#0A0A0A','Backgrounds'],['Bulb White','#FFF4D6','Lit lettering'],['Amber','#FFB000','The moon bulb, highlights'],['Graphite','#1C1C1C','Panels'],['Smoke','#7C776C','Captions']],
+ m:{paper:'#F4EFE2',dark:'#0A0A0A',brand:'#FFB000',ink:'#0A0A0A',acc:'#D98E00',surf:'#161616',surf2:'#EDE7D8',pen:'#FFB000',tee:'#0A0A0A',tote:'#0A0A0A',rx:10},
+ v:{card:1,letter:3,env:1,note:1,tee:1,tote:1,arr:2},
+ motion:'Letters switch on left to right (0.16 s apart), the amber O included, then STUDIOS lights underneath. For a loop, the monogram flickers like a tired bulb.'},
+{id:7,grp:'Studios',sub:'STUDIOS',lg:'deco',hz:1,hs:64,name:'Deco',style:'Art-deco emblem',
+ concept:'Moonrise inside a picture-house arch, drawn in fine gold line. A studio mark with old-cinema glamour: made for title cards, tickets and brass plaques.',
+ f:{d:'Poiret One',dw:400,b:'Jost',n:'Poiret One · Jost'},finish:'foil',foil:G,up:1,
+ t:{dark:{bg:'#06343A',fg:'#EBDDBF',ac:G,on:'#06343A'},light:{bg:'#EBDDBF',fg:'#06343A',ac:'#9C7A2E',on:'#EBDDBF'},brand:{bg:'#D2A857',fg:'#041F23',ac:'#041F23',on:'#D2A857'}},
+ pal:[['Deep Teal','#06343A','Backgrounds, lettering'],['Deco Gold','#D2A857','Foil line work'],['Champagne','#EBDDBF','Paper'],['Jade','#0E5A5F','Secondary surfaces'],['Noir Teal','#041F23','Text on gold']],
+ m:{paper:'#EBDDBF',dark:'#06343A',brand:'#06343A',ink:'#06343A',acc:'#9C7A2E',surf:'#0A2A2F',surf2:'#E3D4B2',pen:'#D2A857',tee:'#06343A',tote:'#EBDDBF',rx:0},
+ v:{card:2,letter:0,env:2,note:2,tee:0,tote:0,arr:0},
+ motion:'The arch draws itself, then the rays glow up and down like a projector warming (2.8 s loop).'},
+{id:8,grp:'Studios',sub:'STUDIOS',lg:'overlap',name:'Eclipse',style:'Lowercase wordmark · the o’s eclipse',
+ concept:'The two o’s slide into each other and the overlap lights up: an eclipse in the middle of the word. Warm, modern and friendly without being soft.',
+ f:{d:'Outfit',dw:600,b:'Outfit',n:'Outfit SemiBold · Outfit'},finish:'ink',foil:'#FF6B57',lc:1,
+ t:{dark:{bg:'#1B1A19',fg:'#FAF8F4',ac:'#FF6B57',on:'#1B1A19'},light:{bg:'#E7E1D8',fg:'#1B1A19',ac:'#FF6B57',on:'#E7E1D8'},brand:{bg:'#FF6B57',fg:'#1B1A19',ac:'#FAF8F4',on:'#FF6B57'}},
+ pal:[['Coral','#FF6B57','The overlap, highlights'],['Soft Black','#1B1A19','Lettering'],['Greige','#E7E1D8','Paper, backgrounds'],['Clay','#B9A999','Secondary surfaces'],['Chalk','#FAF8F4','Lettering on dark']],
+ m:{paper:'#FAF8F4',dark:'#1B1A19',brand:'#FF6B57',ink:'#1B1A19',acc:'#E5503C',surf:'#D8D0C4',surf2:'#F3EEE7',pen:'#FF6B57',tee:'#E7E1D8',tote:'#FF6B57',rx:14},
+ v:{card:3,letter:2,env:1,note:2,tee:3,tote:2,arr:1},
+ motion:'The second o slides in from the right and the coral overlap fades on as they meet. The monogram repeats it as a loop.'},
+{id:9,grp:'Studios',sub:'STUDIOS',lg:'monoline',name:'Monoline',style:'Bespoke single-line lettering',
+ concept:'Every letter is drawn for this logo with one constant line, on circles and straight strokes only. A small tangerine moon sits inside the last O.',
+ f:{d:'Jost',dw:300,b:'Jost',n:'Custom lettering · Jost Light'},finish:'emboss',foil:'#FF5B1F',up:1,
+ t:{dark:{bg:'#121212',fg:'#EFEBE4',ac:'#FF5B1F',on:'#121212'},light:{bg:'#EFEBE4',fg:'#121212',ac:'#FF5B1F',on:'#EFEBE4'},brand:{bg:'#FF5B1F',fg:'#121212',ac:'#EFEBE4',on:'#FF5B1F'}},
+ pal:[['Ink','#121212','Lettering, dark surfaces'],['Bone','#EFEBE4','Paper'],['Tangerine','#FF5B1F','The moon: used once per layout'],['Pebble','#CFC8BC','Secondary surfaces'],['White','#FFFFFF','Screens']],
+ m:{paper:'#EFEBE4',dark:'#121212',brand:'#EFEBE4',ink:'#121212',acc:'#FF5B1F',surf:'#CFC8BC',surf2:'#121212',pen:'#121212',tee:'#EFEBE4',tote:'#EFEBE4',rx:0},
+ v:{card:0,letter:1,env:0,note:0,tee:2,tote:2,arr:2},
+ motion:'The letters draw themselves one after another in a single line (0.14 s apart), STUDIOS follows underneath.'},
+{id:10,grp:'Studios',sub:'STUDIOS',lg:'block',name:'Block',style:'Stacked box logo',
+ concept:'MOON over SHOT in a solid block, STUDIOS running up the side, one volt-green moon in the counter of an O. Loud, tight and made for tape, crates and crew wear.',
+ f:{d:'Archivo Black',dw:400,b:'Inter',n:'Archivo Black · Inter'},finish:'ink',foil:'#D7FF3E',up:1,
+ t:{dark:{bg:'#000000',fg:'#FFFFFF',ac:'#D7FF3E',on:'#000000'},light:{bg:'#FFFFFF',fg:'#000000',ac:'#D7FF3E',on:'#FFFFFF'},brand:{bg:'#D7FF3E',fg:'#000000',ac:'#FFFFFF',on:'#D7FF3E'}},
+ pal:[['Black','#000000','The block'],['White','#FFFFFF','Lettering, paper'],['Volt','#D7FF3E','The moon, tape, highlights'],['Concrete','#BDBDB8','Secondary surfaces'],['Asphalt','#2A2A2A','Panels']],
+ m:{paper:'#FFFFFF',dark:'#000000',brand:'#D7FF3E',ink:'#000000',acc:'#000000',surf:'#BDBDB8',surf2:'#2A2A2A',pen:'#D7FF3E',tee:'#000000',tote:'#D7FF3E',rx:0},
+ v:{card:1,letter:3,env:1,note:1,tee:2,tote:1,arr:0},
+ motion:'The volt moon blinks inside the O (1.6 s). On video the block slams in on the beat.'}
+];
+KITS.forEach(k=>{k.mail=k.grp==='Media'?'contact@moonshotmedia.in':'[email]';k.web=k.grp==='Media'?'moonshotmedia.in':'[website]';k.full='Moonshot '+(k.grp==='Media'?'Media':'Studios')});
+
+</script>
+<script>
+/* Moonshot premium brand kits: stationery, merchandise, digital and signage scenes */
+function mockKit(k){
+  const m=k.m,FD=k.f.d,FB=k.f.b,dopt={w:k.f.dw,i:k.f.di,x:k.f.dx},v=k.v;
+  const cs=s=>k.lc?s.toLowerCase():k.tc?s.charAt(0)+s.slice(1).toLowerCase():s;
+  const foilFlat=k.foil[0]==='u'?k.pal[1][1]:k.foil;
+  const toneFor=bg=>bg===k.t.dark.bg?k.t.dark:bg===k.t.brand.bg?k.t.brand:bg===k.t.light.bg?k.t.light:hexL(bg)<125?{...k.t.dark,bg,on:bg}:{...k.t.light,bg,on:bg};
+  const on=bg=>toneFor(bg).fg;
+  const L=(type,bg,x,y,w,h,al)=>put(logo(k,type,toneFor(bg)),x,y,w,h,al);
+  const LX=(type,bg,x,y,w,h,al)=>{
+    if(k.finish==='foil')return put(logo(k,type,{bg,fg:k.foil,ac:k.foil,on:bg}),x,y,w,h,al);
+    if(k.finish==='emboss'){const c=shade(bg,hexL(bg)<125?20:-20);return `<g filter="url(#emboss)">${put(logo(k,type,{bg,fg:c,ac:c,on:bg}),x,y,w,h,al)}</g>`}
+    return L(type,bg,x,y,w,h,al)};
+  const box=(w,h,fill,inner,rx=m.rx)=>{const id='cp'+(++uid);return `<clipPath id="${id}"><rect width="${w}" height="${h}" rx="${rx}"/></clipPath><g clip-path="url(#${id})"><rect width="${w}" height="${h}" fill="${fill}"/>${inner}</g>`};
+  const DV=(x,y,w,h,col,op=.3)=>`<svg x="${x}" y="${y}" width="${w}" height="${h}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice"><g opacity="${op}">${dev(k,col)}</g></svg>`;
+  const t=(s,x,y,z,fill,o={})=>tx(s,x,y,z,fill,FB,o),d=(s,x,y,z,fill,o={})=>tx(cs(s),x,y,z,fill,FD,{...dopt,...o});
+  const lines=(x,y,w,n,gap,col,op=.2,h=2)=>Array.from({length:n},(_,i)=>`<rect x="${x}" y="${y+i*gap}" width="${i===n-1?w*.5:w}" height="${h}" fill="${col}" opacity="${op}"/>`).join('');
+  const contact=(x,y,z,fill,a,gap=11)=>t('[+00 000 0000000]',x,y,z,fill,{a,o:.8})+t(k.mail,x,y+gap,z,fill,{a,o:.8})+t(k.web,x,y+gap*2,z,fill,{a,w:600});
+  const body=(x,y,w,col)=>t('[Date]',x,y,7.5,col,{o:.7})+t('Dear [Name],',x,y+26,8.5,col,{w:600})+lines(x,y+44,w,7,12,col)+lines(x,y+142,w,6,12,col)+lines(x,y+228,w,4,12,col)+t('[Your name]',x,y+310,8.5,col,{w:600})+t('[Job title]',x,y+322,7,col,{o:.6});
+  const pl=k.hz?'alt':'primary';
+
+  function card(side){const w=v.card===2?150:250,h=v.card===2?250:150;let i;
+    if(side==='b'){
+      if(v.card===0)i=LX(pl,m.dark,45,k.hz?24:45,160,k.hz?102:60);
+      else if(v.card===1)i=DV(0,0,w,h,on(m.brand),.16)+`<rect x="${w/2-40}" y="${h/2-40}" width="80" height="80" fill="${m.brand}"/>`+L('mark',m.brand,w/2-28,h/2-28,56,56);
+      else if(v.card===2)i=DV(0,0,w,h,foilFlat,.3)+`<rect x="35" y="85" width="80" height="80" fill="${m.dark}"/>`+LX('mark',m.dark,45,95,60,60);
+      else i=DV(60,0,190,h,on(m.dark),.12)+LX('primary',m.dark,20,h-62,132,42,'xMinYMax');
+      return{w,h,i:box(w,h,v.card===1?m.brand:m.dark,i)}}
+    if(v.card===0)i=L('mark',m.paper,w/2-17,15,34,34)+d('[YOUR NAME]',w/2,84,13,m.ink,{a:'middle',ls:1.5})+t('[JOB TITLE]',w/2,97,5.8,m.acc,{a:'middle',ls:2.2,w:500})+`<path d="M${w/2-14} 108h28" stroke="${m.acc}" stroke-width=".7"/>`+t(`[+00 000 0000000]  ·  ${k.mail}`,w/2,125,5.6,m.ink,{a:'middle',o:.8})+t(k.web,w/2,136,5.6,m.ink,{a:'middle',w:600});
+    else if(v.card===1)i=`<rect width="84" height="${h}" fill="${m.dark}"/>`+L('mark',m.dark,20,h/2-22,44,44)+d('[YOUR NAME]',102,50,13,m.ink)+t('[Job title]',102,64,6.5,m.ink,{o:.6})+`<rect x="102" y="78" width="18" height="2.5" fill="${m.acc}"/>`+contact(102,104,6,m.ink);
+    else if(v.card===2)i=L('alt',m.paper,28,22,94,86)+`<path d="M60 128h30" stroke="${m.acc}" stroke-width=".7"/>`+d('[YOUR NAME]',w/2,158,12,m.ink,{a:'middle',ls:1})+t('[JOB TITLE]',w/2,171,5.5,m.acc,{a:'middle',ls:2,w:500})+contact(w/2,206,5.6,m.ink,'middle',10);
+    else i=DV(120,0,130,h,m.acc,.42)+L('primary',m.paper,18,18,112,36,'xMinYMin')+d('[YOUR NAME]',18,98,12.5,m.ink)+t('[Job title]',18,110,6,m.ink,{o:.6})+t(`${k.mail}  ·  ${k.web}`,18,134,5.6,m.ink,{o:.85});
+    return{w,h,i:box(w,h,m.paper,i)}}
+
+  function letter(){const w=420,h=594,p=m.paper;let i;
+    if(v.letter===0)i=L(pl,p,150,30,120,k.hz?84:46)+`<path d="M190 ${k.hz?128:92}h40" stroke="${m.acc}" stroke-width=".8"/>`+body(56,160,308,m.ink)+`<path d="M56 548h308" stroke="${m.ink}" stroke-width=".5" opacity=".4"/>`+t(`[Street address, City]   ·   [+00 000 0000000]   ·   ${k.mail}   ·   ${k.web}`,210,566,6,m.ink,{a:'middle',o:.75});
+    else if(v.letter===1)i=`<rect width="118" height="${h}" fill="${m.dark}"/>`+L('mark',m.dark,34,36,50,50)+t('[Street address]',24,492,6.2,on(m.dark),{o:.8})+t('[City, Country]',24,503,6.2,on(m.dark),{o:.8})+contact(24,525,6.2,on(m.dark))+body(150,70,236,m.ink);
+    else if(v.letter===2)i=DV(170,330,250,264,m.acc,.38)+L('primary',p,40,34,150,46,'xMinYMin')+t('[Street address, City]',380,42,6.2,m.ink,{a:'end',o:.75})+contact(380,53,6.2,m.ink,'end',11)+body(40,140,300,m.ink)+`<rect y="${h-9}" width="${w}" height="9" fill="${m.dark}"/>`;
+    else i=`<rect width="${w}" height="104" fill="${m.dark}"/>`+DV(0,0,w,104,on(m.dark),.08)+LX('primary',m.dark,40,26,170,52,'xMinYMid')+t(k.web,380,58,6.5,on(m.dark),{a:'end',w:600,ls:1})+body(40,160,340,m.ink)+t(`[Street address, City]   ·   [+00 000 0000000]   ·   ${k.mail}`,40,566,6,m.ink,{o:.75})+`<rect x="40" y="544" width="24" height="3" fill="${m.acc}"/>`;
+    return{w,h,i:box(w,h,p,i,0)}}
+
+  function env(){const w=440,h=210,id='ep'+(++uid);let i;
+    if(v.env===0)i=box(w,h,m.paper,`<path d="M0 ${h}L170 110M${w} ${h}L270 110" stroke="${m.ink}" stroke-opacity=".12"/><clipPath id="${id}"><path d="M0 0H${w}L220 128Z"/></clipPath><g clip-path="url(#${id})"><rect width="${w}" height="130" fill="${m.dark}"/>${DV(0,0,w,130,foilFlat,.38)}</g><path d="M0 0L220 128L${w} 0" fill="none" stroke="#000" stroke-opacity=".18"/><circle cx="220" cy="124" r="23" fill="${m.acc}"/><circle cx="220" cy="124" r="19" fill="none" stroke="#000" stroke-opacity=".18"/><g filter="url(#emboss)">${put(logo(k,'mark',{bg:m.acc,fg:shade(m.acc,-26),ac:shade(m.acc,-26),on:m.acc}),206,110,28,28)}</g>`,2);
+    else if(v.env===1)i=box(w,h,m.paper,`<rect width="18" height="${h}" fill="${m.brand}"/>`+L('primary',m.paper,40,24,140,42,'xMinYMin')+t('[Street address, City, Country]',40,84,6.2,m.ink,{o:.7})+`<rect x="372" y="22" width="44" height="52" fill="${m.dark}"/>`+L('mark',m.dark,380,34,28,28)+lines(250,130,150,3,13,m.ink,.3,2.4),2);
+    else i=box(w,h,m.dark,`<path d="M0 0L220 112L${w} 0" fill="none" stroke="${on(m.dark)}" stroke-opacity=".22"/><path d="M0 ${h}L160 96M${w} ${h}L280 96" stroke="${on(m.dark)}" stroke-opacity=".1"/>`+LX(k.hz?'mark':'primary',m.dark,150,k.hz?128:134,140,k.hz?62:50),2);
+    return{w,h,i}}
+
+  function note(){const w=290,h=400;let i,bg=m.dark;
+    if(v.note===0)i=LX('mark',m.dark,110,150,70,70)+`<rect x="248" width="10" height="${h}" fill="${foilFlat}" opacity=".9"/><rect width="16" height="${h}" fill="#000" opacity=".28"/>`+t('NOTES',145,300,7,on(m.dark),{a:'middle',ls:6,o:.5});
+    else if(v.note===1){bg=m.brand;i=DV(0,0,w,h,on(m.brand),.2)+`<rect x="60" y="150" width="170" height="92" fill="${m.paper}"/><rect x="66" y="156" width="158" height="80" fill="none" stroke="${m.ink}" stroke-width=".6"/>`+L('primary',m.paper,78,166,134,60)+`<rect width="16" height="${h}" fill="#000" opacity=".22"/>`}
+    else{bg=m.brand;i=`<g opacity=".95">${L('mark',m.brand,-50,110,360,360)}</g><rect width="34" height="${h}" fill="${shade(m.brand[0]==='#'?m.brand:'#333333',-28)}"/>`+t(k.full.toUpperCase(),w-20,h-22,6.5,on(m.brand),{a:'end',ls:3,o:.8})}
+    return{w,h,i:box(w,h,bg,i,6)}}
+
+  const pen=()=>({w:16,h:300,i:`<rect width="16" height="260" rx="8" fill="${m.pen}"/><rect width="16" height="260" rx="8" fill="url(#cyl)"/><rect y="62" width="16" height="5" fill="${foilFlat}"/><rect x="13" y="8" width="4.5" height="58" rx="2" fill="${foilFlat}"/><path d="M1 258L8 300L15 258Z" fill="#b9b9b9"/><path d="M5.5 285L8 300L10.5 285Z" fill="#333"/>`});
+  const seal=()=>({w:96,h:96,i:`<path d="${Array.from({length:24},(_,n)=>{const a=n*Math.PI/12,r=n%2?48:44.5;return`${n?'L':'M'}${48+Math.cos(a)*r} ${48+Math.sin(a)*r}`}).join('')}Z" fill="${m.acc}" stroke="${m.acc}" stroke-width="5" stroke-linejoin="round"/><circle cx="48" cy="48" r="36" fill="none" stroke="#000" stroke-opacity=".2" stroke-width="1.5"/><g filter="url(#emboss)">${put(logo(k,'mark',{bg:m.acc,fg:shade(m.acc,-30),ac:shade(m.acc,-30),on:m.acc}),22,22,52,52)}</g>`});
+  function folder(){const w=360,h=480,c=m.brand,id='fp'+(++uid);return{w,h,i:`<rect x="24" y="-14" width="312" height="60" fill="#fff"/>${lines(40,0,220,3,10,'#000',.15)}<rect width="${w}" height="${h}" rx="4" fill="${c}"/><clipPath id="${id}"><path d="M0 150L${w} 96V${h}H0Z"/></clipPath><g clip-path="url(#${id})"><rect width="${w}" height="${h}" fill="#000" opacity=".1"/>${DV(0,96,w,h-96,on(c),.16)}</g><path d="M0 150L${w} 96" stroke="#000" stroke-opacity=".25"/>${LX('primary',c,36,210,200,80,'xMinYMid')}${t(k.web,36,h-34,8,on(c),{w:600,ls:1.5,o:.85})}`}}
+  function invoice(){const w=360,h=500,p=m.paper;return{w,h,i:box(w,h,p,L('primary',p,30,28,130,44,'xMinYMin')+d('INVOICE',330,58,22,m.ink,{a:'end'})+`<path d="M30 92h300" stroke="${m.ink}" stroke-width=".8"/>`+t('BILLED TO',30,114,5.8,m.acc,{ls:2,w:600})+t('[Client name]',30,128,8,m.ink,{w:600})+t('[Client address]',30,140,7,m.ink,{o:.7})+t('INVOICE NO.',330,114,5.8,m.acc,{ls:2,w:600,a:'end'})+t('[0000]  ·  [Date]',330,128,8,m.ink,{a:'end'})+`<rect x="30" y="166" width="300" height="20" fill="${m.dark}"/>`+t('DESCRIPTION',40,179.5,6,on(m.dark),{ls:2,w:600})+t('AMOUNT',320,179.5,6,on(m.dark),{ls:2,w:600,a:'end'})+[0,1,2,3,4].map(n=>`<rect x="40" y="${204+n*28}" width="${130-n*14}" height="2.4" fill="${m.ink}" opacity=".25"/><rect x="290" y="${204+n*28}" width="30" height="2.4" fill="${m.ink}" opacity=".25"/><path d="M30 ${218+n*28}h300" stroke="${m.ink}" stroke-width=".4" opacity=".35"/>`).join('')+t('TOTAL',228,372,7,m.ink,{ls:2,w:600})+d('[0.00]',330,376,17,m.ink,{a:'end'})+`<path d="M220 384h110" stroke="${m.acc}" stroke-width="1.6"/>`+t('Thank you.',30,440,9,m.ink,{i:1})+t(`${k.mail}   ·   ${k.web}`,30,470,6,m.ink,{o:.7}),0)}}
+  function badge(){const w=190,h=290,p=m.paper;return{w,h,i:`<path d="M72 -260L88 8M118 -260L102 8" stroke="${m.brand}" stroke-width="15"/><path d="M72 -260L88 8M118 -260L102 8" stroke="#000" stroke-opacity=".12" stroke-width="15"/><rect x="82" y="-6" width="26" height="22" rx="4" fill="#a9a9a9"/>`+box(w,h,p,`<rect width="${w}" height="78" fill="${m.dark}"/>`+LX(pl,m.dark,35,k.hz?8:18,120,k.hz?62:42)+`<circle cx="95" cy="128" r="33" fill="${shade(p,-14)}" stroke="${m.acc}" stroke-width="2"/><circle cx="95" cy="119" r="11" fill="${m.ink}" opacity=".3"/><path d="M73 150a22 18 0 0 1 44 0Z" fill="${m.ink}" opacity=".3"/>`+d('[NAME]',95,192,15,m.ink,{a:'middle'})+t('CREW  ·  ALL ACCESS',95,207,6,m.acc,{a:'middle',ls:2,w:600})+[0,4,7,12,15,20,24,27,33,36,41,45,48,54,58,63,66,70,75,79].map((x,n)=>`<rect x="${52+x}" y="226" width="${n%3?1.5:3}" height="26" fill="${m.ink}"/>`).join('')+`<rect y="${h-12}" width="${w}" height="12" fill="${m.acc}"/>`,10)}}
+  const slip=()=>({w:420,h:180,i:box(420,180,m.paper,L('mark',m.paper,30,28,46,46)+tx('With compliments',30,128,24,m.ink,FD,{w:k.f.dw,i:k.f.di||k.lg==='maison',x:k.f.dx})+t(`${k.mail}   ·   ${k.web}`,30,152,6.2,m.ink,{o:.75})+DV(260,0,160,180,m.acc,.35),0)});
+
+  function tee(){const c=m.tee,w=430,h=460,P='M140 12C165 40 265 40 290 12L372 44L428 150L366 184L332 132V452H98V132L64 184L2 150L58 44Z',back=v.tee===2;let i;
+    if(v.tee===0)i=L('mark',c,250,112,54,54);
+    else if(v.tee===1)i=L(pl,c,125,120,180,k.hz?150:100);
+    else if(v.tee===2)i=`<rect x="130" y="110" width="170" height="210" fill="${hexL(c)<125?k.t.dark.ac[0]==='u'?foilFlat:k.t.dark.ac:m.dark}"/>${DV(130,110,170,210,hexL(c)<125?'#000000':on(m.dark),.28)}`+L('word',c,140,336,150,54)+t('CREW',215,96,8,on(c),{a:'middle',ls:6,w:600,o:.8});
+    else i=L('alt',c,140,104,150,160);
+    return{w,h,i:`<path d="${P}" fill="${c}"/><path d="${P}" fill="url(#shade)"/><path d="M98 132L110 62M332 132L320 62" stroke="#000" stroke-opacity=".12" stroke-width="1.5"/><path d="M140 12C165 ${back?26:48} 265 ${back?26:48} 290 12" fill="none" stroke="#000" stroke-opacity=".25" stroke-width="5"/>${back?'':`<path d="M140 12C165 30 265 30 290 12" fill="none" stroke="#000" stroke-opacity=".12" stroke-width="3"/>`}<path d="M150 300q40 14 60 150M300 250q-30 60 -20 200" fill="none" stroke="#000" stroke-opacity=".05" stroke-width="6"/>${i}`}}
+  function tote(){const c=m.tote,w=300,h=430;let i;
+    if(v.tote===0)i=L('mark',c,75,170,150,150)+t(k.full.toUpperCase(),150,372,8,on(c),{a:'middle',ls:5,w:500,o:.85});
+    else if(v.tote===1)i=DV(0,100,w,330,on(c),.2)+`<rect x="60" y="210" width="180" height="96" fill="${m.paper}"/>`+L('primary',m.paper,74,222,152,72);
+    else i=DV(0,100,w,330,on(c),.16)+L('primary',c,28,350,150,50,'xMinYMax');
+    return{w,h,i:`<path d="M84 104C84 -20 216 -20 216 104" fill="none" stroke="${hexL(c)<125?shade(c,26):shade(c,-40)}" stroke-width="15"/><rect y="100" width="${w}" height="330" rx="3" fill="${c}"/>${i}<rect y="100" width="${w}" height="330" fill="url(#shade)"/><path d="M4 114H296" stroke="#000" stroke-opacity=".2" stroke-dasharray="5 4"/>`}}
+  const cap=()=>{const c=m.dark;return{w:280,h:190,i:`<path d="M24 150C24 18 256 18 256 150Z" fill="${c}"/><path d="M24 150C24 18 256 18 256 150Z" fill="url(#shade)"/><path d="M140 50V150M80 68Q92 110 90 150M200 68Q188 110 190 150" stroke="${on(c)}" stroke-opacity=".14" fill="none"/><circle cx="140" cy="48" r="7" fill="${foilFlat}"/><path d="M14 150C90 130 250 136 278 174C220 178 100 184 14 166Z" fill="${hexL(m.brand)<40&&hexL(c)<40?shade(c,30):m.brand}"/><path d="M14 150C90 130 250 136 278 174C220 178 100 184 14 166Z" fill="url(#shade)"/>${L('mark',c,108,72,64,64)}`}};
+  const mug=()=>{const c=m.paper;return{w:210,h:190,i:`<path d="M146 44C212 44 212 148 146 148" fill="none" stroke="${c}" stroke-width="18"/><path d="M146 44C212 44 212 148 146 148" fill="none" stroke="#000" stroke-opacity=".12" stroke-width="18"/><path d="M6 8H154V162a24 24 0 0 1-24 24H30a24 24 0 0 1-24-24Z" fill="${c}"/><path d="M6 8H154V162a24 24 0 0 1-24 24H30a24 24 0 0 1-24-24Z" fill="url(#cyl)"/><ellipse cx="80" cy="9" rx="74" ry="9" fill="${shade(c,-30)}"/><ellipse cx="80" cy="10" rx="66" ry="6.5" fill="#2a1a12"/>${L(k.hz?'alt':'mark',c,34,44,92,104)}`}};
+  const bottle=()=>{const c=hexL(m.brand)>200?m.dark:m.brand;return{w:90,h:330,i:`<rect x="25" width="40" height="34" rx="6" fill="${shade(c,hexL(c)<125?34:-60)}"/><rect x="25" width="40" height="34" rx="6" fill="url(#cyl)"/><path d="M8 62a22 22 0 0 1 22-22h30a22 22 0 0 1 22 22V308a20 20 0 0 1-20 20H28a20 20 0 0 1-20-20Z" fill="${c}"/><path d="M8 62a22 22 0 0 1 22-22h30a22 22 0 0 1 22 22V308a20 20 0 0 1-20 20H28a20 20 0 0 1-20-20Z" fill="url(#cyl)"/>${L('mark',c,21,150,48,48)}`}};
+  const pcase=()=>{const c=m.dark;return{w:150,h:300,i:box(150,300,c,DV(0,0,150,300,on(c),.1)+`<rect x="14" y="14" width="58" height="58" rx="16" fill="#000" opacity=".55"/><circle cx="32" cy="32" r="10" fill="#1a1a1a" stroke="#333"/><circle cx="54" cy="54" r="10" fill="#1a1a1a" stroke="#333"/>`+LX('mark',c,39,128,72,72)+`<rect width="150" height="300" fill="url(#shade)"/>`,26)}};
+  const pkg=()=>{const c=k.finish==='foil'?m.dark:'#C8A47C';return{w:320,h:230,i:box(320,230,c,`<rect x="126" width="68" height="230" fill="${m.brand===c?foilFlat:m.brand}"/>`+[10,84,158].map(y=>L('mark',m.brand===c?foilFlat:m.brand,142,y,36,36)).join('')+`<rect x="20" y="132" width="120" height="76" fill="${m.paper}"/>`+L('primary',m.paper,30,140,100,34)+lines(30,184,90,2,8,m.ink,.3)+`<rect width="320" height="230" fill="url(#shade)"/>`,3)}};
+  const tag=()=>({w:110,h:190,i:`<path d="M55 20C40 -40 90 -70 70 -120" fill="none" stroke="${shade(m.paper,-60)}" stroke-width="1.6"/>`+box(110,190,m.dark,`<circle cx="55" cy="20" r="6" fill="${m.surf2}"/><circle cx="55" cy="20" r="9" fill="none" stroke="${foilFlat}" stroke-width="1.5"/>`+LX('mark',m.dark,27,62,56,56)+t(k.full.toUpperCase(),55,150,5.4,on(m.dark),{a:'middle',ls:2.4,o:.8}),4)});
+  const pin=(bg,r=46)=>({w:r*2,h:r*2,i:`<circle cx="${r}" cy="${r}" r="${r}" fill="${bg}"/>${L('mark',bg,r*.36,r*.36,r*1.28,r*1.28)}<circle cx="${r}" cy="${r}" r="${r}" fill="url(#gloss)"/><circle cx="${r}" cy="${r}" r="${r-1}" fill="none" stroke="#000" stroke-opacity=".25" stroke-width="2"/>`});
+  const stickers=()=>({w:230,h:250,i:`<g transform="rotate(-8 60 60)"><circle cx="62" cy="62" r="60" fill="#fff"/><circle cx="62" cy="62" r="53" fill="${m.brand}"/>${L('mark',m.brand,30,30,64,64)}</g><g transform="translate(40 130) rotate(6)"><rect width="180" height="82" rx="12" fill="#fff"/><rect x="7" y="7" width="166" height="68" rx="7" fill="${m.dark}"/>${L('primary',m.dark,20,17,140,48)}</g>`});
+  function clap(){const w=400,h=330,bars=y=>[0,1,2,3,4,5].map(n=>`<path d="M${22+n*66} ${y}h34l-18 34h-34Z" fill="${n%2?foilFlat:'#f4f4f4'}"/>`).join('');return{w,h,i:`<g transform="rotate(-12 6 66)"><rect y="32" width="${w}" height="34" rx="3" fill="#151515"/>${bars(32)}</g><rect y="66" width="${w}" height="264" rx="5" fill="#151515"/>${bars(66)}`+t('PROD.',20,128,7,'#9a9a9a',{ls:2})+L('word',k.t.dark.bg==='#151515'?'#151515':'#151516',20,138,200,54,'xMinYMin')+`<path d="M20 206h360M20 262h360M140 206v56M260 206v56" stroke="#fff" stroke-opacity=".35"/>`+['SCENE','TAKE','ROLL'].map((s,n)=>t(s,28+n*120,222,7,'#9a9a9a',{ls:2})+t('[   ]',28+n*120,250,20,'#fff',{w:600})).join('')+t('DIRECTOR   [NAME]',20,286,8,'#fff',{ls:2})+t('DATE   [DD / MM / YY]',20,306,8,'#fff',{ls:2})+L('mark','#151516',318,110,58,58)}}
+  const lenscap=()=>({w:150,h:150,i:`<circle cx="75" cy="75" r="75" fill="#141414"/><circle cx="75" cy="75" r="68" fill="none" stroke="#2c2c2c" stroke-width="4"/><circle cx="75" cy="75" r="52" fill="#0c0c0c"/>${L('mark','#0c0c0d',45,45,60,60)}<circle cx="75" cy="75" r="75" fill="url(#gloss)" opacity=".5"/>`});
+  const tape=()=>{const c=m.brand===m.dark?foilFlat:m.brand;return{w:170,h:170,i:`<circle cx="85" cy="85" r="85" fill="${c}"/><circle cx="85" cy="85" r="85" fill="url(#gloss)" opacity=".5"/>${[72,60].map(r=>`<circle cx="85" cy="85" r="${r}" fill="none" stroke="#000" stroke-opacity=".12"/>`).join('')}<circle cx="85" cy="85" r="46" fill="#b89b78"/><circle cx="85" cy="85" r="40" fill="${m.surf2}"/>`}};
+
+  const G=(it,x,y,r=0,f='paper')=>`<g transform="translate(${x} ${y}) rotate(${r} ${it.w/2} ${it.h/2})" filter="url(#${f})">${it.i}</g>`;
+  const scene=(w,h,surf,inner)=>`<svg ${NS} viewBox="0 0 ${w} ${h}"><rect width="${w}" height="${h}" fill="${surf}"/><rect width="${w}" height="${h}" filter="url(#grain)" opacity=".5"/><rect width="${w}" height="${h}" fill="url(#vig)"/>${inner}</svg>`;
+  const cb=card('b'),cf=card('f'),vc=v.card===2;
+  const ARR=[
+    [[letter(),70,70,-5],[env(),545,60,4],[note(),890,300,5],[cb,560,330,-9],[cf,vc?760:690,vc?330:455,7],[pen(),500,360,28],[seal(),1060,150,-8]],
+    [[note(),60,150,-6],[letter(),385,60,3],[env(),720,500,-4],[cb,870,70,9],[cf,vc?1010:900,vc?190:260,-6],[pen(),335,150,-12],[seal(),170,600,10]],
+    [[env(),50,60,-4],[letter(),720,70,4],[note(),400,300,-3],[cb,80,340,6],[cf,vc?250:150,vc?440:520,-7],[pen(),640,60,10],[seal(),560,170,6]]][v.arr];
+  const out={};
+  out.stat1=scene(1200,760,m.surf,ARR.map(a=>G(...a)).join(''));
+  out.stat2=scene(1200,700,m.surf2,G(folder(),80,120,-4)+G(invoice(),480,80,3)+G(slip(),700,480,-5)+G(badge(),930,290,6));
+  out.cards=scene(1200,520,m.surf,`<g transform="translate(${vc?330:130} ${vc?30:95}) scale(${vc?1.85:2.2})" filter="url(#paper)">${cf.i}</g><g transform="translate(${vc?640:650} ${vc?30:95}) scale(${vc?1.85:2.2}) rotate(${vc?0:0})" filter="url(#paper)">${cb.i}</g>`);
+  out.merch1=scene(1200,720,m.surf2,G(tee(),60,140)+G(tote(),545,160,3)+G(cap(),880,130,-4)+G(tag(),990,470,9));
+  out.merch2=scene(1200,640,m.surf,G(mug(),60,240)+G(bottle(),320,160,6)+G(pcase(),470,170,-5)+G(pkg(),680,70,3)+G(pin(m.dark),690,400)+G(pin(m.brand===m.dark?m.paper:m.brand),800,450)+G(pin(m.paper===m.brand?m.dark:m.paper,38),915,390)+G(stickers(),990,330,4));
+  // digital
+  const ph=()=>{const D=k.t.dark,tiles=[[m.dark,'mark'],[m.brand,'dv'],[m.paper,'word'],[m.brand,'mark'],[m.paper,'mark'],[m.dark,'dv'],[m.paper,'dv'],[m.dark,'word'],[m.brand,'mark']];
+    return{w:290,h:500,i:`<rect width="290" height="500" rx="40" fill="#0b0b0b"/><rect x="2" y="2" width="286" height="496" rx="38" fill="none" stroke="#3a3a3a"/>`+`<g transform="translate(13 13)">${box(264,474,'#fff',`<rect x="92" y="8" width="80" height="20" rx="10" fill="#0b0b0b"/><circle cx="52" cy="84" r="32" fill="${m.dark}"/>${L('mark',m.dark,32,64,40,40)}`+t(k.full,100,76,13,'#111',{w:700})+t('[@handle]',100,92,9,'#666')+t(k.grp==='Media'?'Take a quick commercial break.':'[One-line description]',20,138,9,'#222')+`<rect x="20" y="152" width="108" height="26" rx="6" fill="#111"/><rect x="136" y="152" width="108" height="26" rx="6" fill="#eee"/>`+t('Follow',74,169,9,'#fff',{a:'middle',w:600})+t('Message',190,169,9,'#111',{a:'middle',w:600})+tiles.map(([bg,ty],n)=>{const x=(n%3)*88.5,y=196+Math.floor(n/3)*88.5;return `<rect x="${x}" y="${y}" width="87" height="87" fill="${bg}"/>`+(ty==='dv'?DV(x,y,87,87,on(bg),.3):L(ty,bg,x+(ty==='word'?10:23),y+23,ty==='word'?67:41,41))}).join(''),26)}</g>`}};
+  const br=()=>{const D=m.dark,hd=k.grp==='Media'?['TAKE A QUICK','COMMERCIAL BREAK.']:['MOONSHOT','STUDIOS.'];return{w:800,h:500,i:box(800,500,D,`<rect width="800" height="34" fill="#232326"/><circle cx="20" cy="17" r="5" fill="#ff5f57"/><circle cx="38" cy="17" r="5" fill="#febc2e"/><circle cx="56" cy="17" r="5" fill="#28c840"/><rect x="250" y="8" width="300" height="18" rx="9" fill="#111"/>`+t(k.web,400,21,9,'#999',{a:'middle'})+DV(0,34,800,466,on(D),.07)+L('primary',D,36,54,150,48,'xMinYMid')+['WORK','CLIENTS','CONNECT'].map((s,n)=>t(s,560+n*82,82,9,on(D),{ls:2,w:500})).join('')+d(hd[0],60,260,52,on(D))+d(hd[1],60,322,52,toneFor(D).ac[0]==='u'?foilFlat:toneFor(D).ac)+`<rect x="60" y="364" width="150" height="40" rx="${Math.min(m.rx*2,20)}" fill="${on(D)}"/>`+t('WATCH THE WORK',135,389,9,D,{a:'middle',ls:2,w:600})+t('SCROLL',740,460,8,on(D),{a:'end',ls:4,o:.6}),10)}};
+  const icon=bg=>({w:120,h:120,i:box(120,120,bg,L('mark',bg,24,24,72,72)+`<rect width="120" height="120" fill="url(#shade)"/>`,28)});
+  out.digital=scene(1200,680,m.surf2,G(br(),60,90,0,'sh')+G(ph(),880,90,0,'sh')+G(icon(m.dark),80,520,0,'sh')+G(icon(m.brand===m.dark?m.paper:m.brand),220,520,0,'sh')+G(icon(m.paper===m.brand?m.dark:m.paper),360,520,0,'sh'));
+  // signage
+  const wallbg=hexL(m.dark)<60?shade(m.dark,10):m.dark,wt=toneFor(m.dark);
+  out.wall=`<svg ${NS} viewBox="0 0 1200 620"><rect width="1200" height="620" fill="${wallbg}"/><rect width="1200" height="620" fill="url(#spot)"/><rect width="1200" height="620" filter="url(#grain)" opacity=".35"/><g filter="url(#glow)" opacity=".55">${put(logo(k,pl,{...wt,bg:wallbg,on:wallbg}),360,90,480,270)}</g><g filter="url(#sh)">${put(logo(k,pl,{...wt,bg:wallbg,on:wallbg}),360,90,480,270)}</g><rect y="500" width="1200" height="120" fill="#000" opacity=".45"/><g filter="url(#sh)"><rect x="330" y="430" width="540" height="150" fill="${m.paper}"/><rect x="330" y="430" width="540" height="12" fill="${foilFlat}"/><rect x="330" y="442" width="540" height="138" fill="url(#shade)"/>${L('mark',m.paper,570,472,60,60)}</g><g filter="url(#sh)"><rect x="1010" y="250" width="110" height="150" fill="${foilFlat}"/><rect x="1010" y="250" width="110" height="150" fill="url(#shade)"/>${put(logo(k,'mark',MONO.b),1040,275,50,50)}${t('RECEPTION',1065,352,7.5,'#111',{a:'middle',ls:2.5,w:600})}${t('STUDIO 01',1065,368,6.5,'#111',{a:'middle',ls:2,o:.7})}</g></svg>`;
+  out.set=scene(1200,620,m.surf,G(clap(),90,150,-4)+G(badge(),610,300,-5)+G(lenscap(),850,120,0)+G(tape(),960,330,0)+G(cf,820,440,8));
+  return out;
+}
+
+</script>
+<script>
+/* Moonshot premium brand kits: page rendering */
+const app=document.getElementById('app'),tabs=document.getElementById('tabs'),subnav=document.getElementById('subnav');
+const FOILCSS={'url(#gold)':'linear-gradient(135deg,#9C7830,#F3DC9C 30%,#B98D3C 55%,#F7E7B4 80%,#A07C2C)','url(#copper)':'linear-gradient(135deg,#8E4623,#F0B48A 30%,#B8693D 55%,#F6C9A6 80%,#9A4F28)'};
+const hex2=h=>{const n=parseInt(h.slice(1),16);return[n>>16,n>>8&255,n&255]};
+const cmyk=([r,g,b])=>{const k=1-Math.max(r,g,b)/255;if(k===1)return'0 0 0 100';return[(1-r/255-k)/(1-k),(1-g/255-k)/(1-k),(1-b/255-k)/(1-k),k].map(v=>Math.round(v*100)).join(' ')};
+const n2=k=>String(k.id).padStart(2,'0');
+const csk=(k,s)=>k.lc?s.toLowerCase():k.tc?s.charAt(0)+s.slice(1).toLowerCase():s;
+let cur=0;
+
+function buildTabs(){
+  const t=k=>`<button class="tab" data-go="${k.id}"><i style="background:${k.t.dark.bg}">${logo(k,'mark',k.t.dark)}</i>${n2(k)} ${k.name}</button>`;
+  tabs.innerHTML=`<em>MEDIA</em>${KITS.filter(k=>k.grp==='Media').map(t).join('')}<em>STUDIOS</em>${KITS.filter(k=>k.grp==='Studios').map(t).join('')}`;
+}
+function overview(){
+  subnav.innerHTML='<a href="#media">Moonshot Media · 01–05</a><a href="#studios">Moonshot Studios · 06–10</a>';
+  const c=k=>`<button class="ovc" data-go="${k.id}"><div class="lg" style="background:${k.t.dark.bg}">${logo(k,k.hz?'alt':'primary',k.t.dark)}</div><div class="mt"><span>${n2(k)} · ${k.name}</span><small>${k.style}</small></div></button>`;
+  app.innerHTML=`<section class="ov"><h1>Ten identities for <i>Moonshot</i>.</h1><p>Five directions for Moonshot Media and five for Moonshot Studios. Each one is a complete kit: logo system, animated logo, colour, typography, office stationery, merchandise, digital and signage. Open a kit to see it applied.</p>
+  <h2 id="media">MOONSHOT MEDIA</h2><div class="ovg">${KITS.filter(k=>k.grp==='Media').map(c).join('')}</div>
+  <h2 id="studios">MOONSHOT STUDIOS</h2><div class="ovg">${KITS.filter(k=>k.grp==='Studios').map(c).join('')}</div></section>`;
+  document.title='Moonshot — Premium Brand Kits';
+}
+function kit(k){
+  const st=document.documentElement.style,D=k.t.dark,Lt=k.t.light,B=k.t.brand;
+  Object.entries({bg:D.bg,fg:D.fg,paper:Lt.bg,ink:Lt.fg,acc:k.m.acc,fd:`"${k.f.d}"`,fb:`"${k.f.b}"`,dw:k.f.dw,ds:k.f.di?'italic':'normal',dx:k.f.dx?'125%':'100%'}).forEach(([a,b])=>st.setProperty('--'+a,b));
+  subnav.innerHTML=['Logo system:logo','Logo in motion:motion','Colour & type:colour','Office stationery:stationery','Merchandise:merch','Digital:digital','Signage & set:signage'].map(s=>{const[a,b]=s.split(':');return`<a href="#${b}">${a}</a>`}).join('');
+  const M=mockKit(k),pl=k.hz?'primary':'primary';
+  const lt=(svg,bg,fg,cap,cls='')=>`<div class="tile ${cls.includes('wide')?'wide':''}" style="background:${bg};color:${fg}"><div class="pad ${cls}">${svg}</div><div class="cap"><span>${cap}</span><button data-dl>SVG</button></div></div>`;
+  const acD=D.ac,dl=(t,tone,bg,fg,cap,cls)=>lt(logo(k,t,tone),bg,fg,cap,cls);
+  const logos=dl('primary',D,D.bg,D.fg,'Primary · on dark')+dl('primary',Lt,Lt.bg,Lt.fg,'Primary · on light')+dl('primary',B,B.bg,B.fg,'Primary · on brand colour')
+    +dl('alt',D,D.bg,D.fg,'Stacked · on dark')+dl('alt',Lt,Lt.bg,Lt.fg,'Stacked · on light')+(k.hz?dl('word',D,D.bg,D.fg,'Wordmark only'):dl('alt',B,B.bg,B.fg,'Stacked · on brand colour'))
+    +dl('mark',D,D.bg,D.fg,'Monogram · on dark','mk')+dl('mark',Lt,Lt.bg,Lt.fg,'Monogram · on light','mk')+dl('mark',B,B.bg,B.fg,'Monogram · on brand colour','mk')
+    +dl('primary',MONO.b,'#fff','#111','One colour · black')+dl('primary',MONO.w,'#111','#fff','One colour · white')+dl('mark',MONO.w,'#111','#fff','Monogram · one colour','mk');
+  const sw=k.pal.map(([nm,h,role],i)=>{const rgb=hex2(h),foil=i===1&&FOILCSS[k.foil];return `<div class="sw" data-copy="${h}"><div class="c" style="background:${foil||h};color:${hexL(h)>150?'#111':'#fff'}">${nm}</div><div class="m"><b>${h}</b>RGB ${rgb.join(' ')}<br>CMYK ${cmyk(rgb)}<br><em>${role}</em></div></div>`}).join('');
+  const sec=(id,n,title,lede,body,alt)=>`<section class="sec ${alt?'alt':''}" id="${id}"><div class="sh"><b>${n}</b><h2>${csk(k,title)}</h2></div><p class="lede">${lede}</p>${body}</section>`;
+  const shot=(svg,items)=>`<div class="shot">${svg}</div><div class="shotcap">${items.map(x=>`<span>${x}</span>`).join('')}</div>`;
+  app.innerHTML=`
+  <section class="hero"><svg class="pat" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice"><g opacity=".07">${dev(k,D.fg)}</g></svg>
+   <div><div class="kick">Kit ${n2(k)} / 10 · ${k.full} · ${k.style}</div><h1>${csk(k,k.full.toUpperCase())}</h1><p>${k.concept}</p><div class="chips"><span>${k.f.n}</span><span>${k.finish==='foil'?'Hot-foil finish':k.finish==='emboss'?'Blind emboss finish':'Flat ink finish'}</span><span>${k.pal.slice(0,3).map(p=>p[0]).join(' / ')}</span></div></div>
+   <div class="hl" id="hl">${logo(k,k.hz?'alt':'primary',D,1)}</div></section>
+  ${sec('logo','01','LOGO SYSTEM','Primary lockup, stacked version, monogram, and one-colour versions for stamping, engraving and single-ink print.',`<div class="grid">${logos}</div>
+   <div class="rules"><div class="rule"><h4>Clear space &amp; minimum size</h4><div class="clear">${logo(k,'primary',Lt)}</div>Keep clear space equal to half the monogram’s height on every side. Minimum size: monogram 20 px / 8 mm; primary lockup 120 px / 32 mm wide.</div>
+   <div class="rule"><h4>Do not</h4><div class="donts">${[['d1','Stretch or squash'],['d2','Rotate'],['d3','Recolour'],['d4','Use on low contrast']].map(([c,t])=>`<div class="dont ${c}">${logo(k,'primary',Lt)}${t}</div>`).join('')}</div></div></div>`)}
+  ${sec('motion','02','LOGO IN MOTION',k.motion,`<div class="grid"><div class="tile wide" style="background:${D.bg};color:${D.fg}"><div class="pad" id="sting" style="min-height:300px"></div><div class="cap"><span>Intro animation</span><span><button id="replay">Replay</button> <button data-dl>SVG</button></span></div></div>
+   <div class="tile" style="background:${Lt.bg};color:${Lt.fg}"><div class="pad mk">${logo(k,'mark',Lt,1)}</div><div class="cap"><span>Monogram loop · light</span><button data-dl>SVG</button></div></div>
+   <div class="tile" style="background:${B.bg};color:${B.fg}"><div class="pad mk">${logo(k,'mark',B,1)}</div><div class="cap"><span>Monogram loop · brand colour</span><button data-dl>SVG</button></div></div></div>`,1)}
+  ${sec('colour','03','COLOUR & TYPE','Click a swatch to copy its HEX value.',`<div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(200px,1fr))">${sw}</div>
+   <div class="type"><div class="spec"><small>Display · ${k.f.n.split(' · ')[0]}</small><div class="aa dsp">Aa</div><div class="dsp" style="font-size:30px;line-height:1.15">${csk(k,k.grp==='Media'?'TAKE A QUICK COMMERCIAL BREAK.':'MOONSHOT STUDIOS.')}</div></div>
+   <div class="spec"><small>Text · ${k.f.n.split(' · ')[1]}</small><div class="aa" style="font-weight:400">Aa</div><p style="font-size:16px;line-height:1.65">${k.grp==='Media'?'Take a quick commercial break and watch our ads. If you’d like to discuss a potential project or collaboration, email contact@moonshotmedia.in.':'[Two or three sentences about the studio go here: what it makes, who for, and how to get in touch.]'}</p></div>
+   <div class="spec"><small>Scale</small>${[['Display',44,1],['Heading',28,1],['Subhead',19,0],['Body',15,0],['Caption',11.5,0]].map(([l,z,dd])=>`<div style="display:flex;gap:14px;align-items:baseline;padding:9px 0;border-top:1px solid color-mix(in srgb,var(--ink) 12%,transparent)"><span style="font:11px 'DM Mono',monospace;opacity:.55;width:78px;flex:none">${l} ${z}</span><span class="${dd?'dsp':''}" style="font-size:${z}px;line-height:1.1">${dd?csk(k,'MOONSHOT'):'Moonshot'}</span></div>`).join('')}</div></div>`)}
+  ${sec('stationery','04','OFFICE STATIONERY','Letterhead, envelope, business cards, notebook, pen and seal, then the paperwork: folder, invoice, compliment slip and crew pass.',shot(M.stat1,['Letterhead A4','Envelope DL','Business cards','Notebook','Pen','Seal'])+shot(M.cards,['Business card · front','Business card · back'])+shot(M.stat2,['Presentation folder','Invoice','Compliment slip','Crew pass + lanyard']),1)}
+  ${sec('merch','05','MERCHANDISE','Crew wear and gifts.',shot(M.merch1,['T-shirt','Tote bag','Cap','Swing tag'])+shot(M.merch2,['Mug','Bottle','Phone case','Gift box + tape','Pin badges','Stickers']))}
+  ${sec('digital','06','DIGITAL','Website header, social profile and app icons.',shot(M.digital,['Website','Social profile','App icons']),1)}
+  ${sec('signage','07','SIGNAGE & SET','Reception wall, door plaque, and the kit on set.',shot(M.wall,['Reception sign','Desk','Door plaque'])+shot(M.set,['Clapperboard','Crew pass','Lens cap','Gaffer tape']))}`;
+  const play=()=>{document.getElementById('sting').innerHTML=logo(k,k.hz?'alt':'primary',D,1)};play();
+  document.getElementById('replay').onclick=play;
+  document.title=`Moonshot — ${n2(k)} ${k.name}`;
+}
+function go(n,keep){cur=n;n?kit(KITS[n-1]):overview();document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('on',+t.dataset.go===n));history.replaceState(null,'',n?'#k'+n:'#all');if(!keep)scrollTo(0,0)}
+const toast=t=>{const el=document.getElementById('toast');el.textContent=t;el.classList.add('on');clearTimeout(el._t);el._t=setTimeout(()=>el.classList.remove('on'),1400)};
+document.addEventListener('click',e=>{
+  const g=e.target.closest('[data-go]');if(g){go(+g.dataset.go);return}
+  const s=e.target.closest('[data-copy]');if(s){navigator.clipboard&&navigator.clipboard.writeText(s.dataset.copy);toast('Copied '+s.dataset.copy);return}
+  const d=e.target.closest('[data-dl]');
+  if(d){const tl=d.closest('.tile'),svg=tl.querySelector('.pad svg');if(!svg)return;
+    const src=svg.outerHTML.replace(/(<svg[^>]*>)/,'$1'+document.querySelector('#defs defs').outerHTML);
+    const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([src],{type:'image/svg+xml'}));
+    a.download=`moonshot-${n2(KITS[cur-1])}-${tl.querySelector('.cap span').textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g,'-')}.svg`;a.click();toast('SVG saved')}
+});
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight')go(Math.min(10,cur+1));if(e.key==='ArrowLeft')go(Math.max(0,cur-1))});
+(async()=>{
+  const fonts=['500 56px "Bodoni Moda"','300 40px Jost','500 12px Jost','400 12px Jost','800 36px Archivo','400 12px Archivo','italic 300 86px "Cormorant Garamond"','600 38px Cinzel','400 12px Cinzel','400 48px "Poiret One"','600 72px Outfit','400 15px Outfit','400 86px "Archivo Black"','700 12px "Space Mono"','400 12px "EB Garamond"','400 12px Inter','600 12px Inter'];
+  await Promise.all(fonts.map(f=>document.fonts.load(f,'MOONSHOTmedia').catch(()=>{})));
+  try{await document.fonts.load('800 36px Archivo','MOONSHOT')}catch(e){}
+  buildTabs();const h=/k(\d+)/.exec(location.hash);go(h?Math.min(10,+h[1]):0,true);
+})();
+
+</script>
+</body>
+</html>

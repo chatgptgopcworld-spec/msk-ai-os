@@ -14,6 +14,7 @@ deliverables/brand-kits/
   index.html                           Round 2: 6 kits (01 original logo + 5 directions). Self-contained.
   assets/                              Original logo files from moonshotmedia.in (PNG, GIF) + recoloured versions.
   v1-first-draft/index.html            Round 1 of the 6 kits (owner called them generic).
+  moonshot-10-premium-brand-kits.html  Round 3 as ONE standalone file (double-click to open). Built from premium/.
   premium/index.html (+ kits.js, mock.js, app.js)
                                        Round 3: 10 premium kits, 01-05 Moonshot Media, 06-10 Moonshot Studios.
 wiki/ms-hot.md, ms-index.md, ms-log.md Hot cache, index, append-only log.
