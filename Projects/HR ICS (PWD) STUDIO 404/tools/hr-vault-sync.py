@@ -133,12 +133,15 @@ def tidy_locks():
     if not top:
         return
     stamp = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
-    for n in os.listdir(top):
-        if n.endswith(".lock"):
-            try:
-                os.replace(os.path.join(top, n), os.path.join(top, f"stale-{n[:-5]}-{stamp}"))
-            except OSError:
-                pass
+    for root, dirs, names in os.walk(top):
+        if os.path.relpath(root, top).split(os.sep)[0] == "refs":
+            continue  # never touch ref locks
+        for n in names:
+            if n.endswith(".lock"):
+                try:
+                    os.replace(os.path.join(root, n), os.path.join(top, f"stale-{n[:-5]}-{stamp}"))
+                except OSError:
+                    pass
 
 
 def main():
