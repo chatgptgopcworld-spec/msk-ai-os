@@ -1,0 +1,6 @@
+# Large / machine binaries never belong in the vault repo.
+*.exe
+*.zip
+py311/
+build-src/py311/
+StudioMirror/

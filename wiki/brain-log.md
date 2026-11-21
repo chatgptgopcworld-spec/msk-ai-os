@@ -107,3 +107,8 @@
 - 97 project files (ICS Research Portal site, Chrome extension, Apps Script, source, design rounds R1-R3, logos, favicons, zips, uploads, project memory) filed from v1.0.0; 4 hiring screenshots with applicants' data kept in its `private/` (git-ignored).
 - Auto-save: its `tools/s404-vault-sync.py` (takes a bundle from the Claude project, bumps versions of changed files, commits only that folder).
 - Registered: [[msk-vault-map]] (table, rule 10), `Projects/CLAUDE.md`, [[brain-index]]. Hot cache refreshed.
+
+## [2026-11-21] schema | New project: StudioMirror By Studio404
+- Created `Projects/StudioMirror By Studio404/` (CLAUDE.md, README, notes, wiki sm-hot/sm-index/sm-log, build toolkit in build-src/, assets).
+- Owner's office/non-commercial edition of InvoMirror (Invotic app), built by reverse-engineering the shipped exe; runnable build at %USERPROFILE%\StudioMirror\ (exe/py311 git-ignored).
+- Registered in vault map (sections 6 and 10), Projects/CLAUDE.md and brain-index.
