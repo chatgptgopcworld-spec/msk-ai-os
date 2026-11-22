@@ -34,6 +34,7 @@ libx264/boxblur), **yt-dlp**, and **Whisper** (faster-whisper "base", local). Pa
 - Sign-in/license: Cloudflare Worker `klipr-license-worker` → `https://klipr-license.klipr-license-worker.workers.dev` (`FREE_MODE=1`; Google OAuth). Code: `Downloads\klipr-license-worker`.
 
 ## Open threads / pending (owner's responsibility)
+- **Auto-update coded but OFF** — `publish: null`, no feed; updates won't reach installed users (fails silently, no error). Plan ready in [[klipr-auto-update-plan]]; **owner types `klipr-updates`** to turn it on (default GitHub Releases, free).
 - **Code-signing certificate** not configured → installer is unsigned (SmartScreen warning on first run).
 - **PyArmor** obfuscation of the engine not applied yet.
 - Landing page in progress (built separately with Claude; info in `notes/klipr-landing-page-info.md`).

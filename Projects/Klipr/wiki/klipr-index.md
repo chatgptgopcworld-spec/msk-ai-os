@@ -14,6 +14,7 @@ Catalogue of this project. Start at [[klipr-hot]]; rules in the project `CLAUDE.
 - [[klipr-hot]] — hot cache: what Klipr is, the stack, features, where the code lives, pending items.
 - [[klipr-architecture]] — engine/UI/Electron/license design; Streams + live-clip internals (in `notes/`).
 - [[klipr-build-and-release]] — exact steps to rebuild the installer (in `notes/`).
+- [[klipr-auto-update-plan]] — plan to turn on auto-updates (GitHub Releases / Cloudflare R2); trigger keyword **`klipr-updates`** (in `notes/`).
 - [[klipr-landing-page-info]] — marketing/landing-page information pack (in `notes/`).
 - [[klipr-log]] — append-only project log.
 
