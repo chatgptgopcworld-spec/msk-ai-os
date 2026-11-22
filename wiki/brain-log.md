@@ -112,3 +112,9 @@
 - Created `Projects/StudioMirror By Studio404/` (CLAUDE.md, README, notes, wiki sm-hot/sm-index/sm-log, build toolkit in build-src/, assets).
 - Owner's office/non-commercial edition of InvoMirror (Invotic app), built by reverse-engineering the shipped exe; runnable build at %USERPROFILE%\StudioMirror\ (exe/py311 git-ignored).
 - Registered in vault map (sections 6 and 10), Projects/CLAUDE.md and brain-index.
+
+## [2026-11-22] schema | New project: Klipr
+- Created `Projects/Klipr/` (CLAUDE.md, README, notes klipr-architecture/klipr-build-and-release/klipr-landing-page-info, wiki klipr-hot/klipr-index/klipr-log, raw/).
+- The owner's own Windows desktop clipping app (Electron + React/Vite + Python FastAPI); turns long videos AND live streams into captioned vertical shorts, on-device. Source is its own git repo OUTSIDE the vault at `Downloads\Klipr\03-Source-And-Development\klipr-release`; build project at `Downloads\Klipr-Build\app`; sign-in via the `klipr-license-worker` Cloudflare Worker.
+- This session's work (see [[klipr-log]]): built the **Streams** tab, hardened **Google sign-in**, fixed the add-row layout / **Settings icon** / sign-in **logo**, and rebuilt the installer `Klipr-Setup-1.0.0.exe`.
+- Registered in vault map (sections 6 and 10), Projects/CLAUDE.md and brain-index.

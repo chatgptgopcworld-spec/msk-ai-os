@@ -13,6 +13,7 @@ log. Read the vault map `AIOS/msk-vault-map.md` first (section 6, "Projects"), t
 | `HR ICS (PWD) STUDIO 404/` | `HR ICS (PWD) STUDIO 404/CLAUDE.md`, then `wiki/hr-hot.md`, `VERSIONS.md` (ICS hiring system, versioned files; tracked by msk-ai-os; `private/` not in git) |
 | `AI Automation - Studio-404/` | `AI Automation - Studio-404/CLAUDE.md`, then `wiki/s404-hot.md`, `VERSIONS.md` (ICS Research Portal, versioned files; tracked by msk-ai-os; `private/` not in git) |
 | `StudioMirror By Studio404/` | `StudioMirror By Studio404/CLAUDE.md`, then `wiki/sm-hot.md`, `wiki/sm-index.md` (owner's office edition of InvoMirror; build toolkit; tracked by msk-ai-os; exe/`py311` not in git) |
+| `Klipr/` | `Klipr/CLAUDE.md`, then `wiki/klipr-hot.md`, `wiki/klipr-index.md` (owner's Klipr desktop clipping app; record/docs only; app source is its own repo outside the vault; tracked by msk-ai-os) |
 | `Hamzi Prompts/` | `Hamzi Prompts/CLAUDE.md`, then `wiki/hot.md`, `wiki/index.md` (git repo) |
 | `Prompts Website/` | `Prompts Website/CLAUDE.md`, then `wiki/hot.md`, `wiki/index.md` (git repo; code repo in `projects/soniprompts/`) |
 | `Ubaid Automation/` | `Ubaid Automation/CLAUDE.md`, then `wiki/hot.md`, `wiki/index.md` (git repo; code repo in `projects/ubaidooautomation/`) |

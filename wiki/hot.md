@@ -1,6 +1,6 @@
 ---
 type: hot-cache
-updated: 2026-11-21
+updated: 2026-11-22
 word_budget: 500
 ---
 # Hot cache
@@ -27,6 +27,7 @@ Set up 22 Oct 2026. No sources ingested yet; inbox empty.
 - **HR ICS (PWD) STUDIO 404** ([[hr-hot|hot cache]]): ICS [PWD] Studio 404 hiring system; files versioned from v1.0.0.
 - **AI Automation - Studio-404** ([[s404-hot|hot cache]]): ICS Research Portal (Netlify site, Apps Script, Chrome extension); files versioned from v1.0.0, auto-saved from the Claude project.
 - **StudioMirror By Studio404** ([[sm-hot|hot cache]]): the owner's office edition of InvoMirror (their Invotic Android-mirroring app), rebranded to Studio404 and unlocked via a build toolkit; runnable build at `%USERPROFILE%\StudioMirror\`.
+- **Klipr** ([[klipr-hot|hot cache]]): the owner's own Windows desktop app that clips long videos and live streams into on-device captioned vertical shorts (Electron + React + Python FastAPI; Create, Live, Streams, captions, reframe/gaming split). Source is its own repo outside the vault; installer `Klipr-Setup-1.0.0.exe`.
 - **AI OS Blueprint** ([[aios-hot|hot cache]]): Nick Milo's "AI OS" from 6 videos (own your knowledge + AI instructions as files; rent the tool). Its [[aios-msk-adoption-plan]] gave this vault its AIOS layer; `me.md`, a personal-notes area and a Calendar layer still open.
 - **Hamzi Prompts** ([[Projects/Hamzi Prompts/wiki/hot|hot cache]], formerly "AI Brain"): wiki for hamziprompts.com: AI-video prompt library, memberships, community, academy. Code: `Documents\hamzi-lms`.
 - **Prompts Website** ([[Projects/Prompts Website/wiki/hot|hot cache]]): earlier general wiki, plus the SoniPrompts / PromptsStudio rebuild (`projects/soniprompts/`).
@@ -38,8 +39,8 @@ Set up 22 Oct 2026. No sources ingested yet; inbox empty.
 - AI OS adoption: fill the [BRACKETS] in [[msk-me]]; decide on a Calendar/daily-brief layer and a personal-notes area.
 
 ## Recently changed
+- 22 Nov 2026: new project **Klipr** (owner's desktop clipping app; built the Streams tab, hardened Google sign-in, rebuilt the installer).
 - 21 Nov 2026: new project **StudioMirror By Studio404** (office edition of InvoMirror; rebranded, unlocked build toolkit).
 - 17 Nov 2026: new project **AI Automation - Studio-404** (ICS Research Portal, versioned).
 - 17 Nov 2026: new project **HR ICS (PWD) STUDIO 404**.
 - 17 Nov 2026: new project **Moonshot Media** (brand kits).
-- 27 Oct 2026: new project **Artjenny** (client YouTube kit).
